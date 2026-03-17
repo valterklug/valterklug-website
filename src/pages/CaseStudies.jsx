@@ -282,7 +282,7 @@ export default function CaseStudies() {
       {/* Case Study Grid — 3 columns, tall vertical cards */}
       <section style={{ background: '#F5F5F5', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 3 }} className="case-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 3 }} className="case-grid">
             {CASES.map((c, i) => (
               <FadeIn key={c.id} delay={i * .05}>
                 <HoverLift>
@@ -313,7 +313,10 @@ export default function CaseStudies() {
           </div>
         </div>
         <style>{`
-          @media(max-width:1024px){
+          @media(max-width:1200px){
+            .case-grid{grid-template-columns:repeat(3,1fr)!important}
+          }
+          @media(max-width:900px){
             .case-grid{grid-template-columns:repeat(2,1fr)!important}
           }
           @media(max-width:600px){
