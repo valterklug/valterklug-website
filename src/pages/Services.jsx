@@ -20,18 +20,18 @@ const SERVICES = [
     meta:'Fixed-Fee Project-Based · AI-Powered Intelligence',
   },
   {
-    num:'03', title:'Brand Strategy & Positioning',
-    headline:'Purpose, positioning, and messaging built for global brands navigating new markets.',
-    sub:'Grounded in consumer intelligence and shaped by 25 years of cross-cultural brand experience, I help companies define who they are, why they matter, and how to talk about it — in ways that resonate with American audiences.',
-    deliverables:['Brand architecture and positioning strategy','Messaging hierarchy and narrative development','Visual identity direction (strategy, not execution)','Cultural adaptation for US market entry','Competitive differentiation and category analysis'],
-    meta:'Fixed-Fee Project · 6–12 weeks',
+    num:'03', title:'Team of Specialists',
+    headline:'Leading a team of experts in Advertising, E-commerce, Social Media, Digital, and more.',
+    sub:'Through Chameleon Collective\'s Deliver model, I assemble and lead a team of specialists across the disciplines your company needs — whether it\'s advertising, e-commerce, social media, digital marketing, or any combination — to drive growth in the US or Latin America.',
+    deliverables:['Advertising strategy and creative direction','E-commerce launch and optimization','Social media strategy and community management','Digital marketing across paid, organic, and content','Integrated campaign execution and performance tracking'],
+    meta:'Retainer or Project-Based via Chameleon Collective',
   },
   {
-    num:'04', title:'Digital & Performance Marketing',
-    headline:'Integrated digital strategy across the full funnel — from awareness to conversion.',
-    sub:'I design, oversee, and optimize performance marketing programs — working with specialized vendors and internal teams to ensure every channel is pulling in the right direction.',
-    deliverables:['Paid media strategy and vendor oversight (Meta, Google, programmatic)','Email and CRM architecture','Content strategy and editorial planning','SEO framework and audit','Analytics setup, dashboard design, and KPI reporting'],
-    meta:'Retainer or Project-Based',
+    num:'04', title:'Market Intelligence',
+    headline:'AI-powered market research and competitive intelligence — delivered in days, not months.',
+    sub:'Through Soundcheck Insights, I deliver fast, rigorous market intelligence that helps companies validate opportunities, understand competitive landscapes, and make smarter decisions before investing in new markets.',
+    deliverables:['Market viability and opportunity assessment','Competitive landscape and positioning analysis','Consumer sentiment and cultural insights','Category trends and white-space identification','Custom AI-powered research reports'],
+    meta:'Fixed-Fee Project · 7–14 Day Delivery',
   },
 ]
 
