@@ -1813,15 +1813,16 @@
   },
   {
     "slug": "estadao-interview",
-    "source": "EstadÃÂÃÂ£o",
+    "source": "Estadão",
     "date": "Apr 13, 2023",
     "title": "Valter Klug Gives an Interview to Top Brazilian Newspaper",
     "originalUrl": "https://www.sambarock.us/news/blog-post-title-three-r6nzy",
     "img": "https://images.squarespace-cdn.com/content/v1/60b28fc51a1997494136946c/1681511795650-B3MLFRQCA9S54H6PQ5ZT/1681362254293.jpeg?format=750w",
+    "featured": false,
     "content": [
       {
         "tag": "p",
-        "text": "0 Skip to Content @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) { .header-blur-background { } } MENU ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂ· HOME 1: Soundcheck 2: Pesquisa & EstratÃÂÃÂ©gia 3: Posicionamento & Plano 4: Samba+ MENU ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¸ HOME CPG AMP TROPICALIA REBRAND NEWS Book a free call .top-bun, .patty, .bottom-bun { height: 1px; } Open Menu Close Menu .top-bun, .patty, .bottom-bun { height: 1px; } Open Menu Close Menu MENU ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂ· HOME 1: Soundcheck 2: Pesquisa & EstratÃÂÃÂ©gia 3: Posicionamento & Plano 4: Samba+ MENU ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¸ HOME CPG AMP TROPICALIA REBRAND NEWS Book a free call Folder: MENU ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂ· Back HOME 1: Soundcheck 2: Pesquisa & EstratÃÂÃÂ©gia 3: Posicionamento & Plano 4: Samba+ Folder: MENU ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¸ Back HOME CPG AMP TROPICALIA REBRAND NEWS Book a free call Valter Klug gives an interview to top Brazilian newspaper Apr 13 Written By Valter Klug We've got some amazing news! EstadÃÂÃÂ£o, the largest newspaper in Brazil (it's like that country's The New York Times for comparison purposes) has just published an article about internationalization and marketing based on an interview given by our founder and CEO Valter Klug (who was quoted throughout the article) to the renowned journalist Paulo Silvestre! It was also highlighted on EstadÃÂÃÂ£o's homepage, reaching millions of people per day!"
+        "text": "We've got some amazing news! Estadão, the largest newspaper in Brazil (it's like that country's The New York Times for comparison purposes) has just published an article about internationalization and marketing based on an interview given by our founder and CEO Valter Klug (who was quoted throughout the article) to the renowned journalist Paulo Silvestre! It was also highlighted on Estadão's homepage, reaching millions of people per day!"
       },
       {
         "tag": "p",
@@ -1832,12 +1833,8 @@
         "text": "Here is the translated version of the article (the original is available here):"
       },
       {
-        "tag": "h2",
-        "text": "Internationalizing a brand brings benefits but requires caution"
-      },
-      {
         "tag": "p",
-        "text": "By Paulo Fernando Silvestre Jr."
+        "text": "Internationalizing a brand brings benefits but requires caution\nBy Paulo Fernando Silvestre Jr."
       },
       {
         "tag": "p",
@@ -1882,10 +1879,6 @@
       {
         "tag": "p",
         "text": "\"It's not enough to have a good product; you need to know the market, study it, and create a business plan to support the project's viability,\" concludes Klug. \"It's not just about translating what works in Brazil.\""
-      },
-      {
-        "tag": "p",
-        "text": "Previous Previous Samba Rock CEO is featured in Forbes article Next Next Samba Rock CEO joins Forbes Business Council .fe-6464e67a1714b322b250bb3d { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(10,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-6464e67a1714b322b250bb3d { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-6464e67a1714b322b250bb3d { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(3,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-yui_3_17_2_1_1741632411438_6258 { grid-area: 1/2/3/10; z-index: 2; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1741632411438_6258 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1741632411438_6258 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1741632411438_6258 { grid-area: 2/2/4/6; z-index: 2; } .fe-block-yui_3_17_2_1_1741632411438_6258 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1741632411438_6258 .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-yui_3_17_2_1_1741632411438_9295 { grid-area: 3/2/9/10; z-index: 3; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1741632411438_9295 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1741632411438_9295 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1741632411438_9295 { grid-area: 1/11/3/17; z-index: 3; } .fe-block-yui_3_17_2_1_1741632411438_9295 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1741632411438_9295 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-yui_3_17_2_1_1756934706007_19857 { grid-area: 9/2/11/10; z-index: 4; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1756934706007_19857 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1756934706007_19857 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1756934706007_19857 { grid-area: 3/11/4/17; z-index: 4; } .fe-block-yui_3_17_2_1_1756934706007_19857 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1756934706007_19857 .sqs-block-alignment-wrapper { align-items: flex-start; } } #block-yui_3_17_2_1_1741632411438_6258 .social-icons-style-border .sqs-svg-icon--wrapper { box-shadow: 0 0 0 2px inset; border: none; } MIAMI ÃÂ¢ÃÂÃÂ¢ SÃÂÃÂO PAULO ÃÂ¢ÃÂÃÂ¢ NYC ÃÂ¢ÃÂÃÂ¢ WORLDWIDE"
       }
     ]
   },
