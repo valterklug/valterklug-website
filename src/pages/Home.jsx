@@ -6,7 +6,7 @@ const LOGOS = ['AB-InBev', 'Natura &Co', 'Bauducco', 'PepsiCo', 'Inter&Co', 'Con
 const SERVICES = [
   { num: '01', title: 'Fractional CMO', desc: 'Embedded marketing leadership at the executive level — strategy, teams, and outcomes.', href: '/services' },
   { num: '02', title: 'US Market Expansion', desc: 'End-to-end brand expansion strategy for companies entering or scaling in the US market.', href: '/services' },
-  { num: '03', title: 'Brand Strategy & Positioning', desc: 'Purpose, positioning, and messaging architecture built for global brands in new markets.', href: '/services' },
+  { num: '03', title: 'Team of Specialists', desc: 'Leading experts in Advertising, E-commerce, Social Media, Digital, and whatever else your company needs to grow in the US or Latin America.', href: '/services' },
   { num: '04', title: 'Market Intelligence', desc: 'AI-powered research and validation through Soundcheck Insights — delivered in 7–14 days.', href: '/intelligence' },
 ]
 const CREDS = [
@@ -152,7 +152,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }} className="feat-grid">
           <FadeIn>
             <span className="lbl lbl-cream">Featured Case</span>
-            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 8 }}>Grupo Bimbo · Bauducco</div>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 8 }}>Bauducco</div>
             <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)', fontWeight: 400, color: '#121212', letterSpacing: '-.01em', lineHeight: 1.15, marginBottom: 16 }}>
               Bauducco — Building Brand Love in the US Market
             </h2>
@@ -172,7 +172,7 @@ export default function Home() {
               <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: 'rgba(255,255,255,.45)', lineHeight: 1.7 }}>CPG + US Market Entry + Digital</div>
               <div style={{ height: 1, background: 'rgba(255,255,255,.08)' }} />
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-                {[['Brand', 'Bauducco'],['Client', 'Grupo Bimbo'],['Market', 'United States'],['Category', 'CPG / Food']].map(([k,v]) => (
+                {[['Brand', 'Bauducco'],['Client', 'Bauducco USA'],['Market', 'United States'],['Category', 'CPG / Food']].map(([k,v]) => (
                   <div key={k}>
                     <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.25)', marginBottom: 3 }}>{k}</div>
                     <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 500, color: '#fff' }}>{v}</div>
