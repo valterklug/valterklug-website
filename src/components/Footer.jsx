@@ -9,7 +9,7 @@ export default function Footer() {
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 600, color: '#fff', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: 6 }}>Valter Klug</div>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, color: '#EA633F', letterSpacing: '.2em', textTransform: 'uppercase', marginBottom: 16 }}>Fractional CMO · Miami</div>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: 'rgba(255,255,255,.45)', lineHeight: 1.7 }}>
-              25+ years building brands across Brazil, the UK, and the United States. Available as Fractional CMO through Chameleon Collective.
+              28+ years building brands across Brazil, the UK, and the United States. Available as Fractional CMO through Chameleon Collective.
             </p>
             <div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 8 }}>
               <a href="mailto:valter.klug@chameleon.co" style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: 'rgba(255,255,255,.4)', transition: 'color .2s', textDecoration: 'none' }}
