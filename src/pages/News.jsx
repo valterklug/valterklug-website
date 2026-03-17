@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PageWrapper, FadeIn } from '../components/Animate'
-import { ARTICLES, SOURCE_COLORS } from '../data/articles'
+import { fetchArticles, setArticlesSync, SOURCE_COLORS } from '../data/articles'
 
 function ArticleImage({ src, alt, source, style = {} }) {
   const [failed, setFailed] = useState(false)
@@ -35,8 +35,32 @@ function ArticleImage({ src, alt, source, style = {} }) {
 }
 
 export default function News() {
-  const featured = ARTICLES.find(a => a.featured) || ARTICLES[0]
-  const rest = ARTICLES.filter(a => a !== featured)
+  const [articles, setArticles] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchArticles().then(a => {
+      setArticlesSync(a)
+      setArticles(a)
+      setLoading(false)
+    })
+  }, [])
+
+  const featured = articles.find(a => a.featured) || articles[0]
+  const rest = articles.filter(a => a !== featured)
+
+  if (loading) {
+    return (
+      <PageWrapper>
+        <section className="page-hero">
+          <div className="page-hero-inner">
+            <span className="lbl lbl-orange">News · Insights · Press</span>
+            <h1 className="page-h1">Loading articles...</h1>
+          </div>
+        </section>
+      </PageWrapper>
+    )
+  }
 
   return (
     <PageWrapper>
@@ -49,29 +73,31 @@ export default function News() {
       </section>
 
       {/* ── FEATURED ── */}
-      <section style={{background:'#EAEAC8',padding:'80px 64px',borderTop:'1px solid rgba(18,18,18,.1)'}}>
-        <div style={{maxWidth:1200,margin:'0 auto'}}>
-          <FadeIn>
-            <span className="lbl lbl-cream">Featured</span>
-            <Link to={`/news/${featured.slug}`} style={{textDecoration:'none',display:'block'}}>
-              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(18,18,18,.1)',marginTop:16,cursor:'pointer'}} className="feat-grid">
-                <div style={{background:'#121212',padding:'52px 48px'}}>
-                  <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:12}}>
-                    <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#fff',background:SOURCE_COLORS[featured.source]||'#EA633F',padding:'3px 8px',borderRadius:2}}>{featured.source}</span>
+      {featured && (
+        <section style={{background:'#EAEAC8',padding:'80px 64px',borderTop:'1px solid rgba(18,18,18,.1)'}}>
+          <div style={{maxWidth:1200,margin:'0 auto'}}>
+            <FadeIn>
+              <span className="lbl lbl-cream">Featured</span>
+              <Link to={`/news/${featured.slug}`} style={{textDecoration:'none',display:'block'}}>
+                <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(18,18,18,.1)',marginTop:16,cursor:'pointer'}} className="feat-grid">
+                  <div style={{background:'#121212',padding:'52px 48px'}}>
+                    <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:12}}>
+                      <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#fff',background:SOURCE_COLORS[featured.source]||'#EA633F',padding:'3px 8px',borderRadius:2}}>{featured.source}</span>
+                    </div>
+                    <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,fontWeight:500,color:'rgba(255,255,255,.3)',marginBottom:20}}>{featured.date}</div>
+                    <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#fff',lineHeight:1.25,marginBottom:20}}>{featured.title}</h2>
+                    <span className="tlink tlink-white">Read Article →</span>
                   </div>
-                  <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,fontWeight:500,color:'rgba(255,255,255,.3)',marginBottom:20}}>{featured.date}</div>
-                  <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#fff',lineHeight:1.25,marginBottom:20}}>{featured.title}</h2>
-                  <span className="tlink tlink-white">Read Article →</span>
+                  <div style={{background:'#000',position:'relative',overflow:'hidden',minHeight:300}}>
+                    <ArticleImage src={featured.img} alt={featured.title} source={featured.source} style={{opacity:.85}} />
+                  </div>
                 </div>
-                <div style={{background:'#000',position:'relative',overflow:'hidden',minHeight:300}}>
-                  <ArticleImage src={featured.img} alt={featured.title} source={featured.source} style={{opacity:.85}} />
-                </div>
-              </div>
-            </Link>
-          </FadeIn>
-        </div>
-        <style>{"@media(max-width:768px){.feat-grid{grid-template-columns:1fr!important}section[style*='80px 64px']{padding:60px 24px!important}}"}</style>
-      </section>
+              </Link>
+            </FadeIn>
+          </div>
+          <style>{"@media(max-width:768px){.feat-grid{grid-template-columns:1fr!important}section[style*='80px 64px']{padding:60px 24px!important}}"}</style>
+        </section>
+      )}
 
       {/* ── ALL ARTICLES ── */}
       <section style={{background:'#fff',padding:'80px 64px',borderTop:'1px solid #E8E8E8'}}>

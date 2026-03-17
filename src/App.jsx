@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -12,6 +12,8 @@ import Intelligence from './pages/Intelligence'
 import News from './pages/News'
 import ArticlePage from './pages/ArticlePage'
 import Contact from './pages/Contact'
+
+const Admin = lazy(() => import('./pages/Admin'))
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -46,7 +48,10 @@ function Layout() {
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout />
+      <Routes>
+        <Route path="/admin" element={<Suspense fallback={<div style={{padding:80,textAlign:'center'}}>Loading...</div>}><Admin /></Suspense>} />
+        <Route path="*" element={<Layout />} />
+      </Routes>
     </BrowserRouter>
   )
 }
