@@ -17,3 +17,34 @@ function ScrollTop() {
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return null
 }
+
+function Layout() {
+  const location = useLocation()
+  return (
+    <>
+      <ScrollTop />
+      <Nav />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/intelligence" element={<Intelligence />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </AnimatePresence>
+      <Footer />
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
+  )
+}

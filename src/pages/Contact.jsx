@@ -99,7 +99,7 @@ export default function Contact() {
             <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#121212',letterSpacing:'-.015em',marginBottom:8,lineHeight:1.2,marginTop:4}}>Not the right fit for me?</h2>
             <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#666',lineHeight:1.7,marginBottom:36,maxWidth:560}}>I'll connect you with the right specialist. If your needs fall outside my core expertise, I'll route you to a trusted partner from my signed network — no commissions, no pressure.</p>
           </FadeIn>
-          <div style={{display:'grid',gridTemplateColumns:'auto-fit,minmax(280px,1fr)',gap:1,background:'#E8E8E8'}} className="partner-grid">
+          <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:1,background:'#E8E8E8'}} className="partner-grid">
             {PARTNERS.map(p=>(
               <FadeIn key={p.name}>
                 <div style={{background:'#fff',padding:'28px 32px'}}>

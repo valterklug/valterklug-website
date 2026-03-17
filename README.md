@@ -31,7 +31,7 @@ Forms use [Formspree](https://formspree.io) — free, no backend needed.
 4. Open `src/components/ContactForm.jsx`
 5. Replace `YOUR_FORMSPREE_ID` on **line 11** with your actual ID:
    ```js
-   const FORMSUBMITY_ID = 'xkodvpzq'   // ← your ID here
+   const FORMSPREE_ID = 'xkndvpzq'  // ← your ID here
    ```
 6. Redeploy → form submissions go straight to your email
 
@@ -86,15 +86,15 @@ Free plan: 50 submissions/month. Upgrade at formspree.io/pricing if needed.
 
 **About** — At-a-glance stats, biographical text, career timeline (2001→now), Chameleon Collective section.
 
-**Services** — 4 expandable service cards (Fractional CMO, US Expansion, Brand Strategy, Digital Marketing) with full deliverable lists. Click b+` to expand.
+**Services** — 4 expandable service cards (Fractional CMO, US Expansion, Brand Strategy, Digital Marketing) with full deliverable lists. Click `+` to expand.
 
-**Work** — 6 case study cards: Guaraná/GUARANA1ION, Bauducco, KeroCoco, Tropical Fantasy, NYCFC, CBF/World Cup.
+**Work** — 6 case study cards: Guaraná/GUARANATION, Bauducco, KeroCoco, Tropical Fantasy, NYCFC, CBF/World Cup.
 
-**Intelligence** — Soundcheck-powered intelligence services: 4-step process, then 6 expandable product cards (Expansion Analysis, Idea Validation, Business Plan, AI Focus Groups, Funding Vetting, CLEAR Assessment). Click \"View Deliverables\" to expand each.
+**Intelligence** — Soundcheck-powered intelligence services: 4-step process, then 6 expandable product cards (Expansion Analysis, Idea Validation, Business Plan, AI Focus Groups, Funding Vetting, CLEAR Assessment). Click "View Deliverables" to expand each.
 
 **News** — Featured World Cup 2026 article + 5 article cards.
 
-**Contact** — Full contact form (Formspree) + direct contact info + \"What to expect\" sidebar + partner network (Oxford USA, ITS Company, Global Franchise, Go To Market BD).
+**Contact** — Full contact form (Formspree) + direct contact info + "What to expect" sidebar + partner network (Oxford USA, ITS Company, Global Franchise, Go To Market BD).
 
 ---
 
