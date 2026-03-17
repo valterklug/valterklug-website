@@ -36,7 +36,7 @@ export default function About() {
               ))}
             </div>
             <div style={{marginTop:24,display:'flex',flexDirection:'column',gap:1,background:'#E8E8E8'}}>
-              {[['Forbes','Forbes Business Council'],['GS10K','Goldman Sachs 10,000 Small Businesses'],['2× CL','Cannes Lions Winner'],['Author','Published — A.M.P.']].map(([code,label])=>(
+              {[['Forbes','Former Forbes Business Council'],['GS10K','Goldman Sachs 10,000 Small Businesses'],['2× CL','Cannes Lions Winner'],['Author','Published — A.M.P.']].map(([code,label])=>(
                 <div key={code} style={{background:'#F5F5F5',padding:'14px 20px',display:'flex',gap:16,alignItems:'center'}}>
                   <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,fontWeight:700,color:'#EA633F',minWidth:48}}>{code}</span>
                   <span style={{fontFamily:'Inter,sans-serif',fontSize:'.8125rem',color:'#666'}}>{label}</span>
@@ -47,7 +47,7 @@ export default function About() {
           <FadeIn delay={.1}>
             <span className="lbl">Background</span>
             <p style={{fontFamily:'Inter,sans-serif',fontSize:'1rem',color:'#444',lineHeight:1.8,marginBottom:20}}>
-              Brazilian-born. UK-educated. Miami-based. I bring a genuinely multicultural lens to brand strategy — which is exactly why clients hire me to navigate the cultural complexity of entering the US market.
+              Brazilian-born. Miami-based. Two years living and working in the UK. I bring a genuinely multicultural lens to brand strategy — which is exactly why clients hire me to navigate the cultural complexity of entering the US market.
             </p>
             <p style={{fontFamily:'Inter,sans-serif',fontSize:'1rem',color:'#444',lineHeight:1.8,marginBottom:20}}>
               My career spans the full arc of modern marketing — from digital's earliest days at Isobar to holding-company creative direction at Y&R, to building a boutique agency that served major Brazilian and Latin American brands entering the US.
