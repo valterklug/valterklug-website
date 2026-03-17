@@ -28,7 +28,7 @@ export default function About() {
           <FadeIn>
             <span className="lbl">At a Glance</span>
             <div style={{display:'flex',flexDirection:'column',gap:1,background:'#E8E8E8',marginTop:16}}>
-              {[['25+','Years of experience'],['3','Countries lived & worked'],['30+','Brands served'],['5+','Major award categories won']].map(([n,l])=>(
+              {[['28+','Years of experience'],['3','Countries lived & worked'],['30+','Brands served'],['5+','Major award categories won']].map(([n,l])=>(
                 <div key={l} style={{background:'#fff',padding:'20px 24px',display:'flex',alignItems:'center',gap:16}}>
                   <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'1.75rem',fontWeight:300,color:'#EA633F',lineHeight:1,minWidth:48}}>{n}</span>
                   <span style={{fontFamily:'Inter,sans-serif',fontSize:'.875rem',color:'#666',lineHeight:1.5}}>{l}</span>
