@@ -100,13 +100,50 @@ function LoginScreen({ onLogin }) {
   )
 }
 
+/* ── IMAGE UPLOAD ── */
+async function uploadImageToGitHub(file, slug, token) {
+  const filename = slug + '-' + Date.now() + '.' + file.name.split('.').pop().toLowerCase()
+  const ghPath = `public/news/${filename}`
+
+  // Read file as base64
+  const base64 = await new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onload = () => resolve(reader.result.split(',')[1])
+    reader.onerror = reject
+    reader.readAsDataURL(file)
+  })
+
+  // Check if file already exists
+  const checkRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${ghPath}?ref=${BRANCH}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.v3+json' },
+  })
+  const existingSha = checkRes.ok ? (await checkRes.json()).sha : undefined
+
+  // Upload to GitHub
+  const body = {
+    message: `CMS: upload image ${filename}`,
+    content: base64,
+    branch: BRANCH,
+    ...(existingSha ? { sha: existingSha } : {}),
+  }
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${ghPath}`, {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  })
+  if (!res.ok) throw new Error(`Image upload failed: ${res.status}`)
+  return `/news/${filename}`
+}
+
 /* ── ARTICLE FORM ── */
-function ArticleForm({ article, onSave, onCancel }) {
+function ArticleForm({ article, onSave, onCancel, token }) {
   const [form, setForm] = useState({
     title: '', source: 'Forbes', date: '', originalUrl: '', img: '', content: '', featured: false, slug: '',
     ...article,
     content: article?.content || '',
   })
+  const [uploading, setUploading] = useState(false)
+  const [imgPreview, setImgPreview] = useState(article?.img || '')
 
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }))
 
@@ -114,6 +151,29 @@ function ArticleForm({ article, onSave, onCancel }) {
   useEffect(() => {
     if (!article && form.title) set('slug', slugify(form.title))
   }, [form.title, article])
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    if (!file.type.startsWith('image/')) { alert('Please select an image file'); return }
+    if (file.size > 5 * 1024 * 1024) { alert('Image must be under 5MB'); return }
+
+    // Show local preview immediately
+    const localUrl = URL.createObjectURL(file)
+    setImgPreview(localUrl)
+
+    setUploading(true)
+    try {
+      const slug = form.slug || slugify(form.title) || 'article'
+      const imgPath = await uploadImageToGitHub(file, slug, token)
+      set('img', imgPath)
+      setImgPreview(imgPath)
+    } catch (err) {
+      alert('Upload failed: ' + err.message)
+      setImgPreview(form.img)
+    }
+    setUploading(false)
+  }
 
   const handleSave = () => {
     if (!form.title || !form.source || !form.date) { alert('Title, source and date are required'); return }
@@ -149,15 +209,40 @@ function ArticleForm({ article, onSave, onCancel }) {
         </div>
       </div>
 
-      <div style={S.row}>
-        <div>
-          <label style={S.label}>Original URL</label>
-          <input style={S.input} value={form.originalUrl} onChange={e => set('originalUrl', e.target.value)} placeholder="https://..." />
+      <div style={{ marginBottom: 16 }}>
+        <label style={S.label}>Original URL</label>
+        <input style={S.input} value={form.originalUrl} onChange={e => set('originalUrl', e.target.value)} placeholder="https://..." />
+      </div>
+
+      {/* Hero Image: Upload OR URL */}
+      <div style={{ marginBottom: 16 }}>
+        <label style={S.label}>Hero Image</label>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+          {/* Upload button */}
+          <div style={{ flex: '0 0 auto' }}>
+            <label style={{
+              ...S.btn, ...S.btnDark, display: 'inline-flex', alignItems: 'center', gap: 6,
+              opacity: uploading ? 0.5 : 1, pointerEvents: uploading ? 'none' : 'auto',
+            }}>
+              {uploading ? 'Uploading...' : 'Upload Image'}
+              <input type="file" accept="image/*" onChange={handleImageUpload} style={{ display: 'none' }} />
+            </label>
+            <div style={{ fontSize: 11, color: '#999', marginTop: 4 }}>JPG, PNG, WebP — max 5MB</div>
+          </div>
+          {/* OR divider */}
+          <div style={{ flex: '0 0 auto', padding: '10px 0', fontSize: 12, color: '#999', fontWeight: 500 }}>or</div>
+          {/* URL input */}
+          <div style={{ flex: 1 }}>
+            <input style={S.input} value={form.img} onChange={e => { set('img', e.target.value); setImgPreview(e.target.value) }} placeholder="Paste image URL..." />
+          </div>
         </div>
-        <div>
-          <label style={S.label}>Hero Image URL</label>
-          <input style={S.input} value={form.img} onChange={e => set('img', e.target.value)} placeholder="/news/image.jpg or https://..." />
-        </div>
+        {/* Preview */}
+        {imgPreview && (
+          <div style={{ marginTop: 12, borderRadius: 4, overflow: 'hidden', maxHeight: 200, background: '#f0f0f0' }}>
+            <img src={imgPreview} alt="Preview" style={{ width: '100%', maxHeight: 200, objectFit: 'cover', display: 'block' }}
+              onError={e => { e.target.style.display = 'none' }} />
+          </div>
+        )}
       </div>
 
       <div style={{ marginBottom: 16 }}>
@@ -300,6 +385,7 @@ export default function Admin() {
             article={view === 'edit' ? { ...editArticle, content: contentToText(editArticle.content) } : null}
             onSave={handleSave}
             onCancel={() => { setView('list'); setEditArticle(null) }}
+            token={token}
           />
         )}
 
