@@ -10,7 +10,7 @@ const SERVICES = [
   { num: '04', title: 'Market Intelligence', desc: 'AI-powered research and validation through Soundcheck Insights — delivered in 7–14 days.', href: '/intelligence' },
 ]
 const CREDS = [
-  { code: 'Forbes', label: 'Forbes Business Council' },
+  { code: 'Forbes', label: 'Former Forbes Business Council' },
   { code: 'GS10K', label: 'Goldman Sachs 10,000 Small Businesses' },
   { code: '2×CL', label: 'Cannes Lions Winner' },
   { code: 'A.M.P.', label: 'Published Author' },
