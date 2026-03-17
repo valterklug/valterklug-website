@@ -1,0 +1,16 @@
+export default [
+  { tag: 'p', text: "Artificial intelligence (AI) is a powerful tool that has the potential to revolutionize the way businesses operate and interact with their customers. While some may fear that AI will replace human labor and creativity, I see the potential for it to be a powerful ally in improving efficiency, accuracy and personalization." },
+  { tag: 'p', text: "Throughout my 25-year career in marketing, I have consistently integrated new technologies into my daily routine. As the owner of a boutique agency, I rely on various tools to optimize my team's time and make our clients' expansion projects feasible." },
+  { tag: 'p', text: "AI-powered analytics tools have the potential to improve targeting, messaging and campaign effectiveness by quickly and accurately analyzing vast amounts of data." },
+  { tag: 'h2', text: "Analyzing and Organizing Data" },
+  { tag: 'p', text: "Like in other business applications, AI-powered analytics tools can help you quickly and accurately analyze vast amounts of data, allowing you to make more informed decisions about targeting, messaging and campaigns." },
+  { tag: 'p', text: "AI can also assist with personalization by using data and algorithms to deliver customized experiences and content to individual customers." },
+  { tag: 'p', text: "Another area where AI can be useful is in automating routine or time-consuming tasks, such as email marketing, social media scheduling and lead generation." },
+  { tag: 'h2', text: "Ethical And Legal Considerations For AI" },
+  { tag: 'p', text: "However, it's important to approach AI with caution and skepticism. Technology is still evolving rapidly, and there are many ethical and legal considerations to take into account when using it." },
+  { tag: 'p', text: "Transparency is crucial, with clear communication about how AI is being used and data protection. Focusing on diversity and inclusion is also essential to avoid bias in AI implementation." },
+  { tag: 'h2', text: "Balance Between Automation And Creativity" },
+  { tag: 'p', text: "I find that the key to success with AI is to strike the right balance between automation and creativity. AI can help to automate routine tasks and provide valuable data insights, but it should not replace the human touch in marketing." },
+  { tag: 'p', text: "AI creates based on an average of its input, resulting in copy that sounds similar and lacks the brand's unique identity. While AI can assist in organizing ideas, human copywriters are still necessary to inject personality and relatability into creative work." },
+  { tag: 'p', text: "By striking the right balance between automation and creativity, marketing teams can gain a competitive edge and drive success in an increasingly complex and challenging business world." },
+]

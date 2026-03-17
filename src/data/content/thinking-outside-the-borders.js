@@ -1,0 +1,16 @@
+export default [
+  { tag: 'p', text: "With the rise of digital commerce reshaping global markets, I see many U.S. brands on the hunt for the next frontier. As it turns out, this frontier might be nestled in Brazil's energetic streets and vibrant online market." },
+  { tag: 'p', text: "I was born in Brazil and arrived in the U.S. in 2009. Although I became an American citizen in 2018, I never left my Brazilian roots. In 2015, I started a boutique agency whose mission is to help Brazilian brands to expand into the U.S. market." },
+  { tag: 'h2', text: "Brazil: A Thriving E-Commerce Hub" },
+  { tag: 'p', text: "Brazil, known for its sprawling landscapes and diverse culture, is also home to a fast-paced e-commerce market. Brazil's online sales reached roughly $18 billion in 2020, reflecting a staggering growth of 41% from the previous year." },
+  { tag: 'p', text: "I've found that a significant chunk of Brazilian consumers display a strong desire for international brands, with 68% of online shoppers in Brazil saying they have bought from international merchants—with the U.S. being a popular choice." },
+  { tag: 'h2', text: "Brazilians' Affinity For American Products" },
+  { tag: 'p', text: "The propensity for American products isn't limited to online purchases. Brazilians, when traveling to the U.S., consider shopping a primary activity." },
+  { tag: 'h2', text: "Cross-Border Logistics Simplified" },
+  { tag: 'p', text: "One of the challenges of selling products internationally is international shipping. This is where cross-border logistics comes in." },
+  { tag: 'p', text: "When looking to break into Brazil's e-commerce market, I recommend utilizing cross-border logistics since this removes the need to have a warehouse in Brazil." },
+  { tag: 'h2', text: "The Importance Of Local Expertise" },
+  { tag: 'p', text: "But making a splash in Brazil takes more than just opening an online store. It's important to understand the Brazilian market and how to connect with local shoppers." },
+  { tag: 'p', text: "There's no doubt that Brazil's online shopping scene offers a golden opportunity for U.S. brands. But to truly unlock this potential, I believe that you need to understand the market and find the right partners to guide you." },
+  { tag: 'p', text: "Entering a new market is a big step. Always do your homework, learn the market and get expert advice before making your move. You will say \"Obrigado\" later." },
+]
