@@ -188,39 +188,39 @@ function CaseModal({ cs, onClose }) {
       <motion.div
         initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 40 }}
         transition={{ duration: .35 }}
-        style={{ background: '#fff', maxWidth: 960, width: '100%', position: 'relative', margin: '0 auto' }}
+        style={{ background: '#fff', maxWidth: 1060, width: '100%', position: 'relative', margin: '0 auto' }}
         onClick={e => e.stopPropagation()}
       >
         {/* Close button */}
         <button onClick={onClose} style={{ position: 'sticky', top: 0, float: 'right', zIndex: 10, background: 'rgba(18,18,18,.85)', border: 'none', color: '#fff', width: 44, height: 44, cursor: 'pointer', fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>×</button>
 
-        {/* Hero image */}
-        <div style={{ width: '100%', overflow: 'hidden' }}>
-          <img src={cs.fullImg} alt={cs.title} style={{ width: '100%', display: 'block' }} />
-        </div>
-
-        {/* Header */}
-        <div style={{ background: cs.bg, padding: '40px 48px', borderLeft: `4px solid ${cs.accent}` }}>
-          <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: cs.accent, marginBottom: 8 }}>{cs.tag}</div>
-          <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#fff', lineHeight: 1.2, marginBottom: 12, letterSpacing: '-.01em' }}>{cs.title}</h2>
-          <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginTop: 16 }}>
-            <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Client</div>
-              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.client}</div>
+        {/* Header with image side-by-side */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px' }} className="modal-hero">
+          <div style={{ background: cs.bg, padding: '48px 44px', borderLeft: `4px solid ${cs.accent}`, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: cs.accent, marginBottom: 10 }}>{cs.tag}</div>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.3rem,2.8vw,1.9rem)', fontWeight: 300, color: '#fff', lineHeight: 1.2, marginBottom: 14, letterSpacing: '-.01em' }}>{cs.title}</h2>
+            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginTop: 12 }}>
+              <div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Client</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.client}</div>
+              </div>
+              <div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Role</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.role}</div>
+              </div>
+              <div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Category</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.category}</div>
+              </div>
             </div>
-            <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Role</div>
-              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.role}</div>
-            </div>
-            <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Category</div>
-              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.category}</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 20 }}>
+              {cs.tags.map(t => (
+                <span key={t} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(255,255,255,.08)', padding: '4px 10px', color: 'rgba(255,255,255,.6)' }}>{t}</span>
+              ))}
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 20 }}>
-            {cs.tags.map(t => (
-              <span key={t} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(255,255,255,.08)', padding: '4px 10px', color: 'rgba(255,255,255,.6)' }}>{t}</span>
-            ))}
+          <div style={{ overflow: 'hidden', background: cs.bg }}>
+            <img src={cs.fullImg} alt={cs.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
           </div>
         </div>
 
@@ -279,47 +279,18 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* Case Study Grid */}
+      {/* Case Study Grid — 3 columns, tall vertical cards */}
       <section style={{ background: '#F5F5F5', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          {/* Featured case */}
-          {CASES.filter(c => c.featured).map(c => (
-            <FadeIn key={c.id}>
-              <HoverLift>
-                <div
-                  onClick={() => setSelected(c)}
-                  style={{ background: c.bg, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, borderLeft: `4px solid ${c.accent}`, cursor: 'pointer', marginBottom: 3, overflow: 'hidden' }}
-                  className="case-featured"
-                >
-                  <div style={{ padding: '56px 52px' }}>
-                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: c.accent, marginBottom: 12 }}>{c.tag} — Featured Case Study</div>
-                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.3rem,2.5vw,1.8rem)', fontWeight: 300, color: '#fff', lineHeight: 1.2, marginBottom: 14 }}>{c.title}</div>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.7, marginBottom: 20 }}>{c.desc}</p>
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
-                      {c.tags.map(t => (
-                        <span key={t} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(255,255,255,.08)', padding: '4px 10px', color: 'rgba(255,255,255,.6)' }}>{t}</span>
-                      ))}
-                    </div>
-                    <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: c.accent }}>Read Full Case Study →</span>
-                  </div>
-                  <div style={{ overflow: 'hidden', minHeight: 320 }}>
-                    <img src={c.thumb} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  </div>
-                </div>
-              </HoverLift>
-            </FadeIn>
-          ))}
-
-          {/* Grid of remaining cases */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 3, marginTop: 3 }} className="case-grid">
-            {CASES.filter(c => !c.featured).map((c, i) => (
-              <FadeIn key={c.id} delay={i * .06}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 3 }} className="case-grid">
+            {CASES.map((c, i) => (
+              <FadeIn key={c.id} delay={i * .05}>
                 <HoverLift>
                   <div
                     onClick={() => setSelected(c)}
                     style={{ background: '#fff', cursor: 'pointer', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}
                   >
-                    <div style={{ position: 'relative', paddingBottom: '56%', overflow: 'hidden', background: c.bg }}>
+                    <div style={{ position: 'relative', paddingBottom: '130%', overflow: 'hidden', background: c.bg }}>
                       <img src={c.thumb} alt={c.title} loading="lazy"
                         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform .4s' }}
                         onMouseEnter={e => e.target.style.transform = 'scale(1.03)'}
@@ -327,16 +298,11 @@ export default function CaseStudies() {
                       />
                       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: c.accent }} />
                     </div>
-                    <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', borderLeft: `3px solid ${c.accent}` }}>
-                      <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: c.accent, marginBottom: 8 }}>{c.tag}</div>
-                      <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(.95rem,1.5vw,1.15rem)', fontWeight: 500, color: '#121212', lineHeight: 1.3, marginBottom: 10 }}>{c.title}</h3>
-                      <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.8125rem', color: '#888', lineHeight: 1.65, marginBottom: 16, flex: 1 }}>{c.desc}</p>
-                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 16 }}>
-                        {c.tags.slice(0, 3).map(t => (
-                          <span key={t} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 9, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', background: '#F5F5F5', padding: '3px 8px', color: '#999' }}>{t}</span>
-                        ))}
-                      </div>
-                      <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: '#EA633F', display: 'flex', alignItems: 'center', gap: 4 }}>
+                    <div style={{ padding: '20px 22px', flex: 1, display: 'flex', flexDirection: 'column', borderLeft: `3px solid ${c.accent}` }}>
+                      <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 9, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: c.accent, marginBottom: 6 }}>{c.tag}</div>
+                      <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(.85rem,1.2vw,1rem)', fontWeight: 500, color: '#121212', lineHeight: 1.3, marginBottom: 8 }}>{c.title}</h3>
+                      <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.75rem', color: '#888', lineHeight: 1.6, marginBottom: 14, flex: 1 }}>{c.desc}</p>
+                      <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: '#EA633F', display: 'flex', alignItems: 'center', gap: 4 }}>
                         Read Case Study <span>→</span>
                       </div>
                     </div>
@@ -347,10 +313,15 @@ export default function CaseStudies() {
           </div>
         </div>
         <style>{`
-          @media(max-width:768px){
-            .case-featured{grid-template-columns:1fr!important}
+          @media(max-width:1024px){
+            .case-grid{grid-template-columns:repeat(2,1fr)!important}
+          }
+          @media(max-width:600px){
             .case-grid{grid-template-columns:1fr!important}
             section[style*='80px 64px']{padding:60px 24px!important}
+          }
+          @media(max-width:768px){
+            .modal-hero{grid-template-columns:1fr!important}
           }
         `}</style>
       </section>
