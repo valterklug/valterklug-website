@@ -19,7 +19,7 @@ export default function About() {
         <div className="page-hero-inner">
           <span className="lbl lbl-orange">About · Background · Credentials</span>
           <h1 className="page-h1">I'm not a consultant who talks about marketing.<br/>I'm the person who does it.</h1>
-          <p className="page-sub">25 years. Three continents. From interactive agencies in São Paulo to holding-company shops in London and Miami to building my own boutique — and now operating at the fractional C-suite level.</p>
+          <p className="page-sub">28 years. Three continents. From interactive agencies in São Paulo to holding-company shops in London and Miami to building my own boutique — and now operating at the fractional C-suite level.</p>
         </div>
       </section>
 

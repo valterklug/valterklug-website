@@ -156,7 +156,7 @@ export default function Intelligence() {
           <h1 className="page-h1">Every engagement<br />starts with the data.</h1>
           <p className="page-sub">I use AI-powered market research to validate assumptions, size opportunities, and pressure-test ideas — before we invest a dollar in strategy or execution.</p>
           <div style={{ display: 'flex', gap: 32, marginTop: 36, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,.08)', flexWrap: 'wrap' }}>
-            {[['6', 'Intelligence services'], ['14 days', 'Full analysis delivery'], ['25+', 'Years expert validation']].map(([n, l]) => (
+            {[['6', 'Intelligence services'], ['14 days', 'Full analysis delivery'], ['28+', 'Years expert validation']].map(([n, l]) => (
               <div key={l}>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 300, color: '#88E8F0', lineHeight: 1 }}>{n}</div>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginTop: 4 }}>{l}</div>
@@ -179,7 +179,7 @@ export default function Intelligence() {
             {[
               ['01', 'Intake Call', 'We meet to clarify your goals, market, competitors, and target audience. I submit a structured brief to the Soundcheck platform.', 'Valter + You'],
               ['02', 'AI Research', 'The platform aggregates data across competitors, consumer behavior, market size, regulations, and distribution channels — automatically.', 'Platform'],
-              ['03', 'Expert Validation', 'I review every finding with 25 years of cross-cultural market experience — adding context, flagging risks, and shaping strategic implications.', 'Valter'],
+              ['03', 'Expert Validation', 'I review every finding with 28 years of cross-cultural market experience — adding context, flagging risks, and shaping strategic implications.', 'Valter'],
               ['04', 'Live Presentation', 'We present findings in a live video session with your team. You leave with a complete report, an executive deck, and clear next steps.', 'Valter + You'],
             ].map(([n, t, d, who]) => (
               <FadeIn key={n} delay={parseInt(n) * .06}>
@@ -225,7 +225,7 @@ export default function Intelligence() {
           <StaggerContainer>
             {[
               ['Data-Backed Decisions', 'Every recommendation is supported by real market data — competitor analysis, consumer behavior, distribution landscape, regulatory requirements.'],
-              ['Expert-Validated Output', 'AI does the aggregation. I apply 25 years of cross-cultural marketing experience to validate, contextualize, and translate findings into strategy.'],
+              ['Expert-Validated Output', 'AI does the aggregation. I apply 28 years of cross-cultural marketing experience to validate, contextualize, and translate findings into strategy.'],
               ['Fast and Affordable', 'Traditional market research firms charge $30,000–$80,000 and take 3–6 months. Soundcheck delivers equivalent depth in 7–14 days at a fraction of the cost.'],
               ['Standalone or Integrated', "Start with an intelligence engagement, then move into a full fractional CMO relationship — or use the output to brief another agency. Your choice."],
             ].map(([t, d]) => (

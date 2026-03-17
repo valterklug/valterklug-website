@@ -36,7 +36,7 @@ export default function Home() {
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
               style={{ fontFamily: 'Inter,sans-serif', fontSize: '1.0625rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.7, maxWidth: 520, marginBottom: 36 }}>
-              25 years building brands across Brazil, the UK, and the United States. Now available as a Fractional CMO through Chameleon Collective.
+              28 years building brands across Brazil, the UK, and the United States. Now available as a Fractional CMO through Chameleon Collective.
             </motion.p>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .26 }} style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <Link to="/contact" className="btn btn-primary">Let's Talk →</Link>
@@ -44,7 +44,7 @@ export default function Home() {
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .4 }}
               style={{ display: 'flex', gap: 0, marginTop: 48, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,.08)' }}>
-              {[['25+', 'Yrs Exp.'], ['2×', 'Cannes Lions'], ['30+', 'Brands']].map(([n, l], i) => (
+              {[['28+', 'Yrs Exp.'], ['2×', 'Cannes Lions'], ['30+', 'Brands']].map(([n, l], i) => (
                 <div key={l} style={{ paddingRight: 28, borderRight: i < 2 ? '1px solid rgba(255,255,255,.1)' : 'none', marginRight: i < 2 ? 28 : 0 }}>
                   <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 300, color: '#fff', lineHeight: 1 }}>{n}</div>
                   <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginTop: 4 }}>{l}</div>

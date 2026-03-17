@@ -537,9 +537,9 @@ export default function Portfolio() {
       {/* Hero */}
       <section className="page-hero" style={{ borderTop: '4px solid #88E8F0' }}>
         <div className="page-hero-inner">
-          <span className="lbl" style={{ color: '#88E8F0' }}>Creative Portfolio · 25+ Years · 20+ Projects</span>
+          <span className="lbl" style={{ color: '#88E8F0' }}>Creative Portfolio · 28+ Years · 20+ Projects</span>
           <h1 className="page-h1">Selected Work.<br />A career in creative leadership.</h1>
-          <p className="page-sub">A collection of award-winning campaigns and creative projects spanning 25+ years across global brands — from Samba Rock to Y&R to Sapient.</p>
+          <p className="page-sub">A collection of award-winning campaigns and creative projects spanning 28+ years across global brands — from Samba Rock to Y&R to Sapient.</p>
           <div style={{ display: 'flex', gap: 32, marginTop: 36, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,.08)', flexWrap: 'wrap' }}>
             {[['20+', 'Projects'], ['12+', 'Clients'], ['3', 'Agencies']].map(([n, l]) => (
               <div key={l}>

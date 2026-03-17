@@ -30,7 +30,7 @@ export default function News() {
         <div className="page-hero-inner">
           <span className="lbl lbl-orange">News · Insights · Press</span>
           <h1 className="page-h1">Perspectives on international brand expansion, fractional leadership, and the US market.</h1>
-          <p className="page-sub">Sharing what I'm learning — from client engagements, industry trends, and 25 years in the business.</p>
+          <p className="page-sub">Sharing what I'm learning — from client engagements, industry trends, and 28 years in the business.</p>
         </div>
       </section>
 
