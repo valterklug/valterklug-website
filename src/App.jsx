@@ -10,6 +10,7 @@ import CaseStudies from './pages/CaseStudies'
 import Portfolio from './pages/Portfolio'
 import Intelligence from './pages/Intelligence'
 import News from './pages/News'
+import ArticlePage from './pages/ArticlePage'
 import Contact from './pages/Contact'
 
 function ScrollTop() {
@@ -33,6 +34,7 @@ function Layout() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/intelligence" element={<Intelligence />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
