@@ -33,7 +33,7 @@ export default function Home() {
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .08 }}
               style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(2.2rem,5vw,4rem)', fontWeight: 300, lineHeight: 1.04, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680 }}>
-              I Help Ambitious<br />Companies Grow and<br />Win in the US Market.
+              I Help Companies<br />Grow and Win in the<br />US Market and Beyond
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
               style={{ fontFamily: 'Inter,sans-serif', fontSize: '1.0625rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.7, maxWidth: 520, marginBottom: 36 }}>
@@ -169,7 +169,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={.12} direction="left">
             <Link to="/case-studies" style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
-              <img src="/bauducco-panettone-hq.jpg" alt="Bauducco Panettone" style={{ width: '100%', height: '100%', minHeight: 360, objectFit: 'cover', display: 'block', opacity: 0.9, transition: 'opacity .3s' }}
+              <img src="/cs-bauducco-panettone-thumb.jpg" alt="Bauducco Panettone" style={{ width: '100%', height: '100%', minHeight: 360, objectFit: 'cover', display: 'block', opacity: 0.9, transition: 'opacity .3s' }}
                 onMouseEnter={e => e.currentTarget.style.opacity = '1'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '0.9'}
               />
