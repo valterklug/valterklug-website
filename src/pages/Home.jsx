@@ -165,22 +165,19 @@ export default function Home() {
                 <span key={t} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(18,18,18,.08)', padding: '4px 12px', color: '#121212' }}>{t}</span>
               ))}
             </div>
-            <Link to="/portfolio" className="tlink">View Case Study</Link>
+            <Link to="/case-studies" className="tlink">View Case Study</Link>
           </FadeIn>
           <FadeIn delay={.12} direction="left">
-            <div style={{ background: '#121212', padding: '52px 48px', display: 'flex', flexDirection: 'column', gap: 24 }}>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.02em', lineHeight: 1 }}>BAUDUCCO</div>
-              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: 'rgba(255,255,255,.45)', lineHeight: 1.7 }}>CPG + US Market Entry + Digital</div>
-              <div style={{ height: 1, background: 'rgba(255,255,255,.08)' }} />
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-                {[['Brand', 'Bauducco'],['Client', 'Bauducco USA'],['Market', 'United States'],['Category', 'CPG / Food']].map(([k,v]) => (
-                  <div key={k}>
-                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.25)', marginBottom: 3 }}>{k}</div>
-                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 500, color: '#fff' }}>{v}</div>
-                  </div>
-                ))}
+            <Link to="/case-studies" style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
+              <img src="/bauducco-panettone-hq.jpg" alt="Bauducco Panettone" style={{ width: '100%', height: '100%', minHeight: 360, objectFit: 'cover', display: 'block', opacity: 0.9, transition: 'opacity .3s' }}
+                onMouseEnter={e => e.currentTarget.style.opacity = '1'}
+                onMouseLeave={e => e.currentTarget.style.opacity = '0.9'}
+              />
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '24px 28px', background: 'linear-gradient(transparent, rgba(0,0,0,.7))' }}>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.2rem,2.5vw,1.5rem)', fontWeight: 400, color: '#fff', letterSpacing: '-.01em' }}>Bauducco</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '.8rem', color: 'rgba(255,255,255,.6)', marginTop: 4 }}>CPG + US Market Entry + Digital</div>
               </div>
-            </div>
+            </Link>
           </FadeIn>
         </div>
         <style>{`@media(max-width:900px){.feat-grid{grid-template-columns:1fr!important;gap:40px!important}section[style*="80px 64px"]{padding:60px 24px!important}}`}</style>
