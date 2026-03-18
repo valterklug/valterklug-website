@@ -82,7 +82,7 @@ export default function Contact() {
 
               <div style={{background:'#EA633F',padding:'24px 28px'}}>
                 <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:12}}>Engagements Via</div>
-                <a href="https://chameleonco.com" target="_blank" rel="noopener noreferrer" style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:14,fontWeight:500,color:'#fff',textDecoration:'none',display:'block',marginBottom:4}}>Chameleon Collective</a>
+                <a href="https://chameleoncollective.com" target="_blank" rel="noopener noreferrer" style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:14,fontWeight:500,color:'#fff',textDecoration:'none',display:'block',marginBottom:4}}>Chameleon Collective</a>
                 <div style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'rgba(255,255,255,.7)',lineHeight:1.5,marginBottom:10}}>All fractional CMO and consulting engagements are contracted through Chameleon Collective.</div>
                 <a href="https://soundcheckinsights.com" target="_blank" rel="noopener noreferrer" style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:13,fontWeight:500,color:'rgba(255,255,255,.8)',textDecoration:'none'}}>soundcheckinsights.com →</a>
               </div>

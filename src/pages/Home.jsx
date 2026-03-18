@@ -2,7 +2,20 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PageWrapper, FadeIn, StaggerContainer, StaggerItem, HoverLift } from '../components/Animate'
 
-const LOGOS = ['AB-InBev', 'Natura &Co', 'Bauducco', 'PepsiCo', 'Inter&Co', 'Conchita Foods', 'Grendene', 'Tramontina']
+const LOGOS = [
+  { name: 'AB-InBev', src: '/logos/ABI.png' },
+  { name: 'Conchita Foods', src: '/logos/conchita.png' },
+  { name: 'Tramontina', src: '/logos/tramontina.png' },
+  { name: 'Natura &Co', src: '/logos/natura.png' },
+  { name: 'PepsiCo', src: '/logos/pepsico.png' },
+  { name: 'Grendene', src: '/logos/grendene.png' },
+  { name: 'Inter&Co', src: '/logos/inter.png' },
+  { name: 'The Nature Conservancy', src: '/logos/TNC.png' },
+  { name: 'Bauducco', src: '/logos/bauducco.png' },
+  { name: 'Nord Anglia', src: '/logos/nordanglia.png' },
+  { name: 'Carozzi', src: '/logos/carozzi.png' },
+  { name: 'Royal Prestige', src: '/logos/royalprestige.png' },
+]
 const SERVICES = [
   { num: '01', title: 'Fractional CMO', desc: 'Embedded marketing leadership at the executive level — strategy, teams, and outcomes.', href: '/services' },
   { num: '02', title: 'US Market Expansion', desc: 'End-to-end brand expansion strategy for companies entering or scaling in the US market.', href: '/services' },
@@ -74,14 +87,21 @@ export default function Home() {
       </section>
 
       {/* ── TRUSTED BY ── */}
-      <section style={{ background: '#EAEAC8', padding: '28px 64px', borderTop: '1px solid rgba(18,18,18,.08)', borderBottom: '1px solid rgba(18,18,18,.08)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 32, flexWrap: 'wrap', justifyContent: 'center' }}>
-          <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(18,18,18,.4)', flexShrink: 0 }}>Trusted By</span>
-          {LOGOS.map(b => (
-            <span key={b} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600, color: 'rgba(18,18,18,.5)', letterSpacing: '.03em', whiteSpace: 'nowrap' }}>{b}</span>
-          ))}
+      <section style={{ background: '#EAEAC8', padding: '36px 64px', borderTop: '1px solid rgba(18,18,18,.08)', borderBottom: '1px solid rgba(18,18,18,.08)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(18,18,18,.35)', textAlign: 'center', marginBottom: 20 }}>
+            Trusted by Brands Across the Americas, Europe, and Beyond
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 36, flexWrap: 'wrap', justifyContent: 'center' }}>
+            {LOGOS.map(({ name, src }) => (
+              <img key={name} src={src} alt={name} title={name} style={{ height: 28, objectFit: 'contain', opacity: 0.55, filter: 'grayscale(100%)', transition: 'opacity .2s, filter .2s' }}
+                onMouseEnter={e => { e.currentTarget.style.opacity = '0.85'; e.currentTarget.style.filter = 'grayscale(0%)' }}
+                onMouseLeave={e => { e.currentTarget.style.opacity = '0.55'; e.currentTarget.style.filter = 'grayscale(100%)' }}
+              />
+            ))}
+          </div>
         </div>
-        <style>{`@media(max-width:768px){section[style*="28px 64px"]{padding:24px!important}}`}</style>
+        <style>{`@media(max-width:768px){section[style*="36px 64px"]{padding:28px 24px!important}}`}</style>
       </section>
 
       {/* ── SERVICES ── */}

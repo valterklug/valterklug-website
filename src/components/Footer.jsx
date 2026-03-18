@@ -41,7 +41,7 @@ export default function Footer() {
               <div>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,.7)', marginBottom: 3 }}>Chameleon Collective</div>
                 <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 12, color: 'rgba(255,255,255,.35)', lineHeight: 1.6 }}>Fractional CMO & consulting engagements</div>
-                <a href="https://chameleonco.com" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, color: '#EA633F', letterSpacing: '.05em', textDecoration: 'none', display: 'inline-block', marginTop: 4 }}>chameleonco.com →</a>
+                <a href="https://chameleoncollective.com" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, color: '#EA633F', letterSpacing: '.05em', textDecoration: 'none', display: 'inline-block', marginTop: 4 }}>chameleoncollective.com →</a>
               </div>
               <div>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,.7)', marginBottom: 3 }}>Soundcheck Insights</div>
