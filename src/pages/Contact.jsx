@@ -19,10 +19,18 @@ const TOPICS = [
 ]
 
 const PARTNERS = [
-  { name:'Oxford USA — Fast Track', desc:'US entity setup, legal structure, tax planning, and immigration support for Brazilian and Latin American companies entering the US market.', url:'oxfordusa.com', cat:'US Business Setup' },
+  { name:'Chameleon Collective', desc:'Fractional CMO and consulting engagements. An elite collective of independent practitioners who embed directly into client organizations.', url:'chameleoncollective.com', cat:'Fractional Leadership' },
+  { name:'Soundcheck Insights', desc:'AI-powered market intelligence platform delivering actionable growth insights in 7–14 days.', url:'soundcheckinsights.com', cat:'Market Intelligence' },
+  { name:'Oxford USA', desc:'US entity setup, legal structure, tax planning, and immigration support for Brazilian and Latin American companies entering the US market.', url:'oxfordusa.com', cat:'US Business Setup' },
   { name:'ITS Company', desc:'Trade logistics, customs clearance, freight management, and supply chain operations for brands importing into the US.', url:'itscompany.com.br', cat:'Trade & Logistics' },
   { name:'Global Franchise', desc:'Franchise model design, legal framework, franchisee recruitment, and international franchise launch strategy.', url:'globalfranchise.com.br', cat:'Franchise Expansion' },
   { name:'Go To Market BD', desc:'US retail distribution strategy, broker relationships, shelf placement, and buyer introductions for CPG brands.', url:'gotomarketbd.com', cat:'CPG Retail' },
+  { name:'RBA Design', desc:'Strategic brand design, visual identity, and creative direction from Milan, Italy.', url:'rbadesign.it', cat:'Brand Design — Milan' },
+  { name:'Native Digital Edge', desc:'Digital marketing strategy, performance campaigns, and growth consulting.', url:'nativedigitaledge.com', cat:'Digital Marketing' },
+  { name:'QBCO', desc:'Business consulting, operational strategy, and organizational transformation.', url:'qbco.io', cat:'Business Consulting' },
+  { name:'Andeza', desc:'Strategic advisory and business development services for growing companies.', url:'andeza.com', cat:'Strategic Advisory' },
+  { name:'Carve Communications', desc:'Public relations, media strategy, and communications consulting.', url:'carvecomms.com', cat:'PR & Communications' },
+  { name:'Mobly Media', desc:'Media buying, paid social, and performance marketing for brands scaling in digital channels.', url:'moblymedia.com', cat:'Media & Performance' },
 ]
 
 export default function Contact() {
