@@ -153,7 +153,15 @@
       },
       {
         "tag": "li",
-        "text": "Time Mismatch: Digital campaigns launch in days. Product features ship weekly. Competitive responses happen overnight. Waiting 6-8 weeks for customer feedback means testing concepts in a market that no longer exists.\n- Geographic Limitations: Testing a national campaign with a focus group in Miami doesn't represent the entire country. Running multiple groups across regions multiplies costs and extends timelines even further.\n- The Observer Effect: Customers behave differently when they know they're being watched in sterile conference rooms with cameras and one-way mirrors. These artificial environments bear no resemblance to actual decision-making contexts."
+        "text": "Time Mismatch: Digital campaigns launch in days. Product features ship weekly. Competitive responses happen overnight. Waiting 6-8 weeks for customer feedback means testing concepts in a market that no longer exists."
+      },
+      {
+        "tag": "li",
+        "text": "Geographic Limitations: Testing a national campaign with a focus group in Miami doesn't represent the entire country. Running multiple groups across regions multiplies costs and extends timelines even further."
+      },
+      {
+        "tag": "li",
+        "text": "The Observer Effect: Customers behave differently when they know they're being watched in sterile conference rooms with cameras and one-way mirrors. These artificial environments bear no resemblance to actual decision-making contexts."
       },
       {
         "tag": "p",
