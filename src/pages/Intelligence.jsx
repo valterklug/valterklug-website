@@ -16,7 +16,7 @@ const PRODUCTS = [
       'Competitor map: key players, competitive differentials, and white-space opportunities',
       'Detailed viability report (40+ pages) + executive video presentation with Q&A',
     ],
-    price: 'US$5,000', delivery: '14 days · Fixed Fee', featured: true,
+    featured: true,
   },
   {
     num: '02', badge: 'Founders & New Ventures', audience: 'Know Before You Build',
@@ -30,13 +30,12 @@ const PRODUCTS = [
       'Go / No-Go Recommendation: conditions for success, risk factors, and Year 1–3 revenue potential',
       'In-depth report + executive presentation & Q&A session',
     ],
-    price: 'US$2,500', delivery: '7 days · Fixed Fee',
   },
   {
     num: '03', badge: 'Pre-Launch & Setup Stage', audience: 'From Vision to Investor-Ready',
     headline: 'A research-backed business plan built for the conversations that matter.',
     title: 'Business Plan Development',
-    sub: 'Investors and lenders expect market data, competitive intelligence, and credible revenue projections. I build your complete plan from the ground up — powered by real market research — in 14 days.',
+    sub: 'Investors and lenders expect market data, competitive intelligence, and credible revenue projections. I build your complete plan from the ground up — powered by real market research.',
     deliverables: [
       'Market Analysis & Customer Personas: category size, growth drivers, and detailed buyer profiles based on real data — not assumptions',
       'Competitive Landscape & Positioning: direct competitor mapping, differentiation strategy, and the positioning that makes your brand impossible to ignore',
@@ -44,7 +43,6 @@ const PRODUCTS = [
       'Revenue Projections (3-Year): conservative, base, and optimistic scenarios with clear assumptions — the financial model investors actually trust',
       'In-depth report + executive presentation & Q&A session',
     ],
-    price: 'US$5,000', delivery: '14 days · Fixed Fee',
   },
   {
     num: '04', badge: 'Consumer Intelligence', audience: 'Test Ideas in Days, Not Months',
@@ -57,7 +55,6 @@ const PRODUCTS = [
       'Executive Summary & Recommendations: key findings distilled into clear strategic recommendations for your team',
       'Reusable Persona Panel: saved and available for future sessions — test new concepts, packaging, or messaging anytime',
     ],
-    price: 'From US$1,500/session', delivery: '1–7 days · Per Session',
   },
   {
     num: '05', badge: 'VC · PE · Investment', audience: 'Invest with Intelligence, Not Just Intuition',
@@ -71,7 +68,6 @@ const PRODUCTS = [
       'Competitive Landscape Map: where the target company actually sits in its market and who\'s gaining ground',
       '30–50 page report + IC-ready executive deck',
     ],
-    price: 'US$1,500 + US$3,500/report', delivery: '14 days · Volume discounts',
   },
   {
     num: '06', badge: 'CC Methodology', audience: 'CxO Led Evaluation And Recommendations',
@@ -85,7 +81,6 @@ const PRODUCTS = [
       'Prioritized recommendations with sequencing and resource implications',
       'Executive presentation with a clear roadmap to unlock growth',
     ],
-    price: 'Custom Scope', delivery: 'Scoped per engagement',
   },
 ]
 
@@ -106,9 +101,8 @@ function ProductCard({ p, index }) {
               <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.1rem,2vw,1.3rem)', fontWeight: 600, color: dark ? '#fff' : '#121212', lineHeight: 1.2, marginBottom: 8 }}>{p.title}</h3>
               <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', fontStyle: 'italic', color: dark ? 'rgba(255,255,255,.7)' : '#888', lineHeight: 1.5, maxWidth: 500 }}>{p.headline}</p>
             </div>
-            <div style={{ textAlign: 'right', flexShrink: 0 }}>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: '1rem', fontWeight: 600, color: dark ? '#fff' : '#121212', marginBottom: 3 }}>{p.price}</div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.08em', color: dark ? 'rgba(255,255,255,.55)' : '#999' }}>{p.delivery}</div>
+            <div style={{ flexShrink: 0 }}>
+              <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: dark ? 'rgba(255,255,255,.5)' : '#EA633F', background: dark ? 'rgba(255,255,255,.1)' : 'rgba(234,99,63,.08)', padding: '4px 10px', borderRadius: 2 }}>{p.badge}</span>
             </div>
           </div>
           <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: dark ? 'rgba(255,255,255,.7)' : '#555', lineHeight: 1.7, marginBottom: 18, maxWidth: 640 }}>{p.sub}</p>
