@@ -92,7 +92,7 @@ export default function Home() {
           <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(18,18,18,.35)', textAlign: 'center', marginBottom: 20 }}>
             Trusted by Brands Across the Americas, Europe, and Beyond
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 36, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '24px 32px', alignItems: 'center', justifyItems: 'center' }} className="logos-grid">
             {LOGOS.map(({ name, src }) => (
               <img key={name} src={src} alt={name} title={name} style={{ height: 28, objectFit: 'contain', opacity: 0.55, filter: 'grayscale(100%)', transition: 'opacity .2s, filter .2s' }}
                 onMouseEnter={e => { e.currentTarget.style.opacity = '0.85'; e.currentTarget.style.filter = 'grayscale(0%)' }}
@@ -101,7 +101,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <style>{`@media(max-width:768px){section[style*="36px 64px"]{padding:28px 24px!important}}`}</style>
+        <style>{`@media(max-width:768px){section[style*="36px 64px"]{padding:28px 24px!important}.logos-grid{grid-template-columns:repeat(3,1fr)!important}}`}</style>
       </section>
 
       {/* ── SERVICES ── */}
