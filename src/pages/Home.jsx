@@ -186,13 +186,13 @@ export default function Home() {
                 bg: '#FFC107',
               },
               {
-                quote: "Valter Klug's exceptional work with the Chilean brand Carozzi on Amazon led me to confidently rehire them when I joined Netherlands-based Chrysal.",
+                quote: "Valter Klug's exceptional work with the Chilean brand Carozzi on Amazon led me to confidently rehire him and his team when I joined Netherlands-based Chrysal.",
                 name: 'Andro Mandakovic',
                 title: 'Former Marketing & Sales Director at Carozzi and Chrysal',
                 bg: '#1E40AF',
               },
               {
-                quote: "Valter Klug has been developing our digital presence for 9 years, and their strategies have been key to our brand's growth, both at Amazon and at brick-and-mortar retailers.",
+                quote: "Valter Klug has been developing our digital presence for 9 years, and his strategies have been key to our brand's growth, both at Amazon and at brick-and-mortar retailers.",
                 name: 'Sixto Ferro',
                 title: 'CEO @ Conchita Foods',
                 bg: '#FFC107',
@@ -210,7 +210,7 @@ export default function Home() {
                 bg: '#16A34A',
               },
               {
-                quote: "Valter Klug expertly grasped the core of my brand, repositioning it for the US market with a premium focus. Their tailored branding strategy is propelling us to new heights.",
+                quote: "Valter Klug expertly grasped the core of my brand, repositioning it for the US market with a premium focus. His tailored branding strategy is propelling us to new heights.",
                 name: 'Cristian Iuliano',
                 title: 'Owner and CEO @ Saphirus Air Fresheners',
                 bg: '#3B82F6',
