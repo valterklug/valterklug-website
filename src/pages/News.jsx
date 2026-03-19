@@ -54,7 +54,7 @@ export default function News() {
       <PageWrapper>
         <section className="page-hero">
           <div className="page-hero-inner">
-            <span className="lbl lbl-orange">News · Insights · Press</span>
+            <span className="lbl lbl-orange">Articles · Insights · Press</span>
             <h1 className="page-h1">Loading articles...</h1>
           </div>
         </section>
@@ -66,7 +66,7 @@ export default function News() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero-inner">
-          <span className="lbl lbl-orange">News · Insights · Press</span>
+          <span className="lbl lbl-orange">Articles · Insights · Press</span>
           <h1 className="page-h1">Perspectives on international brand expansion, fractional leadership, and the US market.</h1>
           <p className="page-sub">Published articles, media features, and insights from 28 years in the business.</p>
         </div>
@@ -78,7 +78,7 @@ export default function News() {
           <div style={{maxWidth:1200,margin:'0 auto'}}>
             <FadeIn>
               <span className="lbl lbl-cream">Featured</span>
-              <Link to={`/news/${featured.slug}`} style={{textDecoration:'none',display:'block'}}>
+              <Link to={`/articles/${featured.slug}`} style={{textDecoration:'none',display:'block'}}>
                 <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(18,18,18,.1)',marginTop:16,cursor:'pointer'}} className="feat-grid">
                   <div style={{background:'#121212',padding:'52px 48px'}}>
                     <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:12}}>
@@ -106,7 +106,7 @@ export default function News() {
           <div style={{display:'flex',flexDirection:'column',gap:1,background:'#E8E8E8',marginTop:24}}>
             {rest.map((a,i)=>(
               <FadeIn key={a.slug} delay={i*.03}>
-                <Link to={`/news/${a.slug}`} style={{textDecoration:'none',display:'block'}}>
+                <Link to={`/articles/${a.slug}`} style={{textDecoration:'none',display:'block'}}>
                   <div style={{background:'#fff',padding:0,display:'grid',gridTemplateColumns:'220px 1fr',gap:0,alignItems:'stretch',transition:'background .2s',cursor:'pointer'}}
                     onMouseEnter={e=>e.currentTarget.style.background='#F5F5F5'}
                     onMouseLeave={e=>e.currentTarget.style.background='#fff'}

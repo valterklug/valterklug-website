@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Case Studies', to: '/case-studies' },
   { label: 'Portfolio', to: '/portfolio' },
   { label: 'Intelligence', to: '/intelligence' },
-  { label: 'News', to: '/news' },
+  { label: 'Articles', to: '/articles' },
 ]
 
 export default function Nav() {

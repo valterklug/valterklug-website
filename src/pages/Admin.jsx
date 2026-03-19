@@ -248,7 +248,7 @@ function ArticleForm({ article, onSave, onCancel, token }) {
       <div style={{ marginBottom: 16 }}>
         <label style={{ ...S.label, display: 'flex', alignItems: 'center', gap: 8 }}>
           <input type="checkbox" checked={form.featured} onChange={e => set('featured', e.target.checked)} />
-          Featured article (shown at the top of News page)
+          Featured article (shown at the top of Articles page)
         </label>
       </div>
 
@@ -372,7 +372,7 @@ export default function Admin() {
           <div style={{ display: 'flex', gap: 8 }}>
             {view !== 'list' && <button style={{ ...S.btn, ...S.btnGhost }} onClick={() => { setView('list'); setEditArticle(null) }}>← Back</button>}
             {view === 'list' && <button style={{ ...S.btn, ...S.btnPrimary }} onClick={() => setView('new')}>+ New Article</button>}
-            <a href="/news" style={{ ...S.btn, ...S.btnGhost, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>View Site →</a>
+            <a href="/articles" style={{ ...S.btn, ...S.btnGhost, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>View Site →</a>
           </div>
         </div>
 

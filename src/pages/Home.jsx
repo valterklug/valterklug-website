@@ -168,6 +168,70 @@ export default function Home() {
         <style>{`@media(max-width:900px){.approach-grid{grid-template-columns:1fr!important;gap:48px!important}}`}</style>
       </section>
 
+      {/* ── TESTIMONIALS ── */}
+      <section style={{ background: '#fff', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <FadeIn>
+            <span className="lbl">What Clients Say</span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 40, maxWidth: 560 }}>
+              Results that speak for themselves.
+            </h2>
+          </FadeIn>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 1, background: '#E8E8E8' }} className="testimonials-grid">
+            {[
+              {
+                quote: "Valter Klug's creative and strategic work was instrumental in establishing the panettone category in the US, and helping Bauducco to become the leader in the US market.",
+                name: 'Erik Volavicius',
+                title: 'Marketing Director @ Bauducco Foods',
+                bg: '#FFC107',
+              },
+              {
+                quote: "Valter Klug's exceptional work with the Chilean brand Carozzi on Amazon led me to confidently rehire them when I joined Netherlands-based Chrysal.",
+                name: 'Andro Mandakovic',
+                title: 'Former Marketing & Sales Director at Carozzi and Chrysal',
+                bg: '#1E40AF',
+              },
+              {
+                quote: "Valter Klug has been developing our digital presence for 9 years, and their strategies have been key to our brand's growth, both at Amazon and at brick-and-mortar retailers.",
+                name: 'Sixto Ferro',
+                title: 'CEO @ Conchita Foods',
+                bg: '#FFC107',
+              },
+              {
+                quote: "Valter Klug's strategic launch of Forno de Minas in the US, introducing traditional Brazilian cheese bread to American consumers, played a key role in its acquisition by McCain Foods.",
+                name: 'Fred Rodrigues',
+                title: 'Former Marketing and Sales Director @ Forno de Minas',
+                bg: '#F5F5F5',
+              },
+              {
+                quote: "Thanks to Valter Klug's innovative strategies, the beloved Brazilian soda Guarana Antarctica has taken its uniqueness globally, showing great sales and awareness growth, year after year.",
+                name: 'Arthur Ervolino',
+                title: 'Manager Exports @ AMBEV / AB-InBev',
+                bg: '#16A34A',
+              },
+              {
+                quote: "Valter Klug expertly grasped the core of my brand, repositioning it for the US market with a premium focus. Their tailored branding strategy is propelling us to new heights.",
+                name: 'Cristian Iuliano',
+                title: 'Owner and CEO @ Saphirus Air Fresheners',
+                bg: '#3B82F6',
+              },
+            ].map((t, i) => (
+              <FadeIn key={t.name} delay={i * .06}>
+                <div style={{ background: '#fff', padding: '32px 28px', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: '2rem', color: '#EA633F', lineHeight: 1, marginBottom: 12 }}>"</div>
+                  <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#444', lineHeight: 1.7, flex: 1, marginBottom: 20, fontStyle: 'italic' }}>{t.quote}</p>
+                  <div>
+                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600, color: '#121212' }}>{t.name}</div>
+                    <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#999', marginTop: 2 }}>{t.title}</div>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+        <style>{`@media(max-width:900px){.testimonials-grid{grid-template-columns:1fr 1fr!important}}@media(max-width:600px){.testimonials-grid{grid-template-columns:1fr!important}}`}</style>
+      </section>
+
       {/* ── FEATURED CASE ── */}
       <section style={{ background: '#EAEAC8', padding: '80px 64px', borderTop: '1px solid rgba(18,18,18,.1)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }} className="feat-grid">

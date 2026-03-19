@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 18 }}>Navigation</div>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              {[['/', 'Home'],['/about','About'],['/services','What I Do'],['/case-studies','Case Studies'],['/portfolio','Portfolio'],['/intelligence','Intelligence'],['/news','News'],['/contact','Contact']].map(([to, label]) => (
+              {[['/', 'Home'],['/about','About'],['/services','What I Do'],['/case-studies','Case Studies'],['/portfolio','Portfolio'],['/intelligence','Intelligence'],['/articles','Articles'],['/contact','Contact']].map(([to, label]) => (
                 <Link key={to} to={to} style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: 'rgba(255,255,255,.4)', transition: 'color .2s', textDecoration: 'none' }}
                   onMouseEnter={e => e.target.style.color = '#fff'}
                   onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,.4)'}

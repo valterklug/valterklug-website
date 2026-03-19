@@ -35,6 +35,9 @@ function Layout() {
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/intelligence" element={<Intelligence />} />
+          <Route path="/articles" element={<News />} />
+          <Route path="/articles/:slug" element={<ArticlePage />} />
+          {/* Redirect old /news URLs */}
           <Route path="/news" element={<News />} />
           <Route path="/news/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<Contact />} />
