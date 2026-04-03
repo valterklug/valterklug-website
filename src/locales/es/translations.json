@@ -1,0 +1,634 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "services": "Lo que Hago",
+    "caseStudies": "Casos de Estudio",
+    "portfolio": "Portafolio",
+    "intelligence": "Inteligencia",
+    "articles": "Artículos",
+    "wordmark": "Valter Klug",
+    "subtitle": "CMO Fraccional · Miami",
+    "cta": "Hablemos →"
+  },
+  "footer": {
+    "name": "Valter Klug",
+    "subtitle": "CMO Fraccional · Miami",
+    "bio": "28+ años construyendo marcas en Brasil, Reino Unido y Estados Unidos. Disponible como CMO Fraccional a través de Chameleon Collective.",
+    "navigationTitle": "Navegación",
+    "navigationLinks": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "services": "Lo que Hago",
+      "caseStudies": "Casos de Estudio",
+      "portfolio": "Portafolio",
+      "intelligence": "Inteligencia",
+      "articles": "Artículos",
+      "contact": "Contacto"
+    },
+    "operatingThroughTitle": "Operando a Través de",
+    "chameleonCollective": "Compromisos de CMO Fraccional y consultoría",
+    "soundcheckInsights": "Plataforma de inteligencia de mercado impulsada por IA",
+    "copyright": "© 2026 Valter Klug Filho. Todos los derechos reservados.",
+    "location": "Miami, Florida · valterklug.com"
+  },
+  "home": {
+    "heroLabel": "CMO Fraccional · Expansión Internacional de Marcas · Miami",
+    "heroH1": "Ayudo a las Empresas a\nCrecer y Ganar en el\nMercado de EE.UU. y Más Allá",
+    "heroSub": "28 años construyendo marcas en Brasil, Reino Unido y Estados Unidos. Ahora disponible como CMO Fraccional a través de Chameleon Collective.",
+    "ctaPrimary": "Hablemos →",
+    "ctaSecondary": "Ver Mi Trabajo",
+    "stats": [
+      {
+        "number": "28+",
+        "label": "Años Exp."
+      },
+      {
+        "number": "2×",
+        "label": "Cannes Lions"
+      },
+      {
+        "number": "30+",
+        "label": "Marcas"
+      }
+    ],
+    "quote": "No asesoro desde afuera.\nLidero desde adentro.",
+    "quoteName": "Valter Klug",
+    "quoteRole": "CMO Fraccional",
+    "credentials": [
+      {
+        "code": "Forbes",
+        "label": "Antiguo Miembro del Forbes Business Council"
+      },
+      {
+        "code": "GS10K",
+        "label": "Goldman Sachs 10,000 Pequeñas Empresas"
+      },
+      {
+        "code": "2×CL",
+        "label": "Ganador de Cannes Lions"
+      },
+      {
+        "code": "A.M.P.",
+        "label": "Autor Publicado"
+      }
+    ],
+    "trustedBy": "De Confianza de Marcas en las Américas, Europa y Más Allá",
+    "servicesLabel": "Lo que Hago",
+    "servicesH2": "Liderazgo estratégico en marketing —\nsin la sobrecarga de tiempo completo.",
+    "services": [
+      {
+        "num": "01",
+        "title": "CMO Fraccional",
+        "desc": "Liderazgo de marketing integrado a nivel ejecutivo — estrategia, equipos y resultados."
+      },
+      {
+        "num": "02",
+        "title": "Expansión del Mercado de EE.UU.",
+        "desc": "Estrategia completa de expansión de marca para empresas que entran o escalan en el mercado de EE.UU."
+      },
+      {
+        "num": "03",
+        "title": "Equipo de Especialistas",
+        "desc": "Expertos líderes en Publicidad, E-commerce, Redes Sociales, Digital y lo que tu empresa necesite para crecer en EE.UU. o América Latina."
+      },
+      {
+        "num": "04",
+        "title": "Inteligencia de Mercado",
+        "desc": "Investigación impulsada por IA y validación a través de Soundcheck Insights — entregado en 7–14 días."
+      }
+    ],
+    "learnMore": "Aprender Más",
+    "approachLabel": "Mi Enfoque",
+    "approachH2": "Operando en la intersección del liderazgo creativo y los resultados empresariales.",
+    "approachSub": "A través de Chameleon Collective, trabajo junto a una red de elite de profesionales independientes — dando a los clientes la profundidad de una agencia completa con la responsabilidad de un líder dedicado.",
+    "fullBackground": "Historial Completo",
+    "approachItems": [
+      {
+        "title": "Liderazgo Integrado",
+        "desc": "Opero como un verdadero miembro de tu equipo de liderazgo — asistiendo a tus reuniones, siendo dueño de tu roadmap, y siendo responsable por tus resultados."
+      },
+      {
+        "title": "Primero la Inteligencia",
+        "desc": "Cada compromiso comienza con datos. Utilizo investigación de mercado impulsada por IA a través de Soundcheck Insights para validar supuestos antes de invertir en estrategia o ejecución."
+      },
+      {
+        "title": "Acceso a Red de Elite",
+        "desc": "A través de Chameleon Collective, puedo traer profesionales de clase mundial en medios pagados, contenido, SEO, datos o creativo — sin agregar sobrecarga de agencia."
+      },
+      {
+        "title": "Orientado a Resultados",
+        "desc": "Compromisos estructurados alrededor de entregables y resultados — no horas y presentaciones."
+      }
+    ],
+    "testimonialsLabel": "Lo que Dicen los Clientes",
+    "testimonialsH2": "Resultados que hablan por sí solos.",
+    "testimonials": [
+      {
+        "quote": "El trabajo creativo y estratégico de Valter Klug fue instrumental para establecer la categoría de panettone en EE.UU., y ayudar a Bauducco a convertirse en el líder en el mercado de EE.UU.",
+        "name": "Erik Volavicius",
+        "title": "Director de Marketing @ Bauducco Foods"
+      },
+      {
+        "quote": "El trabajo excepcional de Valter Klug con la marca chilena Carozzi en Amazon me llevó a contratarlo con confianza nuevamente a él y su equipo cuando me uní a Chrysal, con sede en Países Bajos.",
+        "name": "Andro Mandakovic",
+        "title": "Antiguo Director de Marketing y Ventas en Carozzi y Chrysal"
+      },
+      {
+        "quote": "Valter Klug ha estado desarrollando nuestra presencia digital durante 9 años, y sus estrategias han sido clave para el crecimiento de nuestra marca, tanto en Amazon como en minoristas físicos.",
+        "name": "Sixto Ferro",
+        "title": "CEO @ Conchita Foods"
+      },
+      {
+        "quote": "El lanzamiento estratégico de Forno de Minas en EE.UU. por Valter Klug, introduciendo el pan de queso brasileño tradicional a los consumidores estadounidenses, jugó un papel clave en su adquisición por McCain Foods.",
+        "name": "Fred Rodrigues",
+        "title": "Antiguo Director de Marketing y Ventas @ Forno de Minas"
+      },
+      {
+        "quote": "Gracias a las estrategias innovadoras de Valter Klug, la amada bebida brasileña Guarana Antarctica ha llevado su singularidad a nivel mundial, mostrando un gran crecimiento en ventas y conciencia, año tras año.",
+        "name": "Arthur Ervolino",
+        "title": "Gerente de Exportaciones @ AMBEV / AB-InBev"
+      },
+      {
+        "quote": "Valter Klug comprendió expertamente la esencia de mi marca, reposicionándola para el mercado de EE.UU. con un enfoque premium. Su estrategia de marca personalizada nos está impulsando a nuevas alturas.",
+        "name": "Cristian Iuliano",
+        "title": "Propietario y CEO @ Saphirus Air Fresheners"
+      }
+    ],
+    "featuredLabel": "Caso Destacado",
+    "featuredBrand": "Bauducco",
+    "featuredTitle": "Bauducco — Construyendo Amor de Marca en el Mercado de EE.UU.",
+    "featuredDesc": "Asociación estratégica a largo plazo ayudando a la marca de pan y pastel más icónica de Brasil a construir presencia significativa con consumidores estadounidenses — desde posicionamiento de marca hasta ejecución de campañas estacionales en digital y retail.",
+    "featuredTags": [
+      "Estrategia de Marca",
+      "Expansión en EE.UU.",
+      "Contenido Digital",
+      "Retail"
+    ],
+    "viewCaseStudy": "Ver Caso de Estudio",
+    "ctaH2": "¿Listo para crecer en el mercado de EE.UU.?",
+    "ctaSub": "Tengamos una conversación directa y sustancial sobre dónde estás, a dónde quieres ir, y si soy la persona correcta para ayudarte."
+  },
+  "about": {
+    "heroLabel": "Acerca de · Historial · Credenciales",
+    "heroH1": "No soy un consultor que habla sobre marketing.\nSoy la persona que lo hace.",
+    "heroSub": "28 años. Tres continentes. Desde agencias interactivas en São Paulo hasta tiendas de holding companies en Londres y Miami, hasta construir mi propia boutique — y ahora operando a nivel de C-suite fraccional.",
+    "glanceLabel": "De un Vistazo",
+    "glanceStats": [
+      {
+        "number": "28+",
+        "label": "Años de experiencia"
+      },
+      {
+        "number": "3",
+        "label": "Países donde he vivido y trabajado"
+      },
+      {
+        "number": "30+",
+        "label": "Marcas servidas"
+      },
+      {
+        "number": "5+",
+        "label": "Categorías de premios importantes ganados"
+      }
+    ],
+    "glanceCredentials": [
+      {
+        "code": "Forbes",
+        "label": "Antiguo Miembro del Forbes Business Council"
+      },
+      {
+        "code": "GS10K",
+        "label": "Goldman Sachs 10,000 Pequeñas Empresas"
+      },
+      {
+        "code": "2× CL",
+        "label": "Ganador de Cannes Lions"
+      },
+      {
+        "code": "Author",
+        "label": "Publicado — A.M.P."
+      }
+    ],
+    "bgLabel": "Historial",
+    "bgP1": "Nacido en Brasil. Basado en Miami. Dos años viviendo y trabajando en el Reino Unido. Aporto una perspectiva genuinamente multicultural a la estrategia de marca — que es exactamente por qué los clientes me contratan para navegar la complejidad cultural de entrar en el mercado de EE.UU.",
+    "bgP2": "Mi carrera abarca el arco completo del marketing moderno — desde los primeros días de lo digital en Isobar hasta dirección creativa de holding companies en Y&R, hasta construir una agencia boutique que sirvió a marcas brasileñas y latinoamericanas importantes que entran en EE.UU.",
+    "bgP3": "Hoy opero como CMO Fraccional a través de Chameleon Collective — una red de elite de profesionales independientes que se integran directamente en las organizaciones de clientes para liderar la transformación desde adentro.",
+    "bgQuote": "No asesoro desde afuera. Lidero desde adentro. Cada compromiso que asumo, soy un verdadero miembro del equipo de liderazgo del cliente — responsable de los mismos resultados que ellos.",
+    "bgQuoteAuthor": "— Valter Klug",
+    "timelineLabel": "Línea de Tiempo de Carrera",
+    "timelineH2": "Un historial construido en los mercados más exigentes del mundo.",
+    "timeline": [
+      {
+        "years": "2001–2003",
+        "role": "Diseñador Interactivo",
+        "company": "AgenciaClick / Isobar",
+        "location": "São Paulo, BR"
+      },
+      {
+        "years": "2003–2007",
+        "role": "Director de Arte",
+        "company": "Euro RSCG 4D",
+        "location": "Brasil"
+      },
+      {
+        "years": "2007–2009",
+        "role": "Director Senior de Arte",
+        "company": "Sapient Interactive",
+        "location": "Londres, UK"
+      },
+      {
+        "years": "2009–2013",
+        "role": "Subdirector Creativo Asociado",
+        "company": "SapientNitro",
+        "location": "Miami, US"
+      },
+      {
+        "years": "2013–2015",
+        "role": "ACD / Director Creativo Digital",
+        "company": "Young & Rubicam (Y&R)",
+        "location": "Miami, US"
+      },
+      {
+        "years": "2015–2025",
+        "role": "Fundador y CEO",
+        "company": "Samba Rock",
+        "location": "Miami, US"
+      },
+      {
+        "years": "2025–Ahora",
+        "role": "Líder de Marketing Fraccional",
+        "company": "Chameleon Collective",
+        "location": "Miami, US"
+      }
+    ],
+    "chameleonCollectiveItems": [
+      {
+        "title": "Liderazgo Integrado",
+        "desc": "Opero como un verdadero miembro de tu equipo de liderazgo — asistiendo a tus reuniones, siendo dueño de tu roadmap, responsable por tus resultados."
+      },
+      {
+        "title": "Acceso a Red de Elite",
+        "desc": "A través de CC, traigo profesionales de clase mundial en medios pagados, contenido, SEO, datos o creativo — sin agregar sobrecarga de agencia."
+      },
+      {
+        "title": "Precios Orientados a Resultados",
+        "desc": "Compromisos estructurados alrededor de entregables y resultados — no horas y presentaciones."
+      }
+    ],
+    "ctaH2": "Veamos si somos un buen match.",
+    "ctaSub": "Sin pitch decks, sin teatro de agencia. Solo una conversación directa sobre tu situación.",
+    "ctaBtn": "Inicia una Conversación →"
+  },
+  "services": {
+    "heroLabel": "Servicios · Capacidades · Cómo Trabajo",
+    "heroH1": "No asesoro desde afuera.\nLidero desde adentro.",
+    "heroSub": "Cuatro áreas de servicio principales — cada una diseñada para entregar resultados reales de marketing, no diapositivas.",
+    "services": [
+      {
+        "num": "01",
+        "title": "CMO Fraccional",
+        "headline": "El líder de marketing estratégico que necesitas — sin el costo de tiempo completo.",
+        "sub": "Opero como un verdadero miembro de tu equipo de liderazgo — asistiendo a tus reuniones, estableciendo tu roadmap de marketing, manejando relaciones de agencia, y siendo responsable por tus objetivos empresariales.",
+        "deliverables": [
+          "Estrategia de marketing y planificación anual",
+          "Selección, gestión de agencias y proveedores, y supervisión de desempeño",
+          "Diseño de estructura de equipo y apoyo en contratación",
+          "Posicionamiento de marca y arquitectura de mensajería",
+          "Marcos de reporte y diseño de KPI"
+        ],
+        "meta": "40–80 hrs/mes · Basado en Retainer a través de Chameleon Collective"
+      },
+      {
+        "num": "02",
+        "title": "Expansión del Mercado de EE.UU.",
+        "headline": "De la inteligencia al lanzamiento — un sistema completo de entrada de mercado de extremo a extremo.",
+        "sub": "Trabajo con empresas establecidas — especialmente las de Brasil y América Latina — para construir una estrategia rigurosa respaldada por datos para entrar o escalar en el mercado de EE.UU. Comenzamos con inteligencia, no supuestos.",
+        "deliverables": [
+          "Evaluación de viabilidad de mercado (impulsada por Soundcheck Insights)",
+          "Análisis de paisaje competitivo y audiencia",
+          "Estrategia de localización de marca y adaptación cultural",
+          "Estrategia de canal: retail, DTC, e-commerce, distribuidor",
+          "Planificación de lanzamiento y ejecución de entrada al mercado"
+        ],
+        "meta": "Basado en Proyecto de Tarifa Fija · Inteligencia Impulsada por IA"
+      },
+      {
+        "num": "03",
+        "title": "Equipo de Especialistas",
+        "headline": "Liderando un equipo de expertos en Publicidad, E-commerce, Redes Sociales, Digital y más.",
+        "sub": "A través del modelo Deliver de Chameleon Collective, ensamblo y lidero un equipo de especialistas en las disciplinas que tu empresa necesita — ya sea publicidad, e-commerce, redes sociales, marketing digital, o cualquier combinación — para impulsar el crecimiento en EE.UU. o América Latina.",
+        "deliverables": [
+          "Estrategia de publicidad y dirección creativa",
+          "Lanzamiento y optimización de e-commerce",
+          "Estrategia de redes sociales y gestión de comunidad",
+          "Marketing digital en medios pagados, orgánicos y contenido",
+          "Ejecución de campaña integrada y seguimiento de desempeño"
+        ],
+        "meta": "Retainer o Basado en Proyecto a través de Chameleon Collective"
+      },
+      {
+        "num": "04",
+        "title": "Inteligencia de Mercado",
+        "headline": "Investigación de mercado impulsada por IA e inteligencia competitiva — entregada en días, no meses.",
+        "sub": "A través de Soundcheck Insights, entrego inteligencia de mercado rápida y rigurosa que ayuda a las empresas a validar oportunidades, entender paisajes competitivos, y tomar decisiones más inteligentes antes de invertir en nuevos mercados.",
+        "deliverables": [
+          "Evaluación de viabilidad y oportunidad de mercado",
+          "Análisis de paisaje competitivo y posicionamiento",
+          "Sentimiento del consumidor e insights culturales",
+          "Tendencias de categoría e identificación de espacio en blanco",
+          "Reportes de investigación personalizados impulsados por IA"
+        ],
+        "meta": "Proyecto de Tarifa Fija · Entrega en 7–14 Días"
+      }
+    ],
+    "whatThisIncludes": "Lo que Esto Incluye",
+    "inquire": "Consultar Sobre Este Servicio",
+    "howLabel": "Cómo Trabajo",
+    "howH2": "Inteligencia primero. Estrategia segundo. Ejecución siempre.",
+    "howP1": "Cada compromiso comienza con datos — no supuestos. Antes de invertir en estrategia o ejecución, utilizo investigación de mercado impulsada por IA a través de Soundcheck Insights para validar el paisaje.",
+    "howP2": "De allí, me integro en tu organización como un verdadero líder — no un asesor externo — e impulso el trabajo desde adentro.",
+    "seeIntel": "Ver Servicios de Inteligencia",
+    "howSteps": [
+      {
+        "number": "01",
+        "title": "Intake e Inteligencia",
+        "desc": "Comenzamos con una toma estructurada y, donde sea necesario, un reporte de investigación de mercado impulsado por IA."
+      },
+      {
+        "number": "02",
+        "title": "Estrategia",
+        "desc": "Fundamentada en datos, construyo la estrategia de marketing, posicionamiento y roadmap."
+      },
+      {
+        "number": "03",
+        "title": "Ejecución Integrada",
+        "desc": "Lidero desde adentro — gestionando vendedores, equipos y canales directamente."
+      },
+      {
+        "number": "04",
+        "title": "Medición",
+        "desc": "KPIs claros, reporte regular y evaluación honesta de qué está funcionando."
+      }
+    ],
+    "ctaH2": "Construyamos algo que vale la pena construir.",
+    "ctaSub": "Cuéntame sobre tu situación. Te diré honestamente si puedo ayudar — y cómo.",
+    "ctaBtn": "Inicia una Conversación →"
+  },
+  "caseStudies": {
+    "heroLabel": "Casos de Estudio · Estrategia · Resultados",
+    "heroH1": "28 años de trabajo.\nUna selección de los casos que lo definieron.",
+    "heroSub": "De gigantes de CPG global a marcas retadoras — liderazgo de marketing estratégico que movió la cultura y entregó resultados empresariales medibles.",
+    "readCaseStudy": "Leer Caso de Estudio",
+    "challengeLabel": "Desafío",
+    "approachLabel": "Enfoque",
+    "impactLabel": "Impacto",
+    "clientLabel": "Cliente",
+    "roleLabel": "Rol",
+    "categoryLabel": "Categoría",
+    "wantResults": "¿Quieres resultados como estos?",
+    "wantResultsSub": "Hablemos sobre tu marca y tu mercado.",
+    "getInTouch": "Ponte en Contacto →",
+    "alsoWorkedWith": "También Trabajó Con",
+    "alsoH2": "28+ años en algunas de las marcas más reconocidas del mundo.",
+    "alsoSub": "Mi historial abarca marcas globales importantes, líderes del mercado brasileño y marcas retadoras que entran en mercados nuevos competitivos.",
+    "ctaH2": "¿Listo para construir tu próximo caso de estudio?",
+    "ctaSub": "Hablemos sobre tu marca, tu mercado y qué significa ganar en EE.UU. para ti."
+  },
+  "news": {
+    "heroLabel": "Artículos · Insights · Prensa",
+    "heroH1": "Perspectivas sobre expansión internacional de marcas, liderazgo fraccional y el mercado de EE.UU.",
+    "heroSub": "Artículos publicados, características de medios e insights de 28 años en el negocio.",
+    "loading": "Cargando artículos...",
+    "featuredLabel": "Destacado",
+    "allArticles": "Todos los Artículos",
+    "readArticle": "Leer Artículo →",
+    "ctaH2": "¿Quieres estos insights en tu bandeja de entrada?",
+    "ctaSub": "Ocasionalmente comparto perspectivas sobre expansión internacional de marcas y el mercado de EE.UU. Sin relleno — solo cuando tengo algo que vale la pena decir."
+  },
+  "articlePage": {
+    "notFound": "Artículo no encontrado",
+    "backToArticles": "← Volver a Artículos",
+    "published": "Publicado",
+    "readOriginal": "Leer Artículo Original →",
+    "ctaH2": "¿Quieres discutir este tema?",
+    "ctaSub": "Siempre me alegra conectar con personas que están pensando en expansión internacional de marcas, el mercado de EE.UU. o liderazgo fraccional."
+  },
+  "contact": {
+    "heroLabel": "Inicia una Conversación",
+    "heroH1": "Averigüemos si — y cómo —\npuedo ayudarte.",
+    "heroSub": "Sin pitch decks, sin teatro de agencia. Solo una conversación honesta sobre dónde estás, a dónde quieres ir, y si soy la persona correcta para ayudarte a llegar allí.",
+    "sendMessage": "Enviar un Mensaje",
+    "sendMessageSub": "Cuéntame en qué estás trabajando. Responderé dentro de 24 horas — personalmente.",
+    "sendBtn": "Enviar Mensaje →",
+    "directContact": "Contacto Directo",
+    "location": "Miami, Florida, USA",
+    "whatToExpect": "Qué Esperar",
+    "expectations": [
+      {
+        "title": "Respuesta en 24h",
+        "desc": "Respondo a cada consulta dentro de 24 horas — personalmente, no a través de un asistente."
+      },
+      {
+        "title": "Sin Teatro de Agencia",
+        "desc": "Sin pitch decks, sin equipo de 6 personas para una llamada de descubrimiento. Solo una conversación directa."
+      },
+      {
+        "title": "Alcance y Precios Claros",
+        "desc": "Si somos un buen match, recibirás una propuesta clara con entregables definidos, cronograma y precios."
+      }
+    ],
+    "engagementsVia": "Compromisos A Través de",
+    "chameleonCollectiveDesc": "Todos los compromisos de CMO Fraccional y consultoría se contratan a través de Chameleon Collective.",
+    "partnerLabel": "Red de Socios",
+    "partnerH2": "¿No soy el fit correcto para ti?",
+    "partnerSub": "Te conectaré con el especialista correcto. Si tus necesidades caen fuera de mi experiencia principal, te dirigiré a un socio de confianza de mi red firmada — sin comisiones, sin presión.",
+    "topics": [
+      "CMO Fraccional — Compromiso de Retainer",
+      "Estrategia de Expansión en Mercado de EE.UU.",
+      "Estrategia y Posicionamiento de Marca",
+      "Marketing Digital y de Desempeño",
+      "Análisis de Viabilidad de Expansión Internacional",
+      "Validación de Idea",
+      "Desarrollo de Plan de Negocios",
+      "Grupos de Enfoque Virtual con IA",
+      "Evaluación de Financiamiento",
+      "Evaluación CLEAR (Diagnóstico Organizacional)",
+      "Conferencias / Asesor",
+      "Otro"
+    ]
+  },
+  "intelligence": {
+    "heroLabel": "Servicios de Inteligencia · Impulsado por Soundcheck Insights",
+    "heroH1": "Cada compromiso\ncomienza con los datos.",
+    "heroSub": "Utilizo investigación de mercado impulsada por IA para validar supuestos, dimensionar oportunidades y probar ideas — antes de invertir un dólar en estrategia o ejecución.",
+    "heroStats": [
+      {
+        "number": "6",
+        "label": "Servicios de inteligencia"
+      },
+      {
+        "number": "14 días",
+        "label": "Entrega completa de análisis"
+      },
+      {
+        "number": "28+",
+        "label": "Años validación de experto"
+      }
+    ],
+    "howLabel": "Cómo Funciona",
+    "howH2": "Investigación impulsada por IA. Inteligencia validada por expertos. Entregada en tus manos.",
+    "howSteps": [
+      {
+        "number": "01",
+        "title": "Llamada de Intake",
+        "desc": "Nos reunimos para aclarar tus objetivos, mercado, competidores y audiencia objetivo. Presento un brief estructurado a la plataforma Soundcheck.",
+        "owner": "Valter + Tú"
+      },
+      {
+        "number": "02",
+        "title": "Investigación con IA",
+        "desc": "La plataforma agrega datos en competidores, comportamiento del consumidor, tamaño de mercado, regulaciones y canales de distribución — automáticamente.",
+        "owner": "Plataforma"
+      },
+      {
+        "number": "03",
+        "title": "Validación por Experto",
+        "desc": "Reviso cada hallazgo con 28 años de experiencia en mercados multiculturales — añadiendo contexto, señalando riesgos y moldeando implicaciones estratégicas.",
+        "owner": "Valter"
+      },
+      {
+        "number": "04",
+        "title": "Presentación en Vivo",
+        "desc": "Presentamos hallazgos en una sesión de video en vivo con tu equipo. Te vas con un reporte completo, un deck ejecutivo y pasos claros a seguir.",
+        "owner": "Valter + Tú"
+      }
+    ],
+    "productsLabel": "Servicios de Inteligencia",
+    "productsH2": "Seis formas en que conviero datos en ventaja competitiva.",
+    "viewDeliverables": "Ver Entregables",
+    "hideDeliverables": "Ocultar Entregables",
+    "whatsIncluded": "Qué Está Incluido",
+    "requestService": "Solicitar Este Servicio →",
+    "products": [
+      {
+        "num": "01",
+        "badge": "Más Popular",
+        "audience": "Marcas Internacionales · Entrada de Mercado",
+        "headline": "Inteligencia de entrada de mercado de grado decisión para marcas internacionales.",
+        "title": "Reporte de Viabilidad de Expansión Internacional",
+        "sub": "Puntuación CVE propietaria, paisaje competitivo, snapshot regulatorio, mapa de canal de distribución, tres caminos estratégicos y un roadmap de 12 meses. 100+ páginas, white-labeled, en 14 días.",
+        "deliverables": [
+          "CVE — Coeficiente de Viabilidad de Expansión: probabilidad de éxito en el nuevo mercado combinando datos del mundo real, análisis de IA y experiencia local",
+          "Estimaciones claras de inversión: proyecciones de costos para marketing, operaciones y e-commerce",
+          "Timeline estratégico: plan de acción paso a paso desde adaptación del producto hasta campaña de lanzamiento",
+          "Mapa de competidores: jugadores clave, diferenciales competitivos y oportunidades de espacio en blanco",
+          "Reporte de viabilidad detallado (100+ páginas) + presentación de video ejecutiva con Q&A"
+        ]
+      },
+      {
+        "num": "02",
+        "badge": "Fundadores y Nuevas Ventures",
+        "audience": "Emprendedores · Fundadores · Emprendedores Seriales",
+        "headline": "Sabe si tu idea tiene un mercado antes de gastar un dólar construyéndola.",
+        "title": "Análisis de Validación de Idea",
+        "sub": "Completa un formulario de 10 minutos describiendo tu idea. El IA de Soundcheck ejecuta investigación de mercado independiente, analiza la competencia, dimensiona la oportunidad y estima qué pagaría tu cliente objetivo. Recibes un análisis completo y una Tarjeta de Resumen de una página en 48 horas.",
+        "deliverables": [
+          "Señales de Demanda de Mercado: volumen de búsqueda real, datos de interés del consumidor y análisis de tendencias de categoría",
+          "Análisis de Brecha Competitiva: quién ya está haciendo esto, qué tan bien, y exactamente dónde existe espacio en blanco",
+          "Perfil del Cliente Objetivo: demografía, comportamientos y señales de disposición a pagar",
+          "Recomendación Ir / No Ir: condiciones para el éxito, factores de riesgo y potencial de ingresos del Año 1–3",
+          "Reporte completo de análisis + Tarjeta de Resumen de una página"
+        ]
+      },
+      {
+        "num": "03",
+        "badge": "Pre-Lanzamiento y Etapa de Configuración",
+        "audience": "Nuevas Empresas · Etapa de Configuración",
+        "headline": "Un plan de negocios completo respaldado por investigación construido para conversaciones de inversor, requisitos de prestamistas y claridad operacional.",
+        "title": "Desarrollo de Plan de Negocios",
+        "sub": "Un plan de negocios completo respaldado por investigación para empresas en configuración o pre-lanzamiento — construido para conversaciones de inversor, requisitos de prestamistas y claridad operacional.",
+        "deliverables": [
+          "Análisis de Mercado y Personas del Cliente: tamaño de categoría, impulsores de crecimiento y perfiles detallados del comprador basados en datos reales — no supuestos",
+          "Paisaje Competitivo y Posicionamiento: mapeo directo de competidores, estrategia de diferenciación y el posicionamiento que hace tu marca imposible de ignorar",
+          "Estrategia de Entrada al Mercado: prioridades de canal, secuenciación de lanzamiento y estrategia de adquisición diseñada para tu mercado y presupuesto específicos",
+          "Proyecciones de Ingresos (3 años): escenarios conservador, base y optimista con supuestos claros — el modelo financiero en el que los inversores realmente confían",
+          "Reporte en profundidad + presentación ejecutiva y sesión de Q&A"
+        ]
+      },
+      {
+        "num": "04",
+        "badge": "Inteligencia del Consumidor",
+        "audience": "Agencias · Consultoría · Departamentos de Marketing",
+        "headline": "Prueba conceptos creativos, ideas de productos, precios y posicionamiento con personas generadas por IA que reflejen tu audiencia objetivo.",
+        "title": "Grupos de Enfoque Virtual con IA",
+        "sub": "Prueba conceptos creativos, ideas de productos, precios y posicionamiento con personas generadas por IA que reflejen tu audiencia objetivo. Sin reclutamiento. Sin programación. Entregado en días.",
+        "deliverables": [
+          "Personas Personalizadas de IA: 3–10 personas construidas a partir de datos demográficos exactos — edad, ingresos, estilo de vida, comportamiento de compra — reflejando tu audiencia real",
+          "Transcripción de Discusión Moderada: estructurada, sin sesgo — cada persona responde independientemente, sin pensamiento grupal o voces dominantes",
+          "Resumen Ejecutivo y Recomendaciones: hallazgos clave destilados en recomendaciones estratégicas claras para tu equipo",
+          "Panel de Personas Reutilizable: guardado y disponible para sesiones futuras — prueba nuevos conceptos, empaques o mensajes en cualquier momento"
+        ]
+      },
+      {
+        "num": "05",
+        "badge": "VC · PE · Inversión",
+        "audience": "Firmas de Capital de Riesgo",
+        "headline": "Sabe qué empresas merecen el tiempo de tu equipo antes de gastarlo.",
+        "title": "Análisis de Evaluación de Financiamiento",
+        "sub": "Dos entrevistas estructuradas — una con el equipo fundador, una con un cliente real. Soundcheck ejecuta investigación independiente, detecta contradicciones entre ambas entrevistas, y entrega un veredicto de una página AVANZAR / CONDICIONAL / PARAR con la evidencia detrás.",
+        "deliverables": [
+          "Dos entrevistas estructuradas: una con el equipo fundador, una con un cliente real",
+          "Investigación independiente: validación de mercado, posicionamiento competitivo y evaluación de riesgo",
+          "Análisis de contradicciones: detecta brechas entre narrativa del fundador y realidad del cliente",
+          "Veredicto de una página AVANZAR / CONDICIONAL / PARAR con evidencia de apoyo",
+          "Reporte completo de análisis con condiciones de ruptura de trato y factores de riesgo"
+        ]
+      },
+      {
+        "num": "06",
+        "badge": "Metodología CC",
+        "audience": "Evaluación y Recomendaciones Lideradas por CxO",
+        "headline": "Diagnóstico organizacional propietario de Chameleon Collective — aplicado por un profesional experimentado.",
+        "title": "Evaluación CLEAR",
+        "sub": "Evalúo tu organización de marketing en Estrategia, Equipo y Ejecución para identificar bloqueadores de crecimiento, descubrir brechas de capacidad y priorizar las oportunidades de mayor apalancamiento para mejora.",
+        "deliverables": [
+          "Entrevistas de stakeholder en liderazgo, marketing, ventas y operaciones",
+          "Evaluación calificada en dimensiones de Estrategia, Equipo y Ejecución",
+          "Identificación de bloqueador de crecimiento con análisis de causa raíz",
+          "Recomendaciones priorizadas con secuenciación e implicaciones de recursos",
+          "Presentación ejecutiva con un roadmap claro para desbloquear crecimiento"
+        ]
+      }
+    ],
+    "whyLabel": "Por Qué Importa",
+    "whyH2": "Inteligencia antes de estrategia. Siempre.",
+    "whySub": "Demasiadas empresas entran en nuevos mercados con instinto, investigación anecdótica o reportes desactualizados. Soundcheck cambia eso — sin el precio de agencia o la cronología de 6 meses.",
+    "whyItems": [
+      {
+        "title": "Decisiones Respaldadas por Datos",
+        "desc": "Cada recomendación está respaldada por datos de mercado reales — análisis de competidor, comportamiento del consumidor, paisaje de distribución, requisitos regulatorios."
+      },
+      {
+        "title": "Salida Validada por Experto",
+        "desc": "La IA hace la agregación. Aplico 28 años de experiencia en marketing multicultural para validar, contextualizar y traducir hallazgos en estrategia."
+      },
+      {
+        "title": "Rápido y Asequible",
+        "desc": "Las firmas tradicionales de investigación de mercado cobran $30,000–$80,000 y tardan 3–6 meses. Soundcheck entrega profundidad equivalente en 7–14 días a una fracción del costo."
+      },
+      {
+        "title": "Independiente o Integrado",
+        "desc": "Comienza con un compromiso de inteligencia, luego pasa a una relación completa de CMO Fraccional — o usa el salida para briefear otra agencia. Tu elección."
+      }
+    ],
+    "ctaH2": "Cuéntame qué necesitas saber.",
+    "ctaSub": "Responderé dentro de 24 horas con una propuesta — o una llamada para discutir el punto de partida correcto.",
+    "ctaBtn": "Inicia un Compromiso de Inteligencia →"
+  },
+  "portfolio": {
+    "heroLabel": "Portafolio · Dirección Creativa · Proyectos Clave",
+    "heroH1": "Una vida construyendo marcas\nque las personas recuerdan.",
+    "heroSub": "Trabajo creativo, estratégico y digital seleccionado de 28 años en agencias, mi propia boutique y liderazgo del lado del cliente.",
+    "filterAll": "Todo"
+  }
+}

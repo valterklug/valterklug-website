@@ -1,22 +1,10 @@
 
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { PageWrapper, FadeIn } from '../components/Animate'
 import ContactForm from '../components/ContactForm'
+import { useLocale } from '../context/LocaleContext'
 
-const TOPICS = [
-  'Fractional CMO — Retainer Engagement',
-  'US Market Expansion Strategy',
-  'Brand Strategy & Positioning',
-  'Digital & Performance Marketing',
-  'International Expansion Viability Analysis',
-  'Idea Validation',
-  'Business Plan Development',
-  'AI Virtual Focus Groups',
-  'Funding Vetting',
-  'CLEAR Assessment (Organizational Diagnostic)',
-  'Speaking / Advisory',
-  'Other',
-]
 
 const PARTNERS = [
   { name:'Chameleon Collective', desc:'Fractional CMO and consulting engagements. An elite collective of independent practitioners who embed directly into client organizations.', url:'chameleoncollective.com', cat:'Fractional Leadership' },
@@ -34,28 +22,32 @@ const PARTNERS = [
 ]
 
 export default function Contact() {
+  const { t } = useTranslation()
+  const { localePath } = useLocale()
+  const TOPICS = t('contact.topics', { returnObjects: true })
+
   return (
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero-inner">
-          <span className="lbl lbl-orange">Start a Conversation</span>
-          <h1 className="page-h1">Let's figure out if — and how —<br/>I can help.</h1>
-          <p className="page-sub">No pitch decks, no agency theater. Just an honest conversation about where you are, where you want to go, and whether I'm the right person to help you get there.</p>
+          <span className="lbl lbl-orange">{t('contact.heroLabel')}</span>
+          <h1 className="page-h1">{t('contact.heroH1')}</h1>
+          <p className="page-sub">{t('contact.heroSub')}</p>
         </div>
       </section>
 
       <section style={{background:'#fff',padding:'80px 64px',borderTop:'1px solid #E8E8E8'}}>
         <div style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 340px',gap:80,alignItems:'start'}} className="contact-grid">
           <FadeIn>
-            <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.7rem)',fontWeight:400,color:'#121212',letterSpacing:'-.01em',marginBottom:8,lineHeight:1.25}}>Send a Message</h2>
-            <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#666',lineHeight:1.7,marginBottom:32}}>Tell me what you're working on. I'll respond within 24 hours — personally.</p>
-            <ContactForm topics={TOPICS} buttonLabel="Send Message →" />
+            <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.7rem)',fontWeight:400,color:'#121212',letterSpacing:'-.01em',marginBottom:8,lineHeight:1.25}}>{t('contact.sendMessage')}</h2>
+            <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#666',lineHeight:1.7,marginBottom:32}}>{t('contact.sendMessageSub')}</p>
+            <ContactForm topics={TOPICS} buttonLabel={t('contact.sendBtn')} />
           </FadeIn>
 
           <FadeIn delay={.12}>
             <div style={{display:'flex',flexDirection:'column',gap:2}}>
               <div style={{background:'#121212',padding:'28px'}}>
-                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'#EA633F',marginBottom:16}}>Direct Contact</div>
+                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'#EA633F',marginBottom:16}}>{t('contact.directContact')}</div>
                 <div style={{display:'flex',flexDirection:'column',gap:10}}>
                   <div style={{display:'flex',gap:12,alignItems:'center'}}>
                     <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,color:'rgba(255,255,255,.25)',width:16}}>✉</span>
@@ -69,29 +61,25 @@ export default function Contact() {
                   </div>
                   <div style={{display:'flex',gap:12,alignItems:'center'}}>
                     <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,color:'rgba(255,255,255,.25)',width:16}}>📍</span>
-                    <span style={{fontFamily:'Inter,sans-serif',fontSize:13,color:'rgba(255,255,255,.4)'}}>Miami, Florida, USA</span>
+                    <span style={{fontFamily:'Inter,sans-serif',fontSize:13,color:'rgba(255,255,255,.4)'}}>{t('contact.location')}</span>
                   </div>
                 </div>
               </div>
 
               <div style={{background:'#F5F5F5',padding:'24px 28px'}}>
-                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'#666',marginBottom:14}}>What to Expect</div>
-                {[
-                  ['24h Response','I respond to every inquiry within 24 hours — personally, not through an assistant.'],
-                  ['No Agency Theater','No pitch decks, no 6-person team for a discovery call. Just a direct conversation.'],
-                  ['Clear Scope & Pricing',"If we're a good fit, you'll receive a clear proposal with defined deliverables, timeline, and pricing."],
-                ].map(([t,d])=>(
-                  <div key={t} style={{marginBottom:14,paddingBottom:14,borderBottom:'1px solid #E8E8E8'}}>
-                    <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:13,fontWeight:500,color:'#121212',marginBottom:4}}>{t}</div>
-                    <div style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'#666',lineHeight:1.6}}>{d}</div>
+                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'#666',marginBottom:14}}>{t('contact.whatToExpect')}</div>
+                {t('contact.expectations', { returnObjects: true }).map((item)=>(
+                  <div key={item.title} style={{marginBottom:14,paddingBottom:14,borderBottom:'1px solid #E8E8E8'}}>
+                    <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:13,fontWeight:500,color:'#121212',marginBottom:4}}>{item.title}</div>
+                    <div style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'#666',lineHeight:1.6}}>{item.desc}</div>
                   </div>
                 ))}
               </div>
 
               <div style={{background:'#EA633F',padding:'24px 28px'}}>
-                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:12}}>Engagements Via</div>
+                <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:500,letterSpacing:'.15em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:12}}>{t('contact.engagementsVia')}</div>
                 <a href="https://chameleoncollective.com" target="_blank" rel="noopener noreferrer" style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:14,fontWeight:500,color:'#fff',textDecoration:'none',display:'block',marginBottom:4}}>Chameleon Collective</a>
-                <div style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'rgba(255,255,255,.7)',lineHeight:1.5,marginBottom:10}}>All fractional CMO and consulting engagements are contracted through Chameleon Collective.</div>
+                <div style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'rgba(255,255,255,.7)',lineHeight:1.5,marginBottom:10}}>{t('contact.chameleonCollectiveDesc')}</div>
                 <a href="https://soundcheckinsights.com" target="_blank" rel="noopener noreferrer" style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:13,fontWeight:500,color:'rgba(255,255,255,.8)',textDecoration:'none'}}>soundcheckinsights.com →</a>
               </div>
             </div>
@@ -103,9 +91,9 @@ export default function Contact() {
       <section style={{background:'#F5F5F5',padding:'80px 64px',borderTop:'1px solid #E8E8E8'}}>
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           <FadeIn>
-            <span className="lbl">Partner Network</span>
-            <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#121212',letterSpacing:'-.015em',marginBottom:8,lineHeight:1.2,marginTop:4}}>Not the right fit for me?</h2>
-            <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#666',lineHeight:1.7,marginBottom:36,maxWidth:560}}>I'll connect you with the right specialist. If your needs fall outside my core expertise, I'll route you to a trusted partner from my signed network — no commissions, no pressure.</p>
+            <span className="lbl">{t('contact.partnerLabel')}</span>
+            <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#121212',letterSpacing:'-.015em',marginBottom:8,lineHeight:1.2,marginTop:4}}>{t('contact.partnerH2')}</h2>
+            <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#666',lineHeight:1.7,marginBottom:36,maxWidth:560}}>{t('contact.partnerSub')}</p>
           </FadeIn>
           <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:1,background:'#E8E8E8'}} className="partner-grid">
             {PARTNERS.map(p=>(

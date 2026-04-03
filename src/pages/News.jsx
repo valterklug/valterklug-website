@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn } from '../components/Animate'
 import { fetchArticles, setArticlesSync, SOURCE_COLORS } from '../data/articles'
+
+/** Get locale-aware article title */
+function localTitle(article, locale) {
+  if (locale !== 'en' && article.translations?.[locale]?.title) return article.translations[locale].title
+  return article.title
+}
 
 function ArticleImage({ src, alt, source, style = {} }) {
   const [failed, setFailed] = useState(false)
@@ -35,6 +43,8 @@ function ArticleImage({ src, alt, source, style = {} }) {
 }
 
 export default function News() {
+  const { t } = useTranslation()
+  const { locale, localePath } = useLocale()
   const [articles, setArticles] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -54,8 +64,8 @@ export default function News() {
       <PageWrapper>
         <section className="page-hero">
           <div className="page-hero-inner">
-            <span className="lbl lbl-orange">Articles · Insights · Press</span>
-            <h1 className="page-h1">Loading articles...</h1>
+            <span className="lbl lbl-orange">{t('news.heroLabel')}</span>
+            <h1 className="page-h1">{t('news.loading')}</h1>
           </div>
         </section>
       </PageWrapper>
@@ -66,9 +76,9 @@ export default function News() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero-inner">
-          <span className="lbl lbl-orange">Articles · Insights · Press</span>
-          <h1 className="page-h1">Perspectives on international brand expansion, fractional leadership, and the US market.</h1>
-          <p className="page-sub">Published articles, media features, and insights from 28 years in the business.</p>
+          <span className="lbl lbl-orange">{t('news.heroLabel')}</span>
+          <h1 className="page-h1">{t('news.heroH1')}</h1>
+          <p className="page-sub">{t('news.heroSub')}</p>
         </div>
       </section>
 
@@ -77,16 +87,16 @@ export default function News() {
         <section style={{background:'#EAEAC8',padding:'80px 64px',borderTop:'1px solid rgba(18,18,18,.1)'}}>
           <div style={{maxWidth:1200,margin:'0 auto'}}>
             <FadeIn>
-              <span className="lbl lbl-cream">Featured</span>
-              <Link to={`/articles/${featured.slug}`} style={{textDecoration:'none',display:'block'}}>
+              <span className="lbl lbl-cream">{t('news.featuredLabel')}</span>
+              <Link to={localePath(`/articles/${featured.slug}`)} style={{textDecoration:'none',display:'block'}}>
                 <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(18,18,18,.1)',marginTop:16,cursor:'pointer'}} className="feat-grid">
                   <div style={{background:'#121212',padding:'52px 48px'}}>
                     <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:12}}>
                       <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#fff',background:SOURCE_COLORS[featured.source]||'#EA633F',padding:'3px 8px',borderRadius:2}}>{featured.source}</span>
                     </div>
                     <div style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:11,fontWeight:500,color:'rgba(255,255,255,.3)',marginBottom:20}}>{featured.date}</div>
-                    <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#fff',lineHeight:1.25,marginBottom:20}}>{featured.title}</h2>
-                    <span className="tlink tlink-white">Read Article →</span>
+                    <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.3rem,2.5vw,1.75rem)',fontWeight:300,color:'#fff',lineHeight:1.25,marginBottom:20}}>{localTitle(featured, locale)}</h2>
+                    <span className="tlink tlink-white">{t('news.readArticle')} →</span>
                   </div>
                   <div style={{background:'#000',position:'relative',overflow:'hidden',minHeight:300}}>
                     <ArticleImage src={featured.img} alt={featured.title} source={featured.source} style={{opacity:.85}} />
@@ -102,11 +112,11 @@ export default function News() {
       {/* ── ALL ARTICLES ── */}
       <section style={{background:'#fff',padding:'80px 64px',borderTop:'1px solid #E8E8E8'}}>
         <div style={{maxWidth:1200,margin:'0 auto'}}>
-          <FadeIn><span className="lbl">All Articles</span></FadeIn>
+          <FadeIn><span className="lbl">{t('news.allArticles')}</span></FadeIn>
           <div style={{display:'flex',flexDirection:'column',gap:1,background:'#E8E8E8',marginTop:24}}>
             {rest.map((a,i)=>(
               <FadeIn key={a.slug} delay={i*.03}>
-                <Link to={`/articles/${a.slug}`} style={{textDecoration:'none',display:'block'}}>
+                <Link to={localePath(`/articles/${a.slug}`)} style={{textDecoration:'none',display:'block'}}>
                   <div style={{background:'#fff',padding:0,display:'grid',gridTemplateColumns:'220px 1fr',gap:0,alignItems:'stretch',transition:'background .2s',cursor:'pointer'}}
                     onMouseEnter={e=>e.currentTarget.style.background='#F5F5F5'}
                     onMouseLeave={e=>e.currentTarget.style.background='#fff'}
@@ -119,8 +129,8 @@ export default function News() {
                         <span style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:10,fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#fff',background:SOURCE_COLORS[a.source]||'#EA633F',padding:'2px 8px',borderRadius:2}}>{a.source}</span>
                         <span style={{fontFamily:'Inter,sans-serif',fontSize:12,color:'#999'}}>{a.date}</span>
                       </div>
-                      <h3 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'1rem',fontWeight:500,color:'#121212',marginBottom:12,lineHeight:1.35}}>{a.title}</h3>
-                      <span className="tlink">Read Article →</span>
+                      <h3 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'1rem',fontWeight:500,color:'#121212',marginBottom:12,lineHeight:1.35}}>{localTitle(a, locale)}</h3>
+                      <span className="tlink">{t('news.readArticle')} →</span>
                     </div>
                   </div>
                 </Link>
@@ -133,10 +143,10 @@ export default function News() {
 
       <div className="cta-strip" style={{padding:'80px 64px'}}>
         <FadeIn>
-          <h2>Want these insights in your inbox?</h2>
-          <p>I occasionally share perspectives on international brand expansion and the US market. No fluff — only when I have something worth saying.</p>
+          <h2>{t('news.ctaH2')}</h2>
+          <p>{t('news.ctaSub')}</p>
         </FadeIn>
-        <Link to="/contact" className="btn btn-dark">Get in Touch →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">Get in Touch →</Link>
       </div>
     </PageWrapper>
   )
