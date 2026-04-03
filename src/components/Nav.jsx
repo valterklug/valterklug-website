@@ -1,20 +1,26 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { useLocale, SUPPORTED_LOCALES } from '../context/LocaleContext'
 
-const NAV_LINKS = [
-  { label: 'About', to: '/about' },
-  { label: 'What I Do', to: '/services' },
-  { label: 'Case Studies', to: '/case-studies' },
-  { label: 'Portfolio', to: '/portfolio' },
-  { label: 'Intelligence', to: '/intelligence' },
-  { label: 'Articles', to: '/articles' },
-]
+const LOCALE_LABELS = { en: 'EN', pt: 'PT', es: 'ES' }
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const location = useLocation()
+  const { t } = useTranslation()
+  const { locale, setLocale, localePath } = useLocale()
+
+  const NAV_LINKS = useMemo(() => [
+    { label: t('nav.about'), to: '/about' },
+    { label: t('nav.services'), to: '/services' },
+    { label: t('nav.caseStudies'), to: '/case-studies' },
+    { label: t('nav.portfolio'), to: '/portfolio' },
+    { label: t('nav.intelligence'), to: '/intelligence' },
+    { label: t('nav.articles'), to: '/articles' },
+  ], [t])
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 30)
@@ -41,22 +47,22 @@ export default function Nav() {
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: '#EA633F' }} />
 
         {/* Wordmark */}
-        <Link to="/" style={{ display: 'flex', flexDirection: 'column', gap: 2, textDecoration: 'none' }}>
+        <Link to={localePath('/')} style={{ display: 'flex', flexDirection: 'column', gap: 2, textDecoration: 'none' }}>
           <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 600, color: '#121212', letterSpacing: '.04em', textTransform: 'uppercase', lineHeight: 1 }}>
-            Valter Klug
+            {t('nav.wordmark')}
           </span>
           <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 9, fontWeight: 500, color: '#EA633F', letterSpacing: '.2em', textTransform: 'uppercase', lineHeight: 1 }}>
-            Fractional CMO · Miami
+            {t('nav.subtitle')}
           </span>
         </Link>
 
         {/* Desktop links */}
         <ul style={{ display: 'flex', alignItems: 'center', gap: 4, listStyle: 'none', margin: 0 }} className="nav-desktop">
           {NAV_LINKS.map(({ label, to }) => {
-            const active = location.pathname === to
+            const active = location.pathname === localePath(to)
             return (
               <li key={to}>
-                <Link to={to} style={{
+                <Link to={localePath(to)} style={{
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500,
                   letterSpacing: '.08em', textTransform: 'uppercase',
                   color: active ? '#EA633F' : '#666',
@@ -74,8 +80,32 @@ export default function Nav() {
           })}
         </ul>
 
-        <Link to="/contact" className="btn btn-primary" style={{ padding: '9px 22px', fontSize: 12 }} data-desktop="true">
-          Let's Talk →
+        {/* Language switcher — desktop */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginRight: 16 }} className="nav-desktop">
+          {SUPPORTED_LOCALES.map((l, i) => (
+            <span key={l} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <button
+                onClick={() => setLocale(l)}
+                style={{
+                  background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: locale === l ? 700 : 400,
+                  letterSpacing: '.08em', color: locale === l ? '#EA633F' : '#999',
+                  transition: 'color .2s',
+                }}
+                onMouseEnter={e => { if (locale !== l) e.target.style.color = '#121212' }}
+                onMouseLeave={e => { if (locale !== l) e.target.style.color = '#999' }}
+              >
+                {LOCALE_LABELS[l]}
+              </button>
+              {i < SUPPORTED_LOCALES.length - 1 && (
+                <span style={{ color: '#ccc', fontSize: 11, userSelect: 'none' }}>|</span>
+              )}
+            </span>
+          ))}
+        </div>
+
+        <Link to={localePath('/contact')} className="btn btn-primary" style={{ padding: '9px 22px', fontSize: 12 }} data-desktop="true">
+          {t('nav.cta')}
         </Link>
 
         {/* Hamburger */}
@@ -128,17 +158,37 @@ export default function Nav() {
           >
             {NAV_LINKS.map(({ label, to }, i) => (
               <motion.div key={to} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
-                <Link to={to} style={{
+                <Link to={localePath(to)} style={{
                   display: 'block', padding: '14px 0',
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 400,
-                  color: location.pathname === to ? '#EA633F' : '#121212',
+                  color: location.pathname === localePath(to) ? '#EA633F' : '#121212',
                   borderBottom: '1px solid #E8E8E8', textDecoration: 'none',
                 }}>{label}</Link>
               </motion.div>
             ))}
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.22 }} style={{ marginTop: 20 }}>
-              <Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Let's Talk →
+            {/* Language switcher — mobile */}
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, marginTop: 18, marginBottom: 14 }}>
+              {SUPPORTED_LOCALES.map((l, i) => (
+                <span key={l} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <button
+                    onClick={() => setLocale(l)}
+                    style={{
+                      background: 'none', border: 'none', cursor: 'pointer', padding: '4px 0',
+                      fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 14, fontWeight: locale === l ? 700 : 400,
+                      letterSpacing: '.08em', color: locale === l ? '#EA633F' : '#666',
+                    }}
+                  >
+                    {LOCALE_LABELS[l]}
+                  </button>
+                  {i < SUPPORTED_LOCALES.length - 1 && (
+                    <span style={{ color: '#ccc', fontSize: 14, userSelect: 'none' }}>|</span>
+                  )}
+                </span>
+              ))}
+            </motion.div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.26 }} style={{ marginTop: 6 }}>
+              <Link to={localePath('/contact')} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+                {t('nav.cta')}
               </Link>
             </motion.div>
           </motion.div>

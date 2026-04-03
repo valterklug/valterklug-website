@@ -1,7 +1,21 @@
 import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn } from '../components/Animate'
 import { fetchArticles, setArticlesSync, getArticlesSync, SOURCE_COLORS } from '../data/articles'
+
+/** Get locale-aware article fields */
+function localArticle(article, locale) {
+  if (!article) return article
+  if (locale === 'en' || !article.translations?.[locale]) return article
+  const tr = article.translations[locale]
+  return {
+    ...article,
+    title: tr.title || article.title,
+    content: tr.content || article.content,
+  }
+}
 
 function ArticleContent({ content }) {
   if (!content || !content.length) return null
@@ -16,23 +30,27 @@ function ArticleContent({ content }) {
 }
 
 export default function ArticlePage() {
+  const { t } = useTranslation()
+  const { locale, localePath } = useLocale()
   const { slug } = useParams()
-  const [article, setArticle] = useState(null)
+  const [rawArticle, setRawArticle] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const cached = getArticlesSync()
     if (cached && cached.length) {
-      setArticle(cached.find(a => a.slug === slug) || null)
+      setRawArticle(cached.find(a => a.slug === slug) || null)
       setLoading(false)
     } else {
       fetchArticles().then(articles => {
         setArticlesSync(articles)
-        setArticle(articles.find(a => a.slug === slug) || null)
+        setRawArticle(articles.find(a => a.slug === slug) || null)
         setLoading(false)
       })
     }
   }, [slug])
+
+  const article = localArticle(rawArticle, locale)
 
   if (loading) {
     return <PageWrapper><section style={{ background: '#1E1E1E', padding: '120px 64px 80px', textAlign: 'center' }}><h1 style={{ fontFamily: 'var(--fd)', fontSize: '2rem', fontWeight: 300, color: '#fff' }}>Loading...</h1></section></PageWrapper>
@@ -42,8 +60,8 @@ export default function ArticlePage() {
     return (
       <PageWrapper>
         <section style={{ background: '#1E1E1E', padding: '120px 64px 80px', textAlign: 'center' }}>
-          <h1 style={{ fontFamily: 'var(--fd)', fontSize: '2rem', fontWeight: 300, color: '#fff' }}>Article not found</h1>
-          <Link to="/articles" className="btn btn-ghost" style={{ marginTop: 24, display: 'inline-flex' }}>← Back to Articles</Link>
+          <h1 style={{ fontFamily: 'var(--fd)', fontSize: '2rem', fontWeight: 300, color: '#fff' }}>{t('articlePage.notFound')}</h1>
+          <Link to={localePath('/articles')} className="btn btn-ghost" style={{ marginTop: 24, display: 'inline-flex' }}>← {t('articlePage.backToArticles')}</Link>
         </section>
       </PageWrapper>
     )
@@ -58,12 +76,12 @@ export default function ArticlePage() {
       <section style={{ background: '#121212', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '100px 64px 60px', position: 'relative', zIndex: 1 }}>
           <FadeIn>
-            <Link to="/articles" style={{ fontFamily: 'var(--fd)', fontSize: 12, fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 28 }}>
-              ← Back to Articles
+            <Link to={localePath('/articles')} style={{ fontFamily: 'var(--fd)', fontSize: 12, fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 28 }}>
+              ← {t('articlePage.backToArticles')}
             </Link>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <span style={{ fontFamily: 'var(--fd)', fontSize: 10, fontWeight: 600, letterSpacing: '.08em', textTransform: 'uppercase', color: '#fff', background: srcColor, padding: '3px 10px', borderRadius: 2 }}>{article.source}</span>
-              <span style={{ fontFamily: 'var(--fb)', fontSize: 13, color: 'rgba(255,255,255,.35)' }}>{article.date}</span>
+              <span style={{ fontFamily: 'var(--fb)', fontSize: 13, color: 'rgba(255,255,255,.35)' }}>{t('articlePage.published')} {article.date}</span>
             </div>
             <h1 style={{ fontFamily: 'var(--fd)', fontSize: 'clamp(1.75rem,4vw,2.75rem)', fontWeight: 300, color: '#fff', lineHeight: 1.12, letterSpacing: '-.02em', marginBottom: 0 }}>{article.title}</h1>
           </FadeIn>
@@ -88,7 +106,7 @@ export default function ArticlePage() {
               <img src="/headshot.png" alt="Valter Klug" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} onError={e => { e.target.style.display = 'none' }} />
               <div>
                 <div style={{ fontFamily: 'var(--fd)', fontSize: 14, fontWeight: 500, color: '#121212' }}>Valter Klug</div>
-                <div style={{ fontFamily: 'var(--fb)', fontSize: 12, color: '#999' }}>Originally published on {article.source} · {article.date}</div>
+                <div style={{ fontFamily: 'var(--fb)', fontSize: 12, color: '#999' }}>{t('articlePage.published')} on {article.source} · {article.date}</div>
               </div>
             </div>
 
@@ -98,7 +116,7 @@ export default function ArticlePage() {
             ) : (
               <div style={{ padding: '40px 0', textAlign: 'center' }}>
                 <p style={{ fontFamily: 'var(--fb)', fontSize: '1rem', color: '#666', marginBottom: 20 }}>
-                  This article was originally published on {article.source}. Read the full article below.
+                  {t('articlePage.readOriginal')} {article.source}.
                 </p>
                 <a href={article.originalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Read on {article.source} →</a>
               </div>
@@ -109,7 +127,7 @@ export default function ArticlePage() {
               {article.originalUrl && (
                 <a href={article.originalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: 13 }}>View Original on {article.source} →</a>
               )}
-              <Link to="/articles" className="btn btn-dark" style={{ fontSize: 13 }}>← All Articles</Link>
+              <Link to={localePath('/articles')} className="btn btn-dark" style={{ fontSize: 13 }}>← All Articles</Link>
             </div>
           </FadeIn>
         </div>
@@ -118,10 +136,10 @@ export default function ArticlePage() {
 
       <div className="cta-strip" style={{ padding: '80px 64px' }}>
         <FadeIn>
-          <h2>Want these insights in your inbox?</h2>
-          <p>I occasionally share perspectives on international brand expansion and the US market.</p>
+          <h2>{t('articlePage.ctaH2')}</h2>
+          <p>{t('articlePage.ctaSub')}</p>
         </FadeIn>
-        <Link to="/contact" className="btn btn-dark">Get in Touch →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">Get in Touch →</Link>
       </div>
     </PageWrapper>
   )

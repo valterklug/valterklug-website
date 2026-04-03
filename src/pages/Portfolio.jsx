@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn, HoverLift } from '../components/Animate'
 
 /* ── PORTFOLIO DATA (from current valterklug.com) ── */
@@ -526,6 +528,8 @@ function ProjectModal({ project, onClose }) {
 
 /* ── PORTFOLIO PAGE ── */
 export default function Portfolio() {
+  const { t } = useTranslation()
+  const { localePath } = useLocale()
   const [selected, setSelected] = useState(null)
   const [filter, setFilter] = useState('all')
 
@@ -537,9 +541,9 @@ export default function Portfolio() {
       {/* Hero */}
       <section className="page-hero" style={{ borderTop: '4px solid #88E8F0' }}>
         <div className="page-hero-inner">
-          <span className="lbl" style={{ color: '#88E8F0' }}>Creative Portfolio · 28+ Years · 20+ Projects</span>
-          <h1 className="page-h1">Selected Work.<br />A career in creative leadership.</h1>
-          <p className="page-sub">A collection of award-winning campaigns and creative projects spanning 28+ years across global brands — from Samba Rock to Y&R to Sapient.</p>
+          <span className="lbl" style={{ color: '#88E8F0' }}>{t('portfolio.heroLabel')}</span>
+          <h1 className="page-h1">{t('portfolio.heroH1')}</h1>
+          <p className="page-sub">{t('portfolio.heroSub')}</p>
           <div style={{ display: 'flex', gap: 32, marginTop: 36, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,.08)', flexWrap: 'wrap' }}>
             {[['20+', 'Projects'], ['12+', 'Clients'], ['3', 'Agencies']].map(([n, l]) => (
               <div key={l}>
@@ -558,7 +562,7 @@ export default function Portfolio() {
           {['all', ...agencies].map(a => (
             <button key={a} onClick={() => setFilter(a)}
               style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.06em', padding: '6px 14px', background: filter === a ? '#121212' : 'transparent', color: filter === a ? '#fff' : '#666', border: filter === a ? 'none' : '1px solid rgba(18,18,18,.15)', cursor: 'pointer', textTransform: a === 'all' ? 'uppercase' : 'none', transition: 'all .2s' }}>
-              {a === 'all' ? 'All Projects' : a}
+              {a === 'all' ? t('portfolio.filterAll') : a}
             </button>
           ))}
         </div>
@@ -625,7 +629,7 @@ export default function Portfolio() {
           <h2>Like what you see?</h2>
           <p>Let's talk about your brand, your vision, and what we can build together.</p>
         </FadeIn>
-        <Link to="/contact" className="btn btn-dark">Let's Talk →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">Let's Talk →</Link>
       </div>
 
       {/* Modal */}

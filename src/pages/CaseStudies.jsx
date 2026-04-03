@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { PageWrapper, FadeIn, HoverLift } from '../components/Animate'
+import { useLocale } from '../context/LocaleContext'
 
 const CASES = [
   {
@@ -169,6 +171,9 @@ const CASES = [
 ]
 
 function CaseModal({ cs, onClose }) {
+  const { t } = useTranslation()
+  const { localePath } = useLocale()
+
   useEffect(() => {
     document.body.style.overflow = 'hidden'
     const handler = (e) => { if (e.key === 'Escape') onClose() }
@@ -201,15 +206,15 @@ function CaseModal({ cs, onClose }) {
             <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.3rem,2.8vw,1.9rem)', fontWeight: 300, color: '#fff', lineHeight: 1.2, marginBottom: 14, letterSpacing: '-.01em' }}>{cs.title}</h2>
             <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginTop: 12 }}>
               <div>
-                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Client</div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>{t('caseStudies.clientLabel')}</div>
                 <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.client}</div>
               </div>
               <div>
-                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Role</div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>{t('caseStudies.roleLabel')}</div>
                 <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.role}</div>
               </div>
               <div>
-                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>Category</div>
+                <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', marginBottom: 4 }}>{t('caseStudies.categoryLabel')}</div>
                 <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: 'rgba(255,255,255,.8)' }}>{cs.category}</div>
               </div>
             </div>
@@ -229,7 +234,7 @@ function CaseModal({ cs, onClose }) {
           <div style={{ marginBottom: 40 }}>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 20, height: 1, background: '#EA633F', display: 'block' }} />
-              Challenge
+              {t('caseStudies.challengeLabel')}
             </div>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#444', lineHeight: 1.8 }}>{cs.challenge}</p>
           </div>
@@ -237,7 +242,7 @@ function CaseModal({ cs, onClose }) {
           <div style={{ marginBottom: 40 }}>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 20, height: 1, background: '#EA633F', display: 'block' }} />
-              Approach
+              {t('caseStudies.approachLabel')}
             </div>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#444', lineHeight: 1.8 }}>{cs.approach}</p>
           </div>
@@ -245,20 +250,20 @@ function CaseModal({ cs, onClose }) {
           <div style={{ marginBottom: 40 }}>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 20, height: 1, background: '#EA633F', display: 'block' }} />
-              Impact
+              {t('caseStudies.impactLabel')}
             </div>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#444', lineHeight: 1.8 }}>{cs.impact}</p>
           </div>
 
           <div style={{ borderTop: '1px solid #E8E8E8', paddingTop: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
             <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 14, fontWeight: 500, color: '#121212', marginBottom: 4 }}>Want results like this?</div>
-              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#888' }}>Let's talk about your brand and your market.</div>
+              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 14, fontWeight: 500, color: '#121212', marginBottom: 4 }}>{t('caseStudies.wantResults')}</div>
+              <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#888' }}>{t('caseStudies.wantResultsSub')}</div>
             </div>
-            <Link to="/contact" onClick={onClose} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', padding: '12px 28px', background: '#EA633F', color: '#fff', textDecoration: 'none', transition: 'background .2s' }}
+            <Link to={localePath('/contact')} onClick={onClose} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', padding: '12px 28px', background: '#EA633F', color: '#fff', textDecoration: 'none', transition: 'background .2s' }}
               onMouseEnter={e => e.target.style.background = '#D4572F'}
               onMouseLeave={e => e.target.style.background = '#EA633F'}
-            >Get in Touch →</Link>
+            >{t('caseStudies.getInTouch')} →</Link>
           </div>
         </div>
       </motion.div>
@@ -268,14 +273,16 @@ function CaseModal({ cs, onClose }) {
 
 export default function CaseStudies() {
   const [selected, setSelected] = useState(null)
+  const { t } = useTranslation()
+  const { localePath } = useLocale()
 
   return (
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero-inner">
-          <span className="lbl lbl-orange">Case Studies · Strategy · Results</span>
-          <h1 className="page-h1">28 years of work.<br/>A selection of the cases that defined it.</h1>
-          <p className="page-sub">From global CPG giants to challenger brands — strategic marketing leadership that moved culture and delivered measurable business outcomes.</p>
+          <span className="lbl lbl-orange">{t('caseStudies.heroLabel')}</span>
+          <h1 className="page-h1">{t('caseStudies.heroH1')}</h1>
+          <p className="page-sub">{t('caseStudies.heroSub')}</p>
         </div>
       </section>
 
@@ -303,7 +310,7 @@ export default function CaseStudies() {
                       <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(.85rem,1.2vw,1rem)', fontWeight: 500, color: '#121212', lineHeight: 1.3, marginBottom: 8 }}>{c.title}</h3>
                       <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.75rem', color: '#888', lineHeight: 1.6, marginBottom: 14, flex: 1 }}>{c.desc}</p>
                       <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: '#EA633F', display: 'flex', alignItems: 'center', gap: 4 }}>
-                        Read Case Study <span>→</span>
+                        {t('caseStudies.readCaseStudy')} <span>→</span>
                       </div>
                     </div>
                   </div>
@@ -333,9 +340,9 @@ export default function CaseStudies() {
       <section style={{ background: '#121212', padding: '80px 64px', borderTop: '1px solid rgba(255,255,255,.06)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }} className="brands-grid">
           <FadeIn>
-            <span className="lbl lbl-white">Also Worked With</span>
-            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,2.5vw,1.8rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 16 }}>28+ years across some of the world's most recognized brands.</h2>
-            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9rem', color: 'rgba(255,255,255,.45)', lineHeight: 1.75 }}>My track record spans major global brands, Brazilian market leaders, and challenger brands entering competitive new markets.</p>
+            <span className="lbl lbl-white">{t('caseStudies.alsoWorkedWith')}</span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,2.5vw,1.8rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 16 }}>{t('caseStudies.alsoH2')}</h2>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9rem', color: 'rgba(255,255,255,.45)', lineHeight: 1.75 }}>{t('caseStudies.alsoSub')}</p>
           </FadeIn>
           <FadeIn delay={.1}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 1, background: 'rgba(255,255,255,.08)' }} className="brand-grid">
@@ -351,10 +358,10 @@ export default function CaseStudies() {
       {/* CTA */}
       <div className="cta-strip" style={{ padding: '80px 64px' }}>
         <FadeIn>
-          <h2>Ready to build your next case study?</h2>
-          <p>Let's talk about your brand, your market, and what winning in the US looks like for you.</p>
+          <h2>{t('caseStudies.ctaH2')}</h2>
+          <p>{t('caseStudies.ctaSub')}</p>
         </FadeIn>
-        <Link to="/contact" className="btn btn-dark">Let's Talk →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">Let's Talk →</Link>
       </div>
 
       {/* Modal */}

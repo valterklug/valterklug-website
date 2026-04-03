@@ -135,15 +135,29 @@ async function uploadImageToGitHub(file, slug, token) {
   return `/news/${filename}`
 }
 
+/* ── LANGUAGE TABS ── */
+const LANGS = [
+  { code: 'en', label: 'EN — English' },
+  { code: 'pt', label: 'PT — Português' },
+  { code: 'es', label: 'ES — Español' },
+]
+
 /* ── ARTICLE FORM ── */
 function ArticleForm({ article, onSave, onCancel, token }) {
   const [form, setForm] = useState({
     title: '', source: 'Forbes', date: '', originalUrl: '', img: '', content: '', featured: false, slug: '',
+    title_pt: '', content_pt: '',
+    title_es: '', content_es: '',
     ...article,
     content: article?.content || '',
+    title_pt: article?.title_pt || '',
+    content_pt: article?.content_pt || '',
+    title_es: article?.title_es || '',
+    content_es: article?.content_es || '',
   })
   const [uploading, setUploading] = useState(false)
   const [imgPreview, setImgPreview] = useState(article?.img || '')
+  const [langTab, setLangTab] = useState('en')
 
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }))
 
@@ -178,7 +192,11 @@ function ArticleForm({ article, onSave, onCancel, token }) {
   const handleSave = () => {
     if (!form.title || !form.source || !form.date) { alert('Title, source and date are required'); return }
     const slug = form.slug || slugify(form.title)
-    onSave({ ...form, slug })
+    onSave({
+      ...form, slug,
+      title_pt: form.title_pt, content_pt: form.content_pt,
+      title_es: form.title_es, content_es: form.content_es,
+    })
   }
 
   return (
@@ -187,11 +205,7 @@ function ArticleForm({ article, onSave, onCancel, token }) {
         {article ? 'Edit Article' : 'New Article'}
       </h2>
 
-      <div style={{ marginBottom: 16 }}>
-        <label style={S.label}>Title *</label>
-        <input style={S.input} value={form.title} onChange={e => set('title', e.target.value)} placeholder="Article title" />
-      </div>
-
+      {/* ── Metadata (shared across languages) ── */}
       <div style={S.row3}>
         <div>
           <label style={S.label}>Source *</label>
@@ -252,18 +266,65 @@ function ArticleForm({ article, onSave, onCancel, token }) {
         </label>
       </div>
 
-      <div style={{ marginBottom: 20 }}>
-        <label style={S.label}>Article Content</label>
-        <textarea
-          style={S.textarea}
-          value={form.content}
-          onChange={e => set('content', e.target.value)}
-          placeholder="Paste the full article text here. Use blank lines to separate paragraphs. Lines starting with ## become headings. Lines starting with - become bullet points."
-        />
-        <div style={{ fontSize: 11, color: '#999', marginTop: 4 }}>
-          Paragraphs = blank line between text. Headings = start line with ##. Bullets = start line with -
-        </div>
+      {/* ── Language Tabs ── */}
+      <div style={{ display: 'flex', gap: 0, marginBottom: 0, borderBottom: '2px solid #e5e5e5' }}>
+        {LANGS.map(({ code, label }) => (
+          <button key={code} onClick={() => setLangTab(code)} style={{
+            ...S.btn, background: 'none', borderRadius: 0, padding: '10px 20px', fontSize: 12,
+            borderBottom: langTab === code ? '2px solid #EA633F' : '2px solid transparent',
+            color: langTab === code ? '#EA633F' : '#999', fontWeight: langTab === code ? 700 : 500,
+            marginBottom: -2,
+          }}>{label}</button>
+        ))}
       </div>
+
+      {/* ── EN Content ── */}
+      {langTab === 'en' && (
+        <div style={{ marginTop: 16, marginBottom: 20 }}>
+          <div style={{ marginBottom: 16 }}>
+            <label style={S.label}>Title (English) *</label>
+            <input style={S.input} value={form.title} onChange={e => set('title', e.target.value)} placeholder="Article title" />
+          </div>
+          <div>
+            <label style={S.label}>Content (English)</label>
+            <textarea style={S.textarea} value={form.content} onChange={e => set('content', e.target.value)}
+              placeholder="Paste the full article text. Blank lines = paragraphs. ## = headings. - = bullets." />
+            <div style={{ fontSize: 11, color: '#999', marginTop: 4 }}>Paragraphs = blank line. Headings = ##. Bullets = -</div>
+          </div>
+        </div>
+      )}
+
+      {/* ── PT Content ── */}
+      {langTab === 'pt' && (
+        <div style={{ marginTop: 16, marginBottom: 20 }}>
+          <div style={{ marginBottom: 16 }}>
+            <label style={S.label}>Título (Português)</label>
+            <input style={S.input} value={form.title_pt} onChange={e => set('title_pt', e.target.value)} placeholder="Título do artigo em português" />
+          </div>
+          <div>
+            <label style={S.label}>Conteúdo (Português)</label>
+            <textarea style={S.textarea} value={form.content_pt} onChange={e => set('content_pt', e.target.value)}
+              placeholder="Cole o texto completo do artigo em português. Linhas em branco = parágrafos. ## = títulos. - = listas." />
+            <div style={{ fontSize: 11, color: '#999', marginTop: 4 }}>Leave blank to use English version as fallback</div>
+          </div>
+        </div>
+      )}
+
+      {/* ── ES Content ── */}
+      {langTab === 'es' && (
+        <div style={{ marginTop: 16, marginBottom: 20 }}>
+          <div style={{ marginBottom: 16 }}>
+            <label style={S.label}>Título (Español)</label>
+            <input style={S.input} value={form.title_es} onChange={e => set('title_es', e.target.value)} placeholder="Título del artículo en español" />
+          </div>
+          <div>
+            <label style={S.label}>Contenido (Español)</label>
+            <textarea style={S.textarea} value={form.content_es} onChange={e => set('content_es', e.target.value)}
+              placeholder="Pegue el texto completo del artículo en español. Líneas en blanco = párrafos. ## = títulos. - = listas." />
+            <div style={{ fontSize: 11, color: '#999', marginTop: 4 }}>Leave blank to use English version as fallback</div>
+          </div>
+        </div>
+      )}
 
       <div style={{ display: 'flex', gap: 12 }}>
         <button style={{ ...S.btn, ...S.btnPrimary }} onClick={handleSave}>
@@ -306,6 +367,25 @@ export default function Admin() {
     try {
       // Parse content text into structured blocks
       const contentBlocks = parseContent(formData.content)
+
+      // Build translations object
+      const translations = {}
+      if (formData.title_pt || formData.content_pt) {
+        translations.pt = {}
+        if (formData.title_pt) translations.pt.title = formData.title_pt
+        if (formData.content_pt) translations.pt.content = parseContent(formData.content_pt)
+      }
+      if (formData.title_es || formData.content_es) {
+        translations.es = {}
+        if (formData.title_es) translations.es.title = formData.title_es
+        if (formData.content_es) translations.es.content = parseContent(formData.content_es)
+      }
+
+      // Preserve existing translations not being edited
+      const existing = editArticle?.translations || {}
+      if (existing.pt && !translations.pt) translations.pt = existing.pt
+      if (existing.es && !translations.es) translations.es = existing.es
+
       const articleData = {
         slug: formData.slug,
         source: formData.source,
@@ -315,6 +395,7 @@ export default function Admin() {
         img: formData.img || '',
         featured: formData.featured || false,
         content: contentBlocks,
+        ...(Object.keys(translations).length > 0 ? { translations } : {}),
       }
 
       let updated
@@ -358,7 +439,15 @@ export default function Admin() {
   }
 
   const startEdit = (article) => {
-    setEditArticle(article)
+    // Flatten translations into form fields for editing
+    const flat = {
+      ...article,
+      title_pt: article.translations?.pt?.title || '',
+      content_pt: article.translations?.pt?.content ? contentToText(article.translations.pt.content) : '',
+      title_es: article.translations?.es?.title || '',
+      content_es: article.translations?.es?.content ? contentToText(article.translations.es.content) : '',
+    }
+    setEditArticle(flat)
     setView('edit')
   }
 
@@ -382,7 +471,14 @@ export default function Admin() {
         {/* NEW / EDIT */}
         {(view === 'new' || view === 'edit') && (
           <ArticleForm
-            article={view === 'edit' ? { ...editArticle, content: contentToText(editArticle.content) } : null}
+            article={view === 'edit' ? {
+              ...editArticle,
+              content: contentToText(editArticle.content),
+              title_pt: editArticle.title_pt || '',
+              content_pt: editArticle.content_pt || '',
+              title_es: editArticle.title_es || '',
+              content_es: editArticle.content_es || '',
+            } : null}
             onSave={handleSave}
             onCancel={() => { setView('list'); setEditArticle(null) }}
             token={token}
@@ -404,6 +500,11 @@ export default function Admin() {
                 <span style={{ flex: 1, fontSize: 14, fontWeight: 500 }}>{a.title}</span>
                 <span style={{ fontSize: 12, color: '#999', whiteSpace: 'nowrap' }}>{a.date}</span>
                 {a.featured && <span style={{ fontSize: 10, color: '#EA633F', fontWeight: 600 }}>★</span>}
+                <span style={{ display: 'flex', gap: 3 }}>
+                  <span style={{ fontSize: 9, fontWeight: 600, color: '#fff', background: '#4CAF50', padding: '1px 4px', borderRadius: 2 }}>EN</span>
+                  {a.translations?.pt && <span style={{ fontSize: 9, fontWeight: 600, color: '#fff', background: '#2196F3', padding: '1px 4px', borderRadius: 2 }}>PT</span>}
+                  {a.translations?.es && <span style={{ fontSize: 9, fontWeight: 600, color: '#fff', background: '#FF9800', padding: '1px 4px', borderRadius: 2 }}>ES</span>}
+                </span>
                 <button style={{ ...S.btn, ...S.btnGhost, padding: '4px 12px', fontSize: 11 }} onClick={() => startEdit(a)}>Edit</button>
                 <button style={{ ...S.btn, ...S.btnDanger, padding: '4px 12px', fontSize: 11 }} onClick={() => handleDelete(a.slug)}>Delete</button>
               </div>
