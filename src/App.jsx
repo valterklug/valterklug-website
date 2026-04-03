@@ -25,13 +25,19 @@ function ScrollTop() {
 
 function Layout() {
   const location = useLocation()
+
+  // Strip locale prefix so inner routes always match against clean paths
+  // e.g. /pt/about → /about, /es/contact → /contact, /about → /about
+  const strippedPathname = location.pathname.replace(/^\/(pt|es)(\/|$)/, '/$2').replace(/^\/\//, '/') || '/'
+  const routeLocation = { ...location, pathname: strippedPathname }
+
   return (
     <LocaleProvider>
       <ScrollTop />
       <SEOHead />
       <Nav />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
+        <Routes location={routeLocation} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
