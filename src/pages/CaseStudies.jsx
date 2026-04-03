@@ -276,6 +276,18 @@ export default function CaseStudies() {
   const { t } = useTranslation()
   const { localePath } = useLocale()
 
+  const localizedCases = CASES.map(cs => ({
+    ...cs,
+    tag: t(`caseStudies.cases.${cs.id}.tag`, { defaultValue: cs.tag }),
+    category: t(`caseStudies.cases.${cs.id}.category`, { defaultValue: cs.category }),
+    title: t(`caseStudies.cases.${cs.id}.title`, { defaultValue: cs.title }),
+    desc: t(`caseStudies.cases.${cs.id}.desc`, { defaultValue: cs.desc }),
+    challenge: t(`caseStudies.cases.${cs.id}.challenge`, { defaultValue: cs.challenge }),
+    approach: t(`caseStudies.cases.${cs.id}.approach`, { defaultValue: cs.approach }),
+    impact: t(`caseStudies.cases.${cs.id}.impact`, { defaultValue: cs.impact }),
+    tags: (() => { const v = t(`caseStudies.cases.${cs.id}.tags`, { returnObjects: true, defaultValue: null }); return Array.isArray(v) ? v : cs.tags })(),
+  }))
+
   return (
     <PageWrapper>
       <section className="page-hero">
@@ -290,7 +302,7 @@ export default function CaseStudies() {
       <section style={{ background: '#F5F5F5', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 3 }} className="case-grid">
-            {CASES.map((c, i) => (
+            {localizedCases.map((c, i) => (
               <FadeIn key={c.id} delay={i * .05}>
                 <HoverLift>
                   <div
@@ -361,7 +373,7 @@ export default function CaseStudies() {
           <h2>{t('caseStudies.ctaH2')}</h2>
           <p>{t('caseStudies.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">Let's Talk →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
       </div>
 
       {/* Modal */}

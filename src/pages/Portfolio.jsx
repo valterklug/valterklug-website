@@ -420,6 +420,7 @@ function getEmbedUrl(url) {
 
 /* ── Project Modal ── */
 function ProjectModal({ project, onClose }) {
+  const { t } = useTranslation()
   if (!project) return null
   const p = project
   return (
@@ -471,11 +472,11 @@ function ProjectModal({ project, onClose }) {
         {p.beforeAfter && (
           <div style={{ marginBottom: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 8 }}>Before</div>
-              <img src={p.beforeAfter.before} alt="Before" style={{ width: '100%', display: 'block' }} loading="lazy" />
+              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 8 }}>{t('portfolio.modal.before')}</div>
+              <img src={p.beforeAfter.before} alt={t('portfolio.modal.before')} style={{ width: '100%', display: 'block' }} loading="lazy" />
             </div>
             <div>
-              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: p.accent, marginBottom: 8 }}>After</div>
+              <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: p.accent, marginBottom: 8 }}>{t('portfolio.modal.after')}</div>
               <img src={p.beforeAfter.after} alt="After" style={{ width: '100%', display: 'block' }} loading="lazy" />
             </div>
           </div>
@@ -484,7 +485,7 @@ function ProjectModal({ project, onClose }) {
         {/* PDFs */}
         {p.pdfs && p.pdfs.length > 0 && (
           <div style={{ marginBottom: 32 }}>
-            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 12 }}>Documents</div>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 12 }}>{t('portfolio.modal.documents')}</div>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               {p.pdfs.map((pdf, i) => (
                 <a key={i} href={pdf.url} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, color: p.accent, padding: '8px 16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}>
@@ -508,9 +509,9 @@ function ProjectModal({ project, onClose }) {
             )}
           </div>
           <div style={{ background: 'rgba(255,255,255,.03)', padding: '24px 28px', borderLeft: `3px solid ${p.accent}` }}>
-            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 16 }}>Credits</div>
-            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, color: 'rgba(255,255,255,.5)', marginBottom: 4 }}>Client: <span style={{ color: '#fff' }}>{p.client}</span></div>
-            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, color: 'rgba(255,255,255,.5)', marginBottom: 16 }}>Agency: <span style={{ color: '#fff' }}>{p.agency}</span></div>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 16 }}>{t('portfolio.modal.credits')}</div>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, color: 'rgba(255,255,255,.5)', marginBottom: 4 }}>{t('portfolio.modal.client')}: <span style={{ color: '#fff' }}>{p.client}</span></div>
+            <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, color: 'rgba(255,255,255,.5)', marginBottom: 16 }}>{t('portfolio.modal.agency')}: <span style={{ color: '#fff' }}>{p.agency}</span></div>
             {p.roles.map((r, i) => (
               <div key={i} style={{ marginBottom: 10, paddingBottom: 10, borderBottom: i < p.roles.length - 1 ? '1px solid rgba(255,255,255,.06)' : 'none' }}>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 2 }}>{r.title}</div>
@@ -533,8 +534,15 @@ export default function Portfolio() {
   const [selected, setSelected] = useState(null)
   const [filter, setFilter] = useState('all')
 
+  const localizedProjects = PROJECTS.map(p => ({
+    ...p,
+    title: t(`portfolio.projects.${p.id}.title`, { defaultValue: p.title }),
+    description: t(`portfolio.projects.${p.id}.description`, { defaultValue: p.description }),
+    category: t(`portfolio.projects.${p.id}.category`, { defaultValue: p.category }),
+  }))
+
   const agencies = [...new Set(PROJECTS.map(p => p.agency))]
-  const filtered = filter === 'all' ? PROJECTS : PROJECTS.filter(p => p.agency === filter)
+  const filtered = filter === 'all' ? localizedProjects : localizedProjects.filter(p => p.agency === filter)
 
   return (
     <PageWrapper>
@@ -545,7 +553,7 @@ export default function Portfolio() {
           <h1 className="page-h1">{t('portfolio.heroH1')}</h1>
           <p className="page-sub">{t('portfolio.heroSub')}</p>
           <div style={{ display: 'flex', gap: 32, marginTop: 36, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,.08)', flexWrap: 'wrap' }}>
-            {[['20+', 'Projects'], ['12+', 'Clients'], ['3', 'Agencies']].map(([n, l]) => (
+            {[['20+', t('portfolio.statsProjects')], ['12+', t('portfolio.statsClients')], ['3', t('portfolio.statsAgencies')]].map(([n, l]) => (
               <div key={l}>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 300, color: '#88E8F0', lineHeight: 1 }}>{n}</div>
                 <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginTop: 4 }}>{l}</div>
@@ -558,7 +566,7 @@ export default function Portfolio() {
       {/* Filter bar */}
       <section style={{ background: '#EAEAC8', padding: '20px 64px', borderTop: '1px solid rgba(18,18,18,.08)', borderBottom: '1px solid rgba(18,18,18,.08)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-          <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(18,18,18,.4)' }}>Filter By</span>
+          <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(18,18,18,.4)' }}>{t('portfolio.filterBy')}</span>
           {['all', ...agencies].map(a => (
             <button key={a} onClick={() => setFilter(a)}
               style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.06em', padding: '6px 14px', background: filter === a ? '#121212' : 'transparent', color: filter === a ? '#fff' : '#666', border: filter === a ? 'none' : '1px solid rgba(18,18,18,.15)', cursor: 'pointer', textTransform: a === 'all' ? 'uppercase' : 'none', transition: 'all .2s' }}>
@@ -611,7 +619,7 @@ export default function Portfolio() {
                       <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(.95rem,1.5vw,1.1rem)', fontWeight: 500, color: '#121212', lineHeight: 1.3, marginBottom: 10 }}>{p.title}</h3>
                       <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', color: p.accent }}>{p.category.replace(/\+/g, ' + ')}</div>
                       <div style={{ marginTop: 16, fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: '#EA633F', display: 'flex', alignItems: 'center', gap: 4 }}>
-                        View Project <span>→</span>
+                        {t('portfolio.viewProject')} <span>→</span>
                       </div>
                     </div>
                   </div>
@@ -626,10 +634,10 @@ export default function Portfolio() {
       {/* CTA */}
       <div className="cta-strip" style={{ padding: '80px 64px' }}>
         <FadeIn>
-          <h2>Like what you see?</h2>
-          <p>Let's talk about your brand, your vision, and what we can build together.</p>
+          <h2>{t('portfolio.ctaH2')}</h2>
+          <p>{t('portfolio.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">Let's Talk →</Link>
+        <Link to={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
       </div>
 
       {/* Modal */}
