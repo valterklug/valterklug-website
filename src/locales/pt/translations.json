@@ -7,13 +7,13 @@
     "intelligence": "Inteligência",
     "articles": "Artigos",
     "wordmark": "Valter Klug",
-    "subtitle": "CMO Fracionário · Miami",
+    "subtitle": "Líder Criativo · Brand Builder · Miami",
     "cta": "Vamos Conversar →"
   },
   "footer": {
     "name": "Valter Klug",
-    "subtitle": "CMO Fracionário · Miami",
-    "bio": "28+ anos construindo marcas no Brasil, Reino Unido e Estados Unidos. Disponível como CMO Fracionário através da Chameleon Collective.",
+    "subtitle": "Líder Criativo · Brand Builder · Miami",
+    "bio": "28+ anos na interseção entre grandes ideias e tecnologia emergente — construindo marcas no Brasil, Reino Unido e Estados Unidos.",
     "navigationTitle": "Navegação",
     "navigationLinks": {
       "home": "Início",
@@ -26,15 +26,15 @@
       "contact": "Contato"
     },
     "operatingThroughTitle": "Operando Através De",
-    "chameleonCollective": "Engajamentos de CMO Fracionário e consultoria",
+    "chameleonCollective": "Engajamentos de liderança criativa e consultoria",
     "soundcheckInsights": "Plataforma de inteligência de mercado alimentada por IA",
     "copyright": "© 2026 Valter Klug Filho. Todos os direitos reservados.",
     "location": "Miami, Flórida · valterklug.com"
   },
   "home": {
-    "heroLabel": "CMO Fracionário · Expansão de Marca Internacional · Miami",
-    "heroH1": "Ajudo Empresas a\nCrescer e Vencer no\nMercado Americano e Além",
-    "heroSub": "28 anos construindo marcas no Brasil, Reino Unido e Estados Unidos. Agora disponível como CMO Fracionário através da Chameleon Collective.",
+    "heroLabel": "Ideias + Inovação · Brand Builder Cross-Border · Miami",
+    "heroH1": "Grandes Ideias. Tecnologia Emergente.\n28 Anos Construindo Marcas\nAtravés de Fronteiras.",
+    "heroSub": "Nascido no Brasil. Formado em Londres. Baseado em Miami. Um líder criativo trilíngue na interseção entre ideias e inovação — construindo marcas através de fronteiras por 28 anos. Operando através da Chameleon Collective.",
     "ctaPrimary": "Vamos Conversar →",
     "ctaSecondary": "Conheça Meu Trabalho",
     "stats": [
@@ -51,9 +51,9 @@
         "label": "Marcas"
       }
     ],
-    "quote": "Não aconselho de fora.\nLidero de dentro.",
+    "quote": "O meio muda.\nO impulso não:\nideias + inovação.",
     "quoteName": "Valter Klug",
-    "quoteRole": "CMO Fracionário",
+    "quoteRole": "Líder Criativo · Brand Builder",
     "credentials": [
       {
         "code": "Forbes",
@@ -69,12 +69,12 @@
       },
       {
         "code": "A.M.P.",
-        "label": "Autor Publicado"
+        "label": "Autor — A.M.P."
       }
     ],
     "trustedBy": "Confiado por Marcas nas Américas, Europa e Além",
     "servicesLabel": "Meu Trabalho",
-    "servicesH2": "Liderança estratégica em marketing —\nsem custos de tempo integral.",
+    "servicesH2": "Ideias alimentadas por dados.\nInovação aplicada a marcas.",
     "services": [
       {
         "num": "01",
@@ -88,7 +88,7 @@
       },
       {
         "num": "03",
-        "title": "Equipe de Especialistas",
+        "title": "Equipe Criativa & de Crescimento",
         "desc": "Experts líderes em Publicidade, E-commerce, Mídia Social, Digital e tudo mais que sua empresa precisa para crescer nos EUA ou América Latina."
       },
       {
@@ -99,8 +99,8 @@
     ],
     "learnMore": "Saiba Mais",
     "approachLabel": "Minha Abordagem",
-    "approachH2": "Operando na interseção entre liderança criativa e resultados de negócio.",
-    "approachSub": "Através da Chameleon Collective, trabalho ao lado de uma rede de practitioners independentes de elite — dando aos clientes a profundidade de uma agência completa com a responsabilidade de um líder dedicado.",
+    "approachH2": "Operando na interseção entre liderança criativa e tecnologia emergente.",
+    "approachSub": "Através da Chameleon Collective e Soundcheck Insights, trago liderança criativa, inteligência alimentada por IA e uma rede de practitioners de elite para cada engajamento.",
     "fullBackground": "Histórico Completo",
     "approachItems": [
       {
@@ -108,8 +108,8 @@
         "desc": "Opero como verdadeiro membro de sua equipe de liderança — participando de suas reuniões, possuindo seu roadmap e sendo responsável por seus resultados."
       },
       {
-        "title": "Inteligência em Primeiro Lugar",
-        "desc": "Todo engajamento começa com dados. Uso pesquisa de mercado alimentada por IA através do Soundcheck Insights para validar suposições antes de investirmos em estratégia ou execução."
+        "title": "Ideias Alimentadas por Dados",
+        "desc": "Todo engajamento começa com inteligência. Através do Soundcheck Insights, uso IA para revelar os insights que alimentam ideias — antes de investirmos em estratégia ou execução."
       },
       {
         "title": "Acesso à Rede de Elite",
@@ -165,7 +165,7 @@
       "Varejo"
     ],
     "viewCaseStudy": "Ver Case de Sucesso",
-    "ctaH2": "Pronto para crescer no mercado americano?",
+    "ctaH2": "Vamos descobrir se sou a pessoa certa para o seu próximo mercado.",
     "ctaSub": "Vamos ter uma conversa direta e substancial sobre onde você está, para onde quer ir e se sou a pessoa certa para ajudar."
   },
   "about": {
@@ -281,14 +281,14 @@
   },
   "services": {
     "heroLabel": "Serviços · Capacidades · Como Trabalho",
-    "heroH1": "Não aconselho de fora.\nLidero de dentro.",
-    "heroSub": "Quatro áreas de serviço principais — cada uma projetada para entregar resultados reais de marketing, não slide decks.",
+    "heroH1": "Grandes ideias. Tecnologia emergente.\nAplicadas à sua marca.",
+    "heroSub": "Quatro capacidades principais — cada uma alimentada por ideias, inovação e 28 anos construindo marcas através de fronteiras.",
     "services": [
       {
         "num": "01",
         "title": "CMO Fracionário",
-        "headline": "O líder de marketing estratégico que você precisa — sem o custo de tempo integral.",
-        "sub": "Opero como verdadeiro membro de sua equipe de liderança — participando de suas reuniões, estabelecendo seu roadmap de marketing, gerenciando relacionamentos com agências e sendo responsável por seus objetivos de negócio.",
+        "headline": "Liderança criativa e estratégia de inovação — sem o custo de tempo integral.",
+        "sub": "Opero como líder criativo e estrategista de inovação dentro de sua organização — estabelecendo seu roadmap de marketing, gerenciando relacionamentos com agências e trazendo ferramentas alimentadas por IA para sua equipe.",
         "deliverables": [
           "Estratégia de marketing e planejamento anual",
           "Seleção de agências e fornecedores, gestão e supervisão de desempenho",
@@ -314,7 +314,7 @@
       },
       {
         "num": "03",
-        "title": "Equipe de Especialistas",
+        "title": "Equipe Criativa & de Crescimento",
         "headline": "Liderando uma equipe de experts em Publicidade, E-commerce, Mídia Social, Digital e mais.",
         "sub": "Através do modelo Deliver da Chameleon Collective, reúno e lidero uma equipe de especialistas nas disciplinas que sua empresa precisa — seja publicidade, e-commerce, mídia social, marketing digital ou qualquer combinação — para impulsionar crescimento nos EUA ou América Latina.",
         "deliverables": [
@@ -344,9 +344,9 @@
     "whatThisIncludes": "O Que Está Incluído",
     "inquire": "Consultar Sobre Este Serviço",
     "howLabel": "Como Trabalho",
-    "howH2": "Inteligência primeiro. Estratégia segundo. Execução sempre.",
-    "howP1": "Todo engajamento começa com dados — não suposições. Antes de investirmos em estratégia ou execução, uso pesquisa de mercado alimentada por IA através do Soundcheck Insights para validar a paisagem.",
-    "howP2": "A partir daí, me incorporo em sua organização como verdadeiro líder — não um consultor externo — e dirijo o trabalho de dentro.",
+    "howH2": "Dados → Ideias → Inovação → Resultados.",
+    "howP1": "Todo engajamento começa com inteligência — não suposições. Através do Soundcheck Insights, uso IA para revelar os dados que alimentam ideias antes de investirmos em estratégia ou execução.",
+    "howP2": "A partir daí, me incorporo em sua organização como líder criativo e estrategista de inovação — dirigindo o trabalho de dentro.",
     "seeIntel": "Ver Serviços de Inteligência",
     "howSteps": [
       {
