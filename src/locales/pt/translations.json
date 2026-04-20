@@ -26,7 +26,7 @@
       "contact": "Contato"
     },
     "operatingThroughTitle": "Operando Através De",
-    "chameleonCollective": "Engajamentos de CMO Fracionário e consultoria",
+    "chameleonCollective": "Liderança criativa e engajamentos de consultoria",
     "soundcheckInsights": "Plataforma de inteligência de mercado alimentada por IA",
     "copyright": "© 2026 Valter Klug Filho. Todos os direitos reservados.",
     "location": "Miami, Flórida · valterklug.com"
@@ -281,14 +281,14 @@
   },
   "services": {
     "heroLabel": "Serviços · Capacidades · Como Trabalho",
-    "heroH1": "Não aconselho de fora.\nLidero de dentro.",
-    "heroSub": "Quatro áreas de serviço principais — cada uma projetada para entregar resultados reais de marketing, não slide decks.",
+    "heroH1": "Grandes ideias. Tecnologia emergente.\nAplicadas à sua marca.",
+    "heroSub": "Quatro capacidades principais — cada uma impulsionada por ideias, inovação e 28 anos construindo marcas através de fronteiras.",
     "services": [
       {
         "num": "01",
         "title": "CMO Fracionário",
-        "headline": "O líder de marketing estratégico que você precisa — sem o custo de tempo integral.",
-        "sub": "Opero como verdadeiro membro de sua equipe de liderança — participando de suas reuniões, estabelecendo seu roadmap de marketing, gerenciando relacionamentos com agências e sendo responsável por seus objetivos de negócio.",
+        "headline": "Liderança criativa e estratégia de inovação — sem o custo de tempo integral.",
+        "sub": "Opero como líder criativo e estrategista de inovação dentro de sua organização — estabelecendo seu roadmap de marketing, gerenciando relacionamentos com agências e trazendo ferramentas alimentadas por IA para sua equipe.",
         "deliverables": [
           "Estratégia de marketing e planejamento anual",
           "Seleção de agências e fornecedores, gestão e supervisão de desempenho",
@@ -344,9 +344,9 @@
     "whatThisIncludes": "O Que Está Incluído",
     "inquire": "Consultar Sobre Este Serviço",
     "howLabel": "Como Trabalho",
-    "howH2": "Inteligência primeiro. Estratégia segundo. Execução sempre.",
-    "howP1": "Todo engajamento começa com dados — não suposições. Antes de investirmos em estratégia ou execução, uso pesquisa de mercado alimentada por IA através do Soundcheck Insights para validar a paisagem.",
-    "howP2": "A partir daí, me incorporo em sua organização como verdadeiro líder — não um consultor externo — e dirijo o trabalho de dentro.",
+    "howH2": "Dados → Ideias → Inovação → Resultados.",
+    "howP1": "Todo engajamento começa com inteligência — não suposições. Através do Soundcheck Insights, uso IA para revelar os dados que alimentam ideias antes de investirmos em estratégia ou execução.",
+    "howP2": "A partir daí, me incorporo em sua organização como líder criativo e estrategista de inovação — dirigindo o trabalho de dentro.",
     "seeIntel": "Ver Serviços de Inteligência",
     "howSteps": [
       {

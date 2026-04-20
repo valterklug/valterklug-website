@@ -26,7 +26,7 @@
       "contact": "Contacto"
     },
     "operatingThroughTitle": "Operando a Través de",
-    "chameleonCollective": "Compromisos de CMO Fraccional y consultoría",
+    "chameleonCollective": "Liderazgo creativo y compromisos de consultoría",
     "soundcheckInsights": "Plataforma de inteligencia de mercado impulsada por IA",
     "copyright": "© 2026 Valter Klug Filho. Todos los derechos reservados.",
     "location": "Miami, Florida · valterklug.com"
@@ -281,14 +281,14 @@
   },
   "services": {
     "heroLabel": "Servicios · Capacidades · Cómo Trabajo",
-    "heroH1": "No asesoro desde afuera.\nLidero desde adentro.",
-    "heroSub": "Cuatro áreas de servicio principales — cada una diseñada para entregar resultados reales de marketing, no diapositivas.",
+    "heroH1": "Grandes ideas. Tecnología emergente.\nAplicadas a tu marca.",
+    "heroSub": "Cuatro capacidades principales — cada una impulsada por ideas, innovación y 28 años construyendo marcas a través de fronteras.",
     "services": [
       {
         "num": "01",
         "title": "CMO Fraccional",
-        "headline": "El líder de marketing estratégico que necesitas — sin el costo de tiempo completo.",
-        "sub": "Opero como un verdadero miembro de tu equipo de liderazgo — asistiendo a tus reuniones, estableciendo tu roadmap de marketing, manejando relaciones de agencia, y siendo responsable por tus objetivos empresariales.",
+        "headline": "Liderazgo creativo y estrategia de innovación — sin el costo de tiempo completo.",
+        "sub": "Opero como líder creativo y estratega de innovación dentro de tu organización — estableciendo tu roadmap de marketing, manejando relaciones de agencia y trayendo herramientas impulsadas por IA a tu equipo.",
         "deliverables": [
           "Estrategia de marketing y planificación anual",
           "Selección, gestión de agencias y proveedores, y supervisión de desempeño",
@@ -344,9 +344,9 @@
     "whatThisIncludes": "Lo que Esto Incluye",
     "inquire": "Consultar Sobre Este Servicio",
     "howLabel": "Cómo Trabajo",
-    "howH2": "Inteligencia primero. Estrategia segundo. Ejecución siempre.",
-    "howP1": "Cada compromiso comienza con datos — no supuestos. Antes de invertir en estrategia o ejecución, utilizo investigación de mercado impulsada por IA a través de Soundcheck Insights para validar el paisaje.",
-    "howP2": "De allí, me integro en tu organización como un verdadero líder — no un asesor externo — e impulso el trabajo desde adentro.",
+    "howH2": "Datos → Ideas → Innovación → Resultados.",
+    "howP1": "Cada compromiso comienza con inteligencia — no supuestos. A través de Soundcheck Insights, uso IA para revelar los datos que impulsan ideas antes de invertir en estrategia o ejecución.",
+    "howP2": "De allí, me integro en tu organización como líder creativo y estratega de innovación — impulsando el trabajo desde adentro.",
     "seeIntel": "Ver Servicios de Inteligencia",
     "howSteps": [
       {

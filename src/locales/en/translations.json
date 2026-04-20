@@ -26,7 +26,7 @@
       "contact": "Contact"
     },
     "operatingThroughTitle": "Operating Through",
-    "chameleonCollective": "Fractional CMO & consulting engagements",
+    "chameleonCollective": "Creative leadership & consulting engagements",
     "soundcheckInsights": "AI-powered market intelligence platform",
     "copyright": "© 2026 Valter Klug Filho. All rights reserved.",
     "location": "Miami, Florida · valterklug.com"
@@ -281,14 +281,14 @@
   },
   "services": {
     "heroLabel": "Services · Capabilities · How I Work",
-    "heroH1": "I don't advise from the outside.\nI lead from the inside.",
-    "heroSub": "Four core service areas — each designed to deliver real marketing outcomes, not slide decks.",
+    "heroH1": "Big ideas. Emerging technology.\nApplied to your brand.",
+    "heroSub": "Four core capabilities — each powered by ideas, innovation, and 28 years building brands across borders.",
     "services": [
       {
         "num": "01",
         "title": "Fractional CMO",
-        "headline": "The strategic marketing leader you need — without the full-time cost.",
-        "sub": "I operate as a true member of your leadership team — attending your standups, setting your marketing roadmap, managing agency relationships, and being accountable to your business goals.",
+        "headline": "Creative leadership and innovation strategy — without the full-time cost.",
+        "sub": "I operate as both creative leader and innovation strategist inside your organization — setting your marketing roadmap, managing agency relationships, and bringing AI-powered tools to your team.",
         "deliverables": [
           "Marketing strategy and annual planning",
           "Agency and vendor selection, management, and performance oversight",
@@ -344,9 +344,9 @@
     "whatThisIncludes": "What This Includes",
     "inquire": "Inquire About This Service",
     "howLabel": "How I Work",
-    "howH2": "Intelligence first. Strategy second. Execution always.",
-    "howP1": "Every engagement begins with data — not assumptions. Before we invest in strategy or execution, I use AI-powered market research through Soundcheck Insights to validate the landscape.",
-    "howP2": "From there, I embed into your organization as a true leader — not an outside advisor — and drive the work from the inside.",
+    "howH2": "Data → Ideas → Innovation → Results.",
+    "howP1": "Every engagement begins with intelligence — not assumptions. Through Soundcheck Insights, I use AI to surface the data that fuels ideas before we invest in strategy or execution.",
+    "howP2": "From there, I embed into your organization as a creative leader and innovation strategist — driving the work from the inside.",
     "seeIntel": "See Intelligence Services",
     "howSteps": [
       {
