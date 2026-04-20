@@ -629,6 +629,21 @@
     "heroLabel": "Portfolio · Creative Direction · Key Projects",
     "heroH1": "A lifetime of building brands\nthat people remember.",
     "heroSub": "Selected creative, strategic, and digital work from 28 years across agencies, my own boutique, and client-side leadership.",
-    "filterAll": "All"
+    "filterAll": "All",
+    "filterBy": "Filter By",
+    "viewProject": "View Project",
+    "statsProjects": "Projects",
+    "statsClients": "Clients",
+    "statsAgencies": "Agencies",
+    "ctaH2": "Like what you see?",
+    "ctaSub": "Let's talk about your brand, your vision, and what we can build together.",
+    "modal": {
+      "credits": "Credits",
+      "client": "Client",
+      "agency": "Agency",
+      "documents": "Documents",
+      "before": "Before",
+      "after": "After"
+    }
   }
 }

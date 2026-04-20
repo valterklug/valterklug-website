@@ -13,7 +13,7 @@
   "footer": {
     "name": "Valter Klug",
     "subtitle": "Líder Criativo · Brand Builder · Miami",
-    "bio": "28+ anos na interseção entre grandes ideias e tecnologia emergente — construindo marcas no Brasil, Reino Unido e Estados Unidos.",
+    "bio": "28+ anos na interseção de grandes ideias e tecnologia emergente — construindo marcas no Brasil, Reino Unido e Estados Unidos.",
     "navigationTitle": "Navegação",
     "navigationLinks": {
       "home": "Início",
@@ -34,7 +34,7 @@
   "home": {
     "heroLabel": "Ideias + Inovação · Brand Builder Cross-Border · Miami",
     "heroH1": "Grandes Ideias. Tecnologia Emergente.\n28 Anos Construindo Marcas\nAtravés de Fronteiras.",
-    "heroSub": "Nascido no Brasil. Formado em Londres. Baseado em Miami. Um líder criativo trilíngue na interseção entre ideias e inovação — construindo marcas através de fronteiras por 28 anos. Operando através da Chameleon Collective.",
+    "heroSub": "Nascido no Brasil. Formado em Londres. Baseado em Miami. Um líder criativo trilíngue na interseção de ideias e inovação — construindo marcas através de fronteiras há 28 anos. Operando através da Chameleon Collective.",
     "ctaPrimary": "Vamos Conversar →",
     "ctaSecondary": "Conheça Meu Trabalho",
     "stats": [
@@ -51,7 +51,7 @@
         "label": "Marcas"
       }
     ],
-    "quote": "O meio muda.\nO impulso não:\nideias + inovação.",
+    "quote": "O meio muda.\nA motivação não:\nideias + inovação.",
     "quoteName": "Valter Klug",
     "quoteRole": "Líder Criativo · Brand Builder",
     "credentials": [
@@ -165,7 +165,7 @@
       "Varejo"
     ],
     "viewCaseStudy": "Ver Case de Sucesso",
-    "ctaH2": "Vamos descobrir se sou a pessoa certa para o seu próximo mercado.",
+    "ctaH2": "Vamos descobrir se sou a pessoa certa para seu próximo mercado.",
     "ctaSub": "Vamos ter uma conversa direta e substancial sobre onde você está, para onde quer ir e se sou a pessoa certa para ajudar."
   },
   "about": {
@@ -392,7 +392,144 @@
     "alsoH2": "28+ anos entre algumas das marcas mais reconhecidas do mundo.",
     "alsoSub": "Meu histórico abrange grandes marcas globais, líderes de mercado brasileiros e marcas desafiadoras entrando em mercados competitivos novos.",
     "ctaH2": "Pronto para construir seu próximo case de sucesso?",
-    "ctaSub": "Vamos conversar sobre sua marca, seu mercado e o que vencer nos EUA significa para você."
+    "ctaSub": "Vamos conversar sobre sua marca, seu mercado e o que vencer nos EUA significa para você.",
+    "cases": {
+      "bauducco": {
+        "tag": "Bauducco Panettone",
+        "category": "CPG + Entrada no Mercado dos EUA + Criação de Categoria",
+        "title": "Do Desconhecido ao Indispensável: Criação da Categoria Holiday da Bauducco Panettone",
+        "desc": "Como a Bauducco transformou um bolo de Natal italiano desconhecido na principal categoria de bolo de holiday da América através de integração cultural sustentada e parcerias estratégicas.",
+        "tags": [
+          "Criação de Categoria",
+          "Integração Cultural",
+          "Estratégia Digital",
+          "Varejo"
+        ],
+        "challenge": "A Bauducco enfrentava uma barreira importante de entrada no mercado: introduzir o Panettone, um bolo de Natal tradicional italiano, para consumidores americanos desconhecidos com o produto. Diferente de expandir uma marca existente, a Bauducco precisava criar consciência de categoria e demanda com um orçamento modesto de 2014, competindo contra favoritos sazonais estabelecidos. A empresa precisava de soluções criativas para gerar consciência, construir preferência de marca e estabelecer o Panettone como um essencial de holiday enquanto educava consumidores sobre o produto.",
+        "approach": "A partir de 2016 como Agência Digital da Bauducco, desenvolvemos uma estratégia de integração cultural de vários anos. Lançamos seu site e mídias sociais, garantindo um endosso de celebridade de Buddy Valastro, o 'Cake Boss', para credibilidade imediata. A campanha 'Difícil de descrever; fácil de amar' (em parceria com Crispin Porter + Bogusky) focou em criação de categoria, culminando em uma ativação na Times Square que transformou histórias pessoais em momentos de marketing emocional e ganhou prêmios internacionais de publicidade para a marca. Em 2020, a estratégia pivotou para 'Compartilhe um Pedaço de Togetherness', utilizando canais digitais e marketing de influenciadores, e lançando comerciais de TV para Wafers Bauducco. A campanha 2022 'Você sabe que é holiday quando...' localizou mensagens para o sul da Flórida, fazendo parceria com o Brighline Polar Express para associar Panettone com tradições de Natal queridas.",
+        "impact": "Bauducco transformou um bolo de Natal italiano desconhecido na principal categoria de bolo de holiday da América, tornando-se a Panettone de escolha através de integração cultural sustentada. Este sucesso justificou a abertura de uma unidade de manufatura em Miami, seguida por uma planta recentemente anunciada e centro de distribuição em Zephyrhills, Flórida, estabelecendo manufatura permanente nos EUA. A parceria criou não apenas consciência de produto, mas propriedade de categoria. A jornada de nove anos demonstra o poder da narrativa consistente, parcerias estratégicas e construção de marca paciente na criação de novas categorias de consumidor."
+      },
+      "guarana-positioning": {
+        "tag": "Guaraná Antarctica da AB-InBev",
+        "category": "CPG + Posicionamento de Marca + Global",
+        "title": "Traduzindo Autenticidade Brasileira para Apelo Global",
+        "desc": "Como reposicionamos Guaraná Antarctica de uma exclusividade brasileira para uma marca de lifestyle global — preservando seu DNA enquanto transformamos exclusividade em inclusividade.",
+        "tags": [
+          "Posicionamento de Marca",
+          "Expansão Internacional",
+          "Manual de Marca",
+          "Estratégia Cultural"
+        ],
+        "challenge": "Ambev enfrentava um dilema crítico de posicionamento enquanto Guaraná Antarctica expandia internacionalmente. No Brasil, o posicionamento da marca, 'É coisa nossa', celebrava identidade cultural brasileira. No entanto, essa mensagem inerentemente exclusiva criava uma barreira ao crescimento internacional. Como uma marca construída sobre 'apenas brasileiros entendem Guaraná' poderia se conectar autenticamente com consumidores através da América do Norte, Ásia, Europa e além? O desafio era preservar o DNA distintivo da marca enquanto transformava exclusividade em inclusividade global.",
+        "approach": "Nosso time destilou a verdade universal por trás do posicionamento brasileiro de Guaraná Antarctica. Descobrimos que 'É coisa nossa' representava mais do que nacionalidade — celebrava individualidade e originalidade. Brasileiros amavam a marca porque a fazia se sentir única e autêntica, diferente de bebedores de refrigerante convencionais. Isso revelou uma visão poderosa universal: pessoas em qualquer lugar querem se sentir originais e ser primeiros usuários que descobrem algo especial. Desenvolvemos um Livro de Marca Internacional abrangente reposicionando Guaraná Antarctica em torno do conceito 'Diferente de qualquer outro. Original como você.' Isso transformou exclusividade em inclusividade mantendo autenticidade de marca. O framework, traduzido em múltiplos idiomas, posicionou consumidores internacionais como formadores de tendências e embaixadores de marca, incluindo orientação detalhada sobre identidade visual, personalidade de marca e públicos alvo.",
+        "impact": "O novo posicionamento estabeleceu com sucesso Guaraná Antarctica como uma marca de lifestyle com ressonância emocional através de mercados globais diversos. Distribuidores locais e agências em todo o mundo agora operam a partir de uma fundação estratégica unificada, garantindo mensagens consistentes com adaptações culturalmente apropriadas. O reposicionamento transformou o modelo de crescimento ao ativar consumidores como defensores que expandem organicamente alcance e penetração de domicílio. A identidade profundamente brasileira da marca, uma vez uma barreira, tornou-se seu maior ativo, oferecendo consumidores globais originalidade brasileira autêntica."
+      },
+      "guarana-mls": {
+        "tag": "Guaraná Antarctica da AB-InBev",
+        "category": "CPG + Marketing Esportivo + Patrocínio",
+        "title": "Timing de Campeonato: Sucesso de Parceria Estratégica MLS da Guaraná Antarctica",
+        "desc": "Como identificamos e negociamos uma parceria MLS que muda o jogo por uma fração dos custos típicos — entregando ROI extraordinário quando NYCFC ganhou a MLS Cup.",
+        "tags": [
+          "Marketing Esportivo",
+          "Patrocínio",
+          "Ativação de Marca",
+          "Experiencial"
+        ],
+        "challenge": "Guaraná Antarctica enfrentava um mercado fechado na Major League Soccer, com quase cada time patrocinado por Coca-Cola ou Pepsi. A marca brasileira precisava de exposição de alto impacto para atingir fãs de futebol e a comunidade brasileira dos EUA, mas patrocínios premium MLS comandavam custos proibitivos para uma marca internacional desafiadora. O desafio era identificar uma parceria viável que pudesse entregar exposição significativa de marca enquanto gerenciava restrições orçamentárias e criava ativações autênticas que ressoassem com públicos americanos além de sinalização tradicional de patrocínio.",
+        "approach": "Identificamos NYCFC como o único time MLS importante sem patrocínio Coke ou Pepsi e negociamos um desconto de 90% sobre o preço pedido original para o primeiro ano, garantindo o segundo ano pela metade do preço. A estratégia aproveitou jogadores brasileiros da NYCFC e a comunidade brasileira de Nova York através de ativações experienciais incluindo sinalização em estádio e transmissão, conteúdo de mídias sociais através dos 3,3M seguidores da NYCFC, e amostragem extensiva — 5.000 latas distribuídas no jogo de 7 de setembro do Brasil com encontros com jogadores, amostragem pré-jogo no Yankee Stadium para mais de 100 convidados por jogo, patrocinando visualizações de Conferência e MLS Cup Final com 3.000 participantes cada, e eventos de Apreciação de Fãs engajando 300 convidados com brindes exclusivos.",
+        "impact": "A parceria entregou ROI extraordinário quando NYCFC ganhou o campeonato da MLS Cup em 2021 — seu primeiro patrocínio — fornecendo exposição nacional sem precedentes durante a corrida de playoffs e celebrações de título. Guaraná Antarctica atingiu mais de 10.000 consumidores através de amostragem direta, ganhou visibilidade através de plataformas de transmissão e digitais durante a temporada de campeonato, e estabeleceu conexões autênticas com cultura de futebol americana. O timing estratégico e preço negociado entregaram benefícios de patrocínio MLS elite por uma fração dos custos típicos, posicionando Guaraná Antarctica unicamente contra gigantes de bebida no mercado dos EUA."
+      },
+      "plantco": {
+        "tag": "PlantCo",
+        "category": "CPG + E-commerce + Amazon",
+        "title": "Do #1 do Brasil para a Estrela em Ascensão da América: Estratégia de Entrada no Mercado dos EUA da PlantCo",
+        "desc": "Como posicionamos a marca brasileira líder de leite vegetal para entrada no mercado dos EUA — alcançando status top-5 Amazon em menos de 6 meses.",
+        "tags": [
+          "Entrada no Mercado",
+          "E-commerce",
+          "Amazon",
+          "Estratégia Digital"
+        ],
+        "challenge": "PlantCo, marca brasileira líder de leite vegetal, enfrentava um desafio crítico de entrada no mercado lançando no mercado altamente competitivo dos EUA. Diferente de seu sucesso brasileiro pioneirando uma categoria emergente, entraram em um mercado maduro dominado por gigantes estabelecidos como Almond Breeze, Silk e Oatly comandando 59% de participação de mercado. O desafio era construir consciência de marca do zero enquanto posicionava um produto premium orgânico a preço competitivo em um mercado onde competidores de alta qualidade tinham participação mínima contra marcas convencionais com orçamentos de marketing substancialmente maiores e distribuição estabelecida.",
+        "approach": "Desenvolvemos uma estratégia digital omnichannel ancorada por 'Uma melhor alternativa para sua alternativa de leite.' Análise competitiva identificou posição única de PlantCo como a única marca oferecendo leite vegetal orgânico de label limpo (menos de 5 ingredientes) a preço de mercado intermediário. Direcionamos flexitarianos — 29% de americanos reduzindo consumo de laticínios — como maior oportunidade de crescimento. A estratégia de entrada no mercado priorizou Amazon com registro de marca abrangente, vitrine otimizada, conteúdo A+, e publicidade direcionada, enquanto estabelecia presença Instagram e site institucional para preparar o caminho para expansão para Walmart, eBay, Google Shopping e Meta Commerce.",
+        "impact": "PlantCo vendeu todo o inventário inicial em menos de seis meses e tornou-se alternativa top-5 de leite vegetal em Amazon EUA dentro de três meses de lançamento. A variante de leite de aveia classificou-se #5 entre todos os produtos nacionais de leite de aveia — penetração notável para uma nova marca estrangeira. A estratégia digital-first validou posicionamento de PlantCo e criou uma fundação omnichannel escalável, provando que execução estratégica poderia competir efetivamente contra marcas estabelecidas com orçamentos significativamente maiores no mercado de leite vegetal dos EUA em rápido crescimento."
+      },
+      "kerococo": {
+        "tag": "KeroCoco da PepsiCo",
+        "category": "CPG + Mídias Sociais + Posicionamento Global",
+        "title": "Celebrando Autenticidade Através de Mídias Sociais para Posicionamento Global",
+        "desc": "Como desenvolvemos um framework flexível de mídias sociais que se adaptou a diferentes maturidades de mercado enquanto mantinha uma voz de marca singular e autêntica.",
+        "tags": [
+          "Mídias Sociais",
+          "Posicionamento Global",
+          "Estratégia de Conteúdo",
+          "Voz de Marca"
+        ],
+        "challenge": "KeroCoco da PepsiCo enfrentava um desafio complexo de posicionamento através de mercados internacionais diversos com níveis de maturidade drasticamente diferentes — de consumidores desconhecidos com água de coco a mercados sofisticados com preferências estabelecidas. O desafio era criar uma estratégia unificada de mídias sociais globais que pudesse flexionar através dessa realidade enquanto mantinha identidade de marca autêntica. Como um posicionamento poderia funcionar efetivamente em mercados requerendo educação de produto, introdução de marca e conexão emocional simultaneamente?",
+        "approach": "Desenvolvemos 'True at the Core', um framework flexível de mídias sociais construído sobre o insight que imperfeição define autenticidade. Extraindo de cocos em si — cada um único em aparência, sabor e caráter — posicionamos KeroCoco como celebrando a natureza perfeitamente imperfeita tanto de produto quanto de consumidores. A estratégia introduziu três pilares de conteúdo adaptáveis: Proveniência (expertise/sustentabilidade), Funcional (nutrição/momentos de consumo) e Emocional (lifestyle/singularidade). A inovação foi proporções de conteúdo específicas do mercado mudando ênfase baseada em necessidades locais — Brasil recebeu 60% de conteúdo emocional celebrando autenticidade do consumidor, enquanto mercados LATAM receberam 50% de conteúdo funcional para educação de produto. Cada peça incorporou elementos experienciais, mantendo consistência enquanto permitindo adaptação cultural com tom celebratório, jovem, positivo e de mente aberta.",
+        "impact": "A estratégia global de mídias sociais estabeleceu KeroCoco com voz distinta que transcendeu limites de mercado enquanto respeitava contextos locais. Ao ancorar em celebrar autenticidade em vez de perfeição, habilitamos adaptação específica de mercado sem diluir identidade central. O sistema de pilar de conteúdo flexível deixou times locais enfatizar educação em mercados emergentes, construir consciência em mercados em desenvolvimento e aprofundar conexões emocionais em mercados maduros, tudo a partir da mesma verdade autêntica de marca. O posicionamento transformou KeroCoco de uma bebida funcional para uma marca de lifestyle com identificação pessoal do consumidor, estabelecendo um framework escalável de mídias sociais agora implementado através do mundo."
+      },
+      "tropical": {
+        "tag": "Tropical Fantasy",
+        "category": "CPG + Marketing Urbano + Cultura Hip-Hop",
+        "title": "Revitalizando um Ícone do Brooklyn: Campanha de Volta ao Hip-Hop da Tropical Fantasy",
+        "desc": "Como reconectamos uma marca nostálgica de bebida de Brooklyn com millennials urbanos através de uma estratégia de marketing hip-hop autêntica e ativações guerrilha.",
+        "tags": [
+          "Multicultural",
+          "Marketing Guerrilha",
+          "Estratégia Social",
+          "Experiencial"
+        ],
+        "challenge": "Tropical Fantasy, uma marca icônica nascida no Brooklyn de suco e refrigerante que dominou mercados urbanos nos anos 90 através de boca-a-boca, lutava para recuperar posição de mercado no cenário de bebida competitivo. Uma vez um essencial cultural em bairros de classe média interior, a marca perdeu momentum com consumidores mais jovens apesar de apelo nostálgico com públicos mais velhos. O desafio era reconectar com Millennials urbanos de raças mistas profundamente conectados com cultura Hip-Hop enquanto lançava novos sabores de Aloe Vera em um mercado saturado. Marketing tradicional não ressoaria com esse público focado em autenticidade que valorizava movimentos culturais grassroots sobre mensagem publicitária.",
+        "approach": "Criamos 'Novos Sabores de Hip Hop', uma campanha integrada de marketing guerrilha lançada no Festival de Hip Hop de NY de 2015 que autenticamente conectou as raízes do Brooklyn da marca com cultura Hip-Hop emergente. A estratégia posicionou Tropical Fantasy como plataforma apoiando artistas Brooklyn emergentes, criando relevância cultural genuína além de promoção de produto. As táticas incluíram um Geofilter Snapchat de marca que fez usuários aparecerem no palco performando; um backdrop de concerto físico dirigindo compartilhamento social orgânico; distribuição de 4.000 amostras de produto apresentando novos sabores de Aloe Vera; e um concurso de mídias sociais com fase de votação de duas semanas selecionando artistas vencedores, culminando em um anúncio vencedor Facebook Live amplificando engajamento através de múltiplos estados.",
+        "impact": "A campanha com sucesso reconectou Tropical Fantasy com Millennials urbanos através de engajamento hip-hop autêntico. O anúncio Facebook Live atingiu 28.800 espectadores, o Geofilter Snapchat atingiu 13.812 pessoas, e 4.000 amostras foram distribuídas para participantes do festival. A abordagem integrada entregou CPC excelente. Mais importante, a campanha revitalizou a relevância cultural de Tropical Fantasy ao autenticamente apoiar comunidade Hip-Hop do Brooklyn, transformando a marca de relíquia nostálgica para participante ativo em cultura urbana contemporânea e lançando com sucesso a nova linha."
+      },
+      "opus": {
+        "tag": "Meta Development · OPUS Coconut Grove",
+        "category": "Imóvel Luxuoso + Marketing de Lifestyle de Luxo + IA",
+        "title": "Amplificando Vida de Luxo: Posicionando OPUS Coconut Grove no Mercado Premium de Miami",
+        "desc": "Como transformamos ativos limitados pré-construção em uma marca de lifestyle de luxo através de conteúdo aumentado por IA e posicionamento estratégico Instagram — gerando US$5M em vendas.",
+        "tags": [
+          "Imóvel Luxuoso",
+          "Conteúdo IA",
+          "Mídias Sociais",
+          "Marketing de Lifestyle"
+        ],
+        "challenge": "OPUS representa uma mudança de paradigma em imóvel de Miami — um desenvolvimento residencial boutique sustentável priorizando design inovador e experiências de vida personalizadas sobre apelo de massa. Com ativos visuais limitados durante pré-construção, Meta Development precisava de uma Agência de Marketing of Record capaz de construir consciência de marca, estabelecer diferenciação e gerar interesse de comprador qualificado através de conteúdo estratégico que trouxesse a visão OPUS para vida antes de conclusão.",
+        "approach": "Implementamos uma estratégia de marketing 360° que transformou limitações de conteúdo em oportunidades criativas. Reconhecendo que marketing imobiliário tradicional não ressoaria com público exigente de OPUS (mulheres 30-44 anos, renda US$100-150K+, profissionais de negócios e criativos), reposicionamos Instagram como revista de lifestyle de luxo. Aumentamos renderings limitados através de IA gerativa, adicionando elementos contextuais e detalhes ambientais para storytelling imersivo. A estratégia de conteúdo se centrou em 'viver em Coconut Grove' não 'vender OPUS', apresentando experiências de vizinhança, conteúdo cultural e de lifestyle que construiu antecipação e FOMO. Transformamos Instagram em mini-site através de Destaques e entregamos posts com ativos customizados, boletins email de lifestyle, colateral de vendas finalizado, atualizações de site e integração CRM.",
+        "impact": "Durante mandato de Samba Rock, OPUS vendeu 2 unidades, gerando US$5 milhões em vendas. Mais significativo, a transformação estabeleceu OPUS como marca de lifestyle em vez de apenas imóvel, criando engajamento sustentado com prospectos qualificados e posicionando Meta Development como voz inovadora em vida sustentável de luxo."
+      },
+      "jtaylor": {
+        "tag": "J Taylor Joias",
+        "category": "Luxo + Criação de Marca + E-commerce",
+        "title": "Dourado Mercado: Construindo Marca de Joias de Luxo J Taylor do Zero",
+        "desc": "Como criamos uma marca de joias de luxo inteiramente nova — de nomeação a identidade visual a presença digital — para uma linha de produto inovadora de ouro 18k.",
+        "tags": [
+          "Criação de Marca",
+          "Luxo",
+          "E-commerce",
+          "Identidade Visual"
+        ],
+        "challenge": "Jonathan e Thalita Taylor seguravam a chave dourada: direitos exclusivos nos EUA para uma linha de joia revolucionária brasileira feita em ouro 18k com designs de centro oco inovador que entregavam estética ousada sem o peso ou custo proibitivo. Mas a marca existia apenas como fornecedor B2B no Brasil, invisível para consumidores. Quebrar no mercado americano, onde ouro 12k reinava supremo, demandava mais que produto excepcional — exigia uma identidade de marca inteiramente nova que pudesse comandar posicionamento de luxo enquanto democratizava acesso a ouro 18k genuíno.",
+        "approach": "Orquestramos uma gênese de marca. Nomeamos a marca J Taylor, tecendo herança familiar na fundação da marca através das filhas Taylor compartilhadas iniciais. A partir daí, desenvolvemos todos os elementos do ecossistema de marca, desenhando um logo sofisticado e identidade visual que falava para elegância intemporal e empoderamento moderno, desenvolvendo guias de marca e construindo presença digital atraente através de desenvolvimento de site e arquitetura de mídias sociais. A estratégia alvo mulheres 30-44 com poder de compra para apreciar qualidade, posicionando J Taylor na intersecção de design único, qualidade inabalável e valor sem precedentes na categoria de ouro 18k.",
+        "impact": "A transformação foi completa. J Taylor emergiu como marca de luxo totalmente realizada, equipada com todos ativos necessários para cativar mercado de joias americano. Com identidade coerente, posicionamento estratégico e infraestrutura de marketing pronta para execução, os Taylors com sucesso transitaram de direitos de distribuição exclusivos para administração de marca, introduzindo consumidores americanos para novo padrão em joia fina."
+      },
+      "travelsana": {
+        "tag": "Travelsana Multivitamínico",
+        "category": "DTC + Lançamento de Marca + Social & Pago",
+        "title": "Construindo Marca do Zero: Entrada Estratégica no Mercado dos EUA da Travelsana",
+        "desc": "Como lançamos marca de suplemento de viagem inteiramente nova no mercado competitivo dos EUA com zero reconhecimento — e construímos um motor de crescimento autossustentável.",
+        "tags": [
+          "Lançamento de Marca",
+          "Mídia Paga",
+          "Estratégia Social",
+          "E-commerce"
+        ],
+        "challenge": "Travelsana, nova marca de companhia de suplemento dietético específico para viagem criada por time suíço com 22+ anos desenvolvendo produtos de bem-estar, precisava lançar marca inteiramente nova no mercado competitivo dos EUA sem consciência existente, distribuição ou base de cliente. A empresa enfrentava introduzir categoria de produto novel (suplementos específicos para viagem para circulação, jet lag e suporte imunológico) para consumidores céticos americanos enquanto competia contra marcas de bem-estar estabelecidas, tudo com restrições de orçamento startup e nenhum dado de performance histórico. O desafio incluiu construir reconhecimento de marca, estabelecer credibilidade no espaço de bem-estar de viagem, gerar vendas imediatas de e-commerce e garantir parcerias B2B com agências de viagem, linhas de cruzeiro e clientes corporativos.",
+        "approach": "Desenvolvemos estratégia de mídias sociais e mídia paga direcionada otimizada para viajantes afluentes 50+ através de análise cruzada de demografia de plataforma e concentrações de usuários de alta renda. A campanha piloto focou Facebook e LinkedIn como canais primários, suplementado por Pinterest, Twitter e Instagram, apresentando 10 posts mensais de conteúdo com histórias de apoio. Alocação de mídia paga estratégica incluiu campanhas de likes de página Facebook, posts impulsionados Instagram, publicidade nativa dirigindo tráfego a conteúdo blog educacional, retargeting programático e Google Shopping. Estabelecemos metas agressivas e alvos de parceria B2B específicos.",
+        "impact": "A campanha com sucesso lançou Travelsana do zero para estabelecida, alcançando metas de consciência de marca e aquisição de cliente enquanto gerava vendas de e-commerce e parcerias B2B na indústria de viagem. Após sucesso piloto, transitamos controle de marketing completo para time de cliente que expandiu estratégia provada, encarnando filosofia de Chameleon Collective 'quando você é bom, você se foi'. A marca continua operando com sucesso em mercados dos EUA e EU, demonstrando que infraestrutura de lançamento criada crescimento independente sustentável."
+      }
+    }
   },
   "news": {
     "heroLabel": "Artigos · Insights · Imprensa",
@@ -629,6 +766,128 @@
     "heroLabel": "Portfólio · Direção Criativa · Projetos-Chave",
     "heroH1": "Uma vida inteira construindo marcas\nque as pessoas lembram.",
     "heroSub": "Trabalho criativo, estratégico e digital selecionado de 28 anos entre agências, minha própria boutique e liderança client-side.",
-    "filterAll": "Todos"
+    "filterAll": "Todos",
+    "filterBy": "Filtrar Por",
+    "viewProject": "Ver Projeto",
+    "statsProjects": "Projetos",
+    "statsClients": "Clientes",
+    "statsAgencies": "Agências",
+    "ctaH2": "Gostou do que viu?",
+    "ctaSub": "Vamos conversar sobre sua marca, sua visão e o que podemos construir juntos.",
+    "modal": {
+      "credits": "Créditos",
+      "client": "Cliente",
+      "agency": "Agência",
+      "documents": "Documentos",
+      "before": "Antes",
+      "after": "Depois"
+    },
+    "projects": {
+      "bauducco-times-square": {
+        "title": "Bauducco Ação de Graças @ Times Square",
+        "description": "No Brasil, Bauducco Panettone representa uma tradição de Natal querida compartilhada com entes queridos. Trouxemos esse momento cultural para os Estados Unidos destacando famílias separadas durante Ação de Graças. Na Times Square, em frente ao nosso outdoor digital, entrevistamos pessoas com histórias convincentes e dinamicamente mudamos a mensagem do outdoor em tempo real para enviar mensagens sinceras para seus entes queridos distantes. O vídeo de campanha se tornou viral, alcançando milhões de espectadores e ganhando Melhor do Espetáculo nos Addy Awards de 2019 em Miami.",
+        "category": "CPG + OOH + Digital"
+      },
+      "natura-ai-videos": {
+        "title": "Vídeos de Marketing Digital Natura IA",
+        "description": "Samba Rock foi pioneira no uso de IA gerativa para produção de vídeo comercial, garantindo contrato recorrente com Natura para produzir 30-40 vídeos mensalmente. Alavancando tecnologia de ponta incluindo Google VEO3, Suno, 11 Labs e Midjourney, criamos vídeos de marketing digital de alta qualidade em tempo recorde — 100% produzido com ferramentas IA desde trilha sonora a voice-over a storyboards a edição final.",
+        "category": "IA + Produção de Vídeo + Digital"
+      },
+      "conchita": {
+        "title": "Conchita Foods - Abuela: O Ingrediente Chave",
+        "description": "A campanha 'Abuela - O Ingrediente Chave' para Conchita Foods tocou no núcleo emocional da herança culinária latino-americana. Através de parcerias com influenciadores, entrevistas de rua com famílias cubanas e vídeos de receita tocantes, a campanha criou uma ponte emocional entre produto e identidade cultural. Resultados: 2,3M usuários alcançados (aumento de 440%), 1,7M reproduções de vídeo (aumento de 280.000%) e diminuição de 50% no custo por 1K pessoas alcançadas.",
+        "category": "CPG + Multicultural + Social"
+      },
+      "cia-maritima": {
+        "title": "Cia Marítima - Lançamento no Mercado dos EUA",
+        "description": "Cia Marítima — a maior marca de moda praia da América Latina — entrou nos EUA em 2022 com duas lojas na Flórida e novo site de e-commerce D2C. Como diretor criativo, Valter liderou a tradução de marca para os EUA curando fotografia e vídeo do Brasil para se ajustar ao gosto americano, construindo linguagem visual coerente em torno de cor ensolarada, silhuetas confiantes e detalhe de tecido premium.",
+        "category": "Moda + E-Commerce + Social"
+      },
+      "nature-conservancy": {
+        "title": "The Nature Conservancy - Crescimento de Mídias Sociais na América Latina",
+        "description": "Em 2019, Samba Rock foi convidada por The Nature Conservancy — a maior ONG de conservação do mundo — para participar em pitch competitivo para Agência de Registro para região latino-americana. Ao longo de dois anos, geramos 228 milhões de impressões, alcançamos 10,3 milhões de pessoas, criamos 1,32 milhão de engajamentos e adicionamos 169.000 novos seguidores. Instagram cresceu extraordinariamente 3.627% (37x).",
+        "category": "ONG + Mídias Sociais + Conteúdo"
+      },
+      "adriana-degreas": {
+        "title": "Adriana Degreas EUA - Lançamento de Comércio Digital",
+        "description": "Adriana Degreas, marca brasileira high-end de roupas de resort, expandiu para os EUA em 2019. Três dias antes da Black Friday, contrataram Samba Rock. Até fevereiro, ROI de busca paga subiu para 22x (ROAS US$22), anúncios digitais cresceram da sexta para segunda maior fonte de tráfego de site — eventualmente entregando receita online mais alta da marca até a data.",
+        "category": "Moda + E-Commerce + Performance"
+      },
+      "zaxy-shoes": {
+        "title": "Zaxy Shoes - Lançamento no Mercado dos EUA",
+        "description": "Zaxy Shoes, marca Grendene do maior exportador de sapatos do Brasil, entrou nos EUA com calçado 'jelly' focado em adolescentes, orçamento limitado e zero reconhecimento de marca. Fãs Facebook cresceram 45x para 63K, seguidores Instagram dobraram, campanhas alcançaram 8 milhões de pessoas e provocaram 190K interações ao longo de três anos, a loja vendeu média de 500 pares por mês e mídia paga entregou ROI 5x.",
+        "category": "Moda + Social + E-Commerce"
+      },
+      "guarana-brand-positioning": {
+        "title": "Posicionamento de Marca Internacional Guaraná Antarctica",
+        "description": "Depois de quatro anos como agência de marketing Guaraná Antarctica para mercado dos EUA, AmBev convidou Samba Rock para adaptar posicionamento da marca para todos mercados internacionais. O insight levou a 'Diferente de qualquer outro refrigerante. Original como você.' Desenvolvemos o novo Livro de Marca Internacional em múltiplos idiomas, imediatamente aprovado por liderança e agora usado através de todos mercados.",
+        "category": "CPG + Estratégia de Marca + Internacional"
+      },
+      "j-taylor-jewelry": {
+        "title": "J Taylor Joias Finas - Desenvolvimento de Marca & E-Commerce",
+        "description": "J Taylor foi concebida para introduzir inovação brasileira aos EUA — joias de ouro 18k elegantes engenharia com espaço oco interno inovador que preserva pureza e estilo de ouro sólido enquanto reduz peso e preço. Construímos marca do zero: nomeação, identidade visual, fotografia macro de produto e vitrine BigCommerce.",
+        "category": "Luxo + Marca + E-Commerce"
+      },
+      "natura-telemundo": {
+        "title": "Natura Agora nos EUA - Espanhol - NBC Telemundo",
+        "description": "Natura desafiou Samba Rock para criar comercial TV de 15 segundos em português e espanhol, alvo comunidades latino-americanas através dos Estados Unidos. Trabalhando com arquivos internos e aumentando footage com tecnologia IA, entregamos produto final em múltiplos formatos, dois idiomas e várias variações — tudo dentro menos de um mês.",
+        "category": "CPG + TV + Multicultural"
+      },
+      "guarana-chloe": {
+        "title": "Guaraná Antarctica Conhece Chloe",
+        "description": "Quando descobrimos que Chloe — conhecida pelo meme viral 'Side-eye Chloe' — era fã de Guaraná Antarctica, fazemos parceria com sua família para criar anúncio de vídeo digital autêntico. Filmado inteiramente remotamente em iPhone durante pandemia, editamos, animamos e produzimos vídeo final de alta qualidade conectando marca de refrigerante com público americano mais jovem.",
+        "category": "CPG + Influenciador + Social"
+      },
+      "guarana-ar": {
+        "title": "Floresta Amazônica AR de Guaraná Antarctica",
+        "description": "Criamos aplicação inovadora iOS e Android de Realidade Aumentada que transporta usuários para experiência imersiva 3D de Floresta Amazônica virtual, oferecendo chance de ganhar viagem gratuita para Brasil. Ao fazer parceria com KAYAK para fornecer prêmio de viagem de US$5.000, adicionamos credibilidade e excitação. O app foi reconhecido como finalista em AWE2020.",
+        "category": "CPG + AR/VR + Inovação"
+      },
+      "bauducco-wafers": {
+        "title": "Comercial TV Wafers Bauducco",
+        "description": "Samba Rock fez parceria com Lobo CX — spin-off de casa de produção 3D brasileira renomada mundialmente Vetor Zero — para criar comercial televisivo 100% CGI para wafers Bauducco. O resultado foi comercial visualmente espetacular que exibiu qualidade dos wafers enquanto demonstrou poder de animação 3D avançada em publicidade de alimento.",
+        "category": "CPG + TV + 3D CGI"
+      },
+      "saphirus-air-fresheners": {
+        "title": "Saphirus Aromatizantes de Ar EUA",
+        "description": "Saphirus, maior fabricante de aromatizantes de ar da Argentina — superando marcas globais como Johnson & Johnson, Glade e P&G no seu mercado — decidiu expandir para Estados Unidos. Desenvolvemos novo posicionamento de marca que elevou Saphirus de marca convencional popular para posição mais refinada, visível no manifesto de marca e vídeo acompanhante.",
+        "category": "CPG + Estratégia de Marca + Entrada nos EUA"
+      },
+      "nordanglia-virtual-games": {
+        "title": "Nordanglia Education - 2020 Jogos Virtuais",
+        "description": "Durante pandemia COVID-19 em 2020, Nordanglia Education transformou seus jogos olímpicos anuais globais em competição virtual em todo continente americano, incorporando e-sports pela primeira vez. Samba Rock criou todos materiais de marketing para este evento inovador, incluindo vídeos teaser e promocionais principais, design de site, campanhas email de marketing e anúncios digitais.",
+        "category": "Educação + Digital + Evento"
+      },
+      "rider-sandals": {
+        "title": "Rider Sandals Stopmotion - Universal Orlando",
+        "description": "Um dos primeiros projetos entregues por Samba Rock exibiu versatilidade de Valter como potência criativa de uma pessoa. Ele manipulou cada aspecto: filmagem, animando quadro a quadro em stop-motion, compondo trilha sonora, gravando voice-over, escrevendo script e editando peça final. Este anúncio foi exibido por dois anos consecutivos em Resorts Universal Studios em Orlando.",
+        "category": "Moda + Animação + OOH"
+      },
+      "bauducco-panettone": {
+        "title": "Bauducco Panettone 'Novo Convidado'",
+        "description": "Quando Bauducco decidiu fazer publicidade de Panettone nos Estados Unidos, criamos cenário comovedor onde pão doce italiano serve como token de bem-vindo e hospitalidade. O anúncio foi exibido por três anos consecutivos durante intervalos de jogos NBA, alcançando milhões de espectadores e com sucesso estabelecendo Panettone como grampeador de holiday em casas americanas.",
+        "category": "CPG + TV + Construção de Marca"
+      },
+      "att-mobile-share": {
+        "title": "AT&T Mobile Share Familiar",
+        "description": "Enquanto Y&R gerenciava conteúdo de mídias sociais para clientes hispanohablantes dos EUA da AT&T, Valter criou série de vídeos stop-motion excêntricos e humorísticos mostrando benefícios de compartilhar minutos de plano de telefone celular com família. Essas comparações visuais inesperadas foram concebidas, filmadas, editadas e animadas inteiramente internamente.",
+        "category": "Telecom + Social + Animação"
+      },
+      "att-gophone": {
+        "title": "Parede - GoPhone da AT&T",
+        "description": "Exploramos conceito criativo conectado ao bairro Wynwood de Miami, renomado por murais de grafite e cultura de arte de rua deslumbrantes. Criamos grafite animado que dinamicamente cobre paredes brancas enquanto protagonista caminha pela cena, visualmente explicando novo plano AT&T GoPhone.",
+        "category": "Telecom + Arte de Rua + Animação"
+      },
+      "bbva-nba": {
+        "title": "Banco NBA por BBVA Bank",
+        "description": "BBVA Compass — banco oficial da NBA — lançou 'banco NBA' durante All-Star Weekend em Houston, centrado em hashtag #RealFan. A campanha gerou mais de 4 milhões de impressões em Houston sozinho, com mais de 15.000 uploads de foto nacionalmente, com sucesso conectando serviços bancários com paixão basquete.",
+        "category": "Finanças + Esportes + Ativação"
+      },
+      "xgames-trick-track": {
+        "title": "X Games Trick Track / Hypemeter",
+        "description": "X Games reimaginou sua presença digital com plataforma mobile-first e aplicação de tablet de segunda tela inovadora. Visitas XGames.com aumentaram 72% ano-a-ano, vídeo inicia cresceram 15%, views de página pularam 99% e tempo no site cresceu 57%. O projeto ganhou prêmio Silver Clio Sports pela sua inovação em experiência digital de esportes.",
+        "category": "Esportes + Digital + Segunda Tela"
+      }
+    }
   }
 }

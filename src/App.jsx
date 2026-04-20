@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { useEffect, lazy, Suspense } from 'react'
-import { LocaleProvider, SUPPORTED_LOCALES, DEFAULT_LOCALE } from './context/LocaleContext'
+import { LocaleProvider } from './context/LocaleContext'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import SEOHead from './components/SEOHead'
@@ -58,16 +58,6 @@ function Layout() {
   )
 }
 
-/** Generates the same route set for a given locale prefix */
-function LocaleRoutes({ prefix }) {
-  return (
-    <Route path={prefix} element={<Layout />}>
-      {/* Layout renders its own nested Routes via location,
-          so we use a wildcard here */}
-    </Route>
-  )
-}
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -75,12 +65,9 @@ export default function App() {
         {/* Admin — no locale prefix, outside Layout */}
         <Route path="/admin" element={<Suspense fallback={<div style={{padding:80,textAlign:'center'}}>Loading...</div>}><Admin /></Suspense>} />
 
-        {/* Locale-prefixed routes: /pt/*, /es/* */}
-        {SUPPORTED_LOCALES.filter(l => l !== DEFAULT_LOCALE).map(lang => (
-          <Route key={lang} path={`/${lang}/*`} element={<Layout />} />
-        ))}
-
-        {/* Default (English) — no prefix */}
+        {/* Single catch-all: Layout handles locale detection internally.
+            Using separate /pt/* and /es/* parent routes causes React Router v7
+            to reject the stripped location prop (base mismatch error). */}
         <Route path="/*" element={<Layout />} />
       </Routes>
     </BrowserRouter>
