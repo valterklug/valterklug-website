@@ -170,8 +170,8 @@
   },
   "about": {
     "heroLabel": "Sobre · Histórico · Credenciais",
-    "heroH1": "Não sou um consultor que fala sobre marketing.\nSou a pessoa que o executa.",
-    "heroSub": "28 anos. Três continentes. De agências interativas em São Paulo a agências de holding em Londres e Miami, construindo minha própria boutique — e agora operando no nível de C-suite fracionário.",
+    "heroH1": "Não me limito a ter ideias.\nEu construo os sistemas que as tornam realidade.",
+    "heroSub": "28 anos. Três continentes. De programar Flash em São Paulo à direção criativa em Londres e Miami, até construir ferramentas de inteligência com IA — sempre na interseção entre ideias e inovação.",
     "glanceLabel": "Em Resumo",
     "glanceStats": [
       {
@@ -210,13 +210,13 @@
       }
     ],
     "bgLabel": "Histórico",
-    "bgP1": "Nascido no Brasil. Baseado em Miami. Dois anos vivendo e trabalhando no Reino Unido. Trago uma perspectiva genuinamente multicultural para a estratégia de marca — exatamente por isso que clientes me contratam para navegar a complexidade cultural de entrar no mercado americano.",
-    "bgP2": "Minha carreira abrange o arco completo do marketing moderno — desde os primeiros dias do digital na Isobar até direção criativa em agências de holding na Y&R, até construir uma agência boutique que atendeu grandes marcas brasileiras e latino-americanas entrando nos EUA.",
-    "bgP3": "Hoje opero como CMO Fracionário através da Chameleon Collective — uma rede de practitioners independentes de elite que se incorporam diretamente nas organizações de clientes para liderar transformação de dentro.",
-    "bgQuote": "Não aconselho de fora. Lidero de dentro. Todo engajamento que assumo, sou um verdadeiro membro da equipe de liderança do cliente — responsável pelos mesmos resultados que eles.",
+    "bgP1": "Nascido no Brasil. Baseado em Miami. Dois anos vivendo e trabalhando no Reino Unido. Trago uma perspectiva multicultural para estratégia de marca — e um instinto permanente para encontrar a ferramenta mais poderosa e usá-la para alimentar ideias maiores.",
+    "bgP2": "Minha carreira abrange o arco completo do marketing digital — de campanhas em Flash antes de 2000 na Isobar à direção criativa na Y&R, à fundação da Samba Rock e seu laboratório de inovação, até construir ferramentas de inteligência com IA que alimentam estratégia de marca hoje.",
+    "bgP3": "Hoje opero através da Chameleon Collective e Soundcheck Insights — trazendo liderança criativa, inteligência alimentada por IA e uma rede de practitioners de elite diretamente para organizações de clientes.",
+    "bgQuote": "O meio muda. O impulso não: ideias + inovação, aplicados a marcas que cruzam fronteiras. Todo engajamento que assumo, estou construindo de dentro.",
     "bgQuoteAuthor": "— Valter Klug",
     "timelineLabel": "Timeline de Carreira",
-    "timelineH2": "Um histórico construído nos mercados mais exigentes do mundo.",
+    "timelineH2": "Ideias + inovação — nos mercados mais exigentes do mundo.",
     "timeline": [
       {
         "years": "2001–2003",
@@ -263,8 +263,8 @@
     ],
     "chameleonCollectiveItems": [
       {
-        "title": "Liderança Incorporada",
-        "desc": "Opero como verdadeiro membro de sua equipe de liderança — participando de suas reuniões, possuindo seu roadmap, responsável por seus resultados."
+        "title": "Liderança Criativa & Inovação",
+        "desc": "Opero como líder criativo e estrategista de inovação — trazendo ideias, ferramentas de IA e craft diretamente para sua equipe."
       },
       {
         "title": "Acesso à Rede de Elite",
@@ -275,7 +275,7 @@
         "desc": "Engajamentos estruturados em torno de entregáveis e resultados — não horas e apresentações."
       }
     ],
-    "ctaH2": "Vamos ver se somos um bom ajuste.",
+    "ctaH2": "Vamos descobrir o que ideias + inovação podem fazer pela sua marca.",
     "ctaSub": "Sem pitch decks, sem teatro de agência. Apenas uma conversa direta sobre sua situação.",
     "ctaBtn": "Iniciar uma Conversa →"
   },
@@ -575,7 +575,7 @@
       }
     ],
     "engagementsVia": "Engajamentos Via",
-    "chameleonCollectiveDesc": "Todos os engajamentos de CMO Fracionário e consultoria são contratados através da Chameleon Collective.",
+    "chameleonCollectiveDesc": "Todos os engajamentos de liderança criativa e consultoria são contratados através da Chameleon Collective.",
     "partnerLabel": "Rede de Parceiros",
     "partnerH2": "Não é o ajuste certo para mim?",
     "partnerSub": "Vou conectá-lo com o especialista certo. Se suas necessidades caem fora de meu núcleo de expertise, vou encaminhá-lo para um parceiro confiável de minha rede assinada — sem comissões, sem pressão.",
@@ -596,8 +596,8 @@
   },
   "intelligence": {
     "heroLabel": "Serviços de Inteligência · Alimentado por Soundcheck Insights",
-    "heroH1": "Todo engajamento\ncomça com os dados.",
-    "heroSub": "Uso pesquisa de mercado alimentada por IA para validar suposições, dimensionar oportunidades e pressure-test ideias — antes de investirmos um dólar em estratégia ou execução.",
+    "heroH1": "As ideias são tão boas\nquanto os dados por trás delas.",
+    "heroSub": "Através do Soundcheck Insights, uso IA para transformar dados brutos na inteligência que alimenta ideias — antes de investirmos um dólar em estratégia ou execução.",
     "heroStats": [
       {
         "number": "6",
@@ -738,7 +738,7 @@
       }
     ],
     "whyLabel": "Por Que Importa",
-    "whyH2": "Inteligência antes de estratégia. Sempre.",
+    "whyH2": "Dados alimentam ideias. Ideias impulsionam inovação.",
     "whySub": "Muitas empresas entram em novos mercados baseadas em intuição, pesquisa anedótica ou relatórios desatualizados. Soundcheck muda isso — sem o preço de agência ou a timeline de 6 meses.",
     "whyItems": [
       {
