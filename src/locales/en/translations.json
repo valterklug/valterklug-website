@@ -7,13 +7,13 @@
     "intelligence": "Intelligence",
     "articles": "Articles",
     "wordmark": "Valter Klug",
-    "subtitle": "Fractional CMO · Miami",
+    "subtitle": "Creative Leader · Brand Builder · Miami",
     "cta": "Let's Talk →"
   },
   "footer": {
     "name": "Valter Klug",
-    "subtitle": "Fractional CMO · Miami",
-    "bio": "28+ years building brands across Brazil, the UK, and the United States. Available as Fractional CMO through Chameleon Collective.",
+    "subtitle": "Creative Leader · Brand Builder · Miami",
+    "bio": "28+ years at the intersection of big ideas and emerging technology — building brands across Brazil, the UK, and the United States.",
     "navigationTitle": "Navigation",
     "navigationLinks": {
       "home": "Home",
@@ -32,9 +32,9 @@
     "location": "Miami, Florida · valterklug.com"
   },
   "home": {
-    "heroLabel": "Fractional CMO · International Brand Expansion · Miami",
-    "heroH1": "I Help Companies\nGrow and Win in the\nUS Market and Beyond",
-    "heroSub": "28 years building brands across Brazil, the UK, and the United States. Now available as a Fractional CMO through Chameleon Collective.",
+    "heroLabel": "Ideas + Innovation · Cross-Border Brand Builder · Miami",
+    "heroH1": "Big Ideas. Emerging Technology.\n28 Years Building Brands\nAcross Borders.",
+    "heroSub": "Born in Brazil. Shaped in London. Based in Miami. A trilingual creative leader at the intersection of ideas and innovation — building brands across borders for 28 years. Operating through Chameleon Collective.",
     "ctaPrimary": "Let's Talk →",
     "ctaSecondary": "See My Work",
     "stats": [
@@ -51,9 +51,9 @@
         "label": "Brands"
       }
     ],
-    "quote": "I don't advise from the outside.\nI lead from the inside.",
+    "quote": "The medium changes.\nThe drive doesn't:\nideas + innovation.",
     "quoteName": "Valter Klug",
-    "quoteRole": "Fractional CMO",
+    "quoteRole": "Creative Leader · Brand Builder",
     "credentials": [
       {
         "code": "Forbes",
@@ -69,12 +69,12 @@
       },
       {
         "code": "A.M.P.",
-        "label": "Published Author"
+        "label": "Author — A.M.P."
       }
     ],
     "trustedBy": "Trusted by Brands Across the Americas, Europe, and Beyond",
     "servicesLabel": "What I Do",
-    "servicesH2": "Strategic marketing leadership —\nwithout the full-time overhead.",
+    "servicesH2": "Ideas powered by data.\nInnovation applied to brands.",
     "services": [
       {
         "num": "01",
@@ -88,7 +88,7 @@
       },
       {
         "num": "03",
-        "title": "Team of Specialists",
+        "title": "Creative & Growth Team",
         "desc": "Leading experts in Advertising, E-commerce, Social Media, Digital, and whatever else your company needs to grow in the US or Latin America."
       },
       {
@@ -99,8 +99,8 @@
     ],
     "learnMore": "Learn More",
     "approachLabel": "My Approach",
-    "approachH2": "Operating at the intersection of creative leadership and business outcomes.",
-    "approachSub": "Through Chameleon Collective, I work alongside an elite network of independent practitioners — giving clients the depth of a full agency with the accountability of a dedicated leader.",
+    "approachH2": "Operating at the intersection of creative leadership and emerging technology.",
+    "approachSub": "Through Chameleon Collective and Soundcheck Insights, I bring creative leadership, AI-powered intelligence, and an elite network of practitioners — the depth of a full agency with the accountability of a dedicated leader.",
     "fullBackground": "Full Background",
     "approachItems": [
       {
@@ -108,8 +108,8 @@
         "desc": "I operate as a true member of your leadership team — attending your standups, owning your roadmap, and being accountable to your results."
       },
       {
-        "title": "Intelligence-First",
-        "desc": "Every engagement starts with data. I use AI-powered market research through Soundcheck Insights to validate assumptions before we invest in strategy or execution."
+        "title": "Ideas Fueled by Data",
+        "desc": "Every engagement starts with intelligence. Through Soundcheck Insights, I use AI to surface the insights that fuel ideas — before we invest in strategy or execution."
       },
       {
         "title": "Elite Network Access",
@@ -165,7 +165,7 @@
       "Retail"
     ],
     "viewCaseStudy": "View Case Study",
-    "ctaH2": "Ready to grow in the US market?",
+    "ctaH2": "Let's figure out if I'm the right person for your next market.",
     "ctaSub": "Let's have a direct, substantive conversation about where you are, where you want to go, and whether I'm the right person to help."
   },
   "about": {
@@ -314,7 +314,7 @@
       },
       {
         "num": "03",
-        "title": "Team of Specialists",
+        "title": "Creative & Growth Team",
         "headline": "Leading a team of experts in Advertising, E-commerce, Social Media, Digital, and more.",
         "sub": "Through Chameleon Collective's Deliver model, I assemble and lead a team of specialists across the disciplines your company needs — whether it's advertising, e-commerce, social media, digital marketing, or any combination — to drive growth in the US or Latin America.",
         "deliverables": [
