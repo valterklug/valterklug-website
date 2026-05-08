@@ -600,8 +600,8 @@
     "heroSub": "Através do Soundcheck Insights, entrego inteligência de mercado em nível de decisão — modular, baseada em metodologia e validada por 28 anos de experiência construindo marcas internacionais. Todo engajamento começa com pesquisa. A partir daí, adicionamos os módulos de inteligência que se encaixam no seu desafio.",
     "heroStats": [
       {
-        "number": "5",
-        "label": "Módulos composíveis"
+        "number": "6",
+        "label": "Serviços de inteligência"
       },
       {
         "number": "7–14 dias",
@@ -721,6 +721,21 @@
           "Resumo executivo com principais descobertas destiladas em recomendações estratégicas",
           "Painel de personas reutilizável salvo para sessões futuras — teste novos conceitos a qualquer momento",
           "Rodadas ilimitadas de feedback dentro da sessão sem custo adicional"
+        ]
+      },
+      {
+        "num": "06",
+        "badge": "Metodologia CC",
+        "audience": "Avaliação e Recomendações Liderada por CxO",
+        "headline": "Diagnóstico organizacional proprietário da Chameleon Collective — aplicado por um practitioner experiente.",
+        "title": "Avaliação CLEAR",
+        "sub": "Avalio sua organização de marketing em Estratégia, Equipe e Execução para identificar bloqueadores de crescimento, descobrir gaps de capacidade e priorizar as oportunidades de maior alavancagem para melhoria.",
+        "deliverables": [
+          "Entrevistas de stakeholder em liderança, marketing, vendas e operações",
+          "Avaliação com score em dimensões de Estratégia, Equipe e Execução",
+          "Identificação de bloqueador de crescimento com análise de causa raiz",
+          "Recomendações priorizadas com sequência e implicações de recurso",
+          "Apresentação executiva com roadmap claro para liberar crescimento"
         ]
       }
     ],

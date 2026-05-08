@@ -463,8 +463,8 @@
     "heroSub": "Through Soundcheck Insights, I deliver decision-grade market intelligence — modular, methodology-driven, and validated by 28 years of cross-border brand experience. Every engagement starts with research. From there, we add the intelligence modules that match your challenge.",
     "heroStats": [
       {
-        "number": "5",
-        "label": "Composable modules"
+        "number": "6",
+        "label": "Intelligence services"
       },
       {
         "number": "7–14 days",
@@ -584,6 +584,21 @@
           "Executive summary with key findings distilled into strategic recommendations",
           "Reusable persona panel saved for future sessions — test new concepts anytime",
           "Unlimited feedback rounds within the session at no additional cost"
+        ]
+      },
+      {
+        "num": "06",
+        "badge": "CC Methodology",
+        "audience": "CxO Led Evaluation And Recommendations",
+        "headline": "Chameleon Collective's proprietary organizational diagnostic — applied by an experienced practitioner.",
+        "title": "CLEAR Assessment",
+        "sub": "I assess your marketing organization across Strategy, Team, and Execution to identify growth blockers, uncover capability gaps, and prioritize the highest-leverage opportunities for improvement.",
+        "deliverables": [
+          "Stakeholder interviews across leadership, marketing, sales, and operations",
+          "Scored assessment across Strategy, Team, and Execution dimensions",
+          "Growth blocker identification with root cause analysis",
+          "Prioritized recommendations with sequencing and resource implications",
+          "Executive presentation with a clear roadmap to unlock growth"
         ]
       }
     ],
