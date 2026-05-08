@@ -597,7 +597,7 @@
   "intelligence": {
     "heroLabel": "Serviços de Inteligência · Alimentado por Soundcheck Insights",
     "heroH1": "As ideias são tão boas\nquanto os dados por trás delas.",
-    "heroSub": "Através do Soundcheck Insights, entrego inteligência de mercado AI-nativa — modular, em nível de decisão e validada por 28 anos de experiência construindo marcas internacionais. Todo engajamento começa com pesquisa. A partir daí, adicionamos os módulos de inteligência que se encaixam no seu desafio.",
+    "heroSub": "Através do Soundcheck Insights, entrego inteligência de mercado em nível de decisão — modular, baseada em metodologia e validada por 28 anos de experiência construindo marcas internacionais. Todo engajamento começa com pesquisa. A partir daí, adicionamos os módulos de inteligência que se encaixam no seu desafio.",
     "heroStats": [
       {
         "number": "5",
@@ -654,13 +654,13 @@
         "audience": "Todo Engajamento Começa Aqui",
         "headline": "A base de pesquisa que alimenta cada módulo do seu engajamento.",
         "title": "Pesquisa de Mercado",
-        "sub": "Todo engajamento Soundcheck começa com uma fundação estruturada de Pesquisa de Mercado — construindo 6 a 20 personas detalhadas que mapeiam sua paisagem competitiva, comportamento de consumidor, dimensionamento de mercado, ambiente regulatório e canais de distribuição. Esta é a base de evidências que alimenta cada módulo adicional.",
+        "sub": "Todo engajamento Soundcheck começa com uma fundação estruturada de Pesquisa de Mercado — três relatórios escritos mais um painel de personas baseado em pesquisa (6 a 20 personas nos tiers Mini, Standard ou Premium). Esta é a base de evidências que alimenta cada módulo adicional.",
         "deliverables": [
-          "6–20 personas detalhadas construídas a partir de seu mercado específico, audiência e contexto competitivo",
-          "Análise de paisagem competitiva com gaps de posicionamento e oportunidades de espaço em branco",
-          "Sinais de comportamento de consumidor, drivers de compra e validação de demanda",
-          "Dimensionamento de mercado com dados de fontes hierarquizadas (governo, sindicadas, setoriais)",
-          "Mapeamento regulatório e de canais de distribuição relevantes à sua categoria"
+          "Relatório A — Análise de Mercado: dimensionamento de categoria (TAM/SAM/SOM), arquitetura de canais, dinâmicas de categoria, códigos de comunicação e semiótica",
+          "Relatório B — Análise de Consumidor: 5–6 clusters com frameworks de motivação, insights culturais e matriz de sentimento",
+          "Relatório C — Paisagem Competitiva: matriz semáforo (7 competidores × 9 dimensões), mapa perceptual e análise de whitespace",
+          "6–20 personas baseadas em pesquisa construídas a partir de seu mercado específico, audiência e contexto competitivo",
+          "Três opções de tier (Mini · Standard · Premium) dimensionadas à pergunta sendo feita"
         ]
       },
       {
@@ -668,13 +668,13 @@
         "badge": "Mais Popular",
         "audience": "Marcas Internacionais · Entrada de Mercado",
         "headline": "Inteligência de entrada no mercado em nível de decisão com score proprietário de viabilidade.",
-        "title": "Viabilidade de Expansão Internacional (IXV)",
-        "sub": "Para marcas considerando expansão geográfica — especialmente para os EUA. Produz o CVE Score proprietário (Coeficiente de Viabilidade de Expansão), um relatório de 8 seções cobrindo análise competitiva, snapshot regulatório, canais de distribuição, prontidão do consumidor, estimativas de investimento, três caminhos estratégicos e roadmap de implementação de 12 meses.",
+        "title": "GoGlobal Viability Analysis",
+        "sub": "Para marcas considerando expansão geográfica — marcas internacionais entrando nos EUA, ou marcas americanas avaliando México, UK, EU ou LATAM. Produz o CVE Score proprietário (Coeficiente de Viabilidade de Expansão), um relatório de 8 seções cobrindo oportunidade de mercado, posição competitiva, prontidão do consumidor, estimativas de investimento, três caminhos estratégicos e plano de ação 30/60/90 dias.",
         "deliverables": [
-          "CVE Score — Coeficiente de Viabilidade de Expansão: score proprietário 0–100 combinando dados do mundo real, análise de IA e expertise de mercado",
-          "Relatório de 8 seções: paisagem competitiva, ambiente regulatório, canais de distribuição, prontidão do consumidor, estimativas de investimento, caminhos estratégicos, fatores de risco e roadmap de implementação",
-          "Três caminhos estratégicos com trade-offs claros, requisitos de recursos e implicações de timeline",
-          "Roadmap de implementação de 12 meses com milestones e gates de decisão",
+          "CVE Score — Coeficiente de Viabilidade de Expansão: score proprietário 0–100 em Oportunidade de Mercado (40%), Posição Competitiva (35%) e Prontidão Interna (25%)",
+          "Relatório de 8 seções: resumo executivo, brief, análise de mercado, paisagem competitiva, prontidão do consumidor, perfis de persona, detalhamento CVE e itens acionáveis",
+          "Três caminhos estratégicos (Conservador / Equilibrado / Agressivo) com caminho recomendado destacado",
+          "Itens acionáveis 30/60/90 dias com frame de risco para o mercado-alvo",
           "Apresentação executiva com sessão Q&A"
         ]
       },
@@ -682,30 +682,30 @@
         "num": "03",
         "badge": "Crescimento & Escala",
         "audience": "Marcas nos EUA · Estágio de Crescimento",
-        "headline": "Avaliação estrutural de prontidão para escala com score proprietário e plano de 24 meses.",
+        "headline": "Auditoria estrutural de prontidão com score proprietário, faixa de veredicto e plano de 24 meses.",
         "title": "Scale Assessment",
-        "sub": "Para marcas já no mercado que precisam entender o que bloqueia o crescimento. Produz o SRS Score proprietário (Scale Readiness Score), um relatório de 8 seções diagnosticando barreiras estruturais de escala e um plano de crescimento de 24 meses.",
+        "sub": "Para empresas crescendo de $5M para $50M, levantando uma rodada, ou com crescimento estagnado. Produz o SRS Score proprietário (Scale-Readiness Score) com faixa de veredicto — Scale-Ready, Scale-Conditional, Growth-Only ou Restructure — mais plano de 24 meses e framework de monitoramento de 90 dias pós-entrega.",
         "deliverables": [
-          "SRS Score — Scale Readiness Score: score proprietário 0–100 avaliando prontidão estrutural para escalar em operações, marketing, distribuição e equipe",
-          "Relatório de 8 seções: bloqueadores de crescimento, gaps de capacidade, otimização de canais, estrutura de equipe, posicionamento competitivo e oportunidades de expansão de mercado",
-          "Análise de causa raiz de barreiras de escala com recomendações priorizadas",
-          "Plano de crescimento de 24 meses com requisitos de recursos e milestones",
-          "Apresentação executiva com sessão Q&A"
+          "SRS Score — Scale-Readiness Score: 0–100 em Fundação Estrutural (40%), Posição de Mercado (35%) e Capacidade de Escala (25%) com faixa de veredicto",
+          "Relatório de 8 seções: avaliação de prontidão operacional nomeando o que quebra primeiro, bloqueadores de crescimento, gaps de capacidade e oportunidades de expansão",
+          "Plano de 24 meses em fases (Fundação → Ativar → Acelerar → Compor) com gates go/no-go",
+          "Risk Frame at Scale: o que muda quando você 3× volume, headcount ou geografia",
+          "Framework de monitoramento de 90 dias pós-entrega alimentado por IA"
         ]
       },
       {
         "num": "04",
         "badge": "Inteligência de Audiência",
         "audience": "Qualquer Engajamento · Por Persona",
-        "headline": "Mapas de jornada por estágio mostrando como cada persona encontra, avalia e compra seu produto.",
+        "headline": "Mapas de jornada em seis estágios com auditoria de touchpoints de marca para cada persona.",
         "title": "Mapeamento de Jornada do Cliente",
-        "sub": "Construído sobre as personas definidas na sua fundação de Pesquisa de Mercado. Cada mapa de jornada traça o caminho completo — de gatilhos de awareness e fontes de informação, passando por critérios de avaliação, comportamento de compra e advocacy pós-compra — para cada persona-alvo.",
+        "sub": "Construído sobre as personas definidas na sua fundação de Pesquisa de Mercado. Cada mapa de jornada traça seis estágios — awareness, consideração, compra, onboarding, retenção e advocacy — com auditoria de touchpoints de marca avaliando sua presença como PRESENTE, PARCIAL ou AUSENTE em cada estágio.",
         "deliverables": [
-          "Mapas de jornada por persona nas fases de awareness, consideração, avaliação, compra e advocacy",
-          "Mapeamento de touchpoints por canal: onde cada persona encontra sua categoria e competidores em cada estágio",
+          "Mapas de jornada por persona em seis estágios: awareness → consideração → compra → onboarding → retenção → advocacy",
+          "Auditoria de touchpoints de marca: avaliação PRESENTE / PARCIAL / AUSENTE em cada estágio para sua marca vs. competidores",
+          "Análise de Gap Cross-Persona: onde sua experiência de cliente quebra entre diferentes segmentos",
           "Recomendações de conteúdo e mensagem alinhadas a cada estágio da jornada",
-          "Barreiras de conversão e pontos de fricção com intervenções recomendadas",
-          "Comparação de jornada competitiva: como seus competidores alcançam as mesmas personas"
+          "Barreiras de conversão e pontos de fricção com intervenções recomendadas"
         ]
       },
       {

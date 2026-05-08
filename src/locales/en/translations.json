@@ -460,7 +460,7 @@
   "intelligence": {
     "heroLabel": "Intelligence Services · Powered by Soundcheck Insights",
     "heroH1": "Ideas are only as good\nas the data behind them.",
-    "heroSub": "Through Soundcheck Insights, I deliver AI-native market intelligence — modular, decision-grade, and validated by 28 years of cross-border brand experience. Every engagement starts with research. From there, we add the intelligence modules that match your challenge.",
+    "heroSub": "Through Soundcheck Insights, I deliver decision-grade market intelligence — modular, methodology-driven, and validated by 28 years of cross-border brand experience. Every engagement starts with research. From there, we add the intelligence modules that match your challenge.",
     "heroStats": [
       {
         "number": "5",
@@ -517,13 +517,13 @@
         "audience": "Every Engagement Starts Here",
         "headline": "The research base that powers every module in your engagement.",
         "title": "Market Research",
-        "sub": "Every Soundcheck engagement begins with a structured Market Research foundation — building 6 to 20 detailed personas that map your competitive landscape, consumer behavior, market sizing, regulatory environment, and distribution channels. This is the evidence base that fuels every add-on module.",
+        "sub": "Every Soundcheck engagement begins with a structured Market Research foundation — three written reports plus a research-grounded persona panel (6 to 20 personas across Mini, Standard, or Premium tiers). This is the evidence base that fuels every add-on module.",
         "deliverables": [
-          "6–20 detailed personas built from your specific market, audience, and competitive context",
-          "Competitive landscape analysis with positioning gaps and white-space opportunities",
-          "Consumer behavior signals, purchase drivers, and demand validation",
-          "Market sizing with source-tiered data (government, syndicated, industry)",
-          "Regulatory and distribution channel mapping relevant to your category"
+          "Report A — Market Analysis: category sizing (TAM/SAM/SOM), channel architecture, category dynamics, communication codes and semiotics",
+          "Report B — Consumer Analysis: 5–6 consumer clusters with motivation frameworks, cultural insights, and sentiment matrix",
+          "Report C — Competitive Landscape: traffic-light matrix (7 competitors × 9 dimensions), perceptual map, and whitespace analysis",
+          "6–20 research-grounded personas built from your specific market, audience, and competitive context",
+          "Three tier options (Mini · Standard · Premium) sized to the question being asked"
         ]
       },
       {
@@ -531,13 +531,13 @@
         "badge": "Most Popular",
         "audience": "International Brands · Market Entry",
         "headline": "Decision-grade market entry intelligence with a proprietary viability score.",
-        "title": "International Expansion Viability (IXV)",
-        "sub": "For brands considering geographic expansion — especially into the US. Produces the proprietary CVE Score (Coefficient of Viability of Expansion), an 8-section stitched report covering competitive analysis, regulatory snapshot, distribution channels, consumer readiness, investment estimates, three strategic paths, and a 12-month implementation roadmap.",
+        "title": "GoGlobal Viability Analysis",
+        "sub": "For brands considering geographic expansion — international brands entering the US, or US brands evaluating Mexico, UK, EU, or LATAM. Produces the proprietary CVE Score (Coefficient of Viability of Expansion), an 8-section report covering market opportunity, competitive position, consumer readiness, investment estimates, three strategic paths, and a 30/60/90-day action plan.",
         "deliverables": [
-          "CVE Score — Coefficient of Viability of Expansion: 0–100 proprietary score combining real-world data, AI analysis, and market expertise",
-          "8-section stitched report: competitive landscape, regulatory environment, distribution channels, consumer readiness, investment estimates, strategic paths, risk factors, and implementation roadmap",
-          "Three strategic paths with clear trade-offs, resource requirements, and timeline implications",
-          "12-month phased implementation roadmap with milestones and decision gates",
+          "CVE Score — Coefficient of Viability of Expansion: 0–100 proprietary score across Market Opportunity (40%), Competitive Position (35%), and Internal Readiness (25%)",
+          "8-section report: executive summary, brief, market analysis, competitive landscape, consumer readiness, persona profiles, CVE breakdown, and actionable items",
+          "Three strategic paths (Conservative / Balanced / Aggressive) with recommended path called out",
+          "30/60/90-day actionable items with risk frame for the target market",
           "Executive presentation with Q&A session"
         ]
       },
@@ -545,30 +545,30 @@
         "num": "03",
         "badge": "Growth & Scaling",
         "audience": "US Brands · Growth Stage",
-        "headline": "Structural assessment of scaling readiness with a proprietary score and 24-month plan.",
+        "headline": "Structural readiness audit with a proprietary score, verdict band, and 24-month phased plan.",
         "title": "Scale Assessment",
-        "sub": "For brands already in market that need to understand what's blocking growth. Produces the proprietary SRS Score (Scale Readiness Score), an 8-section stitched report diagnosing structural scaling barriers, and a 24-month phased growth plan.",
+        "sub": "For companies pushing from $5M to $50M, raising a round, or hitting a growth plateau. Produces the proprietary SRS Score (Scale-Readiness Score) with a verdict band — Scale-Ready, Scale-Conditional, Growth-Only, or Restructure — plus a 24-month phased plan and 90-day post-delivery monitoring framework.",
         "deliverables": [
-          "SRS Score — Scale Readiness Score: 0–100 proprietary score assessing structural readiness to scale across operations, marketing, distribution, and team",
-          "8-section stitched report: growth blockers, capability gaps, channel optimization, team structure, competitive positioning, and market expansion opportunities",
-          "Root cause analysis of scaling barriers with prioritized recommendations",
-          "24-month phased growth plan with resource requirements and milestones",
-          "Executive presentation with Q&A session"
+          "SRS Score — Scale-Readiness Score: 0–100 across Structural Foundation (40%), Market Position (35%), and Scale Capacity (25%) with verdict band",
+          "8-section report: operational readiness assessment naming what breaks first, growth blockers, capability gaps, and market expansion opportunities",
+          "24-month phased plan (Foundation → Activate → Accelerate → Compound) with go/no-go gates",
+          "Risk Frame at Scale: what changes when you 3× volume, headcount, or geography",
+          "90-day post-delivery AI-augmented monitoring framework"
         ]
       },
       {
         "num": "04",
         "badge": "Audience Intelligence",
         "audience": "Any Engagement · Per Persona",
-        "headline": "Stage-by-stage journey maps that show how each persona finds, evaluates, and buys your product.",
+        "headline": "Six-stage journey maps with brand-touchpoint audit for each persona.",
         "title": "Customer Journey Mapping",
-        "sub": "Built on the personas defined in your Market Research foundation. Each journey map traces the complete path — from awareness triggers and information sources through evaluation criteria, purchase behavior, and post-purchase advocacy — for each target persona.",
+        "sub": "Built on the personas defined in your Market Research foundation. Each journey map traces six stages — awareness, consideration, purchase, onboarding, retention, and advocacy — with a brand-touchpoint audit scoring your presence as PRESENT, PARTIAL, or ABSENT at each stage.",
         "deliverables": [
-          "Per-persona journey maps across awareness, consideration, evaluation, purchase, and advocacy stages",
-          "Channel touchpoint mapping: where each persona encounters your category and competitors at each stage",
+          "Per-persona journey maps across six stages: awareness → consideration → purchase → onboarding → retention → advocacy",
+          "Brand-touchpoint audit: PRESENT / PARTIAL / ABSENT scoring at every stage for your brand vs. competitors",
+          "Cross-persona Gap Analysis: where your customer experience breaks down across different segments",
           "Content and messaging recommendations aligned to each journey stage",
-          "Conversion barriers and friction points with recommended interventions",
-          "Competitive journey comparison: how your competitors reach the same personas"
+          "Conversion barriers and friction points with recommended interventions"
         ]
       },
       {
