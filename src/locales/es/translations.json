@@ -597,51 +597,51 @@
   "intelligence": {
     "heroLabel": "Servicios de Inteligencia · Impulsado por Soundcheck Insights",
     "heroH1": "Las ideas son tan buenas\ncomo los datos detrás de ellas.",
-    "heroSub": "A través de Soundcheck Insights, uso IA para transformar datos brutos en la inteligencia que impulsa ideas — antes de invertir un dólar en estrategia o ejecución.",
+    "heroSub": "A través de Soundcheck Insights, entrego inteligencia de mercado AI-nativa — modular, de grado decisión y validada por 28 años de experiencia construyendo marcas internacionales. Cada compromiso comienza con investigación. De ahí, sumamos los módulos de inteligencia que encajan en tu desafío.",
     "heroStats": [
       {
-        "number": "6",
-        "label": "Servicios de inteligencia"
+        "number": "5",
+        "label": "Módulos composibles"
       },
       {
-        "number": "14 días",
-        "label": "Entrega completa de análisis"
+        "number": "7–14 días",
+        "label": "Entrega completa"
       },
       {
         "number": "28+",
-        "label": "Años validación de experto"
+        "label": "Años validación experta"
       }
     ],
     "howLabel": "Cómo Funciona",
-    "howH2": "Investigación impulsada por IA. Inteligencia validada por expertos. Entregada en tus manos.",
+    "howH2": "Un intake. Investigación con IA. Validación experta. Output de grado decisión.",
     "howSteps": [
       {
         "number": "01",
-        "title": "Llamada de Intake",
-        "desc": "Nos reunimos para aclarar tus objetivos, mercado, competidores y audiencia objetivo. Presento un brief estructurado a la plataforma Soundcheck.",
+        "title": "Intake Único",
+        "desc": "Una conversación de 60–90 minutos para mapear tus objetivos, mercado, competidores y audiencia. Esta única sesión alimenta cada módulo del compromiso — sin necesidad de segundas entrevistas.",
         "owner": "Valter + Tú"
       },
       {
         "number": "02",
-        "title": "Investigación con IA",
-        "desc": "La plataforma agrega datos en competidores, comportamiento del consumidor, tamaño de mercado, regulaciones y canales de distribución — automáticamente.",
+        "title": "Motor de Investigación con IA",
+        "desc": "La plataforma Soundcheck agrega datos de fuentes gubernamentales, investigación sindicada, asociaciones sectoriales y señales de mercado — estructurados con jerarquía de fuentes, tipado de claims y clasificación de confianza.",
         "owner": "Plataforma"
       },
       {
         "number": "03",
         "title": "Validación por Experto",
-        "desc": "Reviso cada hallazgo con 28 años de experiencia en mercados multiculturales — añadiendo contexto, señalando riesgos y moldeando implicaciones estratégicas.",
+        "desc": "Reviso cada hallazgo con 28 años de experiencia multicultural en marcas — añadiendo contexto estratégico, señalando riesgos, ajustando niveles de confianza y moldeando la inteligencia en recomendaciones accionables.",
         "owner": "Valter"
       },
       {
         "number": "04",
         "title": "Presentación en Vivo",
-        "desc": "Presentamos hallazgos en una sesión de video en vivo con tu equipo. Te vas con un reporte completo, un deck ejecutivo y pasos claros a seguir.",
+        "desc": "Presentamos los hallazgos en una sesión en vivo con tu equipo. Te vas con un reporte completo, un deck ejecutivo y pasos claros a seguir — listo para actuar.",
         "owner": "Valter + Tú"
       }
     ],
-    "productsLabel": "Servicios de Inteligencia",
-    "productsH2": "Seis formas en que conviero datos en ventaja competitiva.",
+    "productsLabel": "El Modelo de Composición",
+    "productsH2": "Una fundación. Cuatro módulos especializados. Construido para encajar en tu desafío.",
     "viewDeliverables": "Ver Entregables",
     "hideDeliverables": "Ocultar Entregables",
     "whatsIncluded": "Qué Está Incluido",
@@ -649,113 +649,100 @@
     "products": [
       {
         "num": "01",
-        "badge": "Más Popular",
-        "audience": "Marcas Internacionales · Entrada de Mercado",
-        "headline": "Inteligencia de entrada de mercado de grado decisión para marcas internacionales.",
-        "title": "Reporte de Viabilidad de Expansión Internacional",
-        "sub": "Puntuación CVE propietaria, paisaje competitivo, snapshot regulatorio, mapa de canal de distribución, tres caminos estratégicos y un roadmap de 12 meses. 100+ páginas, white-labeled, en 14 días.",
+        "badge": "Fundación · Requerido",
+        "featured": true,
+        "audience": "Todo Compromiso Comienza Aquí",
+        "headline": "La base de investigación que alimenta cada módulo de tu compromiso.",
+        "title": "Investigación de Mercado",
+        "sub": "Todo compromiso Soundcheck comienza con una fundación estructurada de Investigación de Mercado — construyendo 6 a 20 personas detalladas que mapean tu paisaje competitivo, comportamiento del consumidor, dimensionamiento de mercado, entorno regulatorio y canales de distribución. Esta es la base de evidencia que alimenta cada módulo adicional.",
         "deliverables": [
-          "CVE — Coeficiente de Viabilidad de Expansión: probabilidad de éxito en el nuevo mercado combinando datos del mundo real, análisis de IA y experiencia local",
-          "Estimaciones claras de inversión: proyecciones de costos para marketing, operaciones y e-commerce",
-          "Timeline estratégico: plan de acción paso a paso desde adaptación del producto hasta campaña de lanzamiento",
-          "Mapa de competidores: jugadores clave, diferenciales competitivos y oportunidades de espacio en blanco",
-          "Reporte de viabilidad detallado (100+ páginas) + presentación de video ejecutiva con Q&A"
+          "6–20 personas detalladas construidas a partir de tu mercado específico, audiencia y contexto competitivo",
+          "Análisis de paisaje competitivo con brechas de posicionamiento y oportunidades de espacio en blanco",
+          "Señales de comportamiento del consumidor, impulsores de compra y validación de demanda",
+          "Dimensionamiento de mercado con datos de fuentes jerarquizadas (gobierno, sindicadas, sectoriales)",
+          "Mapeo regulatorio y de canales de distribución relevantes a tu categoría"
         ]
       },
       {
         "num": "02",
-        "badge": "Fundadores y Nuevas Ventures",
-        "audience": "Emprendedores · Fundadores · Emprendedores Seriales",
-        "headline": "Sabe si tu idea tiene un mercado antes de gastar un dólar construyéndola.",
-        "title": "Análisis de Validación de Idea",
-        "sub": "Completa un formulario de 10 minutos describiendo tu idea. El IA de Soundcheck ejecuta investigación de mercado independiente, analiza la competencia, dimensiona la oportunidad y estima qué pagaría tu cliente objetivo. Recibes un análisis completo y una Tarjeta de Resumen de una página en 48 horas.",
+        "badge": "Más Popular",
+        "audience": "Marcas Internacionales · Entrada de Mercado",
+        "headline": "Inteligencia de entrada de mercado de grado decisión con score propietario de viabilidad.",
+        "title": "Viabilidad de Expansión Internacional (IXV)",
+        "sub": "Para marcas considerando expansión geográfica — especialmente hacia EE.UU. Produce el CVE Score propietario (Coeficiente de Viabilidad de Expansión), un reporte de 8 secciones cubriendo análisis competitivo, snapshot regulatorio, canales de distribución, preparación del consumidor, estimaciones de inversión, tres caminos estratégicos y roadmap de implementación de 12 meses.",
         "deliverables": [
-          "Señales de Demanda de Mercado: volumen de búsqueda real, datos de interés del consumidor y análisis de tendencias de categoría",
-          "Análisis de Brecha Competitiva: quién ya está haciendo esto, qué tan bien, y exactamente dónde existe espacio en blanco",
-          "Perfil del Cliente Objetivo: demografía, comportamientos y señales de disposición a pagar",
-          "Recomendación Ir / No Ir: condiciones para el éxito, factores de riesgo y potencial de ingresos del Año 1–3",
-          "Reporte completo de análisis + Tarjeta de Resumen de una página"
+          "CVE Score — Coeficiente de Viabilidad de Expansión: score propietario 0–100 combinando datos del mundo real, análisis de IA y experiencia de mercado",
+          "Reporte de 8 secciones: paisaje competitivo, entorno regulatorio, canales de distribución, preparación del consumidor, estimaciones de inversión, caminos estratégicos, factores de riesgo y roadmap de implementación",
+          "Tres caminos estratégicos con trade-offs claros, requisitos de recursos e implicaciones de cronología",
+          "Roadmap de implementación de 12 meses con hitos y gates de decisión",
+          "Presentación ejecutiva con sesión Q&A"
         ]
       },
       {
         "num": "03",
-        "badge": "Pre-Lanzamiento y Etapa de Configuración",
-        "audience": "Nuevas Empresas · Etapa de Configuración",
-        "headline": "Un plan de negocios completo respaldado por investigación construido para conversaciones de inversor, requisitos de prestamistas y claridad operacional.",
-        "title": "Desarrollo de Plan de Negocios",
-        "sub": "Un plan de negocios completo respaldado por investigación para empresas en configuración o pre-lanzamiento — construido para conversaciones de inversor, requisitos de prestamistas y claridad operacional.",
+        "badge": "Crecimiento y Escala",
+        "audience": "Marcas en EE.UU. · Etapa de Crecimiento",
+        "headline": "Evaluación estructural de preparación para escalar con score propietario y plan de 24 meses.",
+        "title": "Scale Assessment",
+        "sub": "Para marcas ya en mercado que necesitan entender qué bloquea el crecimiento. Produce el SRS Score propietario (Scale Readiness Score), un reporte de 8 secciones diagnosticando barreras estructurales de escala y un plan de crecimiento de 24 meses.",
         "deliverables": [
-          "Análisis de Mercado y Personas del Cliente: tamaño de categoría, impulsores de crecimiento y perfiles detallados del comprador basados en datos reales — no supuestos",
-          "Paisaje Competitivo y Posicionamiento: mapeo directo de competidores, estrategia de diferenciación y el posicionamiento que hace tu marca imposible de ignorar",
-          "Estrategia de Entrada al Mercado: prioridades de canal, secuenciación de lanzamiento y estrategia de adquisición diseñada para tu mercado y presupuesto específicos",
-          "Proyecciones de Ingresos (3 años): escenarios conservador, base y optimista con supuestos claros — el modelo financiero en el que los inversores realmente confían",
-          "Reporte en profundidad + presentación ejecutiva y sesión de Q&A"
+          "SRS Score — Scale Readiness Score: score propietario 0–100 evaluando preparación estructural para escalar en operaciones, marketing, distribución y equipo",
+          "Reporte de 8 secciones: bloqueadores de crecimiento, brechas de capacidad, optimización de canales, estructura de equipo, posicionamiento competitivo y oportunidades de expansión de mercado",
+          "Análisis de causa raíz de barreras de escala con recomendaciones priorizadas",
+          "Plan de crecimiento de 24 meses con requisitos de recursos y hitos",
+          "Presentación ejecutiva con sesión Q&A"
         ]
       },
       {
         "num": "04",
-        "badge": "Inteligencia del Consumidor",
-        "audience": "Agencias · Consultoría · Departamentos de Marketing",
-        "headline": "Prueba conceptos creativos, ideas de productos, precios y posicionamiento con personas generadas por IA que reflejen tu audiencia objetivo.",
-        "title": "Grupos de Enfoque Virtual con IA",
-        "sub": "Prueba conceptos creativos, ideas de productos, precios y posicionamiento con personas generadas por IA que reflejen tu audiencia objetivo. Sin reclutamiento. Sin programación. Entregado en días.",
+        "badge": "Inteligencia de Audiencia",
+        "audience": "Cualquier Compromiso · Por Persona",
+        "headline": "Mapas de viaje por etapa mostrando cómo cada persona encuentra, evalúa y compra tu producto.",
+        "title": "Mapeo de Viaje del Cliente",
+        "sub": "Construido sobre las personas definidas en tu fundación de Investigación de Mercado. Cada mapa de viaje traza el camino completo — desde disparadores de awareness y fuentes de información, pasando por criterios de evaluación, comportamiento de compra y advocacy post-compra — para cada persona objetivo.",
         "deliverables": [
-          "Personas Personalizadas de IA: 3–10 personas construidas a partir de datos demográficos exactos — edad, ingresos, estilo de vida, comportamiento de compra — reflejando tu audiencia real",
-          "Transcripción de Discusión Moderada: estructurada, sin sesgo — cada persona responde independientemente, sin pensamiento grupal o voces dominantes",
-          "Resumen Ejecutivo y Recomendaciones: hallazgos clave destilados en recomendaciones estratégicas claras para tu equipo",
-          "Panel de Personas Reutilizable: guardado y disponible para sesiones futuras — prueba nuevos conceptos, empaques o mensajes en cualquier momento"
+          "Mapas de viaje por persona en las etapas de awareness, consideración, evaluación, compra y advocacy",
+          "Mapeo de touchpoints por canal: dónde cada persona encuentra tu categoría y competidores en cada etapa",
+          "Recomendaciones de contenido y mensajería alineadas a cada etapa del viaje",
+          "Barreras de conversión y puntos de fricción con intervenciones recomendadas",
+          "Comparación de viaje competitivo: cómo tus competidores alcanzan las mismas personas"
         ]
       },
       {
         "num": "05",
-        "badge": "VC · PE · Inversión",
-        "audience": "Firmas de Capital de Riesgo",
-        "headline": "Sabe qué empresas merecen el tiempo de tu equipo antes de gastarlo.",
-        "title": "Análisis de Evaluación de Financiamiento",
-        "sub": "Dos entrevistas estructuradas — una con el equipo fundador, una con un cliente real. Soundcheck ejecuta investigación independiente, detecta contradicciones entre ambas entrevistas, y entrega un veredicto de una página AVANZAR / CONDICIONAL / PARAR con la evidencia detrás.",
+        "badge": "Prueba de Concepto",
+        "audience": "Producto · Creativo · Posicionamiento",
+        "headline": "Prueba conceptos creativos, ideas de producto y posicionamiento con personas generadas por IA — en días, no semanas.",
+        "title": "Virtual Focus Group",
+        "sub": "Personas generadas por IA construidas desde tu fundación de Investigación de Mercado responden a tus estímulos — conceptos creativos, ideas de producto, pricing, empaque, posicionamiento. Cada persona responde independientemente, eliminando pensamiento grupal. Incluye rondas ilimitadas de feedback, y re-tests permiten iterar con nuevos estímulos usando el mismo panel.",
         "deliverables": [
-          "Dos entrevistas estructuradas: una con el equipo fundador, una con un cliente real",
-          "Investigación independiente: validación de mercado, posicionamiento competitivo y evaluación de riesgo",
-          "Análisis de contradicciones: detecta brechas entre narrativa del fundador y realidad del cliente",
-          "Veredicto de una página AVANZAR / CONDICIONAL / PARAR con evidencia de apoyo",
-          "Reporte completo de análisis con condiciones de ruptura de trato y factores de riesgo"
-        ]
-      },
-      {
-        "num": "06",
-        "badge": "Metodología CC",
-        "audience": "Evaluación y Recomendaciones Lideradas por CxO",
-        "headline": "Diagnóstico organizacional propietario de Chameleon Collective — aplicado por un profesional experimentado.",
-        "title": "Evaluación CLEAR",
-        "sub": "Evalúo tu organización de marketing en Estrategia, Equipo y Ejecución para identificar bloqueadores de crecimiento, descubrir brechas de capacidad y priorizar las oportunidades de mayor apalancamiento para mejora.",
-        "deliverables": [
-          "Entrevistas de stakeholder en liderazgo, marketing, ventas y operaciones",
-          "Evaluación calificada en dimensiones de Estrategia, Equipo y Ejecución",
-          "Identificación de bloqueador de crecimiento con análisis de causa raíz",
-          "Recomendaciones priorizadas con secuenciación e implicaciones de recursos",
-          "Presentación ejecutiva con un roadmap claro para desbloquear crecimiento"
+          "Panel de personas de IA personalizado construido a partir de tus datos demográficos específicos — edad, ingresos, estilo de vida, comportamiento de compra",
+          "Transcripción de discusión moderada: respuestas independientes, estructuradas y sin sesgo de cada persona",
+          "Resumen ejecutivo con hallazgos clave destilados en recomendaciones estratégicas",
+          "Panel de personas reutilizable guardado para sesiones futuras — prueba nuevos conceptos en cualquier momento",
+          "Rondas ilimitadas de feedback dentro de la sesión sin costo adicional"
         ]
       }
     ],
-    "whyLabel": "Por Qué Importa",
-    "whyH2": "Los datos alimentan ideas. Las ideas impulsan innovación.",
-    "whySub": "Demasiadas empresas entran en nuevos mercados con instinto, investigación anecdótica o reportes desactualizados. Soundcheck cambia eso — sin el precio de agencia o la cronología de 6 meses.",
+    "whyLabel": "Por Qué Este Enfoque",
+    "whyH2": "No es una firma de investigación. No es un prompt de ChatGPT. Es un motor de inteligencia estructurado con una capa de validación humana.",
+    "whySub": "La investigación de mercado tradicional cuesta $30K–$80K y tarda 3–6 meses. ChatGPT entrega output no estructurado sin jerarquía de fuentes. Entrego algo entre ambos — estructurado, con fuentes, clasificación de confianza y validado por experiencia — en 7–14 días.",
     "whyItems": [
       {
-        "title": "Decisiones Respaldadas por Datos",
-        "desc": "Cada recomendación está respaldada por datos de mercado reales — análisis de competidor, comportamiento del consumidor, paisaje de distribución, requisitos regulatorios."
+        "title": "Fuentes Jerarquizadas, No Inventadas",
+        "desc": "Cada claim proviene de una jerarquía de cuatro niveles: datos gubernamentales y oficiales primero, luego investigación sindicada, luego asociaciones sectoriales, luego web y medios — explícitamente señalado cuando fuentes primarias no están disponibles."
       },
       {
-        "title": "Salida Validada por Experto",
-        "desc": "La IA hace la agregación. Aplico 28 años de experiencia en marketing multicultural para validar, contextualizar y traducir hallazgos en estrategia."
+        "title": "Claims Tipados y Confianza Clasificada",
+        "desc": "Cada hallazgo principal se etiqueta como HECHO, ESTIMACIÓN o INTERPRETACIÓN — con confianza ALTA, MEDIA o BAJA y la justificación detrás. Siempre sabes qué estás mirando."
       },
       {
-        "title": "Rápido y Asequible",
-        "desc": "Las firmas tradicionales de investigación de mercado cobran $30,000–$80,000 y tardan 3–6 meses. Soundcheck entrega profundidad equivalente en 7–14 días a una fracción del costo."
+        "title": "Validado por Experto, No Auto-Generado",
+        "desc": "La IA hace la agregación de investigación. Aplico 28 años de experiencia multicultural en marcas para validar, contextualizar y traducir hallazgos en estrategia accionable."
       },
       {
-        "title": "Independiente o Integrado",
-        "desc": "Comienza con un compromiso de inteligencia, luego pasa a una relación completa de CMO Fraccional — o usa el salida para briefear otra agencia. Tu elección."
+        "title": "Modular, No Monolítico",
+        "desc": "Comienza con la fundación de investigación, suma los módulos que encajan en tu desafío específico. Cada compromiso se compone a medida — no un paquete único con entregables que no necesitas."
       }
     ],
     "ctaH2": "Cuéntame qué necesitas saber.",

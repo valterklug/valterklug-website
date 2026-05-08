@@ -460,15 +460,15 @@
   "intelligence": {
     "heroLabel": "Intelligence Services · Powered by Soundcheck Insights",
     "heroH1": "Ideas are only as good\nas the data behind them.",
-    "heroSub": "Through Soundcheck Insights, I use AI to turn raw data into the intelligence that fuels ideas — before we invest a dollar in strategy or execution.",
+    "heroSub": "Through Soundcheck Insights, I deliver AI-native market intelligence — modular, decision-grade, and validated by 28 years of cross-border brand experience. Every engagement starts with research. From there, we add the intelligence modules that match your challenge.",
     "heroStats": [
       {
-        "number": "6",
-        "label": "Intelligence services"
+        "number": "5",
+        "label": "Composable modules"
       },
       {
-        "number": "14 days",
-        "label": "Full analysis delivery"
+        "number": "7–14 days",
+        "label": "Full delivery"
       },
       {
         "number": "28+",
@@ -476,35 +476,35 @@
       }
     ],
     "howLabel": "How It Works",
-    "howH2": "AI-powered research. Expert-validated intelligence. Delivered in your hands.",
+    "howH2": "One intake. AI-powered research. Expert validation. Decision-grade output.",
     "howSteps": [
       {
         "number": "01",
-        "title": "Intake Call",
-        "desc": "We meet to clarify your goals, market, competitors, and target audience. I submit a structured brief to the Soundcheck platform.",
+        "title": "Single Intake Call",
+        "desc": "One 60–90 minute conversation to map your goals, market, competitors, and audience. This single session feeds every module in the engagement — no second interviews required.",
         "owner": "Valter + You"
       },
       {
         "number": "02",
-        "title": "AI Research",
-        "desc": "The platform aggregates data across competitors, consumer behavior, market size, regulations, and distribution channels — automatically.",
+        "title": "AI Research Engine",
+        "desc": "The Soundcheck platform aggregates data from government sources, syndicated research, industry associations, and market signals — structured with source tiering, claim typing, and confidence labeling.",
         "owner": "Platform"
       },
       {
         "number": "03",
         "title": "Expert Validation",
-        "desc": "I review every finding with 28 years of cross-cultural market experience — adding context, flagging risks, and shaping strategic implications.",
+        "desc": "I review every finding with 28 years of cross-cultural brand experience — adding strategic context, flagging risks, adjusting confidence levels, and shaping the intelligence into actionable recommendations.",
         "owner": "Valter"
       },
       {
         "number": "04",
         "title": "Live Presentation",
-        "desc": "We present findings in a live video session with your team. You leave with a complete report, an executive deck, and clear next steps.",
+        "desc": "We present findings in a live session with your team. You leave with a complete report, an executive deck, and clear next steps — ready to act on.",
         "owner": "Valter + You"
       }
     ],
-    "productsLabel": "Intelligence Services",
-    "productsH2": "Six ways I turn data into competitive advantage.",
+    "productsLabel": "The Composition Model",
+    "productsH2": "One foundation. Four specialized modules. Built to fit your challenge.",
     "viewDeliverables": "View Deliverables",
     "hideDeliverables": "Hide Deliverables",
     "whatsIncluded": "What's Included",
@@ -512,113 +512,100 @@
     "products": [
       {
         "num": "01",
-        "badge": "Most Popular",
-        "audience": "International Brands · Market Entry",
-        "headline": "Decision-grade market entry intelligence for international brands.",
-        "title": "International Expansion Viability Report",
-        "sub": "Proprietary CVE Score, competitive landscape, regulatory snapshot, distribution channel map, three strategic paths, and a 12-month roadmap. 100+ pages, white-labeled, in 14 days.",
+        "badge": "Foundation · Required",
+        "featured": true,
+        "audience": "Every Engagement Starts Here",
+        "headline": "The research base that powers every module in your engagement.",
+        "title": "Market Research",
+        "sub": "Every Soundcheck engagement begins with a structured Market Research foundation — building 6 to 20 detailed personas that map your competitive landscape, consumer behavior, market sizing, regulatory environment, and distribution channels. This is the evidence base that fuels every add-on module.",
         "deliverables": [
-          "CVE — Expansion Viability Coefficient: probability of success in the new market combining real-world data, AI analysis, and local expertise",
-          "Clear investment estimates: cost projections for marketing, operations, and e-commerce",
-          "Strategic timeline: step-by-step action plan from product adaptation to launch campaign",
-          "Competitor map: key players, competitive differentials, and white-space opportunities",
-          "Detailed viability report (100+ pages) + executive video presentation with Q&A"
+          "6–20 detailed personas built from your specific market, audience, and competitive context",
+          "Competitive landscape analysis with positioning gaps and white-space opportunities",
+          "Consumer behavior signals, purchase drivers, and demand validation",
+          "Market sizing with source-tiered data (government, syndicated, industry)",
+          "Regulatory and distribution channel mapping relevant to your category"
         ]
       },
       {
         "num": "02",
-        "badge": "Founders & New Ventures",
-        "audience": "Entrepreneurs · Founders · Serial Entrepreneurs",
-        "headline": "Know if your idea has a market before you spend a dollar building it.",
-        "title": "Idea Validation Analysis",
-        "sub": "Fill out a 10-minute form describing your idea. Soundcheck's AI runs independent market research, analyzes the competition, sizes the opportunity, and estimates what your target customer would pay. You receive a full analysis and a one-page Summary Card in 48 hours.",
+        "badge": "Most Popular",
+        "audience": "International Brands · Market Entry",
+        "headline": "Decision-grade market entry intelligence with a proprietary viability score.",
+        "title": "International Expansion Viability (IXV)",
+        "sub": "For brands considering geographic expansion — especially into the US. Produces the proprietary CVE Score (Coefficient of Viability of Expansion), an 8-section stitched report covering competitive analysis, regulatory snapshot, distribution channels, consumer readiness, investment estimates, three strategic paths, and a 12-month implementation roadmap.",
         "deliverables": [
-          "Market Demand Signals: real search volume, consumer interest data, and category trend analysis",
-          "Competitive Gap Analysis: who's already doing this, how well, and exactly where white space exists",
-          "Target Customer Profile: demographics, behaviors, and willingness-to-pay signals",
-          "Go / No-Go Recommendation: conditions for success, risk factors, and Year 1–3 revenue potential",
-          "Full analysis report + one-page Summary Card"
+          "CVE Score — Coefficient of Viability of Expansion: 0–100 proprietary score combining real-world data, AI analysis, and market expertise",
+          "8-section stitched report: competitive landscape, regulatory environment, distribution channels, consumer readiness, investment estimates, strategic paths, risk factors, and implementation roadmap",
+          "Three strategic paths with clear trade-offs, resource requirements, and timeline implications",
+          "12-month phased implementation roadmap with milestones and decision gates",
+          "Executive presentation with Q&A session"
         ]
       },
       {
         "num": "03",
-        "badge": "Pre-Launch & Setup Stage",
-        "audience": "New Companies · Setup Stage",
-        "headline": "A complete, research-backed business plan built for investor conversations, lender requirements, and operational clarity.",
-        "title": "Business Plan Development",
-        "sub": "A complete, research-backed business plan for companies in setup or pre-launch — built for investor conversations, lender requirements, and operational clarity.",
+        "badge": "Growth & Scaling",
+        "audience": "US Brands · Growth Stage",
+        "headline": "Structural assessment of scaling readiness with a proprietary score and 24-month plan.",
+        "title": "Scale Assessment",
+        "sub": "For brands already in market that need to understand what's blocking growth. Produces the proprietary SRS Score (Scale Readiness Score), an 8-section stitched report diagnosing structural scaling barriers, and a 24-month phased growth plan.",
         "deliverables": [
-          "Market Analysis & Customer Personas: category size, growth drivers, and detailed buyer profiles based on real data — not assumptions",
-          "Competitive Landscape & Positioning: direct competitor mapping, differentiation strategy, and the positioning that makes your brand impossible to ignore",
-          "Go-To-Market Strategy: channel priorities, launch sequencing, and acquisition strategy designed for your specific market and budget",
-          "Revenue Projections (3-Year): conservative, base, and optimistic scenarios with clear assumptions — the financial model investors actually trust",
-          "In-depth report + executive presentation & Q&A session"
+          "SRS Score — Scale Readiness Score: 0–100 proprietary score assessing structural readiness to scale across operations, marketing, distribution, and team",
+          "8-section stitched report: growth blockers, capability gaps, channel optimization, team structure, competitive positioning, and market expansion opportunities",
+          "Root cause analysis of scaling barriers with prioritized recommendations",
+          "24-month phased growth plan with resource requirements and milestones",
+          "Executive presentation with Q&A session"
         ]
       },
       {
         "num": "04",
-        "badge": "Consumer Intelligence",
-        "audience": "Agencies · Consultancies · Marketing Depts",
-        "headline": "Test creative concepts, product ideas, pricing, and positioning with AI-generated personas that mirror your target audience.",
-        "title": "AI Virtual Focus Groups",
-        "sub": "Test creative concepts, product ideas, pricing, and positioning with AI-generated personas that mirror your target audience. No recruiting. No scheduling. Delivered in days.",
+        "badge": "Audience Intelligence",
+        "audience": "Any Engagement · Per Persona",
+        "headline": "Stage-by-stage journey maps that show how each persona finds, evaluates, and buys your product.",
+        "title": "Customer Journey Mapping",
+        "sub": "Built on the personas defined in your Market Research foundation. Each journey map traces the complete path — from awareness triggers and information sources through evaluation criteria, purchase behavior, and post-purchase advocacy — for each target persona.",
         "deliverables": [
-          "Custom AI Personas: 3–10 personas built from exact target demographics — age, income, lifestyle, purchase behavior — mirroring your real audience",
-          "Moderated Discussion Transcript: structured, bias-free — every persona responds independently, no groupthink or dominant voices",
-          "Executive Summary & Recommendations: key findings distilled into clear strategic recommendations for your team",
-          "Reusable Persona Panel: saved and available for future sessions — test new concepts, packaging, or messaging anytime"
+          "Per-persona journey maps across awareness, consideration, evaluation, purchase, and advocacy stages",
+          "Channel touchpoint mapping: where each persona encounters your category and competitors at each stage",
+          "Content and messaging recommendations aligned to each journey stage",
+          "Conversion barriers and friction points with recommended interventions",
+          "Competitive journey comparison: how your competitors reach the same personas"
         ]
       },
       {
         "num": "05",
-        "badge": "VC · PE · Investment",
-        "audience": "Venture Capital Firms",
-        "headline": "Know which companies deserve your team's time before you spend it.",
-        "title": "Funding Vetting Analysis",
-        "sub": "Two structured interviews — one with the founder team, one with a real customer. Soundcheck runs independent research, surfaces contradictions between both interviews, and delivers a one-page ADVANCE / CONDITIONAL / STOP verdict with the evidence behind it.",
+        "badge": "Concept Testing",
+        "audience": "Product · Creative · Positioning",
+        "headline": "Test creative concepts, product ideas, and positioning with AI-generated personas — in days, not weeks.",
+        "title": "Virtual Focus Group",
+        "sub": "AI-generated personas built from your Market Research foundation respond to your stimuli — creative concepts, product ideas, pricing, packaging, positioning. Each persona responds independently, eliminating groupthink. Includes unlimited feedback rounds, and re-tests let you iterate with new stimuli using the same panel.",
         "deliverables": [
-          "Two structured interviews: one with the founder team, one with a real customer",
-          "Independent research: market validation, competitive positioning, and risk assessment",
-          "Contradiction analysis: surfaces gaps between founder narrative and customer reality",
-          "One-page ADVANCE / CONDITIONAL / STOP verdict with supporting evidence",
-          "Full analysis report with deal-breaker conditions and risk factors"
-        ]
-      },
-      {
-        "num": "06",
-        "badge": "CC Methodology",
-        "audience": "CxO Led Evaluation And Recommendations",
-        "headline": "Chameleon Collective's proprietary organizational diagnostic — applied by an experienced practitioner.",
-        "title": "CLEAR Assessment",
-        "sub": "I assess your marketing organization across Strategy, Team, and Execution to identify growth blockers, uncover capability gaps, and prioritize the highest-leverage opportunities for improvement.",
-        "deliverables": [
-          "Stakeholder interviews across leadership, marketing, sales, and operations",
-          "Scored assessment across Strategy, Team, and Execution dimensions",
-          "Growth blocker identification with root cause analysis",
-          "Prioritized recommendations with sequencing and resource implications",
-          "Executive presentation with a clear roadmap to unlock growth"
+          "Custom AI persona panel built from your specific target demographics — age, income, lifestyle, purchase behavior",
+          "Moderated discussion transcript: structured, bias-free independent responses from each persona",
+          "Executive summary with key findings distilled into strategic recommendations",
+          "Reusable persona panel saved for future sessions — test new concepts anytime",
+          "Unlimited feedback rounds within the session at no additional cost"
         ]
       }
     ],
-    "whyLabel": "Why This Matters",
-    "whyH2": "Data fuels ideas. Ideas drive innovation.",
-    "whySub": "Too many companies enter new markets on gut feeling, anecdotal research, or outdated reports. Soundcheck changes that — without the agency price tag or the 6-month timeline.",
+    "whyLabel": "Why This Approach",
+    "whyH2": "Not a research firm. Not a ChatGPT prompt. A structured intelligence engine with a human validation layer.",
+    "whySub": "Traditional market research costs $30K–$80K and takes 3–6 months. ChatGPT gives you unstructured output with no source hierarchy. I deliver something in between — structured, sourced, confidence-labeled, and validated by experience — in 7–14 days.",
     "whyItems": [
       {
-        "title": "Data-Backed Decisions",
-        "desc": "Every recommendation is supported by real market data — competitor analysis, consumer behavior, distribution landscape, regulatory requirements."
+        "title": "Source-Tiered, Not Invented",
+        "desc": "Every claim is sourced from a four-tier hierarchy: government and official data first, then syndicated research, then industry associations, then web and media — explicitly flagged when primary sources aren't available."
       },
       {
-        "title": "Expert-Validated Output",
-        "desc": "AI does the aggregation. I apply 28 years of cross-cultural marketing experience to validate, contextualize, and translate findings into strategy."
+        "title": "Claim-Typed and Confidence-Labeled",
+        "desc": "Every major finding is tagged as FACT, ESTIMATE, or INTERPRETATION — with HIGH, MED, or LOW confidence and the rationale behind it. You always know what you're looking at."
       },
       {
-        "title": "Fast and Affordable",
-        "desc": "Traditional market research firms charge $30,000–$80,000 and take 3–6 months. Soundcheck delivers equivalent depth in 7–14 days at a fraction of the cost."
+        "title": "Expert-Validated, Not Auto-Generated",
+        "desc": "AI does the research aggregation. I apply 28 years of cross-cultural brand experience to validate, contextualize, and translate findings into strategy you can act on."
       },
       {
-        "title": "Standalone or Integrated",
-        "desc": "Start with an intelligence engagement, then move into a full fractional CMO relationship — or use the output to brief another agency. Your choice."
+        "title": "Modular, Not Monolithic",
+        "desc": "Start with the research foundation, add the modules that match your specific challenge. Every engagement is composed to fit — not a one-size-fits-all package with deliverables you don't need."
       }
     ],
     "ctaH2": "Tell me what you need to know.",
