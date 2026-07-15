@@ -20,6 +20,7 @@ export default function Nav() {
     { label: t('nav.portfolio'), to: '/portfolio' },
     { label: t('nav.intelligence'), to: '/intelligence' },
     { label: t('nav.articles'), to: '/articles' },
+    { label: t('nav.investors'), to: '/private-equity' },
   ], [t])
 
   useEffect(() => {

@@ -14,6 +14,7 @@ import Intelligence from './pages/Intelligence'
 import News from './pages/News'
 import ArticlePage from './pages/ArticlePage'
 import Contact from './pages/Contact'
+import PrivateEquity from './pages/PrivateEquity'
 
 const Admin = lazy(() => import('./pages/Admin'))
 
@@ -51,6 +52,7 @@ function Layout() {
           <Route path="/news" element={<News />} />
           <Route path="/news/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/private-equity" element={<PrivateEquity />} />
         </Routes>
       </AnimatePresence>
       <Footer />

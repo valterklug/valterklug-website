@@ -6,6 +6,7 @@
     "portfolio": "Portafolio",
     "intelligence": "Inteligencia",
     "articles": "Artículos",
+    "investors": "Para Inversores",
     "wordmark": "Valter Klug",
     "subtitle": "Líder Creativo · Brand Builder · Miami",
     "cta": "Hablemos →"
@@ -23,7 +24,8 @@
       "portfolio": "Portafolio",
       "intelligence": "Inteligencia",
       "articles": "Artículos",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "investors": "Para Inversores"
     },
     "operatingThroughTitle": "Operando a Través de",
     "chameleonCollective": "Liderazgo creativo y compromisos de consultoría",
