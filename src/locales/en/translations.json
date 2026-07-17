@@ -649,5 +649,94 @@
       "before": "Before",
       "after": "After"
     }
+  },
+  "privateEquity": {
+    "seoTitle": "Private Equity Partnership — Valter Klug",
+    "seoDescription": "A transformation partner for private equity, from diligence to exit. International expansion and commerce growth that survives to exit, inside the Chameleon Collective model.",
+    "seoDefaultTitle": "Valter Klug — Fractional CMO & Brand Expansion Strategist",
+    "heroLabel": "For Investors",
+    "heroH1": "Expansion and commerce growth your buyer keeps.",
+    "heroSub": "I lead international expansion and commerce transformation inside Chameleon Collective's diligence-to-exit model. A transformation expense with an end date, not an agency retainer that compounds.",
+    "heroCta": "Bring me your thesis →",
+    "thesisEyebrow": "The Thesis",
+    "thesisH2": "The agency you hire at entry is the growth that walks out at exit.",
+    "agencyCurveTitle": "The agency curve",
+    "agencyCurveText": "Retainers compound quarter after quarter. The capability is rented. When the agency leaves, the growth leaves with it, and your buyer pays for a dependency.",
+    "chameleonCurveTitle": "The Chameleon curve",
+    "chameleonCurveText": "The spend has an end date. We transform the function, recruit the permanent team, and internalize the capability. EBITDA improves because we refuse to become overhead. At exit, the business runs itself.",
+    "fitEyebrow": "My Seat",
+    "fitH2": "I own the deals with a new-market or commerce thesis.",
+    "fitSub": "Chameleon is the machine across the whole deal lifecycle. My seat is the growth thesis I have spent 28 years executing, in both directions across the U.S. and Latin America.",
+    "crossBorderTitle": "Cross-border expansion",
+    "crossBorderText": "Building brands into new markets, U.S. to Latin America and back. Bauducco's U.S. national launch. Inter&Co's 2022 U.S. entry. The corridor most operators have never worked, in both directions.",
+    "commerceTitle": "Commerce as measurable growth",
+    "commerceText": "The e-commerce engine that turns a brand into direct sales. I built the first two U.S. storefronts on VTEX in 2019, two years before its U.S. IPO, and run Amazon and DTC on Shopify and BigCommerce.",
+    "lifecycleEyebrow": "Across the Hold Period",
+    "lifecycleH2": "One partner, from diligence to exit.",
+    "differentiatorBadge": "Differentiator",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Diligence",
+        "text": "Before you wire the money. Chameleon's CLEAR assessment puts C-level operators into the business and returns a plain read on where the growth blockers are. I add a quantified market-viability layer through Soundcheck Insights, my market-intelligence platform, so an expansion thesis gets a number before you commit capital.",
+        "featured": true
+      },
+      {
+        "num": "02",
+        "title": "The first hundred days",
+        "text": "Interim marketing and commerce leadership in the seats that matter, while you search for the permanent hire. The growth engine gets stood up fast."
+      },
+      {
+        "num": "03",
+        "title": "The hold period",
+        "text": "The expansion and commerce theses executed, not just planned. Brand, DTC, marketplace, and AI-enabled marketing operations, injected exactly where the thesis needs them."
+      },
+      {
+        "num": "04",
+        "title": "Exit readiness",
+        "text": "We recruit the permanent team, hand off everything we built, and leave. Your buyer finds a self-sustaining business, not a dependency to unwind."
+      }
+    ],
+    "calloutEyebrow": "The Diligence Edge",
+    "calloutText": "Most partners find out if an expansion thesis works after they have paid for it. I put a number on it during diligence. Soundcheck Insights scores cross-border viability and scale readiness, and it plugs straight into CLEAR, so your value-creation plan starts with evidence instead of a hunch.",
+    "proofEyebrow": "Proof",
+    "proofH2": "Chameleon Collective's track record.",
+    "stats": [
+      {
+        "number": "280+",
+        "label": "Proven Specialists"
+      },
+      {
+        "number": "2,000+",
+        "label": "Transformations Delivered"
+      },
+      {
+        "number": "6",
+        "label": "Trusted PE Partners"
+      }
+    ],
+    "trustedBy": "Trusted by",
+    "myWorkLabel": "My Work",
+    "myWorkText": "Bauducco's U.S. launch, Inter&Co's U.S. market entry, and the first U.S. e-commerce storefronts on VTEX. Brand and commerce outcomes across consumer, fintech, and DTC.",
+    "contactEyebrow": "Get in Touch",
+    "contactH2": "Bring me your thesis.",
+    "contactSub": "Whether you are mid-diligence or mid-hold, let's talk. I will tell you honestly where we can move the number, and where you would not need me.",
+    "formNameLabel": "Name *",
+    "formNamePlaceholder": "Full name",
+    "formFirmLabel": "Firm *",
+    "formFirmPlaceholder": "Your firm",
+    "formEmailLabel": "Email *",
+    "formEmailPlaceholder": "you@firm.com",
+    "formThesisLabel": "What's the thesis?",
+    "formThesisPlaceholder": "E.g., LATAM CPG expanding to U.S. retail",
+    "formRequired": "Required",
+    "formInvalidEmail": "Invalid email",
+    "formSubmitting": "Sending...",
+    "formSubmit": "Start the conversation →",
+    "formOr": "or",
+    "formBookCall": "book a call directly",
+    "formSuccess": "Thanks. I'll be in touch within one business day.",
+    "formError": "Something went wrong. Email me directly:",
+    "formSubjectPrefix": "PE Inquiry from"
   }
 }

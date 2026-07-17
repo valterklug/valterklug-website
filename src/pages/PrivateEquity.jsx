@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn, StaggerContainer, StaggerItem } from '../components/Animate'
 
 // ── Terracotta accent — signals the Chameleon Collective partnership ──
@@ -26,22 +28,24 @@ const FUND_LOGOS = [
 export default function PrivateEquity() {
   const [formStatus, setFormStatus] = useState('idle')
   const { register, handleSubmit, reset, formState: { errors } } = useForm()
+  const { t } = useTranslation()
+  const { localePath } = useLocale()
 
   // ── SEO ──
   useEffect(() => {
-    document.title = 'Private Equity Partnership — Valter Klug'
+    document.title = t('privateEquity.seoTitle')
     const setMeta = (attr, key, content) => {
       let el = document.querySelector(`meta[${attr}="${key}"]`)
       if (!el) { el = document.createElement('meta'); el.setAttribute(attr, key); document.head.appendChild(el) }
       el.content = content
     }
-    setMeta('name', 'description', 'A transformation partner for private equity, from diligence to exit. International expansion and commerce growth that survives to exit, inside the Chameleon Collective model.')
-    setMeta('property', 'og:title', 'Private Equity Partnership — Valter Klug')
-    setMeta('property', 'og:description', 'A transformation partner for private equity, from diligence to exit. International expansion and commerce growth that survives to exit, inside the Chameleon Collective model.')
+    setMeta('name', 'description', t('privateEquity.seoDescription'))
+    setMeta('property', 'og:title', t('privateEquity.seoTitle'))
+    setMeta('property', 'og:description', t('privateEquity.seoDescription'))
     setMeta('property', 'og:type', 'website')
     setMeta('property', 'og:url', 'https://valterklug.com/private-equity/')
-    return () => { document.title = 'Valter Klug — Fractional CMO & Brand Expansion Strategist' }
-  }, [])
+    return () => { document.title = t('privateEquity.seoDefaultTitle') }
+  }, [t])
 
   const onSubmit = async (data) => {
     setFormStatus('submitting')
@@ -51,7 +55,7 @@ export default function PrivateEquity() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           ...data,
-          _subject: `PE Inquiry from ${data.name} — ${data.firm || 'No firm'}`,
+          _subject: `${t('privateEquity.formSubjectPrefix')} ${data.name} — ${data.firm || 'No firm'}`,
           _template: 'table',
         }),
       })
@@ -64,6 +68,9 @@ export default function PrivateEquity() {
     e.preventDefault()
     document.getElementById('pe-contact')?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  const steps = t('privateEquity.steps', { returnObjects: true })
+  const stats = t('privateEquity.stats', { returnObjects: true })
 
   return (
     <PageWrapper>
@@ -90,7 +97,7 @@ export default function PrivateEquity() {
               marginBottom: 28, display: 'flex', alignItems: 'center', gap: 10,
             }}>
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: TERRA, display: 'block', flexShrink: 0 }} />
-            For Investors
+            {t('privateEquity.heroLabel')}
           </motion.div>
 
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .08 }}
@@ -99,7 +106,7 @@ export default function PrivateEquity() {
               fontWeight: 300, lineHeight: 1.08, color: '#fff',
               letterSpacing: '-.025em', marginBottom: 24, maxWidth: 720,
             }}>
-            Expansion and commerce growth your buyer keeps.
+            {t('privateEquity.heroH1')}
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
@@ -107,14 +114,14 @@ export default function PrivateEquity() {
               fontFamily: 'Inter,sans-serif', fontSize: '1.0625rem',
               color: 'rgba(255,255,255,.55)', lineHeight: 1.7, maxWidth: 620, marginBottom: 40,
             }}>
-            I lead international expansion and commerce transformation inside Chameleon Collective's diligence-to-exit model. A transformation expense with an end date, not an agency retainer that compounds.
+            {t('privateEquity.heroSub')}
           </motion.p>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .26 }}>
             <button onClick={scrollToForm} className="btn" style={{
               background: TERRA, color: '#fff', border: 'none',
             }}>
-              Bring me your thesis →
+              {t('privateEquity.heroCta')}
             </button>
           </motion.div>
         </div>
@@ -134,14 +141,14 @@ export default function PrivateEquity() {
               display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14,
             }}>
               <span style={{ width: 20, height: 1.5, background: TERRA, display: 'block' }} />
-              The Thesis
+              {t('privateEquity.thesisEyebrow')}
             </span>
             <h2 style={{
               fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)',
               fontWeight: 300, color: '#121212', letterSpacing: '-.015em',
               lineHeight: 1.15, marginBottom: 48, maxWidth: 700,
             }}>
-              The agency you hire at entry is the growth that walks out at exit.
+              {t('privateEquity.thesisH2')}
             </h2>
           </FadeIn>
 
@@ -156,7 +163,7 @@ export default function PrivateEquity() {
                   <h3 style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500,
                     color: '#121212', letterSpacing: '-.01em',
-                  }}>The agency curve</h3>
+                  }}>{t('privateEquity.agencyCurveTitle')}</h3>
                   <span style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 300,
                     color: '#ccc', letterSpacing: '.02em',
@@ -166,7 +173,7 @@ export default function PrivateEquity() {
                   fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                   color: '#444', lineHeight: 1.7,
                 }}>
-                  Retainers compound quarter after quarter. The capability is rented. When the agency leaves, the growth leaves with it, and your buyer pays for a dependency.
+                  {t('privateEquity.agencyCurveText')}
                 </p>
               </div>
             </FadeIn>
@@ -178,7 +185,7 @@ export default function PrivateEquity() {
                   <h3 style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500,
                     color: '#121212', letterSpacing: '-.01em',
-                  }}>The Chameleon curve</h3>
+                  }}>{t('privateEquity.chameleonCurveTitle')}</h3>
                   <span style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 300,
                     color: '#ccc', letterSpacing: '.02em',
@@ -188,7 +195,7 @@ export default function PrivateEquity() {
                   fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                   color: '#444', lineHeight: 1.7,
                 }}>
-                  The spend has an end date. We transform the function, recruit the permanent team, and internalize the capability. EBITDA improves because we refuse to become overhead. At exit, the business runs itself.
+                  {t('privateEquity.chameleonCurveText')}
                 </p>
               </div>
             </FadeIn>
@@ -208,20 +215,20 @@ export default function PrivateEquity() {
               display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14,
             }}>
               <span style={{ width: 20, height: 1.5, background: TERRA, display: 'block' }} />
-              My Seat
+              {t('privateEquity.fitEyebrow')}
             </span>
             <h2 style={{
               fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)',
               fontWeight: 300, color: '#121212', letterSpacing: '-.015em',
               lineHeight: 1.15, marginBottom: 16, maxWidth: 700,
             }}>
-              I own the deals with a new-market or commerce thesis.
+              {t('privateEquity.fitH2')}
             </h2>
             <p style={{
               fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
               color: '#666', lineHeight: 1.7, marginBottom: 48, maxWidth: 660,
             }}>
-              Chameleon is the machine across the whole deal lifecycle. My seat is the growth thesis I have spent 28 years executing, in both directions across the U.S. and Latin America.
+              {t('privateEquity.fitSub')}
             </p>
           </FadeIn>
 
@@ -238,12 +245,12 @@ export default function PrivateEquity() {
                   <h3 style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500,
                     color: '#121212', letterSpacing: '-.01em', marginBottom: 16,
-                  }}>Cross-border expansion</h3>
+                  }}>{t('privateEquity.crossBorderTitle')}</h3>
                   <p style={{
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     color: '#444', lineHeight: 1.7,
                   }}>
-                    Building brands into new markets, U.S. to Latin America and back. Bauducco's U.S. national launch. Inter&Co's 2022 U.S. entry. The corridor most operators have never worked, in both directions.
+                    {t('privateEquity.crossBorderText')}
                   </p>
                 </div>
               </StaggerItem>
@@ -257,12 +264,12 @@ export default function PrivateEquity() {
                   <h3 style={{
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500,
                     color: '#121212', letterSpacing: '-.01em', marginBottom: 16,
-                  }}>Commerce as measurable growth</h3>
+                  }}>{t('privateEquity.commerceTitle')}</h3>
                   <p style={{
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     color: '#444', lineHeight: 1.7,
                   }}>
-                    The e-commerce engine that turns a brand into direct sales. I built the first two U.S. storefronts on VTEX in 2019, two years before its U.S. IPO, and run Amazon and DTC on Shopify and BigCommerce.
+                    {t('privateEquity.commerceText')}
                   </p>
                 </div>
               </StaggerItem>
@@ -283,14 +290,14 @@ export default function PrivateEquity() {
               display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14,
             }}>
               <span style={{ width: 20, height: 1.5, background: TERRA, display: 'block' }} />
-              Across the Hold Period
+              {t('privateEquity.lifecycleEyebrow')}
             </span>
             <h2 style={{
               fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)',
               fontWeight: 300, color: '#fff', letterSpacing: '-.015em',
               lineHeight: 1.15, marginBottom: 48,
             }}>
-              One partner, from diligence to exit.
+              {t('privateEquity.lifecycleH2')}
             </h2>
           </FadeIn>
 
@@ -298,29 +305,7 @@ export default function PrivateEquity() {
             display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2,
             background: 'rgba(255,255,255,.06)',
           }} className="pe-timeline-grid">
-            {[
-              {
-                num: '01',
-                title: 'Diligence',
-                text: 'Before you wire the money. Chameleon’s CLEAR assessment puts C-level operators into the business and returns a plain read on where the growth blockers are. I add a quantified market-viability layer through Soundcheck Insights, my market-intelligence platform, so an expansion thesis gets a number before you commit capital.',
-                featured: true,
-              },
-              {
-                num: '02',
-                title: 'The first hundred days',
-                text: 'Interim marketing and commerce leadership in the seats that matter, while you search for the permanent hire. The growth engine gets stood up fast.',
-              },
-              {
-                num: '03',
-                title: 'The hold period',
-                text: 'The expansion and commerce theses executed, not just planned. Brand, DTC, marketplace, and AI-enabled marketing operations, injected exactly where the thesis needs them.',
-              },
-              {
-                num: '04',
-                title: 'Exit readiness',
-                text: 'We recruit the permanent team, hand off everything we built, and leave. Your buyer finds a self-sustaining business, not a dependency to unwind.',
-              },
-            ].map((step, i) => (
+            {steps.map((step, i) => (
               <FadeIn key={step.num} delay={i * 0.1}>
                 <div style={{
                   background: step.featured ? 'rgba(212,89,57,.08)' : 'rgba(255,255,255,.03)',
@@ -343,7 +328,7 @@ export default function PrivateEquity() {
                       fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 9, fontWeight: 600,
                       letterSpacing: '.15em', textTransform: 'uppercase', color: TERRA,
                       marginBottom: 14, display: 'block',
-                    }}>Differentiator</span>
+                    }}>{t('privateEquity.differentiatorBadge')}</span>
                   )}
                   <p style={{
                     fontFamily: 'Inter,sans-serif', fontSize: '0.875rem',
@@ -373,14 +358,14 @@ export default function PrivateEquity() {
                 letterSpacing: '.18em', textTransform: 'uppercase', color: TERRA,
                 display: 'block', marginBottom: 20,
               }}>
-                The Diligence Edge
+                {t('privateEquity.calloutEyebrow')}
               </span>
               <p style={{
                 fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.1rem,2.2vw,1.4rem)',
                 fontWeight: 300, color: '#121212', lineHeight: 1.6,
                 letterSpacing: '-.01em',
               }}>
-                Most partners find out if an expansion thesis works after they have paid for it. I put a number on it during diligence. Soundcheck Insights scores cross-border viability and scale readiness, and it plugs straight into CLEAR, so your value-creation plan starts with evidence instead of a hunch.
+                {t('privateEquity.calloutText')}
               </p>
             </div>
           </FadeIn>
@@ -399,14 +384,14 @@ export default function PrivateEquity() {
               display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14,
             }}>
               <span style={{ width: 20, height: 1.5, background: TERRA, display: 'block' }} />
-              Proof
+              {t('privateEquity.proofEyebrow')}
             </span>
             <h2 style={{
               fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)',
               fontWeight: 300, color: '#121212', letterSpacing: '-.015em',
               lineHeight: 1.15, marginBottom: 48,
             }}>
-              Chameleon Collective's track record.
+              {t('privateEquity.proofH2')}
             </h2>
           </FadeIn>
 
@@ -416,11 +401,7 @@ export default function PrivateEquity() {
               display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
               gap: 0, marginBottom: 48,
             }} className="pe-stats-grid">
-              {[
-                { number: '280+', label: 'Proven Specialists' },
-                { number: '2,000+', label: 'Transformations Delivered' },
-                { number: '6', label: 'Trusted PE Partners' },
-              ].map((stat, i) => (
+              {stats.map((stat, i) => (
                 <div key={stat.label} style={{
                   textAlign: 'center', padding: '32px 24px',
                   borderRight: i < 2 ? '1px solid #E8E8E8' : 'none',
@@ -445,7 +426,7 @@ export default function PrivateEquity() {
               letterSpacing: '.14em', textTransform: 'uppercase', color: '#999',
               marginBottom: 20, textAlign: 'center',
             }}>
-              Trusted by
+              {t('privateEquity.trustedBy')}
             </div>
             <div style={{
               display: 'flex', justifyContent: 'center', flexWrap: 'wrap',
@@ -481,13 +462,13 @@ export default function PrivateEquity() {
                 letterSpacing: '.14em', textTransform: 'uppercase', color: '#999',
                 display: 'block', marginBottom: 12,
               }}>
-                My Work
+                {t('privateEquity.myWorkLabel')}
               </span>
               <p style={{
                 fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                 color: '#444', lineHeight: 1.7, maxWidth: 700,
               }}>
-                Bauducco's U.S. launch, Inter&Co's U.S. market entry, and the first U.S. e-commerce storefronts on VTEX. Brand and commerce outcomes across consumer, fintech, and DTC.
+                {t('privateEquity.myWorkText')}
               </p>
             </div>
           </FadeIn>
@@ -509,20 +490,20 @@ export default function PrivateEquity() {
                   display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14,
                 }}>
                   <span style={{ width: 20, height: 1.5, background: TERRA, display: 'block' }} />
-                  Get in Touch
+                  {t('privateEquity.contactEyebrow')}
                 </span>
                 <h2 style={{
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)',
                   fontWeight: 300, color: '#fff', letterSpacing: '-.015em',
                   lineHeight: 1.15, marginBottom: 20,
                 }}>
-                  Bring me your thesis.
+                  {t('privateEquity.contactH2')}
                 </h2>
                 <p style={{
                   fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                   color: 'rgba(255,255,255,.5)', lineHeight: 1.7,
                 }}>
-                  Whether you are mid-diligence or mid-hold, let's talk. I will tell you honestly where we can move the number, and where you would not need me.
+                  {t('privateEquity.contactSub')}
                 </p>
               </div>
             </FadeIn>
@@ -541,7 +522,7 @@ export default function PrivateEquity() {
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500,
                     letterSpacing: '.12em', textTransform: 'uppercase',
                     color: 'rgba(255,255,255,.45)', display: 'block', marginBottom: 6,
-                  }}>Name *</label>
+                  }}>{t('privateEquity.formNameLabel')}</label>
                   <input style={{
                     width: '100%', padding: '12px 14px',
                     background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.12)',
@@ -549,8 +530,8 @@ export default function PrivateEquity() {
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     transition: 'border-color .2s',
                   }}
-                    placeholder="Full name"
-                    {...register('name', { required: 'Required' })}
+                    placeholder={t('privateEquity.formNamePlaceholder')}
+                    {...register('name', { required: t('privateEquity.formRequired') })}
                     onFocus={e => e.target.style.borderColor = TERRA}
                     onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.12)'}
                   />
@@ -563,7 +544,7 @@ export default function PrivateEquity() {
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500,
                     letterSpacing: '.12em', textTransform: 'uppercase',
                     color: 'rgba(255,255,255,.45)', display: 'block', marginBottom: 6,
-                  }}>Firm *</label>
+                  }}>{t('privateEquity.formFirmLabel')}</label>
                   <input style={{
                     width: '100%', padding: '12px 14px',
                     background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.12)',
@@ -571,8 +552,8 @@ export default function PrivateEquity() {
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     transition: 'border-color .2s',
                   }}
-                    placeholder="Your firm"
-                    {...register('firm', { required: 'Required' })}
+                    placeholder={t('privateEquity.formFirmPlaceholder')}
+                    {...register('firm', { required: t('privateEquity.formRequired') })}
                     onFocus={e => e.target.style.borderColor = TERRA}
                     onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.12)'}
                   />
@@ -585,7 +566,7 @@ export default function PrivateEquity() {
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500,
                     letterSpacing: '.12em', textTransform: 'uppercase',
                     color: 'rgba(255,255,255,.45)', display: 'block', marginBottom: 6,
-                  }}>Email *</label>
+                  }}>{t('privateEquity.formEmailLabel')}</label>
                   <input type="email" style={{
                     width: '100%', padding: '12px 14px',
                     background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.12)',
@@ -593,8 +574,8 @@ export default function PrivateEquity() {
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     transition: 'border-color .2s',
                   }}
-                    placeholder="you@firm.com"
-                    {...register('email', { required: 'Required', pattern: { value: /^\S+@\S+\.\S+$/, message: 'Invalid email' } })}
+                    placeholder={t('privateEquity.formEmailPlaceholder')}
+                    {...register('email', { required: t('privateEquity.formRequired'), pattern: { value: /^\S+@\S+\.\S+$/, message: t('privateEquity.formInvalidEmail') } })}
                     onFocus={e => e.target.style.borderColor = TERRA}
                     onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.12)'}
                   />
@@ -607,7 +588,7 @@ export default function PrivateEquity() {
                     fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500,
                     letterSpacing: '.12em', textTransform: 'uppercase',
                     color: 'rgba(255,255,255,.45)', display: 'block', marginBottom: 6,
-                  }}>What's the thesis?</label>
+                  }}>{t('privateEquity.formThesisLabel')}</label>
                   <input style={{
                     width: '100%', padding: '12px 14px',
                     background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.12)',
@@ -615,7 +596,7 @@ export default function PrivateEquity() {
                     fontFamily: 'Inter,sans-serif', fontSize: '0.9375rem',
                     transition: 'border-color .2s',
                   }}
-                    placeholder="E.g., LATAM CPG expanding to U.S. retail"
+                    placeholder={t('privateEquity.formThesisPlaceholder')}
                     {...register('thesis')}
                     onFocus={e => e.target.style.borderColor = TERRA}
                     onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.12)'}
@@ -636,7 +617,7 @@ export default function PrivateEquity() {
                   onMouseEnter={e => { if (formStatus !== 'submitting') { e.target.style.opacity = '.85'; e.target.style.transform = 'translateY(-1px)' } }}
                   onMouseLeave={e => { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)' }}
                 >
-                  {formStatus === 'submitting' ? 'Sending...' : 'Start the conversation →'}
+                  {formStatus === 'submitting' ? t('privateEquity.formSubmitting') : t('privateEquity.formSubmit')}
                 </button>
 
                 {/* Book a call alternative */}
@@ -644,14 +625,14 @@ export default function PrivateEquity() {
                   fontFamily: 'Inter,sans-serif', fontSize: 13,
                   color: 'rgba(255,255,255,.35)', marginTop: -4,
                 }}>
-                  or{' '}
+                  {t('privateEquity.formOr')}{' '}
                   <a href="https://calendar.app.google/2oLdDao8pL6GaAjdA" target="_blank" rel="noopener noreferrer" style={{
                     color: TERRA, textDecoration: 'underline', textUnderlineOffset: 3,
                     transition: 'opacity .2s',
                   }}
                     onMouseEnter={e => e.target.style.opacity = '.7'}
                     onMouseLeave={e => e.target.style.opacity = '1'}
-                  >book a call directly</a>
+                  >{t('privateEquity.formBookCall')}</a>
                 </p>
 
                 {/* Status messages */}
@@ -663,7 +644,7 @@ export default function PrivateEquity() {
                         padding: '16px 20px', borderRadius: 2,
                         fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#68d391', lineHeight: 1.6,
                       }}>
-                      Thanks. I'll be in touch within one business day.
+                      {t('privateEquity.formSuccess')}
                     </motion.div>
                   )}
                   {formStatus === 'error' && (
@@ -673,7 +654,7 @@ export default function PrivateEquity() {
                         padding: '16px 20px', borderRadius: 2,
                         fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#fc8181', lineHeight: 1.6,
                       }}>
-                      Something went wrong. Email me directly:{' '}
+                      {t('privateEquity.formError')}{' '}
                       <a href="mailto:valter.klug@chameleon.co" style={{ color: TERRA }}>valter.klug@chameleon.co</a>
                     </motion.div>
                   )}

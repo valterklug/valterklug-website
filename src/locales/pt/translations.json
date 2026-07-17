@@ -893,5 +893,94 @@
         "category": "Esportes + Digital + Segunda Tela"
       }
     }
+  },
+  "privateEquity": {
+    "seoTitle": "Parceria com Private Equity — Valter Klug",
+    "seoDescription": "Um parceiro de transformação para private equity, da diligência ao exit. Expansão internacional e crescimento de commerce que sobrevive ao exit, dentro do modelo Chameleon Collective.",
+    "seoDefaultTitle": "Valter Klug — CMO Fracional & Estrategista de Expansão de Marca",
+    "heroLabel": "Para Investidores",
+    "heroH1": "Expansão e crescimento de commerce que o comprador mantém.",
+    "heroSub": "Lidero expansão internacional e transformação de commerce dentro do modelo diligência-ao-exit da Chameleon Collective. Um investimento em transformação com data de término, não um retainer de agência que se acumula.",
+    "heroCta": "Traga sua tese →",
+    "thesisEyebrow": "A Tese",
+    "thesisH2": "A agência que você contrata na entrada é o crescimento que sai na saída.",
+    "agencyCurveTitle": "A curva da agência",
+    "agencyCurveText": "Retainers se acumulam trimestre após trimestre. A capacidade é alugada. Quando a agência sai, o crescimento sai junto, e seu comprador paga por uma dependência.",
+    "chameleonCurveTitle": "A curva Chameleon",
+    "chameleonCurveText": "O investimento tem data de término. Transformamos a função, recrutamos o time permanente e internalizamos a capacidade. O EBITDA melhora porque nos recusamos a virar overhead. No exit, o negócio se sustenta sozinho.",
+    "fitEyebrow": "Minha Posição",
+    "fitH2": "Eu lidero os deals com tese de novo mercado ou commerce.",
+    "fitSub": "Chameleon é a máquina ao longo de todo o ciclo do deal. Minha posição é a tese de crescimento que passei 28 anos executando, nos dois sentidos entre EUA e América Latina.",
+    "crossBorderTitle": "Expansão cross-border",
+    "crossBorderText": "Construindo marcas em novos mercados, dos EUA para a América Latina e de volta. O lançamento nacional da Bauducco nos EUA. A entrada da Inter&Co nos EUA em 2022. O corredor que a maioria dos operadores nunca trabalhou, nos dois sentidos.",
+    "commerceTitle": "Commerce como crescimento mensurável",
+    "commerceText": "O motor de e-commerce que transforma uma marca em vendas diretas. Construí as duas primeiras lojas americanas na VTEX em 2019, dois anos antes do IPO nos EUA, e opero Amazon e DTC em Shopify e BigCommerce.",
+    "lifecycleEyebrow": "Ao Longo do Período de Hold",
+    "lifecycleH2": "Um parceiro, da diligência ao exit.",
+    "differentiatorBadge": "Diferencial",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Diligência",
+        "text": "Antes de transferir o dinheiro. A avaliação CLEAR da Chameleon coloca operadores C-level dentro do negócio e retorna uma leitura clara de onde estão os bloqueadores de crescimento. Eu adiciono uma camada quantificada de viabilidade de mercado através da Soundcheck Insights, minha plataforma de inteligência de mercado, para que uma tese de expansão receba um número antes de você comprometer capital.",
+        "featured": true
+      },
+      {
+        "num": "02",
+        "title": "Os primeiros cem dias",
+        "text": "Liderança interina de marketing e commerce nas posições que importam, enquanto você busca a contratação permanente. O motor de crescimento é montado rapidamente."
+      },
+      {
+        "num": "03",
+        "title": "O período de hold",
+        "text": "As teses de expansão e commerce executadas, não apenas planejadas. Marca, DTC, marketplace e operações de marketing habilitadas por IA, injetadas exatamente onde a tese precisa."
+      },
+      {
+        "num": "04",
+        "title": "Prontidão para o exit",
+        "text": "Recrutamos o time permanente, entregamos tudo que construímos e saímos. Seu comprador encontra um negócio autossustentável, não uma dependência para desfazer."
+      }
+    ],
+    "calloutEyebrow": "A Vantagem na Diligência",
+    "calloutText": "A maioria dos partners descobre se uma tese de expansão funciona depois de já ter pago por ela. Eu coloco um número durante a diligência. A Soundcheck Insights faz o scoring de viabilidade cross-border e prontidão de escala, e se conecta direto ao CLEAR, para que seu plano de criação de valor comece com evidência em vez de intuição.",
+    "proofEyebrow": "Prova",
+    "proofH2": "O track record da Chameleon Collective.",
+    "stats": [
+      {
+        "number": "280+",
+        "label": "Especialistas Comprovados"
+      },
+      {
+        "number": "2.000+",
+        "label": "Transformações Entregues"
+      },
+      {
+        "number": "6",
+        "label": "Partners de PE"
+      }
+    ],
+    "trustedBy": "Confiado por",
+    "myWorkLabel": "Meu Trabalho",
+    "myWorkText": "O lançamento da Bauducco nos EUA, a entrada da Inter&Co no mercado americano e as primeiras lojas de e-commerce americanas na VTEX. Resultados de marca e commerce em consumo, fintech e DTC.",
+    "contactEyebrow": "Fale Comigo",
+    "contactH2": "Traga sua tese.",
+    "contactSub": "Seja no meio da diligência ou no meio do hold, vamos conversar. Vou te dizer com honestidade onde podemos mover o número, e onde você não precisaria de mim.",
+    "formNameLabel": "Nome *",
+    "formNamePlaceholder": "Nome completo",
+    "formFirmLabel": "Firma *",
+    "formFirmPlaceholder": "Sua firma",
+    "formEmailLabel": "Email *",
+    "formEmailPlaceholder": "voce@firma.com",
+    "formThesisLabel": "Qual é a tese?",
+    "formThesisPlaceholder": "Ex.: CPG LATAM expandindo para varejo nos EUA",
+    "formRequired": "Obrigatório",
+    "formInvalidEmail": "Email inválido",
+    "formSubmitting": "Enviando...",
+    "formSubmit": "Iniciar a conversa →",
+    "formOr": "ou",
+    "formBookCall": "agendar uma chamada diretamente",
+    "formSuccess": "Obrigado. Retorno em até um dia útil.",
+    "formError": "Algo deu errado. Me envie um email diretamente:",
+    "formSubjectPrefix": "Consulta PE de"
   }
 }

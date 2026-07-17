@@ -893,5 +893,94 @@
         "category": "Deportes + Tecnología + Experiencial"
       }
     }
+  },
+  "privateEquity": {
+    "seoTitle": "Alianza con Private Equity — Valter Klug",
+    "seoDescription": "Un socio de transformación para private equity, desde la diligencia hasta el exit. Expansión internacional y crecimiento de commerce que sobrevive al exit, dentro del modelo Chameleon Collective.",
+    "seoDefaultTitle": "Valter Klug — CMO Fraccional & Estratega de Expansión de Marca",
+    "heroLabel": "Para Inversores",
+    "heroH1": "Expansión y crecimiento de commerce que tu comprador conserva.",
+    "heroSub": "Lidero expansión internacional y transformación de commerce dentro del modelo de diligencia-al-exit de Chameleon Collective. Una inversión en transformación con fecha de fin, no un retainer de agencia que se acumula.",
+    "heroCta": "Tráeme tu tesis →",
+    "thesisEyebrow": "La Tesis",
+    "thesisH2": "La agencia que contratas a la entrada es el crecimiento que se va a la salida.",
+    "agencyCurveTitle": "La curva de la agencia",
+    "agencyCurveText": "Los retainers se acumulan trimestre tras trimestre. La capacidad se alquila. Cuando la agencia se va, el crecimiento se va con ella, y tu comprador paga por una dependencia.",
+    "chameleonCurveTitle": "La curva Chameleon",
+    "chameleonCurveText": "La inversión tiene fecha de fin. Transformamos la función, reclutamos al equipo permanente e internalizamos la capacidad. El EBITDA mejora porque nos negamos a convertirnos en overhead. Al exit, el negocio se sostiene solo.",
+    "fitEyebrow": "Mi Posición",
+    "fitH2": "Lidero los deals con tesis de nuevo mercado o commerce.",
+    "fitSub": "Chameleon es la máquina a lo largo de todo el ciclo del deal. Mi posición es la tesis de crecimiento que llevo 28 años ejecutando, en ambas direcciones entre EE.UU. y América Latina.",
+    "crossBorderTitle": "Expansión cross-border",
+    "crossBorderText": "Construyendo marcas en nuevos mercados, de EE.UU. a América Latina y de vuelta. El lanzamiento nacional de Bauducco en EE.UU. La entrada de Inter&Co en EE.UU. en 2022. El corredor que la mayoría de los operadores nunca ha trabajado, en ambas direcciones.",
+    "commerceTitle": "Commerce como crecimiento medible",
+    "commerceText": "El motor de e-commerce que convierte una marca en ventas directas. Construí las dos primeras tiendas estadounidenses en VTEX en 2019, dos años antes de su IPO en EE.UU., y opero Amazon y DTC en Shopify y BigCommerce.",
+    "lifecycleEyebrow": "A Lo Largo del Período de Hold",
+    "lifecycleH2": "Un socio, desde la diligencia hasta el exit.",
+    "differentiatorBadge": "Diferenciador",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Diligencia",
+        "text": "Antes de transferir el dinero. La evaluación CLEAR de Chameleon coloca operadores C-level dentro del negocio y devuelve una lectura clara de dónde están los bloqueadores de crecimiento. Yo agrego una capa cuantificada de viabilidad de mercado a través de Soundcheck Insights, mi plataforma de inteligencia de mercado, para que una tesis de expansión reciba un número antes de comprometer capital.",
+        "featured": true
+      },
+      {
+        "num": "02",
+        "title": "Los primeros cien días",
+        "text": "Liderazgo interino de marketing y commerce en las posiciones que importan, mientras buscas la contratación permanente. El motor de crecimiento se monta rápido."
+      },
+      {
+        "num": "03",
+        "title": "El período de hold",
+        "text": "Las tesis de expansión y commerce ejecutadas, no solo planeadas. Marca, DTC, marketplace y operaciones de marketing habilitadas por IA, inyectadas exactamente donde la tesis las necesita."
+      },
+      {
+        "num": "04",
+        "title": "Preparación para el exit",
+        "text": "Reclutamos al equipo permanente, entregamos todo lo que construimos y nos vamos. Tu comprador encuentra un negocio autosostenible, no una dependencia que desmontar."
+      }
+    ],
+    "calloutEyebrow": "La Ventaja en Diligencia",
+    "calloutText": "La mayoría de los partners descubre si una tesis de expansión funciona después de haber pagado por ella. Yo le pongo un número durante la diligencia. Soundcheck Insights puntúa viabilidad cross-border y preparación de escala, y se conecta directo con CLEAR, para que tu plan de creación de valor comience con evidencia en vez de una corazonada.",
+    "proofEyebrow": "Prueba",
+    "proofH2": "El track record de Chameleon Collective.",
+    "stats": [
+      {
+        "number": "280+",
+        "label": "Especialistas Probados"
+      },
+      {
+        "number": "2.000+",
+        "label": "Transformaciones Entregadas"
+      },
+      {
+        "number": "6",
+        "label": "Partners de PE"
+      }
+    ],
+    "trustedBy": "Con la confianza de",
+    "myWorkLabel": "Mi Trabajo",
+    "myWorkText": "El lanzamiento de Bauducco en EE.UU., la entrada de Inter&Co en el mercado estadounidense y las primeras tiendas de e-commerce estadounidenses en VTEX. Resultados de marca y commerce en consumo, fintech y DTC.",
+    "contactEyebrow": "Contacto",
+    "contactH2": "Tráeme tu tesis.",
+    "contactSub": "Ya sea en medio de la diligencia o en medio del hold, hablemos. Te diré con honestidad dónde podemos mover el número, y dónde no me necesitarías.",
+    "formNameLabel": "Nombre *",
+    "formNamePlaceholder": "Nombre completo",
+    "formFirmLabel": "Firma *",
+    "formFirmPlaceholder": "Tu firma",
+    "formEmailLabel": "Email *",
+    "formEmailPlaceholder": "tu@firma.com",
+    "formThesisLabel": "¿Cuál es la tesis?",
+    "formThesisPlaceholder": "Ej.: CPG LATAM expandiéndose a retail en EE.UU.",
+    "formRequired": "Requerido",
+    "formInvalidEmail": "Email inválido",
+    "formSubmitting": "Enviando...",
+    "formSubmit": "Iniciar la conversación →",
+    "formOr": "o",
+    "formBookCall": "agendar una llamada directamente",
+    "formSuccess": "Gracias. Te contactaré dentro de un día hábil.",
+    "formError": "Algo salió mal. Envíame un email directamente:",
+    "formSubjectPrefix": "Consulta PE de"
   }
 }
