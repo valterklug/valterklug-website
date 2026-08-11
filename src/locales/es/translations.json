@@ -70,8 +70,8 @@
         "label": "Ganador de Cannes Lions"
       },
       {
-        "code": "A.M.P.",
-        "label": "Autor — A.M.P."
+        "code": "TSTF",
+        "label": "Autor — Too Small To Fall"
       }
     ],
     "trustedBy": "De Confianza de Marcas en las Américas, Europa y Más Allá",
@@ -208,12 +208,12 @@
       },
       {
         "code": "Author",
-        "label": "Publicado — A.M.P."
+        "label": "Autor — Too Small To Fall (2026)"
       }
     ],
     "bgLabel": "Historial",
     "bgP1": "Nacido en Brasil. Basado en Miami. Dos años viviendo y trabajando en el Reino Unido. Aporto una perspectiva multicultural a la estrategia de marca — y un instinto permanente para encontrar la herramienta más poderosa y usarla para impulsar ideas más grandes.",
-    "bgP2": "Mi carrera abarca el arco completo del marketing digital — desde campañas en Flash antes de 2000 en Isobar hasta dirección creativa en Y&R, hasta fundar Samba Rock y su laboratorio de innovación, hasta construir herramientas de inteligencia con IA que impulsan estrategia de marca hoy.",
+    "bgP2": "Mi carrera abarca el arco completo del marketing digital — desde campañas en Flash antes de 2000 en Isobar hasta la creación de uno de los primeros chatbots de IA para marketing comercial de marca en 2006 (Dado Spitze para Bavaria Premium Beer en Euro RSCG), hasta dirección creativa en Y&R, hasta fundar Samba Rock y su laboratorio de innovación (iLab), hasta construir herramientas de inteligencia con IA que impulsan estrategia de marca hoy.",
     "bgP3": "Hoy opero a través de Chameleon Collective y Soundcheck Insights — aportando liderazgo creativo, inteligencia impulsada por IA y una red de profesionales de élite directamente a las organizaciones de clientes.",
     "bgQuote": "El medio cambia. El impulso no: ideas + innovación, aplicados a marcas que cruzan fronteras. Cada compromiso que asumo, estoy construyendo desde adentro.",
     "bgQuoteAuthor": "— Valter Klug",
@@ -258,7 +258,7 @@
       },
       {
         "years": "2025–Ahora",
-        "role": "Líder de Marketing Fraccional",
+        "role": "Líder de Marketing — Expansión Intl. de Marcas",
         "company": "Chameleon Collective",
         "location": "Miami, US"
       }
