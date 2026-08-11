@@ -1,5 +1,7 @@
+'use client'
 import { useState, useEffect, useMemo } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useLocale, SUPPORTED_LOCALES } from '../context/LocaleContext'
@@ -9,7 +11,7 @@ const LOCALE_LABELS = { en: 'EN', pt: 'PT', es: 'ES' }
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-  const location = useLocation()
+  const pathname = usePathname()
   const { t } = useTranslation()
   const { locale, setLocale, localePath } = useLocale()
 
@@ -29,7 +31,7 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
-  useEffect(() => setOpen(false), [location])
+  useEffect(() => setOpen(false), [pathname])
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function Nav() {
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: '#EA633F' }} />
 
         {/* Wordmark */}
-        <Link to={localePath('/')} style={{ display: 'flex', flexDirection: 'column', gap: 2, textDecoration: 'none' }}>
+        <Link href={localePath('/')} style={{ display: 'flex', flexDirection: 'column', gap: 2, textDecoration: 'none' }}>
           <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 600, color: '#121212', letterSpacing: '.04em', textTransform: 'uppercase', lineHeight: 1 }}>
             {t('nav.wordmark')}
           </span>
@@ -60,10 +62,10 @@ export default function Nav() {
         {/* Desktop links */}
         <ul style={{ display: 'flex', alignItems: 'center', gap: 4, listStyle: 'none', margin: 0 }} className="nav-desktop">
           {NAV_LINKS.map(({ label, to }) => {
-            const active = location.pathname === localePath(to)
+            const active = pathname === localePath(to)
             return (
               <li key={to}>
-                <Link to={localePath(to)} style={{
+                <Link href={localePath(to)} style={{
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500,
                   letterSpacing: '.08em', textTransform: 'uppercase',
                   color: active ? '#EA633F' : '#666',
@@ -105,7 +107,7 @@ export default function Nav() {
           ))}
         </div>
 
-        <Link to={localePath('/contact')} className="btn btn-primary" style={{ padding: '9px 22px', fontSize: 12 }} data-desktop="true">
+        <Link href={localePath('/contact')} className="btn btn-primary" style={{ padding: '9px 22px', fontSize: 12 }} data-desktop="true">
           {t('nav.cta')}
         </Link>
 
@@ -159,10 +161,10 @@ export default function Nav() {
           >
             {NAV_LINKS.map(({ label, to }, i) => (
               <motion.div key={to} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
-                <Link to={localePath(to)} style={{
+                <Link href={localePath(to)} style={{
                   display: 'block', padding: '14px 0',
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 400,
-                  color: location.pathname === localePath(to) ? '#EA633F' : '#121212',
+                  color: pathname === localePath(to) ? '#EA633F' : '#121212',
                   borderBottom: '1px solid #E8E8E8', textDecoration: 'none',
                 }}>{label}</Link>
               </motion.div>
@@ -188,7 +190,7 @@ export default function Nav() {
               ))}
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.26 }} style={{ marginTop: 6 }}>
-              <Link to={localePath('/contact')} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href={localePath('/contact')} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 {t('nav.cta')}
               </Link>
             </motion.div>

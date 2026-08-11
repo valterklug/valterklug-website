@@ -1,5 +1,6 @@
+'use client'
 
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import { PageWrapper, FadeIn } from '../components/Animate'
 import ContactForm from '../components/ContactForm'

@@ -1,5 +1,6 @@
+'use client'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { PageWrapper, FadeIn, StaggerContainer, StaggerItem } from '../components/Animate'
@@ -35,7 +36,7 @@ function ProductCard({ p, index, localePath }) {
               <motion.span animate={{ rotate: open ? 90 : 0 }} style={{ display: 'inline-block', fontSize: 14 }}>›</motion.span>
               {open ? t('intelligence.hideDeliverables') : t('intelligence.viewDeliverables')}
             </button>
-            <Link to={localePath('/contact')} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: dark ? '#fff' : '#EA633F', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+            <Link href={localePath('/contact')} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.05em', textTransform: 'uppercase', color: dark ? '#fff' : '#EA633F', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
               {t('intelligence.requestService')} →
             </Link>
           </div>
@@ -160,7 +161,7 @@ export default function Intelligence() {
           <h2>{t('intelligence.ctaH2')}</h2>
           <p>{t('intelligence.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('intelligence.ctaBtn')} →</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('intelligence.ctaBtn')} →</Link>
       </div>
     </PageWrapper>
   )

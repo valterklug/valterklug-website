@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+'use client'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useLocale } from '../context/LocaleContext'
@@ -46,8 +47,8 @@ export default function Home() {
               {t('home.heroSub')}
             </motion.p>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .26 }} style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-              <Link to={localePath('/contact')} className="btn btn-primary">{t('home.ctaPrimary')}</Link>
-              <Link to={localePath('/portfolio')} className="btn btn-ghost">{t('home.ctaSecondary')}</Link>
+              <Link href={localePath('/contact')} className="btn btn-primary">{t('home.ctaPrimary')}</Link>
+              <Link href={localePath('/portfolio')} className="btn btn-ghost">{t('home.ctaSecondary')}</Link>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .4 }}
               style={{ display: 'flex', gap: 0, marginTop: 48, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,.08)' }}>
@@ -110,7 +111,7 @@ export default function Home() {
             {t('home.services', { returnObjects: true }).map((s, i) => (
               <FadeIn key={s.num} delay={i * .06}>
                 <HoverLift>
-                  <Link to={localePath(s.href)} style={{ display: 'block', background: i % 2 === 0 ? '#fff' : '#F5F5F5', padding: '44px 40px', textDecoration: 'none', transition: 'background .2s' }}
+                  <Link href={localePath(s.href || '/services')} style={{ display: 'block', background: i % 2 === 0 ? '#fff' : '#F5F5F5', padding: '44px 40px', textDecoration: 'none', transition: 'background .2s' }}
                     onMouseEnter={e => e.currentTarget.style.background = '#F5F5F5'}
                     onMouseLeave={e => e.currentTarget.style.background = i % 2 === 0 ? '#fff' : '#F5F5F5'}
                   >
@@ -138,7 +139,7 @@ export default function Home() {
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.75 }}>
               {t('home.approachSub')}
             </p>
-            <Link to={localePath('/about')} className="tlink tlink-white" style={{ marginTop: 28, display: 'inline-flex' }}>{t('home.fullBackground')}</Link>
+            <Link href={localePath('/about')} className="tlink tlink-white" style={{ marginTop: 28, display: 'inline-flex' }}>{t('home.fullBackground')}</Link>
           </FadeIn>
           <StaggerContainer>
             {t('home.approachItems', { returnObjects: true }).map(({title, desc}) => (
@@ -200,10 +201,10 @@ export default function Home() {
                 <span key={tag} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(18,18,18,.08)', padding: '4px 12px', color: '#121212' }}>{tag}</span>
               ))}
             </div>
-            <Link to={localePath('/case-studies')} className="tlink">{t('home.viewCaseStudy')}</Link>
+            <Link href={localePath('/case-studies')} className="tlink">{t('home.viewCaseStudy')}</Link>
           </FadeIn>
           <FadeIn delay={.12} direction="left">
-            <Link to={localePath('/case-studies')} style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
+            <Link href={localePath('/case-studies')} style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
               <img src="/cs-bauducco-panettone-thumb.jpg" alt="Bauducco Panettone" style={{ width: '100%', height: '100%', minHeight: 360, objectFit: 'cover', display: 'block', opacity: 0.9, transition: 'opacity .3s' }}
                 onMouseEnter={e => e.currentTarget.style.opacity = '1'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '0.9'}
@@ -224,7 +225,7 @@ export default function Home() {
           <h2>{t('home.ctaH2')}</h2>
           <p>{t('home.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('home.ctaPrimary')}</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('home.ctaPrimary')}</Link>
       </div>
     </PageWrapper>
   )

@@ -1,5 +1,6 @@
+'use client'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useLocale } from '../context/LocaleContext'
@@ -637,7 +638,7 @@ export default function Portfolio() {
           <h2>{t('portfolio.ctaH2')}</h2>
           <p>{t('portfolio.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
       </div>
 
       {/* Modal */}

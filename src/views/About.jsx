@@ -1,5 +1,6 @@
+'use client'
 
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn, StaggerContainer, StaggerItem } from '../components/Animate'
@@ -108,7 +109,7 @@ export default function About() {
           <h2>{t('about.ctaH2')}</h2>
           <p>{t('about.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('about.ctaBtn')}</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('about.ctaBtn')}</Link>
       </div>
     </PageWrapper>
   )

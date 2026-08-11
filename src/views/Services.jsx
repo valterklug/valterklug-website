@@ -1,5 +1,6 @@
+'use client'
 
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
@@ -51,7 +52,7 @@ export default function Services() {
                               </div>
                             ))}
                           </div>
-                          <Link to={localePath('/contact')} className="tlink" style={{marginTop:24,display:'inline-flex'}}>{t('services.inquire')}</Link>
+                          <Link href={localePath('/contact')} className="tlink" style={{marginTop:24,display:'inline-flex'}}>{t('services.inquire')}</Link>
                         </div>
                       </div>
                     </motion.div>
@@ -71,7 +72,7 @@ export default function Services() {
             <h2 style={{fontFamily:'IBM Plex Sans,sans-serif',fontSize:'clamp(1.5rem,3vw,2rem)',fontWeight:300,color:'#121212',letterSpacing:'-.015em',lineHeight:1.15,marginBottom:20}}>{t('services.howH2')}</h2>
             <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#444',lineHeight:1.8,marginBottom:16}}>{t('services.howP1')}</p>
             <p style={{fontFamily:'Inter,sans-serif',fontSize:'.9375rem',color:'#444',lineHeight:1.8}}>{t('services.howP2')}</p>
-            <Link to={localePath('/intelligence')} className="tlink" style={{marginTop:24,display:'inline-flex'}}>{t('services.seeIntel')}</Link>
+            <Link href={localePath('/intelligence')} className="tlink" style={{marginTop:24,display:'inline-flex'}}>{t('services.seeIntel')}</Link>
           </FadeIn>
           <FadeIn delay={.1}>
             <div style={{display:'flex',flexDirection:'column',gap:1,background:'rgba(18,18,18,.1)'}}>
@@ -95,7 +96,7 @@ export default function Services() {
           <h2>{t('services.ctaH2')}</h2>
           <p>{t('services.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('services.ctaBtn')}</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('services.ctaBtn')}</Link>
       </div>
     </PageWrapper>
   )

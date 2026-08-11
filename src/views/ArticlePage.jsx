@@ -1,4 +1,6 @@
-import { useParams, Link } from 'react-router-dom'
+'use client'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocale } from '../context/LocaleContext'
@@ -61,7 +63,7 @@ export default function ArticlePage() {
       <PageWrapper>
         <section style={{ background: '#1E1E1E', padding: '120px 64px 80px', textAlign: 'center' }}>
           <h1 style={{ fontFamily: 'var(--fd)', fontSize: '2rem', fontWeight: 300, color: '#fff' }}>{t('articlePage.notFound')}</h1>
-          <Link to={localePath('/articles')} className="btn btn-ghost" style={{ marginTop: 24, display: 'inline-flex' }}>← {t('articlePage.backToArticles')}</Link>
+          <Link href={localePath('/articles')} className="btn btn-ghost" style={{ marginTop: 24, display: 'inline-flex' }}>← {t('articlePage.backToArticles')}</Link>
         </section>
       </PageWrapper>
     )
@@ -76,7 +78,7 @@ export default function ArticlePage() {
       <section style={{ background: '#121212', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '100px 64px 60px', position: 'relative', zIndex: 1 }}>
           <FadeIn>
-            <Link to={localePath('/articles')} style={{ fontFamily: 'var(--fd)', fontSize: 12, fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 28 }}>
+            <Link href={localePath('/articles')} style={{ fontFamily: 'var(--fd)', fontSize: 12, fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,.4)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 28 }}>
               ← {t('articlePage.backToArticles')}
             </Link>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
@@ -127,7 +129,7 @@ export default function ArticlePage() {
               {article.originalUrl && (
                 <a href={article.originalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: 13 }}>View Original on {article.source} →</a>
               )}
-              <Link to={localePath('/articles')} className="btn btn-dark" style={{ fontSize: 13 }}>← All Articles</Link>
+              <Link href={localePath('/articles')} className="btn btn-dark" style={{ fontSize: 13 }}>← All Articles</Link>
             </div>
           </FadeIn>
         </div>
@@ -139,7 +141,7 @@ export default function ArticlePage() {
           <h2>{t('articlePage.ctaH2')}</h2>
           <p>{t('articlePage.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">Get in Touch →</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">Get in Touch →</Link>
       </div>
     </PageWrapper>
   )

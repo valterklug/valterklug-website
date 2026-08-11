@@ -1,5 +1,6 @@
+'use client'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { PageWrapper, FadeIn, HoverLift } from '../components/Animate'
@@ -260,7 +261,7 @@ function CaseModal({ cs, onClose }) {
               <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 14, fontWeight: 500, color: '#121212', marginBottom: 4 }}>{t('caseStudies.wantResults')}</div>
               <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#888' }}>{t('caseStudies.wantResultsSub')}</div>
             </div>
-            <Link to={localePath('/contact')} onClick={onClose} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', padding: '12px 28px', background: '#EA633F', color: '#fff', textDecoration: 'none', transition: 'background .2s' }}
+            <Link href={localePath('/contact')} onClick={onClose} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', padding: '12px 28px', background: '#EA633F', color: '#fff', textDecoration: 'none', transition: 'background .2s' }}
               onMouseEnter={e => e.target.style.background = '#D4572F'}
               onMouseLeave={e => e.target.style.background = '#EA633F'}
             >{t('caseStudies.getInTouch')} →</Link>
@@ -373,7 +374,7 @@ export default function CaseStudies() {
           <h2>{t('caseStudies.ctaH2')}</h2>
           <p>{t('caseStudies.ctaSub')}</p>
         </FadeIn>
-        <Link to={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
+        <Link href={localePath('/contact')} className="btn btn-dark">{t('nav.cta')}</Link>
       </div>
 
       {/* Modal */}
