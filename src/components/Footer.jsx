@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#EA633F', marginBottom: 18 }}>{t('footer.navigationTitle')}</div>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              {[['/', 'footer.navigationLinks.home'],['/about','footer.navigationLinks.about'],['/services','footer.navigationLinks.services'],['/case-studies','footer.navigationLinks.caseStudies'],['/portfolio','footer.navigationLinks.portfolio'],['/intelligence','footer.navigationLinks.intelligence'],['/articles','footer.navigationLinks.articles'],['/contact','footer.navigationLinks.contact'],['/private-equity','footer.navigationLinks.investors']].map(([to, labelKey]) => (
+              {[['/', 'footer.navigationLinks.home'],['/about','footer.navigationLinks.about'],['/services','footer.navigationLinks.services'],['/case-studies','footer.navigationLinks.caseStudies'],['/portfolio','footer.navigationLinks.portfolio'],['/intelligence','footer.navigationLinks.intelligence'],['/articles','footer.navigationLinks.articles'],['/contact','footer.navigationLinks.contact'],['/private-equity','footer.navigationLinks.investors'],['/goglobal','footer.navigationLinks.goglobal']].map(([to, labelKey]) => (
                 <Link key={to} href={localePath(to)} style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: 'rgba(255,255,255,.4)', transition: 'color .2s', textDecoration: 'none' }}
                   onMouseEnter={e => e.target.style.color = '#fff'}
                   onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,.4)'}

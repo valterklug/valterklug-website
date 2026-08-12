@@ -7,6 +7,7 @@
     "intelligence": "Inteligencia",
     "articles": "Artículos",
     "investors": "Para Inversores",
+    "goglobal": "GoGlobal",
     "wordmark": "Valter Klug",
     "subtitle": "Líder Creativo · Brand Builder · Miami",
     "cta": "Hablemos →"
@@ -25,7 +26,8 @@
       "intelligence": "Inteligencia",
       "articles": "Artículos",
       "contact": "Contacto",
-      "investors": "Para Inversores"
+      "investors": "Para Inversores",
+      "goglobal": "GoGlobal"
     },
     "operatingThroughTitle": "Operando a Través de",
     "chameleonCollective": "Liderazgo creativo y compromisos de consultoría",
@@ -982,5 +984,94 @@
     "formSuccess": "Gracias. Te contactaré dentro de un día hábil.",
     "formError": "Algo salió mal. Envíame un email directamente:",
     "formSubjectPrefix": "Consulta PE de"
+  },
+  "goglobal": {
+    "heroLabel": "GoGlobal — por Valter Klug",
+    "heroH1": "De Brasil a los EE.UU.\nCon alguien que lo ha hecho\nmás de 30 veces.",
+    "heroSub": "Una mentoría de 6 meses para fundadores brasileños ingresando al mercado estadounidense — respaldada por inteligencia de mercado impulsada por IA, 11 años de expansión transfronteriza y una red verificada de profesionales en EE.UU.",
+    "ctaPrimary": "Quiero Participar →",
+    "stats": [
+      { "number": "11+", "label": "Años en expansión internacional" },
+      { "number": "30+", "label": "Marcas expandidas a EE.UU." },
+      { "number": "6", "label": "Meses de programa estructurado" }
+    ],
+    "whoLabel": "Para Quién Es",
+    "whoH2": "Para fundadores brasileños serios sobre el mercado estadounidense.",
+    "whoP": "No \"pensando en ello algún día.\" Planificando activamente o en las etapas iniciales de ingresar a EE.UU. Tienes product-market fit en Brasil. Necesitas un guía estratégico que ha recorrido este camino con algunas de las marcas brasileñas más grandes — y una red de profesionales estadounidenses confiables para hacerlo realidad.",
+    "whoChecks": [
+      "Negocio establecido en Brasil con tracción comprobada",
+      "Planificando activamente o iniciando entrada al mercado estadounidense",
+      "Listo para invertir tiempo y capital en hacerlo bien",
+      "CPG, alimentos y bebidas, belleza, moda, tech, servicios, DTC o franquicia"
+    ],
+    "structureLabel": "La Estructura de 6 Meses",
+    "structureH2": "Inteligencia → Estrategia → Ejecución.",
+    "months": [
+      {
+        "num": "01",
+        "title": "Mes 1 — Inteligencia",
+        "desc": "Comenzamos con datos, no suposiciones. Tu engagement se inicia con una fundación completa de Market Research vía Soundcheck Insights — panorama competitivo, análisis de consumidor y personas basadas en investigación para tu categoría específica en EE.UU. También alineamos el framework estratégico a través de A.M.P., mi playbook de crecimiento y posicionamiento (incluido como regalo, en portugués).",
+        "outcome": "Sales del mes 1 con una visión clara y basada en datos de la oportunidad en EE.UU."
+      },
+      {
+        "num": "02–03",
+        "title": "Meses 2–3 — Estrategia",
+        "desc": "Toda decisión importante se toma aquí — posicionamiento, go-to-market, pricing, estrategia de canal, estructura societaria — todo basado en la inteligencia del mes 1. Te presento a los profesionales estadounidenses que necesitarás: logística, legal, tributario, importación/exportación, ventas. Este también es el momento para agregar un Análisis de Viabilidad GoGlobal para un roadmap formal de expansión.",
+        "outcome": "Un plan de go-to-market para ejecutar, más conexiones con los profesionales que te ayudarán a ejecutarlo."
+      },
+      {
+        "num": "04–06",
+        "title": "Meses 4–6 — Soporte a la Ejecución",
+        "desc": "Las llamadas cambian de planificación a troubleshooting en tiempo real y accountability. Te ayudo a navegar las sorpresas inevitables — demoras en aduana, resistencia de retailers, errores culturales, desafíos de contratación — y hago presentaciones adicionales conforme surgen necesidades específicas.",
+        "outcome": "Confianza de que el plan funciona, relaciones con los profesionales correctos y la capacidad de continuar de forma independiente."
+      }
+    ],
+    "includedLabel": "Qué Incluye",
+    "includedH2": "Todo lo que necesitas. Nada que no.",
+    "includedItems": [
+      {
+        "title": "4 Llamadas Semanales",
+        "desc": "Una hora cada una, por video. Mentoría estratégica, no coaching genérico."
+      },
+      {
+        "title": "Fundación de Market Research",
+        "desc": "Inteligencia basada en IA vía Soundcheck Insights — informes de mercado, consumidor y competitivo, más personas basadas en investigación. Incluido en tu programa."
+      },
+      {
+        "title": "Libro A.M.P. (Portugués)",
+        "desc": "Mi playbook de crecimiento y posicionamiento, enviado antes de nuestra primera llamada. Define el framework estratégico en tu idioma nativo."
+      },
+      {
+        "title": "Red de Profesionales en EE.UU.",
+        "desc": "Presentaciones a especialistas confiables de go-to-market, 3PL/logística, importación/exportación, contadores, asesoría legal, profesionales de ventas y operadores de e-commerce."
+      },
+      {
+        "title": "Acceso Asíncrono",
+        "desc": "WhatsApp y email entre llamadas para preguntas rápidas y decisiones urgentes."
+      },
+      {
+        "title": "Análisis GoGlobal (Opcional)",
+        "desc": "Agrega un score formal de viabilidad de expansión y roadmap estratégico con 50% de descuento del precio individual. Encaje natural alrededor de los meses 2–3."
+      }
+    ],
+    "brandsLabel": "Marcas que Ayudé a Expandir a EE.UU.",
+    "brandsH2": "11 años construyendo el puente entre Brasil y el mercado estadounidense.",
+    "pricingLabel": "Inversión",
+    "pricingH2": "$1.000/mes",
+    "pricingSub": "Compromiso mínimo de 6 meses",
+    "pricingIncludes": [
+      "4 llamadas semanales de 1 hora por video",
+      "Fundación Soundcheck Market Research (incluida)",
+      "Libro A.M.P. — edición en portugués (regalo)",
+      "Presentaciones a la red de profesionales en EE.UU.",
+      "Acceso asíncrono vía WhatsApp & email"
+    ],
+    "pricingNote": "Después de 6 meses, continúa mes a mes al mismo valor si deseas soporte continuo.",
+    "miamiLabel": "Próximamente",
+    "miamiH2": "Inmersión en Miami — Delegación Presencial",
+    "miamiP": "Estamos desarrollando una experiencia presencial en Miami para participantes del programa — una delegación de varios días con visitas a APEX Brasil, sesiones de trabajo en Mana Tech y reuniones presenciales con profesionales estadounidenses de logística, legal, tributario, ventas y e-commerce. Detalles próximamente.",
+    "ctaH2": "¿Listo para hacer la travesía?",
+    "ctaSub": "Cuéntame sobre tu negocio, tu producto y lo que el mercado estadounidense significa para ti. Te diré honestamente si puedo ayudar — y cómo.",
+    "ctaBtn": "Iniciar una Conversación →"
   }
 }

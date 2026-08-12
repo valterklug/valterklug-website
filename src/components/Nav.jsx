@@ -23,6 +23,7 @@ export default function Nav() {
     { label: t('nav.intelligence'), to: '/intelligence' },
     { label: t('nav.articles'), to: '/articles' },
     { label: t('nav.investors'), to: '/private-equity' },
+    { label: t('nav.goglobal'), to: '/goglobal' },
   ], [t])
 
   useEffect(() => {

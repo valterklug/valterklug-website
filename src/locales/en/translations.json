@@ -7,6 +7,7 @@
     "intelligence": "Intelligence",
     "articles": "Articles",
     "investors": "For Investors",
+    "goglobal": "GoGlobal",
     "wordmark": "Valter Klug",
     "subtitle": "Creative Leader · Brand Builder · Miami",
     "cta": "Let's Talk →"
@@ -25,7 +26,8 @@
       "intelligence": "Intelligence",
       "articles": "Articles",
       "contact": "Contact",
-      "investors": "For Investors"
+      "investors": "For Investors",
+      "goglobal": "GoGlobal"
     },
     "operatingThroughTitle": "Operating Through",
     "chameleonCollective": "Creative leadership & consulting engagements",
@@ -738,5 +740,94 @@
     "formSuccess": "Thanks. I'll be in touch within one business day.",
     "formError": "Something went wrong. Email me directly:",
     "formSubjectPrefix": "PE Inquiry from"
+  },
+  "goglobal": {
+    "heroLabel": "GoGlobal — by Valter Klug",
+    "heroH1": "From Brazil to the US.\nWith someone who's done it\n30+ times.",
+    "heroSub": "A 6-month mentorship for Brazilian founders entering the US market — backed by AI-powered market intelligence, 11 years of cross-border brand expansion, and a vetted network of US-based professionals.",
+    "ctaPrimary": "Apply Now →",
+    "stats": [
+      { "number": "11+", "label": "Years in cross-border expansion" },
+      { "number": "30+", "label": "Brands expanded to the US" },
+      { "number": "6", "label": "Month structured program" }
+    ],
+    "whoLabel": "Who It's For",
+    "whoH2": "For Brazilian founders serious about the US market.",
+    "whoP": "Not \"thinking about it someday.\" Actively planning or in early stages of entering the US. You have product-market fit in Brazil. You need a strategic guide who has walked this path with some of the biggest Brazilian brands — and a network of trusted US professionals to make it happen.",
+    "whoChecks": [
+      "Established business in Brazil with proven traction",
+      "Actively planning or starting US market entry",
+      "Ready to invest time and capital in doing it right",
+      "CPG, food & beverage, beauty, fashion, tech, services, DTC, or franchise"
+    ],
+    "structureLabel": "The 6-Month Structure",
+    "structureH2": "Intelligence → Strategy → Execution.",
+    "months": [
+      {
+        "num": "01",
+        "title": "Month 1 — Intelligence",
+        "desc": "We start with data, not guesses. Your engagement opens with a full Market Research foundation through Soundcheck Insights — competitive landscape, consumer analysis, and research-based personas for your specific category in the US. We also align on the strategic framework through A.M.P., my growth and positioning playbook (included as a gift, in Portuguese).",
+        "outcome": "You leave month 1 with a clear, data-backed picture of the US opportunity."
+      },
+      {
+        "num": "02–03",
+        "title": "Months 2–3 — Strategy",
+        "desc": "Every major decision gets made here — positioning, go-to-market, pricing, channel strategy, entity structure — all grounded in the intelligence from month 1. I introduce you to the US professionals you'll need: logistics, legal, tax, import/export, sales. This is also when you can add a GoGlobal Viability Analysis for a formal expansion roadmap.",
+        "outcome": "A go-to-market plan you can execute against, plus connections to the people who will help you execute it."
+      },
+      {
+        "num": "04–06",
+        "title": "Months 4–6 — Execution Support",
+        "desc": "Calls shift from planning to real-time troubleshooting and accountability. I help you navigate the inevitable surprises — customs delays, retailer pushback, cultural missteps, hiring challenges — and make additional introductions as specific needs emerge.",
+        "outcome": "Confidence that the plan works, relationships with the right professionals, and the ability to continue independently."
+      }
+    ],
+    "includedLabel": "What's Included",
+    "includedH2": "Everything you need. Nothing you don't.",
+    "includedItems": [
+      {
+        "title": "4 Weekly Calls",
+        "desc": "One hour each, video. Strategic mentorship, not generic coaching."
+      },
+      {
+        "title": "Market Research Foundation",
+        "desc": "AI-powered intelligence through Soundcheck Insights — market, consumer, and competitive reports plus research-based personas. Included in your program."
+      },
+      {
+        "title": "A.M.P. Book (Portuguese)",
+        "desc": "My growth and positioning playbook, gifted before our first call. Sets the strategic framework in your native language."
+      },
+      {
+        "title": "US Professional Network",
+        "desc": "Warm introductions to trusted go-to-market specialists, 3PL/logistics, import/export, CPAs, legal counsel, sales professionals, and e-commerce operators."
+      },
+      {
+        "title": "Async Access",
+        "desc": "WhatsApp and email between calls for quick questions and time-sensitive decisions."
+      },
+      {
+        "title": "GoGlobal Analysis (Optional)",
+        "desc": "Add a formal expansion viability score and strategic roadmap at 50% off the standalone price. Natural fit around months 2–3."
+      }
+    ],
+    "brandsLabel": "Brands I've Helped Expand to the US",
+    "brandsH2": "11 years building the bridge between Brazil and the American market.",
+    "pricingLabel": "Investment",
+    "pricingH2": "$1,000/month",
+    "pricingSub": "6-month minimum commitment",
+    "pricingIncludes": [
+      "4 weekly 1-hour video calls",
+      "Soundcheck Market Research foundation (included)",
+      "A.M.P. book — Portuguese edition (gift)",
+      "US professional network introductions",
+      "Async access via WhatsApp & email"
+    ],
+    "pricingNote": "After 6 months, continue month-to-month at the same rate if you want ongoing support.",
+    "miamiLabel": "Coming Soon",
+    "miamiH2": "Miami Immersion — In-Person Delegation",
+    "miamiP": "We're developing an in-person experience in Miami for program participants — a multi-day delegation with visits to APEX Brasil, working sessions at Mana Tech, and face-to-face meetings with US professionals in logistics, legal, tax, sales, and e-commerce. Details coming soon.",
+    "ctaH2": "Ready to make the crossing?",
+    "ctaSub": "Tell me about your business, your product, and what the US market means for you. I'll tell you honestly if I can help — and how.",
+    "ctaBtn": "Start a Conversation →"
   }
 }
