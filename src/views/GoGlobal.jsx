@@ -1,6 +1,8 @@
 'use client'
+import { useState } from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { useForm } from 'react-hook-form'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useLocale } from '../context/LocaleContext'
 import { PageWrapper, FadeIn, StaggerContainer, StaggerItem } from '../components/Animate'
@@ -9,6 +11,22 @@ import { PageWrapper, FadeIn, StaggerContainer, StaggerItem } from '../component
 const GREEN = '#2D936C'
 const GREEN_LIGHT = 'rgba(45,147,108,.08)'
 const GREEN_MID = 'rgba(45,147,108,.15)'
+
+// ── FormSubmit.co ──
+const FORMSUBMIT_EMAIL = 'info@soundcheckinsights.com'
+
+// ── Soundcheck link helper ──
+const SOUNDCHECK_URL = 'https://www.soundcheckinsights.com'
+const linkifySoundcheck = (text) => {
+  if (typeof text !== 'string') return text
+  const parts = text.split(/(Soundcheck Insights|Soundcheck)/g)
+  if (parts.length === 1) return text
+  return parts.map((part, i) =>
+    part === 'Soundcheck Insights' || part === 'Soundcheck'
+      ? <a key={i} href={SOUNDCHECK_URL} target="_blank" rel="noopener noreferrer" style={{ color: GREEN, textDecoration: 'underline', textUnderlineOffset: 2 }}>{part}</a>
+      : part
+  )
+}
 
 // ── Brazilian brands helped expand to the US ──
 const BRANDS_WITH_LOGOS = [
@@ -24,11 +42,36 @@ const BRANDS_TEXT_ONLY = ['Forno de Minas', 'Cia Marítima', 'Grupo 3 Corações
 export default function GoGlobal() {
   const { t } = useTranslation()
   const { localePath } = useLocale()
+  const [formStatus, setFormStatus] = useState('idle')
+  const { register, handleSubmit, reset, formState: { errors } } = useForm()
+
   const stats = t('goglobal.stats', { returnObjects: true })
   const months = t('goglobal.months', { returnObjects: true })
   const included = t('goglobal.includedItems', { returnObjects: true })
   const whoChecks = t('goglobal.whoChecks', { returnObjects: true })
   const pricingIncludes = t('goglobal.pricingIncludes', { returnObjects: true })
+
+  const onSubmit = async (data) => {
+    setFormStatus('submitting')
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          ...data,
+          _subject: `${t('goglobal.formSubjectPrefix')} ${data.name} — ${data.company || 'No company'}`,
+          _template: 'table',
+        }),
+      })
+      if (res.ok) { setFormStatus('success'); reset() }
+      else setFormStatus('error')
+    } catch { setFormStatus('error') }
+  }
+
+  const scrollToForm = (e) => {
+    e.preventDefault()
+    document.getElementById('goglobal-contact')?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <PageWrapper>
@@ -56,13 +99,13 @@ export default function GoGlobal() {
               {t('goglobal.heroSub')}
             </motion.p>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .26 }} style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-              <Link href={localePath('/contact')} style={{
+              <button onClick={scrollToForm} style={{
                 display: 'inline-flex', alignItems: 'center', gap: 6,
                 padding: '12px 28px', background: GREEN, color: '#fff',
                 fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600,
-                letterSpacing: '.06em', textTransform: 'uppercase', textDecoration: 'none',
-                borderRadius: 2, transition: 'opacity .2s',
-              }}>{t('goglobal.ctaPrimary')}</Link>
+                letterSpacing: '.06em', textTransform: 'uppercase',
+                borderRadius: 2, transition: 'opacity .2s', border: 'none', cursor: 'pointer',
+              }}>{t('goglobal.ctaPrimary')}</button>
             </motion.div>
 
             {/* Stats */}
@@ -117,7 +160,7 @@ export default function GoGlobal() {
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
               {t('goglobal.structureLabel')}
             </span>
-            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 48, maxWidth: 460 }}>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 48, whiteSpace: 'nowrap' }}>
               {t('goglobal.structureH2')}
             </h2>
           </FadeIn>
@@ -134,7 +177,7 @@ export default function GoGlobal() {
                   }}>
                     <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', color: i === 0 ? 'rgba(255,255,255,.7)' : GREEN, marginBottom: 8 }}>{m.num}</div>
                     <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.1rem,2vw,1.3rem)', fontWeight: 600, color: i === 0 ? '#fff' : '#121212', lineHeight: 1.2, marginBottom: 12 }}>{m.title}</h3>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: i === 0 ? 'rgba(255,255,255,.75)' : '#555', lineHeight: 1.7, marginBottom: 16, maxWidth: 640 }}>{m.desc}</p>
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: i === 0 ? 'rgba(255,255,255,.75)' : '#555', lineHeight: 1.7, marginBottom: 16, maxWidth: 640 }}>{linkifySoundcheck(m.desc)}</p>
                     <div style={{
                       fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500,
                       color: i === 0 ? 'rgba(255,255,255,.5)' : '#999',
@@ -175,7 +218,7 @@ export default function GoGlobal() {
                     height: '100%',
                   }}>
                     <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: '.9375rem', fontWeight: 600, color: '#121212', marginBottom: 8 }}>{item.title}</h3>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#555', lineHeight: 1.65 }}>{item.desc}</p>
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#555', lineHeight: 1.65 }}>{linkifySoundcheck(item.desc)}</p>
                   </div>
                 </StaggerItem>
               ))}
@@ -242,7 +285,7 @@ export default function GoGlobal() {
                 {pricingIncludes.map(item => (
                   <div key={item} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', marginBottom: 10 }}>
                     <span style={{ color: GREEN, flexShrink: 0, fontSize: 16, lineHeight: 1.5 }}>✓</span>
-                    <span style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#333', lineHeight: 1.6 }}>{item}</span>
+                    <span style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: '#333', lineHeight: 1.6 }}>{linkifySoundcheck(item)}</span>
                   </div>
                 ))}
               </div>
@@ -251,13 +294,13 @@ export default function GoGlobal() {
                 {t('goglobal.pricingNote')}
               </p>
 
-              <Link href={localePath('/contact')} style={{
+              <button onClick={scrollToForm} style={{
                 display: 'inline-flex', alignItems: 'center', gap: 6,
                 padding: '14px 36px', background: GREEN, color: '#fff',
                 fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600,
-                letterSpacing: '.06em', textTransform: 'uppercase', textDecoration: 'none',
-                borderRadius: 2, transition: 'opacity .2s',
-              }}>{t('goglobal.ctaPrimary')}</Link>
+                letterSpacing: '.06em', textTransform: 'uppercase',
+                borderRadius: 2, transition: 'opacity .2s', border: 'none', cursor: 'pointer',
+              }}>{t('goglobal.ctaPrimary')}</button>
             </div>
           </FadeIn>
         </div>
@@ -283,24 +326,121 @@ export default function GoGlobal() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════
-          CTA
+          CONTACT FORM
           ════════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#121212', padding: '80px 64px', borderTop: `3px solid ${GREEN}` }}>
-        <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
+      <section id="goglobal-contact" style={{ background: '#121212', padding: '80px 64px', borderTop: `3px solid ${GREEN}` }}>
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
           <FadeIn>
-            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.2, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.2, marginBottom: 16, textAlign: 'center' }}>
               {t('goglobal.ctaH2')}
             </h2>
-            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '1rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.7, marginBottom: 32 }}>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '1rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.7, marginBottom: 40, textAlign: 'center' }}>
               {t('goglobal.ctaSub')}
             </p>
-            <Link href={localePath('/contact')} style={{
-              display: 'inline-flex', alignItems: 'center', gap: 6,
-              padding: '14px 36px', background: GREEN, color: '#fff',
-              fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600,
-              letterSpacing: '.06em', textTransform: 'uppercase', textDecoration: 'none',
-              borderRadius: 2,
-            }}>{t('goglobal.ctaBtn')}</Link>
+
+            <form onSubmit={handleSubmit(onSubmit)} noValidate style={{
+              display: 'flex', flexDirection: 'column', gap: 20,
+            }}>
+              {/* Name */}
+              <div>
+                <label style={{
+                  display: 'block', marginBottom: 6,
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
+                  letterSpacing: '.12em', textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,.4)',
+                }}>{t('goglobal.formNameLabel')}</label>
+                <input
+                  type="text"
+                  placeholder={t('goglobal.formNamePlaceholder')}
+                  {...register('name', { required: t('goglobal.formRequired') })}
+                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.name ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
+                />
+                {errors.name && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.name.message}</span>}
+              </div>
+
+              {/* Email */}
+              <div>
+                <label style={{
+                  display: 'block', marginBottom: 6,
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
+                  letterSpacing: '.12em', textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,.4)',
+                }}>{t('goglobal.formEmailLabel')}</label>
+                <input
+                  type="email"
+                  placeholder={t('goglobal.formEmailPlaceholder')}
+                  {...register('email', { required: t('goglobal.formRequired'), pattern: { value: /^\S+@\S+\.\S+$/, message: t('goglobal.formInvalidEmail') } })}
+                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.email ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
+                />
+                {errors.email && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.email.message}</span>}
+              </div>
+
+              {/* Company */}
+              <div>
+                <label style={{
+                  display: 'block', marginBottom: 6,
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
+                  letterSpacing: '.12em', textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,.4)',
+                }}>{t('goglobal.formCompanyLabel')}</label>
+                <input
+                  type="text"
+                  placeholder={t('goglobal.formCompanyPlaceholder')}
+                  {...register('company', { required: t('goglobal.formRequired') })}
+                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.company ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
+                />
+                {errors.company && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.company.message}</span>}
+              </div>
+
+              {/* Message */}
+              <div>
+                <label style={{
+                  display: 'block', marginBottom: 6,
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
+                  letterSpacing: '.12em', textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,.4)',
+                }}>{t('goglobal.formMessageLabel')}</label>
+                <textarea
+                  rows={5}
+                  placeholder={t('goglobal.formMessagePlaceholder')}
+                  {...register('message')}
+                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', resize: 'vertical', boxSizing: 'border-box' }}
+                />
+              </div>
+
+              {/* Submit */}
+              <button type="submit" disabled={formStatus === 'submitting'}
+                style={{
+                  width: '100%', padding: '14px 36px', background: GREEN, color: '#fff',
+                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600,
+                  letterSpacing: '.06em', textTransform: 'uppercase', border: 'none',
+                  borderRadius: 2, cursor: formStatus === 'submitting' ? 'not-allowed' : 'pointer',
+                  opacity: formStatus === 'submitting' ? .6 : 1,
+                  transition: 'opacity .2s, transform .15s',
+                }}
+                onMouseEnter={e => { if (formStatus !== 'submitting') { e.target.style.opacity = '.85'; e.target.style.transform = 'translateY(-1px)' } }}
+                onMouseLeave={e => { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)' }}
+              >
+                {formStatus === 'submitting' ? t('goglobal.formSubmitting') : t('goglobal.ctaBtn')}
+              </button>
+
+              {/* Status messages */}
+              <AnimatePresence>
+                {formStatus === 'success' && (
+                  <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                    style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: GREEN, textAlign: 'center', marginTop: 4 }}>
+                    {t('goglobal.formSuccess')}
+                  </motion.p>
+                )}
+                {formStatus === 'error' && (
+                  <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                    style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#E85D4A', textAlign: 'center', marginTop: 4 }}>
+                    {t('goglobal.formError')}{' '}
+                    <a href={`mailto:${FORMSUBMIT_EMAIL}`} style={{ color: '#E85D4A', textDecoration: 'underline' }}>{FORMSUBMIT_EMAIL}</a>
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </form>
           </FadeIn>
         </div>
       </section>

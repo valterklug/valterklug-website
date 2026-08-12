@@ -744,7 +744,7 @@
   "goglobal": {
     "heroLabel": "GoGlobal — by Valter Klug",
     "heroH1": "From Brazil to the US.\nWith someone who's done it\n30+ times.",
-    "heroSub": "A 6-month mentorship for Brazilian founders entering the US market — backed by AI-powered market intelligence, 11 years of cross-border brand expansion, and a vetted network of US-based professionals.",
+    "heroSub": "A 6-month mentorship for Brazilian business owners entering the US market — backed by AI-powered market intelligence, 11 years of cross-border brand expansion, and a vetted network of US-based professionals.",
     "ctaPrimary": "Apply Now →",
     "stats": [
       { "number": "11+", "label": "Years in cross-border expansion" },
@@ -752,8 +752,8 @@
       { "number": "6", "label": "Month structured program" }
     ],
     "whoLabel": "Who It's For",
-    "whoH2": "For Brazilian founders serious about the US market.",
-    "whoP": "Not \"thinking about it someday.\" Actively planning or in early stages of entering the US. You have product-market fit in Brazil. You need a strategic guide who has walked this path with some of the biggest Brazilian brands — and a network of trusted US professionals to make it happen.",
+    "whoH2": "For Brazilian business owners serious about the US market.",
+    "whoP": "Not \"thinking about it someday.\" Actively planning or in early stages of entering the US. You have proven product-market fit in Brazil. You need a strategic guide who has walked this path with some of the biggest Brazilian brands — and a network of trusted US professionals to make it happen.",
     "whoChecks": [
       "Established business in Brazil with proven traction",
       "Actively planning or starting US market entry",
@@ -766,13 +766,13 @@
       {
         "num": "01",
         "title": "Month 1 — Intelligence",
-        "desc": "We start with data, not guesses. Your engagement opens with a full Market Research foundation through Soundcheck Insights — competitive landscape, consumer analysis, and research-based personas for your specific category in the US. We also align on the strategic framework through A.M.P., my growth and positioning playbook (included as a gift, in Portuguese).",
+        "desc": "We start with data, not guesses. Your engagement opens with a full Market Research foundation through Soundcheck Insights — competitive landscape, consumer analysis, and research-based personas for your specific category in the US (a $3,000 value, included in the program). We also align on the strategic framework through A.M.P., my growth and positioning playbook (included as a gift, in Portuguese).",
         "outcome": "You leave month 1 with a clear, data-backed picture of the US opportunity."
       },
       {
         "num": "02–03",
         "title": "Months 2–3 — Strategy",
-        "desc": "Every major decision gets made here — positioning, go-to-market, pricing, channel strategy, entity structure — all grounded in the intelligence from month 1. I introduce you to the US professionals you'll need: logistics, legal, tax, import/export, sales. This is also when you can add a GoGlobal Viability Analysis for a formal expansion roadmap.",
+        "desc": "Every major decision gets made here — positioning, go-to-market, pricing, channel strategy, entity structure — all grounded in the intelligence from month 1. I connect you to the US professionals you'll need: logistics, legal, tax, import/export, sales. This is also when you can add a GoGlobal Viability Analysis for a formal expansion roadmap.",
         "outcome": "A go-to-market plan you can execute against, plus connections to the people who will help you execute it."
       },
       {
@@ -791,18 +791,18 @@
       },
       {
         "title": "Market Research Foundation",
-        "desc": "AI-powered intelligence through Soundcheck Insights — market, consumer, and competitive reports plus research-based personas. Included in your program."
+        "desc": "AI-powered intelligence through Soundcheck Insights — market, consumer, and competitive reports plus research-based personas. Included in the program ($3,000 value)."
       },
       {
         "title": "A.M.P. Book (Portuguese)",
-        "desc": "My growth and positioning playbook, gifted before our first call. Sets the strategic framework in your native language."
+        "desc": "Receive a copy of my growth and positioning playbook, as a gift."
       },
       {
         "title": "US Professional Network",
         "desc": "Warm introductions to trusted go-to-market specialists, 3PL/logistics, import/export, CPAs, legal counsel, sales professionals, and e-commerce operators."
       },
       {
-        "title": "Async Access",
+        "title": "Direct Contact",
         "desc": "WhatsApp and email between calls for quick questions and time-sensitive decisions."
       },
       {
@@ -817,10 +817,10 @@
     "pricingSub": "6-month minimum commitment",
     "pricingIncludes": [
       "4 weekly 1-hour video calls",
-      "Soundcheck Market Research foundation (included)",
+      "Soundcheck Market Research foundation — $3,000 value (included)",
       "A.M.P. book — Portuguese edition (gift)",
       "US professional network introductions",
-      "Async access via WhatsApp & email"
+      "Direct contact via WhatsApp & email"
     ],
     "pricingNote": "After 6 months, continue month-to-month at the same rate if you want ongoing support.",
     "miamiLabel": "Coming Soon",
@@ -828,6 +828,20 @@
     "miamiP": "We're developing an in-person experience in Miami for program participants — a multi-day delegation with visits to APEX Brasil, working sessions at Mana Tech, and face-to-face meetings with US professionals in logistics, legal, tax, sales, and e-commerce. Details coming soon.",
     "ctaH2": "Ready to make the crossing?",
     "ctaSub": "Tell me about your business, your product, and what the US market means for you. I'll tell you honestly if I can help — and how.",
-    "ctaBtn": "Start a Conversation →"
+    "ctaBtn": "Send →",
+    "formNameLabel": "Your name",
+    "formNamePlaceholder": "Full name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "you@company.com",
+    "formCompanyLabel": "Company",
+    "formCompanyPlaceholder": "Your company name",
+    "formMessageLabel": "Tell me about your business and your plans for the US",
+    "formMessagePlaceholder": "What you do, your product/service, and what the US market means for your business.",
+    "formRequired": "Required",
+    "formInvalidEmail": "Invalid email",
+    "formSubmitting": "Sending...",
+    "formSuccess": "Thanks. I'll be in touch within one business day.",
+    "formError": "Something went wrong. Email me directly:",
+    "formSubjectPrefix": "GoGlobal — Interest from"
   }
 }
