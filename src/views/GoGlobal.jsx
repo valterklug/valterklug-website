@@ -36,8 +36,11 @@ const BRANDS_WITH_LOGOS = [
   { name: 'Natura', src: '/logos/natura.png' },
   { name: 'Tramontina', src: '/logos/tramontina.png' },
   { name: 'Grendene', src: '/logos/grendene.png' },
+  { name: 'Forno de Minas', src: '/logos/logo_forno.png' },
+  { name: 'Cia Marítima', src: '/logos/logo_ciaM.png' },
+  { name: 'Grupo 3 Corações', src: '/logos/logo_3cor.png' },
 ]
-const BRANDS_TEXT_ONLY = ['Forno de Minas', 'Cia Marítima', 'Grupo 3 Corações']
+const BRANDS_TEXT_ONLY = []
 
 export default function GoGlobal() {
   const { t } = useTranslation()
