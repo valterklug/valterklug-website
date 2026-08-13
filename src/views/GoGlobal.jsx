@@ -94,7 +94,7 @@ export default function GoGlobal() {
               {t('goglobal.heroLabel')}
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .08 }}
-              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(2.2rem,5vw,3.6rem)', fontWeight: 300, lineHeight: 1.06, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 600 }}>
+              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, lineHeight: 1.1, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680 }}>
               {t('goglobal.heroH1')}
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
