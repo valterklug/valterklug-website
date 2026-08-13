@@ -743,43 +743,43 @@
   },
   "goglobal": {
     "heroLabel": "GoGlobal — by Valter Klug",
-    "heroH1": "From Brazil to the US.\nWith someone who's done it\n30+ times.",
-    "heroSub": "A 6-month mentorship for Brazilian business owners entering the US market — backed by AI-powered market intelligence, 11 years of cross-border brand expansion, and a vetted network of US-based professionals.",
+    "heroH1": "From Brazil to the US.\nStrategy, positioning\n& marketing execution.",
+    "heroSub": "A 6-month mentorship for Brazilian business owners entering the US market — from market intelligence to brand positioning and marketing execution, digital and e-commerce. Built on the A.M.P. methodology and powered by research through Soundcheck Insights.",
     "ctaPrimary": "Apply Now →",
     "stats": [
       { "number": "11+", "label": "Years in cross-border expansion" },
-      { "number": "30+", "label": "Brands expanded to the US" },
-      { "number": "6", "label": "Month structured program" }
+      { "number": "30+", "label": "Brands brought to the US" },
+      { "number": "A.M.P.", "label": "Proprietary methodology" }
     ],
     "whoLabel": "Who It's For",
     "whoH2": "For Brazilian business owners serious about the US market.",
-    "whoP": "Not \"thinking about it someday.\" Actively planning or in early stages of entering the US. You have proven product-market fit in Brazil. You need a strategic guide who has walked this path with some of the biggest Brazilian brands — and a network of trusted US professionals to make it happen.",
+    "whoP": "You've proven product-market fit in Brazil. Now you need market intelligence, brand positioning, and a real go-to-market plan — with someone who's done it with Bauducco, Guaraná Antarctica, Natura, and dozens of other Brazilian brands. My expertise is in marketing, branding, digital, and e-commerce. For the other areas — legal, tax, logistics, import — I connect you to the best professionals in the US.",
     "whoChecks": [
       "Established business in Brazil with proven traction",
-      "Actively planning or starting US market entry",
+      "Actively planning or beginning US market entry",
       "Ready to invest time and capital in doing it right",
       "CPG, food & beverage, beauty, fashion, tech, services, DTC, or franchise"
     ],
-    "structureLabel": "The 6-Month Structure",
-    "structureH2": "Intelligence → Strategy → Execution.",
+    "structureLabel": "The A.M.P. Methodology in 6 Months",
+    "structureH2": "Assessment → Positioning → Amplification.",
     "months": [
       {
         "num": "01",
-        "title": "Month 1 — Intelligence",
-        "desc": "We start with data, not guesses. Your engagement opens with a full Market Research foundation through Soundcheck Insights — competitive landscape, consumer analysis, and research-based personas for your specific category in the US (a $3,000 value, included in the program). We also align on the strategic framework through A.M.P., my growth and positioning playbook (included as a gift, in Portuguese).",
-        "outcome": "You leave month 1 with a clear, data-backed picture of the US opportunity."
+        "title": "Month 1 — Assessment",
+        "desc": "We start with market intelligence and an audit of your brand. Your engagement opens with a full Market Research foundation through Soundcheck Insights — competitive landscape, consumer analysis, and personas for your specific US category ($3,000 value, included). In parallel, we apply the A.M.P. diagnostic: business blind spots, Brand Value Dashboard, and essential financial metrics (CAC, CLTV, margin).",
+        "outcome": "You leave month 1 with clarity on the US opportunity, your brand, and the numbers that matter."
       },
       {
         "num": "02–03",
-        "title": "Months 2–3 — Strategy",
-        "desc": "Every major decision gets made here — positioning, go-to-market, pricing, channel strategy, entity structure — all grounded in the intelligence from month 1. I connect you to the US professionals you'll need: logistics, legal, tax, import/export, sales. This is also when you can add a GoGlobal Viability Analysis for a formal expansion roadmap.",
-        "outcome": "A go-to-market plan you can execute against, plus connections to the people who will help you execute it."
+        "title": "Months 2–3 — Mindset & Positioning",
+        "desc": "The most strategic phase. With month 1's market intelligence in hand, we define your positioning for the American market: value proposition, differentiation, messaging, pricing, and channel strategy. We apply A.M.P. principles — finding your untapped advantage and crafting messages that resonate with the American consumer. I connect you to the professionals you'll need in the US: legal, tax, logistics, import, agencies, e-commerce operators.",
+        "outcome": "A complete go-to-market plan with positioning, channels, and the professional network to execute."
       },
       {
         "num": "04–06",
-        "title": "Months 4–6 — Execution Support",
-        "desc": "Calls shift from planning to real-time troubleshooting and accountability. I help you navigate the inevitable surprises — customs delays, retailer pushback, cultural missteps, hiring challenges — and make additional introductions as specific needs emerge.",
-        "outcome": "Confidence that the plan works, relationships with the right professionals, and the ability to continue independently."
+        "title": "Months 4–6 — Amplification",
+        "desc": "We shift from strategy to execution. This is where my expertise in marketing, branding, digital, and e-commerce comes in full force: campaign launches, channel optimization, e-commerce, strategic partnerships, and customer experience in the US. I help you navigate media decisions, creative adjustments, retailer pushback — and monitor KPIs to make sure every dollar invested is driving results.",
+        "outcome": "Active US operations, metrics being tracked, and the ability to continue independently."
       }
     ],
     "includedLabel": "What's Included",
@@ -787,19 +787,19 @@
     "includedItems": [
       {
         "title": "4 Weekly Calls",
-        "desc": "One hour each, video. Strategic mentorship, not generic coaching."
+        "desc": "One hour each, video. Strategic mentorship covering market intelligence, positioning, and execution — not generic coaching."
       },
       {
         "title": "Market Research Foundation",
         "desc": "AI-powered intelligence through Soundcheck Insights — market, consumer, and competitive reports plus research-based personas. Included in the program ($3,000 value)."
       },
       {
-        "title": "A.M.P. Book (Portuguese)",
-        "desc": "Receive a copy of my growth and positioning playbook, as a gift."
+        "title": "A.M.P. Methodology",
+        "desc": "Structured framework of Assessment, Mindset, Positioning, and Amplification applied to your brand. Includes a copy of the A.M.P. book in Portuguese, as a gift."
       },
       {
         "title": "US Professional Network",
-        "desc": "Warm introductions to trusted go-to-market specialists, 3PL/logistics, import/export, CPAs, legal counsel, sales professionals, and e-commerce operators."
+        "desc": "Warm introductions to specialists in the areas you'll need: legal, tax, logistics, import/export, 3PL, digital marketing agencies, e-commerce, media, creative, and sales in the US."
       },
       {
         "title": "Direct Contact",
@@ -811,22 +811,22 @@
       }
     ],
     "brandsLabel": "Brands I've Helped Expand to the US",
-    "brandsH2": "11 years building the bridge between Brazil and the American market.",
+    "brandsH2": "11 years building the Brazil–US bridge in strategy, branding & go-to-market.",
     "pricingLabel": "Investment",
     "pricingH2": "$1,000/month",
     "pricingSub": "6-month minimum commitment",
     "pricingIncludes": [
       "4 weekly 1-hour video calls",
       "Soundcheck Market Research foundation — $3,000 value (included)",
-      "A.M.P. book — Portuguese edition (gift)",
-      "US professional network introductions",
+      "Full A.M.P. methodology + book in Portuguese (gift)",
+      "US professional network (legal, tax, logistics, marketing, e-commerce)",
       "Direct contact via WhatsApp & email"
     ],
     "pricingNote": "After 6 months, continue month-to-month at the same rate if you want ongoing support.",
     "miamiLabel": "Coming Soon",
     "miamiH2": "Miami Immersion — In-Person Delegation",
-    "miamiP": "We're developing an in-person experience in Miami for program participants — a multi-day delegation with visits to APEX Brasil, working sessions at Mana Tech, and face-to-face meetings with US professionals in logistics, legal, tax, sales, and e-commerce. Details coming soon.",
-    "ctaH2": "Ready to make the crossing?",
+    "miamiP": "We're developing an in-person experience in Miami for program participants — a multi-day delegation with visits to APEX Brasil, working sessions at Mana Tech, and face-to-face meetings with US professionals in logistics, legal, tax, marketing, e-commerce, and sales. Details coming soon.",
+    "ctaH2": "Ready to bring your business to the US?",
     "ctaSub": "Tell me about your business, your product, and what the US market means for you. I'll tell you honestly if I can help — and how.",
     "ctaBtn": "Send →",
     "formNameLabel": "Your name",

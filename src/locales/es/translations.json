@@ -987,43 +987,43 @@
   },
   "goglobal": {
     "heroLabel": "GoGlobal — por Valter Klug",
-    "heroH1": "De Brasil a los EE.UU.\nCon alguien que lo ha hecho\nmás de 30 veces.",
-    "heroSub": "Una mentoría de 6 meses para empresarios brasileños ingresando al mercado estadounidense — respaldada por inteligencia de mercado impulsada por IA, 11 años de expansión transfronteriza y una red verificada de profesionales en EE.UU.",
+    "heroH1": "De Brasil a EE.UU.\nEstrategia, posicionamiento\ny ejecución de marketing.",
+    "heroSub": "Una mentoría de 6 meses para empresarios brasileños ingresando al mercado estadounidense — de la inteligencia de mercado al posicionamiento de marca y ejecución de marketing, digital y e-commerce. Estructurada en la metodología A.M.P. y respaldada por investigación vía Soundcheck Insights.",
     "ctaPrimary": "Quiero Participar →",
     "stats": [
-      { "number": "11+", "label": "Años en expansión internacional" },
-      { "number": "30+", "label": "Marcas expandidas a EE.UU." },
-      { "number": "6", "label": "Meses de programa estructurado" }
+      { "number": "11+", "label": "Años en expansión cross-border" },
+      { "number": "30+", "label": "Marcas llevadas a EE.UU." },
+      { "number": "A.M.P.", "label": "Metodología propietaria" }
     ],
     "whoLabel": "Para Quién Es",
     "whoH2": "Para empresarios brasileños serios sobre el mercado estadounidense.",
-    "whoP": "No \"pensando en ello algún día.\" Planificando activamente o en las etapas iniciales de ingresar a EE.UU. Ya comprobaste el fit de mercado en Brasil. Necesitas un guía estratégico que ha recorrido este camino con algunas de las marcas brasileñas más grandes — y una red de profesionales estadounidenses confiables para hacerlo realidad.",
+    "whoP": "Ya comprobaste el fit de mercado en Brasil. Ahora necesitas inteligencia de mercado, posicionamiento de marca y un plan real de go-to-market — con quien ya hizo ese camino con Bauducco, Guaraná Antarctica, Natura y decenas de otras marcas brasileñas. Mi expertise es en marketing, branding, digital y e-commerce. Para las otras áreas — legal, tributario, logística, importación — te conecto con los mejores profesionales en EE.UU.",
     "whoChecks": [
       "Negocio establecido en Brasil con tracción comprobada",
       "Planificando activamente o iniciando entrada al mercado estadounidense",
       "Listo para invertir tiempo y capital en hacerlo bien",
       "CPG, alimentos y bebidas, belleza, moda, tech, servicios, DTC o franquicia"
     ],
-    "structureLabel": "La Estructura de 6 Meses",
-    "structureH2": "Inteligencia → Estrategia → Ejecución.",
+    "structureLabel": "La Metodología A.M.P. en 6 Meses",
+    "structureH2": "Assessment → Posicionamiento → Amplificación.",
     "months": [
       {
         "num": "01",
-        "title": "Mes 1 — Inteligencia",
-        "desc": "Comenzamos con datos, no suposiciones. Tu engagement se inicia con una fundación completa de Market Research vía Soundcheck Insights — panorama competitivo, análisis de consumidor y personas basadas en investigación para tu categoría específica en EE.UU. (un valor de $3.000, incluido en el programa). También alineamos el framework estratégico a través de A.M.P., mi playbook de crecimiento y posicionamiento (incluido como regalo, en portugués).",
-        "outcome": "Sales del mes 1 con una visión clara y basada en datos de la oportunidad en EE.UU."
+        "title": "Mes 1 — Assessment",
+        "desc": "Comenzamos con inteligencia de mercado y una auditoría de tu marca. Tu engagement se inicia con una fundación completa de Market Research vía Soundcheck Insights — panorama competitivo, análisis de consumidor y personas para tu categoría en EE.UU. (valor de $3.000, incluido). En paralelo, aplicamos el diagnóstico A.M.P.: puntos ciegos del negocio, Brand Value Dashboard y métricas financieras esenciales (CAC, CLTV, margen).",
+        "outcome": "Sales del mes 1 con claridad sobre la oportunidad en EE.UU., tu marca y los números que importan."
       },
       {
         "num": "02–03",
-        "title": "Meses 2–3 — Estrategia",
-        "desc": "Toda decisión importante se toma aquí — posicionamiento, go-to-market, pricing, estrategia de canal, estructura societaria — todo basado en la inteligencia del mes 1. Te conecto con los profesionales en EE.UU. que necesitarás: logística, legal, tributario, importación/exportación, ventas. Este también es el momento para agregar un Análisis de Viabilidad GoGlobal para un roadmap formal de expansión.",
-        "outcome": "Un plan de go-to-market para ejecutar, más conexiones con los profesionales que te ayudarán a ejecutarlo."
+        "title": "Meses 2–3 — Mindset & Posicionamiento",
+        "desc": "La fase más estratégica del programa. Con la inteligencia de mercado del mes 1 en mano, definimos tu posicionamiento para el mercado estadounidense: propuesta de valor, diferenciación, mensaje, pricing y estrategia de canales. Aplicamos los principios del A.M.P. — encontrar tu ventaja inexplorada y crear mensajes que resuenen con el consumidor estadounidense. Te conecto con los profesionales que necesitarás en EE.UU.: legal, tributario, logística, importación, agencias, operadores de e-commerce.",
+        "outcome": "Un plan de go-to-market completo con posicionamiento, canales y la red de profesionales para ejecutar."
       },
       {
         "num": "04–06",
-        "title": "Meses 4–6 — Soporte a la Ejecución",
-        "desc": "Las llamadas cambian de planificación a troubleshooting en tiempo real y accountability. Te ayudo a navegar las sorpresas inevitables — demoras en aduana, resistencia de retailers, errores culturales, desafíos de contratación — y hago presentaciones adicionales conforme surgen necesidades específicas.",
-        "outcome": "Confianza de que el plan funciona, relaciones con los profesionales correctos y la capacidad de continuar de forma independiente."
+        "title": "Meses 4–6 — Amplificación",
+        "desc": "Pasamos de la estrategia a la ejecución. Aquí mi expertise en marketing, branding, digital y e-commerce entra con fuerza total: lanzamiento de campañas, optimización de canales, e-commerce, alianzas estratégicas y experiencia del cliente en EE.UU. Te ayudo a navegar decisiones de medios, ajustes creativos, resistencia de retailers — y monitoreo KPIs para asegurar que cada inversión esté generando resultados.",
+        "outcome": "Operación activa en EE.UU., métricas siendo monitoreadas y capacidad de continuar de forma independiente."
       }
     ],
     "includedLabel": "Qué Incluye",
@@ -1031,19 +1031,19 @@
     "includedItems": [
       {
         "title": "4 Llamadas Semanales",
-        "desc": "Una hora cada una, por video. Mentoría estratégica, no coaching genérico."
+        "desc": "Una hora cada una, por video. Mentoría estratégica cubriendo inteligencia de mercado, posicionamiento y ejecución — no coaching genérico."
       },
       {
         "title": "Fundación de Market Research",
         "desc": "Inteligencia basada en IA vía Soundcheck Insights — informes de mercado, consumidor y competitivo, más personas basadas en investigación. Incluido en el programa (valor de $3.000)."
       },
       {
-        "title": "Libro A.M.P. (Portugués)",
-        "desc": "Recibe una copia de mi playbook de crecimiento y posicionamiento, como cortesía."
+        "title": "Metodología A.M.P.",
+        "desc": "Framework estructurado de Assessment, Mindset, Posicionamiento y Amplificación aplicado a tu marca. Incluye copia del libro A.M.P. en portugués, como cortesía."
       },
       {
         "title": "Red de Profesionales en EE.UU.",
-        "desc": "Presentaciones a especialistas confiables de go-to-market, 3PL/logística, importación/exportación, contadores, asesoría legal, profesionales de ventas y operadores de e-commerce."
+        "desc": "Presentaciones a especialistas en las áreas que necesitarás: legal, tributario, logística, importación/exportación, 3PL, agencias de marketing digital, e-commerce, medios, creación y ventas en EE.UU."
       },
       {
         "title": "Contacto Directo",
@@ -1055,22 +1055,22 @@
       }
     ],
     "brandsLabel": "Marcas que Ayudé a Expandir a EE.UU.",
-    "brandsH2": "11 años construyendo el puente entre Brasil y el mercado estadounidense.",
+    "brandsH2": "11 años construyendo el puente Brasil–EE.UU. en estrategia, branding y go-to-market.",
     "pricingLabel": "Inversión",
     "pricingH2": "$1.000/mes",
     "pricingSub": "Compromiso mínimo de 6 meses",
     "pricingIncludes": [
       "4 llamadas semanales de 1 hora por video",
       "Fundación Soundcheck Market Research — valor de $3.000 (incluida)",
-      "Libro A.M.P. — edición en portugués (cortesía)",
-      "Presentaciones a la red de profesionales en EE.UU.",
+      "Metodología A.M.P. completa + libro en portugués (cortesía)",
+      "Red de profesionales en EE.UU. (legal, tributario, logística, marketing, e-commerce)",
       "Contacto directo vía WhatsApp & email"
     ],
     "pricingNote": "Después de 6 meses, continúa mes a mes al mismo valor si deseas soporte continuo.",
     "miamiLabel": "Próximamente",
     "miamiH2": "Inmersión en Miami — Delegación Presencial",
-    "miamiP": "Estamos desarrollando una experiencia presencial en Miami para participantes del programa — una delegación de varios días con visitas a APEX Brasil, sesiones de trabajo en Mana Tech y reuniones presenciales con profesionales estadounidenses de logística, legal, tributario, ventas y e-commerce. Detalles próximamente.",
-    "ctaH2": "¿Listo para hacer la travesía?",
+    "miamiP": "Estamos desarrollando una experiencia presencial en Miami para participantes del programa — una delegación de varios días con visitas a APEX Brasil, sesiones de trabajo en Mana Tech y reuniones presenciales con profesionales estadounidenses en las áreas de logística, legal, tributario, marketing, e-commerce y ventas. Detalles próximamente.",
+    "ctaH2": "¿Listo para llevar tu negocio a EE.UU.?",
     "ctaSub": "Cuéntame sobre tu negocio, tu producto y lo que el mercado estadounidense significa para ti. Te diré honestamente si puedo ayudar — y cómo.",
     "ctaBtn": "Enviar →",
     "formNameLabel": "Tu nombre",
