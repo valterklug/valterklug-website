@@ -81,20 +81,19 @@ export default function GoGlobal() {
       {/* ════════════════════════════════════════════════════════════
           HERO — with Valter photo
           ════════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#121212', padding: '90px 64px 80px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-valter.jpg)', backgroundSize: 'cover', backgroundPosition: 'center right', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #121212 0%, #121212 30%, transparent 65%)', pointerEvents: 'none' }} />
+      <section style={{ background: '#121212', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: GREEN }} />
 
-        <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }} className="hero-grid">
-          <div style={{ maxWidth: 640 }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'stretch', position: 'relative', zIndex: 1 }}>
+          {/* Left — text content */}
+          <div style={{ flex: '1 1 55%', padding: '90px 48px 80px 64px', minWidth: 0 }}>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
               style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, marginBottom: 24, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
               {t('goglobal.heroLabel')}
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .08 }}
-              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, lineHeight: 1.1, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680 }}>
+              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, lineHeight: 1.1, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680, whiteSpace: 'pre-line' }}>
               {t('goglobal.heroH1')}
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
@@ -122,6 +121,14 @@ export default function GoGlobal() {
               ))}
             </motion.div>
           </div>
+
+          {/* Right — Valter photo */}
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .8, delay: .2 }}
+            style={{ flex: '0 0 40%', position: 'relative', display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', overflow: 'hidden' }}
+            className="hero-photo-col">
+            <img src="/hero-valter.jpg" alt="Valter Klug" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #121212 0%, transparent 30%)', pointerEvents: 'none' }} />
+          </motion.div>
         </div>
       </section>
 
