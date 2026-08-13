@@ -17,13 +17,13 @@ const FORMSUBMIT_EMAIL = 'info@soundcheckinsights.com'
 
 // ── Soundcheck link helper ──
 const SOUNDCHECK_URL = 'https://www.soundcheckinsights.com'
-const linkifySoundcheck = (text) => {
+const linkifySoundcheck = (text, linkColor = GREEN) => {
   if (typeof text !== 'string') return text
   const parts = text.split(/(Soundcheck Insights|Soundcheck)/g)
   if (parts.length === 1) return text
   return parts.map((part, i) =>
     part === 'Soundcheck Insights' || part === 'Soundcheck'
-      ? <a key={i} href={SOUNDCHECK_URL} target="_blank" rel="noopener noreferrer" style={{ color: GREEN, textDecoration: 'underline', textUnderlineOffset: 2 }}>{part}</a>
+      ? <a key={i} href={SOUNDCHECK_URL} target="_blank" rel="noopener noreferrer" style={{ color: linkColor, textDecoration: 'underline', textUnderlineOffset: 2 }}>{part}</a>
       : part
   )
 }
@@ -180,7 +180,7 @@ export default function GoGlobal() {
                   }}>
                     <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', color: i === 0 ? 'rgba(255,255,255,.7)' : GREEN, marginBottom: 8 }}>{m.num}</div>
                     <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.1rem,2vw,1.3rem)', fontWeight: 600, color: i === 0 ? '#fff' : '#121212', lineHeight: 1.2, marginBottom: 12 }}>{m.title}</h3>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: i === 0 ? 'rgba(255,255,255,.75)' : '#555', lineHeight: 1.7, marginBottom: 16, maxWidth: 640 }}>{linkifySoundcheck(m.desc)}</p>
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: i === 0 ? 'rgba(255,255,255,.75)' : '#555', lineHeight: 1.7, marginBottom: 16, maxWidth: 640 }}>{linkifySoundcheck(m.desc, i === 0 ? '#fff' : GREEN)}</p>
                     <div style={{
                       fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 500,
                       color: i === 0 ? 'rgba(255,255,255,.5)' : '#999',
