@@ -6,8 +6,7 @@
     "portfolio": "Portfólio",
     "intelligence": "Inteligência",
     "articles": "Artigos",
-    "investors": "Para Investidores",
-    "goglobal": "GoGlobal",
+    "goglobal": "Mentoria",
     "wordmark": "Valter Klug",
     "subtitle": "Líder Criativo · Brand Builder · Miami",
     "cta": "Vamos Conversar →"
@@ -26,8 +25,7 @@
       "intelligence": "Inteligência",
       "articles": "Artigos",
       "contact": "Contato",
-      "investors": "Para Investidores",
-      "goglobal": "GoGlobal"
+      "goglobal": "Mentoria"
     },
     "operatingThroughTitle": "Operando Através De",
     "chameleonCollective": "Liderança criativa e engajamentos de consultoria",
@@ -170,7 +168,35 @@
     ],
     "viewCaseStudy": "Ver Case de Sucesso",
     "ctaH2": "Vamos descobrir se sou a pessoa certa para seu próximo mercado.",
-    "ctaSub": "Vamos ter uma conversa direta e substancial sobre onde você está, para onde quer ir e se sou a pessoa certa para ajudar."
+    "ctaSub": "Vamos ter uma conversa direta e substancial sobre onde você está, para onde quer ir e se sou a pessoa certa para ajudar.",
+    "mentorshipLabel": "Mentoria de Internacionalização",
+    "mentorshipH2": "Quer levar sua empresa para os EUA?",
+    "mentorshipP": "Mentoria de 6 meses para empresários brasileiros entrando no mercado americano. Da inteligência de mercado ao posicionamento de marca e execução de marketing — com quem já fez esse caminho com mais de 30 marcas brasileiras.",
+    "mentorshipTags": [
+      "6 meses",
+      "Metodologia A.M.P.",
+      "Market Research incluído",
+      "Rede de profissionais nos EUA"
+    ],
+    "mentorshipCta": "Saiba Mais →",
+    "mentorshipHighlights": [
+      {
+        "number": "30+",
+        "label": "Marcas brasileiras levadas aos EUA"
+      },
+      {
+        "number": "11+",
+        "label": "Anos em expansão cross-border"
+      },
+      {
+        "number": "$3K",
+        "label": "Em Market Research incluído no programa"
+      },
+      {
+        "number": "4×/sem",
+        "label": "Chamadas semanais de 1 hora"
+      }
+    ]
   },
   "about": {
     "heroLabel": "Sobre · Histórico · Credenciais",
@@ -896,113 +922,51 @@
       }
     }
   },
-  "privateEquity": {
-    "seoTitle": "Parceria com Private Equity — Valter Klug",
-    "seoDescription": "Um parceiro de transformação para private equity, da diligência ao exit. Expansão internacional e crescimento de commerce que sobrevive ao exit, dentro do modelo Chameleon Collective.",
-    "seoDefaultTitle": "Valter Klug — CMO Fracional & Estrategista de Expansão de Marca",
-    "heroLabel": "Para Investidores",
-    "heroH1": "Expansão e crescimento de commerce que o comprador mantém.",
-    "heroSub": "Lidero expansão internacional e transformação de commerce dentro do modelo diligência-ao-exit da Chameleon Collective. Um investimento em transformação com data de término, não um retainer de agência que se acumula.",
-    "heroCta": "Traga sua tese →",
-    "thesisEyebrow": "A Tese",
-    "thesisH2": "A agência que você contrata na entrada é o crescimento que sai na saída.",
-    "agencyCurveTitle": "A curva da agência",
-    "agencyCurveText": "Retainers se acumulam trimestre após trimestre. A capacidade é alugada. Quando a agência sai, o crescimento sai junto, e seu comprador paga por uma dependência.",
-    "chameleonCurveTitle": "A curva Chameleon",
-    "chameleonCurveText": "O investimento tem data de término. Transformamos a função, recrutamos o time permanente e internalizamos a capacidade. O EBITDA melhora porque nos recusamos a virar overhead. No exit, o negócio se sustenta sozinho.",
-    "fitEyebrow": "Minha Posição",
-    "fitH2": "Eu lidero os deals com tese de novo mercado ou commerce.",
-    "fitSub": "Chameleon é a máquina ao longo de todo o ciclo do deal. Minha posição é a tese de crescimento que passei 28 anos executando, nos dois sentidos entre EUA e América Latina.",
-    "crossBorderTitle": "Expansão cross-border",
-    "crossBorderText": "Construindo marcas em novos mercados, dos EUA para a América Latina e de volta. O lançamento nacional da Bauducco nos EUA. A entrada da Inter&Co nos EUA em 2022. O corredor que a maioria dos operadores nunca trabalhou, nos dois sentidos.",
-    "commerceTitle": "Commerce como crescimento mensurável",
-    "commerceText": "O motor de e-commerce que transforma uma marca em vendas diretas. Construí as duas primeiras lojas americanas na VTEX em 2019, dois anos antes do IPO nos EUA, e opero Amazon e DTC em Shopify e BigCommerce.",
-    "lifecycleEyebrow": "Ao Longo do Período de Hold",
-    "lifecycleH2": "Um parceiro, da diligência ao exit.",
-    "differentiatorBadge": "Diferencial",
-    "steps": [
-      {
-        "num": "01",
-        "title": "Diligência",
-        "text": "Antes de transferir o dinheiro. A avaliação CLEAR da Chameleon coloca operadores C-level dentro do negócio e retorna uma leitura clara de onde estão os bloqueadores de crescimento. Eu adiciono uma camada quantificada de viabilidade de mercado através da Soundcheck Insights, minha plataforma de inteligência de mercado, para que uma tese de expansão receba um número antes de você comprometer capital.",
-        "featured": true
-      },
-      {
-        "num": "02",
-        "title": "Os primeiros cem dias",
-        "text": "Liderança interina de marketing e commerce nas posições que importam, enquanto você busca a contratação permanente. O motor de crescimento é montado rapidamente."
-      },
-      {
-        "num": "03",
-        "title": "O período de hold",
-        "text": "As teses de expansão e commerce executadas, não apenas planejadas. Marca, DTC, marketplace e operações de marketing habilitadas por IA, injetadas exatamente onde a tese precisa."
-      },
-      {
-        "num": "04",
-        "title": "Prontidão para o exit",
-        "text": "Recrutamos o time permanente, entregamos tudo que construímos e saímos. Seu comprador encontra um negócio autossustentável, não uma dependência para desfazer."
-      }
-    ],
-    "calloutEyebrow": "A Vantagem na Diligência",
-    "calloutText": "A maioria dos partners descobre se uma tese de expansão funciona depois de já ter pago por ela. Eu coloco um número durante a diligência. A Soundcheck Insights faz o scoring de viabilidade cross-border e prontidão de escala, e se conecta direto ao CLEAR, para que seu plano de criação de valor comece com evidência em vez de intuição.",
-    "proofEyebrow": "Prova",
-    "proofH2": "O track record da Chameleon Collective.",
-    "stats": [
-      {
-        "number": "280+",
-        "label": "Especialistas Comprovados"
-      },
-      {
-        "number": "2.000+",
-        "label": "Transformações Entregues"
-      },
-      {
-        "number": "6",
-        "label": "Partners de PE"
-      }
-    ],
-    "trustedBy": "Confiado por",
-    "myWorkLabel": "Meu Trabalho",
-    "myWorkText": "O lançamento da Bauducco nos EUA, a entrada da Inter&Co no mercado americano e as primeiras lojas de e-commerce americanas na VTEX. Resultados de marca e commerce em consumo, fintech e DTC.",
-    "contactEyebrow": "Fale Comigo",
-    "contactH2": "Traga sua tese.",
-    "contactSub": "Seja no meio da diligência ou no meio do hold, vamos conversar. Vou te dizer com honestidade onde podemos mover o número, e onde você não precisaria de mim.",
-    "formNameLabel": "Nome *",
-    "formNamePlaceholder": "Nome completo",
-    "formFirmLabel": "Firma *",
-    "formFirmPlaceholder": "Sua firma",
-    "formEmailLabel": "Email *",
-    "formEmailPlaceholder": "voce@firma.com",
-    "formThesisLabel": "Qual é a tese?",
-    "formThesisPlaceholder": "Ex.: CPG LATAM expandindo para varejo nos EUA",
-    "formRequired": "Obrigatório",
-    "formInvalidEmail": "Email inválido",
-    "formSubmitting": "Enviando...",
-    "formSubmit": "Iniciar a conversa →",
-    "formOr": "ou",
-    "formBookCall": "agendar uma chamada diretamente",
-    "formSuccess": "Obrigado. Retorno em até um dia útil.",
-    "formError": "Algo deu errado. Me envie um email diretamente:",
-    "formSubjectPrefix": "Consulta PE de"
-  },
   "goglobal": {
-    "heroLabel": "GoGlobal — por Valter Klug",
-    "heroH1": "Do Brasil para os EUA.\nMentoria em estratégia de internacionalização, posicionamento de marca e marketing.",
-    "heroSub": "Uma mentoria de 6 meses para empresários brasileiros entrando no mercado americano — da inteligência de mercado ao posicionamento de marca e execução de marketing, digital e e-commerce. Estruturada na metodologia A.M.P. e apoiada por pesquisa via Soundcheck Insights.",
-    "ctaPrimary": "Quero Participar →",
-    "stats": [
-      { "number": "11+", "label": "Anos em expansão cross-border" },
-      { "number": "30+", "label": "Marcas levadas aos EUA" },
-      { "number": "A.M.P.", "label": "Metodologia proprietária" }
+    "heroLabel": "GoGlobal — Mentoria de Internacionalização",
+    "heroH1": "Quer levar sua empresa\npara os EUA?",
+    "heroSub": "Uma mentoria de 6 meses para empresários brasileiros que querem entrar no mercado americano com estratégia, inteligência de mercado e um plano real — sem queimar verba na largada.",
+    "ctaPrimary": "Agendar Conversa →",
+    "painLabel": "Você Se Identifica?",
+    "painH2": "Se alguma dessas frases soa familiar, esse programa foi feito para você.",
+    "painPoints": [
+      "Tenho o sonho de expandir minha empresa para os EUA, mas não sei por onde começar.",
+      "Estou preocupado com o futuro da economia brasileira e quero diversificar o risco explorando o maior mercado do mundo.",
+      "Quero expandir aos EUA mas não quero queimar toda minha verba na largada e ter que voltar pra casa mais cedo.",
+      "Cheguei num plateau no Brasil e preciso explorar novos mercados para continuar crescendo.",
+      "Já sei o que quero fazer, mas preciso de ajuda para entender COMO fazer na minha expansão internacional."
     ],
-    "whoLabel": "Para Quem É",
-    "whoH2": "Para empresários brasileiros sérios sobre o mercado americano.",
-    "whoP": "Você já comprovou o fit de mercado no Brasil. Agora precisa de inteligência de mercado, posicionamento de marca e um plano real de go-to-market — com quem já fez esse caminho com Bauducco, Guaraná Antarctica, Natura e dezenas de outras marcas brasileiras. Minha expertise é em marketing, branding, digital e e-commerce. Para as outras áreas — jurídico, tributário, logística, importação — conecto você aos melhores profissionais nos EUA.",
-    "whoChecks": [
-      "Negócio estabelecido no Brasil com tração comprovada",
-      "Planejando ativamente ou iniciando entrada no mercado americano",
-      "Pronto para investir tempo e capital em fazer certo",
-      "CPG, alimentos & bebidas, beleza, moda, tech, serviços, DTC ou franquia"
+    "painClosing": "Se você se viu em alguma dessas situações, eu posso te ajudar. Nos últimos 11 anos, ajudei mais de 30 marcas brasileiras a entrar e crescer no mercado americano — de CPG e alimentos a tech, moda e serviços.",
+    "authorityLabel": "Quem é o Mentor",
+    "authorityH2": "Valter Klug — 11 anos construindo a ponte Brasil–EUA.",
+    "authorityP": "Brasileiro, baseado em Miami há 16 anos. Já liderei a estratégia de entrada e crescimento nos EUA para marcas como Bauducco, Guaraná Antarctica, Natura, Tramontina, Inter&Co e dezenas de outras. Minha expertise é em estratégia de internacionalização, posicionamento de marca, marketing, digital e e-commerce. Para as outras áreas — jurídico, tributário, logística, importação — conecto você aos melhores profissionais nos EUA.",
+    "stats": [
+      {
+        "number": "11+",
+        "label": "Anos em expansão cross-border"
+      },
+      {
+        "number": "30+",
+        "label": "Marcas levadas aos EUA"
+      },
+      {
+        "number": "A.M.P.",
+        "label": "Metodologia proprietária"
+      }
+    ],
+    "brandsLabel": "Marcas que Ajudei a Expandir nos EUA",
+    "booksLabel": "Publicações",
+    "books": [
+      {
+        "title": "A.M.P. — A Fórmula Secreta Para Amplificar A Sua Marca E Conquistar Os EUA",
+        "desc": "A metodologia Assessment, Mindset, Posicionamento e Amplificação aplicada ao crescimento de marcas internacionais. Base do framework usado na mentoria.",
+        "cta": "Ver na Amazon"
+      },
+      {
+        "title": "Too Small To Fall",
+        "desc": "Por que empresas menores têm vantagens estruturais que as grandes não conseguem replicar — e como usar isso na sua expansão internacional.",
+        "cta": "Ver na Amazon"
+      }
     ],
     "structureLabel": "A Metodologia A.M.P. em 6 Meses",
     "structureH2": "Assessment → Posicionamento → Amplificação.",
@@ -1054,8 +1018,6 @@
         "desc": "Adicione um score formal de viabilidade de expansão e roadmap estratégico com 50% de desconto do preço avulso. Encaixe natural por volta dos meses 2–3."
       }
     ],
-    "brandsLabel": "Marcas que Ajudei a Expandir nos EUA",
-    "brandsH2": "11 anos construindo a ponte Brasil–EUA em estratégia, branding e go-to-market.",
     "pricingLabel": "Investimento",
     "pricingH2": "$1.200/mês",
     "pricingSub": "Compromisso mínimo de 6 meses",
@@ -1070,8 +1032,8 @@
     "miamiLabel": "Em Breve",
     "miamiH2": "Imersão em Miami — Delegação Presencial",
     "miamiP": "Estamos desenvolvendo uma experiência presencial em Miami para participantes do programa — uma delegação de vários dias com visitas à APEX Brasil, sessões de trabalho no Mana Tech e reuniões presenciais com profissionais americanos nas áreas de logística, jurídico, tributário, marketing, e-commerce e vendas. Detalhes em breve.",
-    "ctaH2": "Pronto para levar seu negócio para os EUA?",
-    "ctaSub": "Me conte sobre seu negócio, seu produto e o que o mercado americano significa para você. Vou te dizer honestamente se posso ajudar — e como.",
+    "ctaH2": "Vamos conversar sobre a sua expansão?",
+    "ctaSub": "Preencha o formulário abaixo para que eu entenda melhor o seu negócio. Retorno em até um dia útil para agendarmos uma conversa.",
     "ctaBtn": "Enviar →",
     "formNameLabel": "Seu nome",
     "formNamePlaceholder": "Nome completo",
@@ -1079,8 +1041,47 @@
     "formEmailPlaceholder": "seu@email.com",
     "formCompanyLabel": "Empresa",
     "formCompanyPlaceholder": "Nome da sua empresa",
-    "formMessageLabel": "Conte sobre sua empresa e seus planos para os EUA",
-    "formMessagePlaceholder": "O que você faz, qual seu produto/serviço, e o que o mercado americano significa para o seu negócio.",
+    "formSegmentLabel": "Segmento",
+    "formSegmentPlaceholder": "Selecione...",
+    "formSegmentOptions": [
+      "CPG / Alimentos & Bebidas",
+      "Beleza & Cosméticos",
+      "Moda & Acessórios",
+      "Tech / SaaS",
+      "Serviços",
+      "DTC / E-commerce",
+      "Franquia",
+      "Outro"
+    ],
+    "formRevenueLabel": "Faturamento anual aproximado",
+    "formRevenuePlaceholder": "Selecione...",
+    "formRevenueOptions": [
+      "Até R$ 5M",
+      "R$ 5M – R$ 20M",
+      "R$ 20M – R$ 50M",
+      "R$ 50M – R$ 200M",
+      "Acima de R$ 200M",
+      "Prefiro não informar"
+    ],
+    "formUSopsLabel": "Já tem operação nos EUA?",
+    "formUSopsPlaceholder": "Selecione...",
+    "formUSopsOptions": [
+      "Não, estou começando do zero",
+      "Sim, mas ainda inicial",
+      "Sim, já consolidada",
+      "Tenho empresa aberta mas sem operação ativa"
+    ],
+    "formTimelineLabel": "Quando pretende iniciar a expansão?",
+    "formTimelinePlaceholder": "Selecione...",
+    "formTimelineOptions": [
+      "Imediatamente",
+      "Nos próximos 3 meses",
+      "Nos próximos 6 meses",
+      "Nos próximos 12 meses",
+      "Ainda estou avaliando"
+    ],
+    "formMessageLabel": "Conte um pouco mais (opcional)",
+    "formMessagePlaceholder": "Seu produto/serviço, o que te motivou a considerar os EUA, e como posso te ajudar.",
     "formRequired": "Obrigatório",
     "formInvalidEmail": "Email inválido",
     "formSubmitting": "Enviando...",

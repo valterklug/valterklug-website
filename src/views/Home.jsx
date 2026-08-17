@@ -219,6 +219,50 @@ export default function Home() {
         <style>{`@media(max-width:900px){.feat-grid{grid-template-columns:1fr!important;gap:40px!important}section[style*="80px 64px"]{padding:60px 24px!important}}`}</style>
       </section>
 
+      {/* ── MENTORSHIP ── */}
+      <section style={{ background: '#121212', padding: '80px 64px', borderTop: '4px solid #2D936C', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }} className="mentorship-grid">
+          <FadeIn>
+            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#2D936C', display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+              <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#2D936C', display: 'block', flexShrink: 0 }} />
+              {t('home.mentorshipLabel')}
+            </span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2.1rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 16 }}>
+              {t('home.mentorshipH2')}
+            </h2>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.75, marginBottom: 28 }}>
+              {t('home.mentorshipP')}
+            </p>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 28 }}>
+              {t('home.mentorshipTags', { returnObjects: true }).map(tag => (
+                <span key={tag} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(45,147,108,.12)', padding: '5px 14px', color: '#2D936C', border: '1px solid rgba(45,147,108,.2)' }}>{tag}</span>
+              ))}
+            </div>
+            <Link href={localePath('/goglobal')} style={{
+              display: 'inline-flex', alignItems: 'center', gap: 6,
+              padding: '12px 28px', background: '#2D936C', color: '#fff',
+              fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 600,
+              letterSpacing: '.06em', textTransform: 'uppercase',
+              borderRadius: 2, transition: 'opacity .2s', textDecoration: 'none',
+            }}
+              onMouseEnter={e => e.currentTarget.style.opacity = '.85'}
+              onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+            >{t('home.mentorshipCta')}</Link>
+          </FadeIn>
+          <FadeIn delay={.1}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+              {t('home.mentorshipHighlights', { returnObjects: true }).map(({ number, label }) => (
+                <div key={label} style={{ background: 'rgba(255,255,255,.03)', borderLeft: '3px solid #2D936C', padding: '18px 24px', display: 'flex', alignItems: 'center', gap: 20 }}>
+                  <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.2rem,2vw,1.5rem)', fontWeight: 300, color: '#2D936C', minWidth: 60 }}>{number}</span>
+                  <span style={{ fontFamily: 'Inter,sans-serif', fontSize: '.875rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.5 }}>{label}</span>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+        </div>
+        <style>{`@media(max-width:900px){.mentorship-grid{grid-template-columns:1fr!important;gap:40px!important}}`}</style>
+      </section>
+
       {/* ── CTA ── */}
       <div className="cta-strip" style={{ padding: '80px 64px' }}>
         <FadeIn>

@@ -40,19 +40,43 @@ const BRANDS_WITH_LOGOS = [
   { name: 'Cia Marítima', src: '/logos/logo_ciaM.png' },
   { name: 'Grupo 3 Corações', src: '/logos/logo_3cor.png' },
 ]
-const BRANDS_TEXT_ONLY = []
+
+// ── Book data (locale-aware) ──
+const BOOKS_DATA = {
+  amp: {
+    en: { cover: 'https://m.media-amazon.com/images/I/61Ez36HNNtL._SL1500_.jpg', url: 'https://amzn.to/4xLNIP6' },
+    pt: { cover: 'https://m.media-amazon.com/images/I/610HrGdMGYL._SL1499_.jpg', url: 'https://amzn.to/3UCN9Zr' },
+    es: { cover: 'https://m.media-amazon.com/images/I/61Ez36HNNtL._SL1500_.jpg', url: 'https://amzn.to/4xLNIP6' },
+  },
+  tstf: {
+    cover: 'https://m.media-amazon.com/images/I/51rJzuYSa+L._SL1500_.jpg',
+    url: 'https://amzn.to/4bSNSMb',
+  },
+}
+
+// ── Shared label style ──
+const sectionLabel = (color = GREEN) => ({
+  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500,
+  letterSpacing: '.2em', textTransform: 'uppercase', color,
+  display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16,
+})
+const labelDot = (color = GREEN) => ({
+  width: 6, height: 6, borderRadius: '50%', background: color,
+  display: 'block', flexShrink: 0,
+})
 
 export default function GoGlobal() {
   const { t } = useTranslation()
-  const { localePath } = useLocale()
+  const { localePath, locale } = useLocale()
   const [formStatus, setFormStatus] = useState('idle')
   const { register, handleSubmit, reset, formState: { errors } } = useForm()
 
+  const painPoints = t('goglobal.painPoints', { returnObjects: true })
   const stats = t('goglobal.stats', { returnObjects: true })
   const months = t('goglobal.months', { returnObjects: true })
   const included = t('goglobal.includedItems', { returnObjects: true })
-  const whoChecks = t('goglobal.whoChecks', { returnObjects: true })
   const pricingIncludes = t('goglobal.pricingIncludes', { returnObjects: true })
+  const books = t('goglobal.books', { returnObjects: true })
 
   const onSubmit = async (data) => {
     setFormStatus('submitting')
@@ -62,7 +86,7 @@ export default function GoGlobal() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           ...data,
-          _subject: `${t('goglobal.formSubjectPrefix')} ${data.name} — ${data.company || 'No company'}`,
+          _subject: `${t('goglobal.formSubjectPrefix')} ${data.name} — ${data.company || 'No company'} (${data.segment || '?'})`,
           _template: 'table',
         }),
       })
@@ -76,10 +100,25 @@ export default function GoGlobal() {
     document.getElementById('goglobal-contact')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  // ── Shared input style ──
+  const inputStyle = (hasError) => ({
+    width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)',
+    border: hasError ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)',
+    borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff',
+    outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box',
+  })
+  const labelStyle = {
+    display: 'block', marginBottom: 6,
+    fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
+    letterSpacing: '.12em', textTransform: 'uppercase',
+    color: 'rgba(255,255,255,.4)',
+  }
+  const errorStyle = { fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }
+
   return (
     <PageWrapper>
       {/* ════════════════════════════════════════════════════════════
-          HERO — with Valter photo
+          HERO — Pain-point first
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#121212', padding: '90px 64px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-valter.jpg)', backgroundSize: 'cover', backgroundPosition: 'center right -100px', pointerEvents: 'none' }} />
@@ -94,7 +133,7 @@ export default function GoGlobal() {
               {t('goglobal.heroLabel')}
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .08 }}
-              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, lineHeight: 1.1, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680, whiteSpace: 'pre-line' }}>
+              style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 300, lineHeight: 1.15, color: '#fff', letterSpacing: '-.025em', marginBottom: 24, maxWidth: 680, whiteSpace: 'pre-line' }}>
               {t('goglobal.heroH1')}
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .16 }}
@@ -110,44 +149,120 @@ export default function GoGlobal() {
                 borderRadius: 2, transition: 'opacity .2s', border: 'none', cursor: 'pointer',
               }}>{t('goglobal.ctaPrimary')}</button>
             </motion.div>
+          </div>
+        </div>
+      </section>
 
-            {/* Stats */}
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .4 }}
-              style={{ display: 'flex', gap: 0, marginTop: 48, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,.08)' }}>
+      {/* ════════════════════════════════════════════════════════════
+          PAIN POINTS — "Você se identifica?"
+          ════════════════════════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <FadeIn>
+            <span style={sectionLabel()}>
+              <span style={labelDot()} />
+              {t('goglobal.painLabel')}
+            </span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 48, maxWidth: 560 }}>
+              {t('goglobal.painH2')}
+            </h2>
+          </FadeIn>
+
+          <StaggerContainer>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 20 }}>
+              {painPoints.map((point, i) => (
+                <StaggerItem key={i}>
+                  <div style={{
+                    background: '#F5F5F5', padding: '28px 28px', borderLeft: `3px solid ${GREEN}`,
+                    height: '100%', display: 'flex', alignItems: 'flex-start', gap: 14,
+                  }}>
+                    <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 24, fontWeight: 300, color: GREEN, lineHeight: 1, flexShrink: 0, marginTop: -2 }}>"</span>
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#333', lineHeight: 1.6, fontStyle: 'italic' }}>{point}</p>
+                  </div>
+                </StaggerItem>
+              ))}
+            </div>
+          </StaggerContainer>
+
+          <FadeIn>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '1rem', color: '#555', lineHeight: 1.75, marginTop: 40, maxWidth: 640 }}>
+              {t('goglobal.painClosing')}
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════════
+          AUTHORITY — Who is Valter + Books
+          ════════════════════════════════════════════════════════════ */}
+      <section style={{ background: '#121212', padding: '80px 64px', borderTop: '1px solid rgba(255,255,255,.06)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <FadeIn>
+            <span style={sectionLabel()}>
+              <span style={labelDot()} />
+              {t('goglobal.authorityLabel')}
+            </span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 20, maxWidth: 600 }}>
+              {t('goglobal.authorityH2')}
+            </h2>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '1rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.75, maxWidth: 640, marginBottom: 48 }}>
+              {t('goglobal.authorityP')}
+            </p>
+          </FadeIn>
+
+          {/* Stats bar */}
+          <FadeIn>
+            <div style={{ display: 'flex', gap: 0, marginBottom: 56, paddingBottom: 40, borderBottom: '1px solid rgba(255,255,255,.08)' }}>
               {stats.map(({ number, label }, i) => (
                 <div key={label} style={{ paddingRight: 28, borderRight: i < stats.length - 1 ? '1px solid rgba(255,255,255,.1)' : 'none', marginRight: i < stats.length - 1 ? 28 : 0 }}>
                   <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 300, color: '#fff', lineHeight: 1 }}>{number}</div>
                   <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginTop: 4 }}>{label}</div>
                 </div>
               ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
+            </div>
+          </FadeIn>
 
-      {/* ════════════════════════════════════════════════════════════
-          WHO IT'S FOR
-          ════════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#fff', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          {/* Brand logos */}
           <FadeIn>
-            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
-              {t('goglobal.whoLabel')}
-            </span>
-            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 20, maxWidth: 560 }}>
-              {t('goglobal.whoH2')}
-            </h2>
-            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '1rem', color: '#555', lineHeight: 1.75, maxWidth: 640, marginBottom: 32 }}>
-              {t('goglobal.whoP')}
+            <p style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 20 }}>
+              {t('goglobal.brandsLabel')}
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              {whoChecks.map(check => (
-                <div key={check} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-                  <span style={{ color: GREEN, flexShrink: 0, fontSize: 18, lineHeight: 1.4 }}>✓</span>
-                  <span style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#333', lineHeight: 1.6 }}>{check}</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', marginBottom: 56 }}>
+              {BRANDS_WITH_LOGOS.map(b => (
+                <div key={b.name} style={{ height: 36, opacity: .6, transition: 'opacity .2s' }}
+                  onMouseEnter={e => e.currentTarget.style.opacity = 1}
+                  onMouseLeave={e => e.currentTarget.style.opacity = .6}>
+                  <img src={b.src} alt={b.name} style={{ height: '100%', width: 'auto', filter: 'brightness(0) invert(1)', objectFit: 'contain' }} />
                 </div>
               ))}
+            </div>
+          </FadeIn>
+
+          {/* Books */}
+          <FadeIn>
+            <p style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 24 }}>
+              {t('goglobal.booksLabel')}
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32 }} className="books-grid">
+              {books.map((book, i) => {
+                const ampData = BOOKS_DATA.amp[locale] || BOOKS_DATA.amp.en
+                const bookData = i === 0
+                  ? { cover: ampData.cover, url: ampData.url }
+                  : { cover: BOOKS_DATA.tstf.cover, url: BOOKS_DATA.tstf.url }
+                return (
+                  <a key={i} href={bookData.url} target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'flex', gap: 20, alignItems: 'flex-start', textDecoration: 'none', padding: '24px 24px', background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', transition: 'border-color .2s, background .2s' }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = GREEN; e.currentTarget.style.background = 'rgba(45,147,108,.06)' }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,.08)'; e.currentTarget.style.background = 'rgba(255,255,255,.04)' }}>
+                    <img src={bookData.cover} alt={book.title} style={{ width: 80, height: 'auto', flexShrink: 0, boxShadow: '0 4px 16px rgba(0,0,0,.4)' }} />
+                    <div>
+                      <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: '.9375rem', fontWeight: 600, color: '#fff', lineHeight: 1.3, marginBottom: 6 }}>{book.title}</h3>
+                      <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.8125rem', color: 'rgba(255,255,255,.5)', lineHeight: 1.6, marginBottom: 10 }}>{book.desc}</p>
+                      <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, color: GREEN, letterSpacing: '.06em', textTransform: 'uppercase' }}>{book.cta} →</span>
+                    </div>
+                  </a>
+                )
+              })}
             </div>
           </FadeIn>
         </div>
@@ -159,8 +274,8 @@ export default function GoGlobal() {
       <section style={{ background: '#F5F5F5', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <FadeIn>
-            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
+            <span style={sectionLabel()}>
+              <span style={labelDot()} />
               {t('goglobal.structureLabel')}
             </span>
             <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 48, whiteSpace: 'nowrap' }}>
@@ -203,8 +318,8 @@ export default function GoGlobal() {
       <section style={{ background: '#fff', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <FadeIn>
-            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
+            <span style={sectionLabel()}>
+              <span style={labelDot()} />
               {t('goglobal.includedLabel')}
             </span>
             <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.015em', lineHeight: 1.15, marginBottom: 48, maxWidth: 460 }}>
@@ -214,7 +329,7 @@ export default function GoGlobal() {
 
           <StaggerContainer>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
-              {included.map((item, i) => (
+              {included.map((item) => (
                 <StaggerItem key={item.title}>
                   <div style={{
                     background: '#F5F5F5', padding: '28px 28px', borderTop: `3px solid ${GREEN}`,
@@ -227,41 +342,6 @@ export default function GoGlobal() {
               ))}
             </div>
           </StaggerContainer>
-        </div>
-      </section>
-
-      {/* ════════════════════════════════════════════════════════════
-          BRANDS
-          ════════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#121212', padding: '64px 64px', borderTop: '1px solid rgba(255,255,255,.06)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <FadeIn>
-            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: GREEN, display: 'block', flexShrink: 0 }} />
-              {t('goglobal.brandsLabel')}
-            </span>
-            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.1rem,2.5vw,1.5rem)', fontWeight: 300, color: '#fff', letterSpacing: '-.01em', lineHeight: 1.25, marginBottom: 40, maxWidth: 520 }}>
-              {t('goglobal.brandsH2')}
-            </h2>
-          </FadeIn>
-
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', marginBottom: 24 }}>
-            {BRANDS_WITH_LOGOS.map(b => (
-              <div key={b.name} style={{ height: 36, opacity: .6, transition: 'opacity .2s' }}
-                onMouseEnter={e => e.currentTarget.style.opacity = 1}
-                onMouseLeave={e => e.currentTarget.style.opacity = .6}>
-                <img src={b.src} alt={b.name} style={{ height: '100%', width: 'auto', filter: 'brightness(0) invert(1)', objectFit: 'contain' }} />
-              </div>
-            ))}
-          </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center' }}>
-            {BRANDS_TEXT_ONLY.map(name => (
-              <span key={name} style={{
-                fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,.4)',
-                letterSpacing: '.04em', padding: '4px 0',
-              }}>{name}</span>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -329,7 +409,7 @@ export default function GoGlobal() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════
-          CONTACT FORM
+          STRUCTURED INTAKE FORM
           ════════════════════════════════════════════════════════════ */}
       <section id="goglobal-contact" style={{ background: '#121212', padding: '80px 64px', borderTop: `3px solid ${GREEN}` }}>
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
@@ -344,71 +424,88 @@ export default function GoGlobal() {
             <form onSubmit={handleSubmit(onSubmit)} noValidate style={{
               display: 'flex', flexDirection: 'column', gap: 20,
             }}>
-              {/* Name */}
-              <div>
-                <label style={{
-                  display: 'block', marginBottom: 6,
-                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
-                  letterSpacing: '.12em', textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,.4)',
-                }}>{t('goglobal.formNameLabel')}</label>
-                <input
-                  type="text"
-                  placeholder={t('goglobal.formNamePlaceholder')}
-                  {...register('name', { required: t('goglobal.formRequired') })}
-                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.name ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
-                />
-                {errors.name && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.name.message}</span>}
+              {/* Row: Name + Email */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formNameLabel')}</label>
+                  <input type="text" placeholder={t('goglobal.formNamePlaceholder')}
+                    {...register('name', { required: t('goglobal.formRequired') })}
+                    style={inputStyle(errors.name)} />
+                  {errors.name && <span style={errorStyle}>{errors.name.message}</span>}
+                </div>
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formEmailLabel')}</label>
+                  <input type="email" placeholder={t('goglobal.formEmailPlaceholder')}
+                    {...register('email', { required: t('goglobal.formRequired'), pattern: { value: /^\S+@\S+\.\S+$/, message: t('goglobal.formInvalidEmail') } })}
+                    style={inputStyle(errors.email)} />
+                  {errors.email && <span style={errorStyle}>{errors.email.message}</span>}
+                </div>
               </div>
 
-              {/* Email */}
-              <div>
-                <label style={{
-                  display: 'block', marginBottom: 6,
-                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
-                  letterSpacing: '.12em', textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,.4)',
-                }}>{t('goglobal.formEmailLabel')}</label>
-                <input
-                  type="email"
-                  placeholder={t('goglobal.formEmailPlaceholder')}
-                  {...register('email', { required: t('goglobal.formRequired'), pattern: { value: /^\S+@\S+\.\S+$/, message: t('goglobal.formInvalidEmail') } })}
-                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.email ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
-                />
-                {errors.email && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.email.message}</span>}
+              {/* Row: Company + Segment */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formCompanyLabel')}</label>
+                  <input type="text" placeholder={t('goglobal.formCompanyPlaceholder')}
+                    {...register('company', { required: t('goglobal.formRequired') })}
+                    style={inputStyle(errors.company)} />
+                  {errors.company && <span style={errorStyle}>{errors.company.message}</span>}
+                </div>
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formSegmentLabel')}</label>
+                  <select {...register('segment', { required: t('goglobal.formRequired') })}
+                    style={{ ...inputStyle(errors.segment), appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6.5 6.5-6.5'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 36 }}>
+                    <option value="" style={{ background: '#1E1E1E' }}>{t('goglobal.formSegmentPlaceholder')}</option>
+                    {t('goglobal.formSegmentOptions', { returnObjects: true }).map(opt => (
+                      <option key={opt} value={opt} style={{ background: '#1E1E1E' }}>{opt}</option>
+                    ))}
+                  </select>
+                  {errors.segment && <span style={errorStyle}>{errors.segment.message}</span>}
+                </div>
               </div>
 
-              {/* Company */}
+              {/* Row: Revenue + US Operations */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formRevenueLabel')}</label>
+                  <select {...register('revenue')}
+                    style={{ ...inputStyle(false), appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6.5 6.5-6.5'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 36 }}>
+                    <option value="" style={{ background: '#1E1E1E' }}>{t('goglobal.formRevenuePlaceholder')}</option>
+                    {t('goglobal.formRevenueOptions', { returnObjects: true }).map(opt => (
+                      <option key={opt} value={opt} style={{ background: '#1E1E1E' }}>{opt}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label style={labelStyle}>{t('goglobal.formUSopsLabel')}</label>
+                  <select {...register('usOperations')}
+                    style={{ ...inputStyle(false), appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6.5 6.5-6.5'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 36 }}>
+                    <option value="" style={{ background: '#1E1E1E' }}>{t('goglobal.formUSopsPlaceholder')}</option>
+                    {t('goglobal.formUSopsOptions', { returnObjects: true }).map(opt => (
+                      <option key={opt} value={opt} style={{ background: '#1E1E1E' }}>{opt}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              {/* Timeline */}
               <div>
-                <label style={{
-                  display: 'block', marginBottom: 6,
-                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
-                  letterSpacing: '.12em', textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,.4)',
-                }}>{t('goglobal.formCompanyLabel')}</label>
-                <input
-                  type="text"
-                  placeholder={t('goglobal.formCompanyPlaceholder')}
-                  {...register('company', { required: t('goglobal.formRequired') })}
-                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: errors.company ? '1px solid #E85D4A' : '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', boxSizing: 'border-box' }}
-                />
-                {errors.company && <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 11, color: '#E85D4A', marginTop: 4, display: 'block' }}>{errors.company.message}</span>}
+                <label style={labelStyle}>{t('goglobal.formTimelineLabel')}</label>
+                <select {...register('timeline')}
+                  style={{ ...inputStyle(false), appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6.5 6.5-6.5'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 36 }}>
+                  <option value="" style={{ background: '#1E1E1E' }}>{t('goglobal.formTimelinePlaceholder')}</option>
+                  {t('goglobal.formTimelineOptions', { returnObjects: true }).map(opt => (
+                    <option key={opt} value={opt} style={{ background: '#1E1E1E' }}>{opt}</option>
+                  ))}
+                </select>
               </div>
 
               {/* Message */}
               <div>
-                <label style={{
-                  display: 'block', marginBottom: 6,
-                  fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
-                  letterSpacing: '.12em', textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,.4)',
-                }}>{t('goglobal.formMessageLabel')}</label>
-                <textarea
-                  rows={5}
-                  placeholder={t('goglobal.formMessagePlaceholder')}
+                <label style={labelStyle}>{t('goglobal.formMessageLabel')}</label>
+                <textarea rows={4} placeholder={t('goglobal.formMessagePlaceholder')}
                   {...register('message')}
-                  style={{ width: '100%', padding: '12px 14px', background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 2, fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#fff', outline: 'none', transition: 'border-color .2s', resize: 'vertical', boxSizing: 'border-box' }}
-                />
+                  style={{ ...inputStyle(false), resize: 'vertical' }} />
               </div>
 
               {/* Submit */}
@@ -447,6 +544,14 @@ export default function GoGlobal() {
           </FadeIn>
         </div>
       </section>
+
+      {/* ── Responsive overrides ── */}
+      <style>{`
+        @media (max-width: 768px) {
+          .form-row { grid-template-columns: 1fr !important; }
+          .books-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </PageWrapper>
   )
 }
