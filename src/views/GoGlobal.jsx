@@ -39,6 +39,7 @@ const BRANDS_WITH_LOGOS = [
   { name: 'Forno de Minas', src: '/logos/logo_forno.png' },
   { name: 'Cia Marítima', src: '/logos/logo_ciaM.png' },
   { name: 'Grupo 3 Corações', src: '/logos/logo_3cor.png' },
+  { name: 'PepsiCo', src: '/logos/pepsico.png' },
 ]
 
 // ── Book data (locale-aware) ──
@@ -121,7 +122,7 @@ export default function GoGlobal() {
           HERO — Pain-point first
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#121212', padding: '90px 64px 80px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-mentorship.png)', backgroundSize: 'cover', backgroundPosition: 'center right', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-mentorship.png)', backgroundSize: 'contain', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #121212 0%, #121212 30%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: GREEN }} />
 
