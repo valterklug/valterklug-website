@@ -121,7 +121,7 @@ export default function GoGlobal() {
           HERO — Pain-point first
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#121212', padding: '90px 64px 80px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-valter.jpg)', backgroundSize: 'cover', backgroundPosition: 'center right -100px', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-mentorship.png)', backgroundSize: 'cover', backgroundPosition: 'center right', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #121212 0%, #121212 30%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: GREEN }} />
 
