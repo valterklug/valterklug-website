@@ -122,7 +122,7 @@ export default function GoGlobal() {
           HERO — Pain-point first
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#000', padding: '90px 64px 80px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-mentorship.png)', backgroundSize: 'contain', backgroundPosition: 'center right 15%', backgroundRepeat: 'no-repeat', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero-mentorship.png)', backgroundSize: 'contain', backgroundPosition: 'center right 30%', backgroundRepeat: 'no-repeat', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #000 0%, #000 30%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: GREEN }} />
 
@@ -228,7 +228,7 @@ export default function GoGlobal() {
             <p style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,.3)', marginBottom: 20 }}>
               {t('goglobal.brandsLabel')}
             </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', marginBottom: 56 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, auto)', gap: '24px 40px', alignItems: 'center', justifyContent: 'start', marginBottom: 56 }}>
               {BRANDS_WITH_LOGOS.map(b => (
                 <div key={b.name} style={{ height: 36, opacity: .6, transition: 'opacity .2s' }}
                   onMouseEnter={e => e.currentTarget.style.opacity = 1}
