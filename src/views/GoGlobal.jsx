@@ -17,6 +17,7 @@ const FORMSUBMIT_EMAIL = 'info@soundcheckinsights.com'
 
 // ── Soundcheck link helper ──
 const SOUNDCHECK_URL = 'https://www.soundcheckinsights.com'
+const JOINT_PHOTOS = ['/mentorship-paulo.png', '/mentorship-erik.png']
 const linkifySoundcheck = (text, linkColor = GREEN) => {
   if (typeof text !== 'string') return text
   const parts = text.split(/(Soundcheck Insights|Soundcheck)/g)
@@ -391,6 +392,77 @@ export default function GoGlobal() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════
+          JOINT MENTORSHIPS
+          ════════════════════════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '80px 64px', borderTop: '1px solid #E8E8E8' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <FadeIn>
+            <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: GREEN, marginBottom: 12, display: 'block', textAlign: 'center' }}>
+              {t('goglobal.jointLabel')}
+            </span>
+            <h2 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.25rem,3vw,1.75rem)', fontWeight: 300, color: '#121212', letterSpacing: '-.01em', lineHeight: 1.25, marginBottom: 8, textAlign: 'center' }}>
+              {t('goglobal.jointH2')}
+            </h2>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#666', lineHeight: 1.7, textAlign: 'center', maxWidth: 600, margin: '0 auto 40px' }}>
+              {t('goglobal.jointSub')}
+            </p>
+          </FadeIn>
+
+          <StaggerContainer>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 28 }}>
+              {(t('goglobal.jointMentors', { returnObjects: true }) || []).map((mentor, idx) => (
+                <StaggerItem key={mentor.name}>
+                  <div style={{
+                    background: '#F5F5F5', border: `2px solid ${GREEN}`,
+                    height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden',
+                  }}>
+                    <div style={{
+                      width: '100%', height: 280, background: '#000',
+                      backgroundImage: `url(${JOINT_PHOTOS[idx]})`,
+                      backgroundSize: 'cover', backgroundPosition: 'center top',
+                    }} />
+                    <div style={{ padding: '32px 32px 40px' , display: 'flex', flexDirection: 'column', flex: 1 }}>
+                    <span style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.15em', textTransform: 'uppercase', color: GREEN, marginBottom: 8 }}>
+                      {mentor.focus}
+                    </span>
+                    <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: '1.125rem', fontWeight: 600, color: '#121212', marginBottom: 6 }}>
+                      {mentor.name}
+                    </h3>
+                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 300, color: '#121212', marginBottom: 20 }}>
+                      {mentor.price}
+                    </div>
+
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.8125rem', color: '#555', lineHeight: 1.65, marginBottom: 24 }}>
+                      {mentor.bio}
+                    </p>
+
+                    <div style={{ marginBottom: 28, flex: 1 }}>
+                      {(mentor.includes || []).map(item => (
+                        <div key={item} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 8 }}>
+                          <span style={{ color: GREEN, flexShrink: 0, fontSize: 14, lineHeight: 1.5 }}>✓</span>
+                          <span style={{ fontFamily: 'Inter,sans-serif', fontSize: '.8125rem', color: '#333', lineHeight: 1.6 }}>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <button onClick={scrollToForm} style={{
+                      display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                      padding: '12px 28px', background: GREEN, color: '#fff',
+                      fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 600,
+                      letterSpacing: '.06em', textTransform: 'uppercase',
+                      borderRadius: 2, transition: 'opacity .2s', border: 'none', cursor: 'pointer',
+                      width: '100%',
+                    }}>{t('goglobal.ctaPrimary')}</button>
+                    </div>
+                  </div>
+                </StaggerItem>
+              ))}
+            </div>
+          </StaggerContainer>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════════
           MIAMI TEASER
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '64px 64px', borderTop: '1px solid #E8E8E8' }}>
@@ -463,6 +535,18 @@ export default function GoGlobal() {
                   </select>
                   {errors.segment && <span style={errorStyle}>{errors.segment.message}</span>}
                 </div>
+              </div>
+
+              {/* Mentorship model */}
+              <div>
+                <label style={labelStyle}>{t('goglobal.formMentorshipLabel')}</label>
+                <select {...register('mentorshipModel')}
+                  style={{ ...inputStyle(false), appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6.5 6.5-6.5'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 36 }}>
+                  <option value="" style={{ background: '#1E1E1E' }}>{t('goglobal.formMentorshipPlaceholder')}</option>
+                  {t('goglobal.formMentorshipOptions', { returnObjects: true }).map(opt => (
+                    <option key={opt} value={opt} style={{ background: '#1E1E1E' }}>{opt}</option>
+                  ))}
+                </select>
               </div>
 
               {/* Row: Revenue + US Operations */}

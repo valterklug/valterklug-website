@@ -1030,6 +1030,35 @@
       "Contacto directo vía WhatsApp & email"
     ],
     "pricingNote": "Después de 6 meses, continúa mes a mes al mismo valor si deseas soporte continuo.",
+    "jointLabel": "Mentorías Conjuntas",
+    "jointH2": "Mentorías Especializadas",
+    "jointSub": "Combina la experiencia de Valter Klug con especialistas sectoriales para una expansión aún más dirigida.",
+    "jointMentors": [
+      {
+        "name": "Valter Klug + Paulo Mauro",
+        "focus": "Expansión de Franquicias a EE.UU.",
+        "price": "$1.800/mes",
+        "bio": "Paulo Mauro es ingeniero y administrador de empresas, pionero del franchising en Brasil desde 1985. Fundó Global Franchise, con cientos de proyectos de franquicias nacionales e internacionales, oficinas en São Paulo y Miami y asociados en 56 países. Fundó la red Sapataria do Futuro en 1994, vendida en 2008 con aproximadamente 200 unidades. Ex-director de la ABF (2000–2004), firmó el acuerdo ABF-APEX para internacionalizar franquicias brasileñas. Autor de O Guia do Franqueador y O Guia do Franqueado. Premiado como Empreendedor do Novo Brasil por Revista Você S/A y Endeavor.",
+        "includes": [
+          "Todo lo de la mentoría individual con Valter Klug",
+          "Participación directa de Paulo Mauro en sesiones de estrategia de franquicias",
+          "Análisis del modelo de franquicia para el mercado estadounidense",
+          "Acceso a la red internacional de Global Franchise (56 países)"
+        ]
+      },
+      {
+        "name": "Valter Klug + Erik Volavicius",
+        "focus": "Expansión de Bienes de Consumo a EE.UU.",
+        "price": "$1.800/mes",
+        "bio": "Erik Volavicius es ejecutivo de marketing y ventas con más de 20 años en bienes de consumo. Basado en Key Biscayne, Florida, es fundador de Evolve Growth Consulting, especializada en entrada al mercado estadounidense. Fue General Manager de Natura en EE.UU. y por 14 años lideró marketing y ventas internacionales en Bauducco, convirtiendo la marca en referencia en el mercado estadounidense. Experiencia previa en Kraft Foods y Faber-Castell. Graduado de la Kellogg School of Management (Northwestern) y Darden School of Business (UVA).",
+        "includes": [
+          "Todo lo de la mentoría individual con Valter Klug",
+          "Participación directa de Erik Volavicius en sesiones de estrategia de CPG",
+          "Estrategia de entrada para alimentos, bebidas y cosméticos",
+          "Playbook de distribución, trade marketing y retail en EE.UU."
+        ]
+      }
+    ],
     "miamiLabel": "Próximamente",
     "miamiH2": "Inmersión en Miami — Delegación Presencial",
     "miamiP": "Estamos desarrollando una experiencia presencial en Miami para participantes del programa — una delegación de varios días con visitas a APEX Brasil, sesiones de trabajo en Mana Tech y reuniones presenciales con profesionales estadounidenses en las áreas de logística, legal, tributario, marketing, e-commerce y ventas. Detalles próximamente.",
@@ -1053,6 +1082,13 @@
       "DTC / E-commerce",
       "Franquicia",
       "Otro"
+    ],
+    "formMentorshipLabel": "Modelo de mentoría",
+    "formMentorshipPlaceholder": "Selecciona...",
+    "formMentorshipOptions": [
+      "Individual — Valter Klug ($1.200/mes)",
+      "Conjunta — Valter Klug + Paulo Mauro · Franquicias ($1.800/mes)",
+      "Conjunta — Valter Klug + Erik Volavicius · Bienes de Consumo ($1.800/mes)"
     ],
     "formRevenueLabel": "Facturación anual aproximada",
     "formRevenuePlaceholder": "Selecciona...",
