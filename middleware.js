@@ -20,5 +20,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|api|admin|.*\\..*).*)'],
+  matcher: ['/((?!_next|api|admin|bellas-playhouse-privacy|.*\\..*).*)'],
 }
