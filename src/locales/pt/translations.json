@@ -7,6 +7,7 @@
     "intelligence": "Inteligência",
     "articles": "Artigos",
     "goglobal": "Mentoria",
+    "agencies": "Agências",
     "wordmark": "Valter Klug",
     "subtitle": "Líder Criativo · Brand Builder · Miami",
     "cta": "Vamos Conversar →"
@@ -25,7 +26,8 @@
       "intelligence": "Inteligência",
       "articles": "Artigos",
       "contact": "Contato",
-      "goglobal": "Mentoria"
+      "goglobal": "Mentoria",
+      "agencies": "Agências"
     },
     "operatingThroughTitle": "Operando Através De",
     "chameleonCollective": "Liderança criativa e engajamentos de consultoria",
@@ -1125,5 +1127,244 @@
     "formSuccess": "Obrigado. Retorno em até um dia útil.",
     "formError": "Algo deu errado. Me envie um email diretamente:",
     "formSubjectPrefix": "GoGlobal — Interesse de"
+  },
+
+  "agencies": {
+    "meta": {
+      "title": "Agências | Valter Klug",
+      "description": "Liderança executiva fractional para agências do Brasil e da América Latina que querem atender clientes nos EUA."
+    },
+    "heroEyebrow": "Para agências do Brasil e da América Latina",
+    "heroH1": "Sua agência nos EUA,\nsem abrir uma operação nos EUA.",
+    "heroSub": "Liderança executiva fractional para a sua agência no mercado americano, como CMO, CEO ou COO. A relação com o cliente permanece sua. A estratégia de entrada e a execução local ficam a cargo de um executivo sênior baseado em Miami, com o apoio da equipe da Chameleon Collective.",
+    "heroChips": ["28 anos de agência", "10+ anos em expansão Brasil & LatAm > EUA", "Base em Miami"],
+    "heroCta": "Marcar uma conversa",
+
+    "stats": [
+      { "number": "250+", "label": "especialistas de nível sênior pré-validados" },
+      { "number": "12", "label": "disciplinas de growth e criação" },
+      { "number": "0", "label": "contratações fixas necessárias" },
+      { "number": "10+", "label": "anos entregando no mercado americano" }
+    ],
+
+    "whoLeadsLabel": "Quem conduz",
+    "whoLeadsName": "Valter Klug",
+    "whoLeadsBio": "28 anos em agência. Começou como assistente de arte em São Paulo, em 1998, e aprendeu a programar Flash por conta própria, o que o levou ao digital quando boa parte do mercado ainda o tratava como anexo da campanha. Depois vieram AgenciaClick (que virou Isobar), Euro RSCG 4D na Havas, Sapient em Londres e Miami, e Young & Rubicam no WPP, onde liderou a conta da AT&T no mercado hispânico americano com um time de cerca de 35 pessoas. Dois Leões em Cannes, em 2005, por trabalho que assinou do conceito ao código.",
+    "whoLeadsBio2": "Viveu integração de agência por dentro: em 2009 a Sapient o transferiu de Londres para Miami na fusão com a iChameleon, dentro do time adquirido, para transformar duas formas de trabalhar em uma.",
+    "whoLeadsBio3": "Em 2015 fundou a Samba Rock e passou dez anos provando o modelo que oferece agora: núcleo pequeno, especialistas seniores por projeto, qualidade de agência grande a custo de boutique. Bauducco, Guaraná Antarctica, Natura, Tramontina, Grendene.",
+    "whoLeadsBio4": "Fundou também a Soundcheck Insights, plataforma de inteligência de mercado com IA que entrega estudo de entrada nos EUA em duas semanas. É ela que sustenta cada decisão de expansão com evidência, e não com opinião.",
+    "timeline": [
+      "1998 · assistente de arte, São Paulo",
+      "AgenciaClick · Isobar · Euro RSCG 4D · Havas",
+      "2005 · duas vezes vencedor em Cannes Lions",
+      "2009 · Sapient: de Londres para Miami, na integração com a iChameleon",
+      "Young & Rubicam · WPP · conta AT&T no mercado hispânico, time de ~35",
+      "2015–2025 · fundador da Samba Rock, agência boutique em Miami",
+      "Hoje · Chameleon Collective e Soundcheck Insights"
+    ],
+
+    "problemH2": "Abrir nos EUA custa mais caro do que parece.",
+    "problemP1": "Quase toda agência brasileira faz a conta do escritório: sala, empresa aberta nos EUA, contador e um responsável local. O que raramente entra na planilha é o tempo até a primeira receita e o risco de errar o posicionamento logo no primeiro cliente.",
+    "problemP2": "Contratar um executivo sênior em tempo integral resolve uma parte e cria outra: salário americano de CMO, com todos os encargos, antes de existir volume que justifique.",
+    "problemStats": [
+      { "number": "28", "label": "anos de mercado publicitário" },
+      { "number": "10+", "label": "anos movendo marcas LatAm para os EUA" },
+      { "number": "300", "label": "empresas brasileiras mapeadas na nossa pesquisa de entrada" },
+      { "number": "0", "label": "estrutura que você precisa montar por aqui" }
+    ],
+
+    "servicesEyebrow": "O que a sua agência ganha",
+    "servicesH2": "Quatro formas de entrar no mercado americano.",
+    "servicesIntro": "Sua agência escolhe até onde quer ir. Funcionam juntas ou separadas, sempre com a sua marca na frente.",
+    "services": [
+      {
+        "tag": "Representação",
+        "title": "Sua agência nos EUA, white label",
+        "desc": "O braço americano da sua agência. A relação e a conta permanecem suas, e a execução local fica com especialistas seniores, seguindo a sua estratégia e a visão de marca do seu cliente."
+      },
+      {
+        "tag": "Liderança fractional",
+        "title": "CMO, CEO ou COO fractional",
+        "desc": "Um executivo sênior dentro da sua agência, em tempo parcial, à frente da operação americana: posicionamento, oferta, preço, estrutura de time e rotina comercial."
+      },
+      {
+        "tag": "Expansão de clientes",
+        "title": "Planejamento de entrada para os seus clientes",
+        "desc": "Pesquisa de mercado, viabilidade, posicionamento para o consumidor americano e plano de marketing e e-commerce. Amplia o escopo junto a quem já é cliente da casa."
+      },
+      {
+        "tag": "Execução",
+        "title": "Campanhas rodando nos EUA",
+        "desc": "Criação e execução com time americano, on e offline, conduzidas por quem já lançou marcas brasileiras neste mercado e conhece o que não funciona."
+      }
+    ],
+
+    "teamEyebrow": "O time por trás",
+    "teamH2": "Chameleon Collective",
+    "teamIntro": "A operação não depende de uma pessoa. Atrás dela está a Chameleon Collective, rede americana de executivos e especialistas seniores acionados por projeto. Sua agência contrata a senioridade necessária, pelo tempo necessário, sem colocar ninguém na folha.",
+    "teamMembers": [
+      {
+        "name": "Julie Mantis",
+        "role": "Marca e operações",
+        "bio": "Uma das Chameleons originais, com mais de 20 anos ao lado dos sócios da Chameleon. Foi ela quem posicionou a marca Chameleon Collective. Participou da integração da iChameleon após a aquisição pela Sapient, dentro dos times que definiram como a agência combinada iria operar. Hoje conduz avaliações de operação de marketing e criação e constrói modelos de agência interna, trabalho que fez para Polaroid, Bugaboo, Vera Bradley e Blink Fitness.",
+        "tags": ["Integração de agências", "Agência interna", "Polaroid"],
+        "photo": "/agencies/julie-mantis.jpg"
+      },
+      {
+        "name": "Juan-Carlos Morales",
+        "role": "Direção executiva de criação",
+        "bio": "Diretor executivo de criação na Chameleon Collective. Liderou times de criação em escala, reunindo designers, redatores e profissionais de UX. Veio de agências como CP+B e Sapient, passou pela PwC, onde cocriou o BXT, framework que une times multidisciplinares, e hoje atua dentro de marcas como WorkMoney, Pacific Life e Bugaboo, montando capacidade criativa interna para os times delas.",
+        "tags": ["CP+B", "Publicis Sapient", "PwC", "Bugaboo"],
+        "photo": "/agencies/juan-carlos-morales.jpg"
+      },
+      {
+        "name": "Austin Dillman",
+        "role": "Growth e mídia paga",
+        "bio": "20 anos em mídia paga e growth, 14 deles dentro de empresas. Há sete anos na Chameleon, monta e lidera times seniores para clientes com verbas de até US$ 40 milhões por ano, muitas vezes substituindo a agência anterior. Audita a performance de agências para empresas de private equity e já escreveu centenas de contratos e escopos de trabalho.",
+        "tags": ["Private equity", "US$ 40M em mídia"],
+        "photo": "/agencies/austin-dillman.jpg"
+      },
+      {
+        "name": "Jeff Hunt",
+        "role": "Estratégia de marca e visão do cliente",
+        "bio": "Construiu a carreira quase toda do lado do cliente, liderando marketing em B2B, B2C e B2B2C, começando em bens de consumo. Já escolheu agências, definiu como elas trabalhariam com os times internos e negociou os termos dessas relações sentado na cadeira do cliente. Também trabalhou dentro de agência e assessora agências em diferenciação.",
+        "tags": ["Lado cliente", "Agency of record", "CPG"],
+        "photo": "/agencies/jeff-hunt.jpg"
+      }
+    ],
+    "teamFooter": "Mídia, performance, criação, e-commerce, dados, imprensa e trade. O time é montado por projeto, conforme a necessidade de cada cliente seu.",
+
+    "networkEyebrow": "A rede",
+    "networkH2": "Mais de 250 especialistas de nível sênior pré-validados, prontos para entrar sob a sua marca.",
+    "networkIntro": "Quando o cliente pede algo fora do escopo do seu time, ou quando o volume de trabalho ultrapassa a capacidade interna, a especialidade que falta é acionada. Tudo acontece nos bastidores e sai com a sua marca.",
+    "disciplines": ["Liderança fractional (CMO, CFO, COO)", "Mídia paga", "Marca e criação", "UX e UI", "SEO", "Redação", "E-mail marketing", "CRM e retenção", "Analytics e dados", "PR e comunicação", "Growth marketing", "Recrutamento e seleção"],
+
+    "howEyebrow": "Como funciona",
+    "howH2": "Da oportunidade à entrega em três etapas.",
+    "howSteps": [
+      {
+        "num": "01",
+        "title": "A demanda chega",
+        "desc": "Um cliente que quer entrar nos EUA, uma concorrência americana a disputar ou a decisão de começar a operar por aqui. Escopo, prazo e formato são definidos em poucos dias."
+      },
+      {
+        "num": "02",
+        "title": "O time é montado",
+        "desc": "A liderança é sênior e os especialistas vêm da rede, conforme o projeto exige. Tudo white label, nos bastidores, adaptado ao seu jeito de trabalhar."
+      },
+      {
+        "num": "03",
+        "title": "Você fatura e fica com a margem",
+        "desc": "Sua agência cobra do cliente o preço que o mercado aceita e paga a taxa de parceria. A diferença permanece com você, e o cliente continua sendo seu."
+      }
+    ],
+
+    "compareEyebrow": "A comparação honesta",
+    "compareH2": "Por que este modelo supera os outros dois caminhos.",
+    "compareIntro": "A diferença não está apenas no custo. Está no risco, na velocidade e no que acontece caso a primeira aposta não funcione.",
+    "benefitCards": [
+      {
+        "title": "Amplie seu portfólio",
+        "desc": "Comunique ao mercado brasileiro que a sua agência passa a atender nos EUA. Gera imprensa e abre portas com clientes que consideram internacionalizar."
+      },
+      {
+        "title": "Upsell na base que você já tem",
+        "desc": "Leve a conversa de expansão às marcas que já atende, com um caminho estruturado em vez de uma intenção."
+      },
+      {
+        "title": "Confidencialidade e proteção da conta",
+        "desc": "Contrato com NDA e cláusula de não concorrência dos dois lados. O cliente é seu e continua seu, sempre."
+      }
+    ],
+    "compareHeaders": ["Montar operação própria", "Contratar um executivo full time", "Executivo fractional + a rede da Chameleon"],
+    "compareRows": [
+      ["6 a 12 meses até a primeira entrega", "3 a 6 meses de recrutamento, mais o onboarding", "Começa em dias, com o primeiro projeto"],
+      ["Custo fixo alto antes de existir receita", "Salário americano de CMO com encargos", "Custo por projeto ou mensalidade definida"],
+      ["Abrir empresa, contador, jurídico e folha de pagamento", "Uma pessoa só, com uma especialidade só", "Nenhuma estrutura nova para tocar"],
+      ["Aprender o mercado na tentativa e erro", "Uma rede de contatos que não é sua", "Dez anos de erros já cometidos e corrigidos"],
+      ["Difícil de desmontar se não funcionar", "Todo o risco em uma contratação só", "Aumenta e diminui conforme o volume real"]
+    ],
+
+    "soundcheckEyebrow": "Camada de inteligência",
+    "soundcheckH2": "Soundcheck Insights",
+    "soundcheckIntro": "Nenhuma marca deveria atravessar a fronteira no escuro, e nenhuma agência deveria defender um plano de entrada só com opinião. A plataforma de inteligência de mercado que sustenta cada decisão entrega estudo de entrada nos EUA em duas semanas, com fonte e evidência, por uma fração do custo de consultoria tradicional.",
+    "soundcheckCards": [
+      {
+        "number": "300",
+        "title": "Empresas brasileiras mapeadas",
+        "desc": "Pesquisa própria com empresas que entraram nos EUA desde 1995, codificadas em mais de 40 campos, para entender o que separa quem cresceu de quem quebrou."
+      },
+      {
+        "number": "CVE",
+        "title": "Índice de viabilidade de expansão",
+        "desc": "Pontua o plano de entrada do seu cliente contra o que de fato aconteceu com quem veio antes, e mostra quanto o plano melhora com decisões diferentes."
+      },
+      {
+        "number": "2",
+        "title": "Semanas, não seis meses",
+        "desc": "Relatório completo de mercado, concorrência, precificação e canal, pronto para virar apresentação de cliente com a marca da sua agência."
+      }
+    ],
+    "soundcheckFooter": "Sua agência pode oferecer isso como serviço próprio, em modelo white label, e entrar na conversa de expansão do cliente pela porta da evidência.",
+
+    "mathEyebrow": "As contas",
+    "mathH2": "Você define o preço e fica com a margem.",
+    "mathIntro": "Não há divisão de receita nem exclusividade. Sua agência paga a taxa de parceria, define livremente o preço ao cliente final e fica com a diferença. Dois modos de olhar para essa conta.",
+    "marginTitle": "1. A sua margem em cima da entrega",
+    "marginHeaders": ["Tipo de contrato (exemplo)", "Taxa de parceria", "Preço ao seu cliente", "Sua margem mensal"],
+    "marginRows": [
+      ["Especialista de mídia paga, mensal", "US$ 6.000/mês", "US$ 9.000/mês", "US$ 3.000/mês"],
+      ["Dupla de UX e UI, por projeto", "US$ 12.000/mês", "US$ 18.000/mês", "US$ 6.000/mês"],
+      ["CMO fractional, liderança estratégica", "US$ 10.000/mês", "US$ 15.000/mês", "US$ 5.000/mês"]
+    ],
+    "costTitle": "2. O custo de fazer sozinho",
+    "costHeaders": ["Caminho", "Custo mensal estimado", "Tempo até a primeira entrega", "Se não der certo"],
+    "costRows": [
+      ["Operação própria nos EUA: abertura de empresa, contador, jurídico, escritório e um diretor local", "US$ 25.000 a 30.000", "6 a 12 meses", "Desmontar tudo, pagar rescisão, perder o investimento"],
+      ["Contratar um executivo americano em tempo integral", "US$ 20.000 a 26.000", "3 a 6 meses", "Contratação errada, recomeçar do zero"],
+      ["Executivo fractional com a rede por trás", "A partir de uma fração disso", "Dias", "Você para quando quiser"]
+    ],
+    "mathDisclaimer": "Números ilustrativos, não uma proposta. A taxa efetiva depende do escopo e da senioridade, e a margem aplicada é decisão exclusiva da sua agência.",
+
+    "faqEyebrow": "Dúvidas",
+    "faqH2": "O que costumam perguntar.",
+    "faqs": [
+      {
+        "q": "É realmente white label?",
+        "a": "Sim. O time trabalha nos bastidores, sob a sua marca. A relação com o cliente, o faturamento e o crédito permanecem inteiramente seus. Se preferir, tudo sai com o seu nome, das entregas à comunicação."
+      },
+      {
+        "q": "De quem é o cliente?",
+        "a": "Da sua agência, sempre. Contrato com NDA e cláusula de não concorrência dos dois lados: as contas que você trouxer não são abordadas, atendidas nem disputadas."
+      },
+      {
+        "q": "Precisamos abrir empresa nos EUA?",
+        "a": "Para começar, normalmente não. Muitas agências faturam do Brasil nos primeiros projetos e só montam estrutura quando o volume justifica. Quando esse momento chega, o caminho é desenhado junto com os especialistas certos."
+      },
+      {
+        "q": "Em quanto tempo começa?",
+        "a": "Dias, não meses. A rede já está montada e pré-validada, portanto o prazo é de alinhamento de escopo e time, não de recrutamento."
+      },
+      {
+        "q": "Tem exclusividade ou volume mínimo?",
+        "a": "Não. Pode ser um projeto pontual ou uma extensão permanente do seu time, sem volume mínimo e sem exclusividade."
+      },
+      {
+        "q": "E o idioma e o fuso horário?",
+        "a": "O atendimento é em português, inglês e espanhol, a partir de Miami. Você trata no seu idioma e no seu horário, e a operação do lado americano fica resolvida."
+      },
+      {
+        "q": "Qual a diferença entre os especialistas e a liderança fractional?",
+        "a": "Os especialistas executam. A liderança fractional conduz: dirige o time, estrutura uma área nova ou representa a agência diante do cliente quando a conversa passa do tático ao estratégico."
+      }
+    ],
+
+    "ctaEyebrow": "Próximo passo",
+    "ctaH2": "Trinta minutos de conversa resolvem mais do que três meses de pesquisa.",
+    "ctaText": "Conte onde a sua agência está hoje e onde pretende chegar. Havendo aderência, a proposta vem com escopo, formato e valores. Não havendo, isso fica claro já na primeira conversa.",
+    "ctaEmail": "valter.klug@chameleon.co",
+    "ctaLinkedIn": "/in/valterklug",
+    "ctaLocation": "Miami, Flórida",
+    "ctaButton": "Começar a conversa"
   }
 }

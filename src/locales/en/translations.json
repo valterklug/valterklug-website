@@ -7,6 +7,7 @@
     "intelligence": "Intelligence",
     "articles": "Articles",
     "goglobal": "Mentorship",
+    "agencies": "Agencies",
     "wordmark": "Valter Klug",
     "subtitle": "Creative Leader · Brand Builder · Miami",
     "cta": "Let's Talk →"
@@ -25,7 +26,8 @@
       "intelligence": "Intelligence",
       "articles": "Articles",
       "contact": "Contact",
-      "goglobal": "Mentorship"
+      "goglobal": "Mentorship",
+      "agencies": "Agencies"
     },
     "operatingThroughTitle": "Operating Through",
     "chameleonCollective": "Creative leadership & consulting engagements",
@@ -881,5 +883,244 @@
     "formSuccess": "Thanks. I'll be in touch within one business day.",
     "formError": "Something went wrong. Email me directly:",
     "formSubjectPrefix": "GoGlobal — Interest from"
+  },
+
+  "agencies": {
+    "meta": {
+      "title": "Agencies | Valter Klug",
+      "description": "Fractional executive leadership for agencies in Brazil and Latin America looking to serve clients in the U.S."
+    },
+    "heroEyebrow": "For agencies in Brazil and Latin America",
+    "heroH1": "Your agency in the U.S.,\nwithout building a U.S. operation.",
+    "heroSub": "Fractional executive leadership for your agency in the US market, as CMO, CEO or COO. The client relationship stays yours. Entry strategy and local execution are handled by a senior executive based in Miami, supported by the Chameleon Collective bench.",
+    "heroChips": ["28 years in agencies", "10+ years moving LatAm brands into the US", "Based in Miami"],
+    "heroCta": "Start a conversation",
+
+    "stats": [
+      { "number": "250+", "label": "vetted mid-to-senior experts in the network" },
+      { "number": "12", "label": "growth and creative disciplines" },
+      { "number": "0", "label": "full-time hires required" },
+      { "number": "10+", "label": "years delivering in the US market" }
+    ],
+
+    "whoLeadsLabel": "Who leads it",
+    "whoLeadsName": "Valter Klug",
+    "whoLeadsBio": "28 years in agencies. Valter Klug started as an art assistant in São Paulo in 1998 and taught himself to code Flash, which pulled him into digital while much of the industry still treated it as an afterthought. Then came AgenciaClick (later Isobar), Euro RSCG 4D at Havas, Sapient in London and Miami, and Young & Rubicam at WPP, where he led AT&T's U.S. Hispanic account with a team of about 35. Two Cannes Lions in 2005, for work he built from concept to code.",
+    "whoLeadsBio2": "He has been through agency integration from the inside: in 2009 Sapient moved him from London to Miami through the iChameleon merge, embedded in the acquired team to make two ways of working become one.",
+    "whoLeadsBio3": "In 2015 he founded Samba Rock and spent ten years proving the model offered here: a small core, senior specialists per project, large-agency quality at boutique cost. Bauducco, Guaraná Antarctica, Natura, Tramontina, Grendene.",
+    "whoLeadsBio4": "He also founded Soundcheck Insights, an AI-native market intelligence platform that delivers a US market-entry study in two weeks. It is what backs every expansion decision with evidence instead of opinion.",
+    "timeline": [
+      "1998 · art assistant, São Paulo",
+      "AgenciaClick · Isobar · Euro RSCG 4D · Havas",
+      "2005 · two-time Cannes Lions winner",
+      "2009 · Sapient: London to Miami, through the iChameleon integration",
+      "Young & Rubicam · WPP · AT&T U.S. Hispanic account, team of ~35",
+      "2015–2025 · founder of Samba Rock, a boutique agency in Miami",
+      "Today · Chameleon Collective and Soundcheck Insights"
+    ],
+
+    "problemH2": "Opening in the US costs more than it looks.",
+    "problemP1": "The math most Brazilian agencies run is the office math: a lease, a US entity, an accountant, a local head. What never makes the spreadsheet is the time to first revenue, and the real odds of getting the positioning wrong on the first client.",
+    "problemP2": "Hiring a senior executive full time solves part of that and creates another problem: a US CMO salary with payroll load, before there is volume to justify it.",
+    "problemStats": [
+      { "number": "28", "label": "years in the advertising industry" },
+      { "number": "10+", "label": "years moving LatAm brands into the US" },
+      { "number": "300", "label": "Brazilian companies mapped in our market-entry research" },
+      { "number": "0", "label": "structure you have to build here" }
+    ],
+
+    "servicesEyebrow": "What your agency gains",
+    "servicesH2": "Four ways into the American market.",
+    "servicesIntro": "Your agency chooses the depth. All four work together or separately, always with your brand in front.",
+    "services": [
+      {
+        "tag": "Representation",
+        "title": "Your agency in the US, white label",
+        "desc": "The American arm of your agency. The relationship and the account stay yours, and local execution runs through senior specialists, following your strategy and your client's brand vision."
+      },
+      {
+        "tag": "Fractional leadership",
+        "title": "Fractional CMO, CEO or COO",
+        "desc": "A senior executive inside your agency, part time, leading the US operation: positioning, offer, pricing, team structure and commercial routine."
+      },
+      {
+        "tag": "Client expansion",
+        "title": "Market-entry planning for your clients",
+        "desc": "Market research, feasibility, positioning for the American consumer, and an integrated marketing and e-commerce plan. You widen the scope with clients you already serve."
+      },
+      {
+        "tag": "Execution",
+        "title": "Campaigns running in the United States",
+        "desc": "Local creative and execution with an American team, online and offline, from someone who has launched Brazilian brands here and knows what does not work in this market."
+      }
+    ],
+
+    "teamEyebrow": "The bench",
+    "teamH2": "Chameleon Collective",
+    "teamIntro": "The operation does not rest on one person. Behind it is Chameleon Collective, an American network of senior executives and specialists brought in per project. Your agency gets the seniority it needs, for as long as it needs it, with no payroll.",
+    "teamMembers": [
+      {
+        "name": "Julie Mantis",
+        "role": "Brand and operations strategy",
+        "bio": "One of the original Chameleons, with more than 20 years alongside the partners. She positioned the Chameleon Collective brand itself. She worked on integrating iChameleon after the Sapient acquisition, inside the teams that defined how the merged agency would operate. Today she runs marketing and creative operations assessments and builds internal agency models, work she has done for Polaroid, Bugaboo, Vera Bradley and Blink Fitness.",
+        "tags": ["Agency integration", "In-house agency", "Polaroid"],
+        "photo": "/agencies/julie-mantis.jpg"
+      },
+      {
+        "name": "Juan-Carlos Morales",
+        "role": "Executive creative direction",
+        "bio": "Executive Creative Director at Chameleon Collective. He has led creative teams at scale, bringing together designers, copywriters and UX professionals. Agencies like CP+B and Sapient taught him how to earn attention; at PwC he co-created BXT, a framework uniting multidisciplinary teams. Today he embeds inside brands like WorkMoney, Pacific Life and Bugaboo, building in-house creative capability for their teams.",
+        "tags": ["CP+B", "Publicis Sapient", "PwC", "Bugaboo"],
+        "photo": "/agencies/juan-carlos-morales.jpg"
+      },
+      {
+        "name": "Austin Dillman",
+        "role": "Growth and paid media",
+        "bio": "20 years in paid media and growth marketing, 14 of them in-house. Seven years at Chameleon Collective, where he builds and leads senior growth teams for clients managing up to $40 million in annual ad spend, often replacing the incumbent agency. He audits agency performance for private equity portfolio companies and has written several hundred statements of work.",
+        "tags": ["Private equity", "$40M ad spend"],
+        "photo": "/agencies/austin-dillman.jpg"
+      },
+      {
+        "name": "Jeff Hunt",
+        "role": "Brand strategy and client-side perspective",
+        "bio": "Built his career mostly on the client side, leading marketing across B2B, B2C and B2B2C, starting in classical CPG. He has selected agencies of record, structured how they work with internal teams and set the terms of those relationships from the client's chair. He has also worked inside an agency and advises agencies on differentiation.",
+        "tags": ["Client side", "Agency of record", "CPG"],
+        "photo": "/agencies/jeff-hunt.jpg"
+      }
+    ],
+    "teamFooter": "Media, performance, creative, e-commerce, data, PR and trade. The team is assembled per project, based on what each of your clients needs.",
+
+    "networkEyebrow": "The bench",
+    "networkH2": "250+ experts, ready to deploy under your brand.",
+    "networkIntro": "When a client asks for something your team does not staff, or demand outpaces your capacity, you plug in the discipline you need. Delivery happens behind the scenes with your brand in front.",
+    "disciplines": ["Fractional leadership (CMO, CFO, COO)", "Paid media", "Brand and creative", "UX and UI", "SEO", "Copywriting", "Email marketing", "CRM and lifecycle", "Analytics and data", "PR and communications", "Growth marketing", "Recruiting and talent"],
+
+    "howEyebrow": "How it works",
+    "howH2": "Three steps from opportunity to delivery.",
+    "howSteps": [
+      {
+        "num": "01",
+        "title": "The need arrives",
+        "desc": "A client that wants to enter the US, an American account to pitch, or the decision to start operating here. Scope, timeline and format are defined within days."
+      },
+      {
+        "num": "02",
+        "title": "The team is assembled",
+        "desc": "Leadership is senior and specialists come from the bench, according to what the project requires. White-labeled, behind the scenes, aligned to how you work."
+      },
+      {
+        "num": "03",
+        "title": "You bill and keep the margin",
+        "desc": "Your agency charges the client what your market supports and pays the partner rate. The spread stays with you, and so does the account."
+      }
+    ],
+
+    "compareEyebrow": "The honest comparison",
+    "compareH2": "Why this beats the two alternatives.",
+    "compareIntro": "It is not about being cheaper. It is about risk, speed, and what happens if the first bet does not work.",
+    "benefitCards": [
+      {
+        "title": "Widen your portfolio",
+        "desc": "Tell your home market that your agency now serves clients in the US. It generates PR and opens doors with brands thinking about going international."
+      },
+      {
+        "title": "Upsell the base you already have",
+        "desc": "Take the expansion conversation to the brands you already serve, with a concrete path instead of an intention."
+      },
+      {
+        "title": "Confidentiality and account protection",
+        "desc": "Contracts with mutual NDA and non-compete. Ownership and control of the client always stay with you."
+      }
+    ],
+    "compareHeaders": ["Build your own operation", "Hire a full-time executive", "Fractional executive + collective"],
+    "compareRows": [
+      ["6 to 12 months to first delivery", "3 to 6 months to recruit, plus onboarding", "Starts in days, with the first project"],
+      ["High fixed cost before any revenue exists", "US CMO salary with full payroll load", "Cost per project or a defined monthly fee"],
+      ["Entity setup, accounting, legal, payroll", "One head, with one specialty", "No new structure to administrate"],
+      ["Learning the market by trial and error", "A network you do not control", "Ten years of mistakes already made and fixed"],
+      ["Hard to unwind if it does not work", "Risk concentrated in a single hire", "Scales up and down with real volume"]
+    ],
+
+    "soundcheckEyebrow": "Intelligence layer",
+    "soundcheckH2": "Soundcheck Insights",
+    "soundcheckIntro": "No brand should cross the border blind, and no agency should defend an entry plan on opinion alone. Soundcheck Insights delivers a US market-entry study in two weeks, sourced and evidenced, at a fraction of traditional consulting cost.",
+    "soundcheckCards": [
+      {
+        "number": "300",
+        "title": "Brazilian companies mapped",
+        "desc": "Original research on companies that entered the US since 1995, coded across 40+ fields, to understand what separates the ones that grew from the ones that failed."
+      },
+      {
+        "number": "CVE",
+        "title": "Cross-border Viability Expansion index",
+        "desc": "Scores your client's entry plan against what actually happened to the companies that went before, and shows how much the plan improves with different decisions."
+      },
+      {
+        "number": "2",
+        "title": "Weeks, not six months",
+        "desc": "A full report on market, competition, pricing and channel, ready to become a client presentation under your agency's brand."
+      }
+    ],
+    "soundcheckFooter": "Your agency can offer this as its own service, white label, and enter the client's expansion conversation through the evidence door.",
+
+    "mathEyebrow": "The math",
+    "mathH2": "You set the price. You keep the spread.",
+    "mathIntro": "No revenue share, no exclusivity. You get a partner rate, bill your client at whatever you choose, and pocket the difference. Two ways to look at the number.",
+    "marginTitle": "1. Margin on delivery",
+    "marginHeaders": ["Engagement (illustrative)", "Partner rate", "Your client rate", "Your monthly margin"],
+    "marginRows": [
+      ["Paid media specialist, retainer", "$6,000 / mo", "$9,000 / mo", "$3,000 / mo"],
+      ["UX/UI pod, project", "$12,000 / mo", "$18,000 / mo", "$6,000 / mo"],
+      ["Fractional CMO, strategic lead", "$10,000 / mo", "$15,000 / mo", "$5,000 / mo"]
+    ],
+    "costTitle": "2. The cost of doing it alone",
+    "costHeaders": ["Path", "Estimated monthly cost", "Time to first delivery", "If it does not work"],
+    "costRows": [
+      ["Own US operation: entity, accounting, legal, office and a local head", "$25,000 to 30,000", "6 to 12 months", "Unwind the structure, severance, sunk cost"],
+      ["Full-time American executive", "$20,000 to 26,000", "3 to 6 months", "One wrong hire, start over"],
+      ["Fractional executive with the bench behind", "A fraction of that", "Days", "You stop whenever you want"]
+    ],
+    "mathDisclaimer": "Illustrative figures, not a quote. Actual partner rates depend on scope and seniority, and the markup applied is entirely your agency's decision.",
+
+    "faqEyebrow": "Questions",
+    "faqH2": "What agencies usually ask.",
+    "faqs": [
+      {
+        "q": "Is the work truly white-labeled?",
+        "a": "Yes. The team works behind the scenes under your brand. The client relationship, the invoicing and the credit stay entirely with you. If you prefer, everything ships under your name, including deliverables and communications."
+      },
+      {
+        "q": "Who owns the client?",
+        "a": "Your agency does, always. Contracts include a mutual NDA and non-compete: the accounts you bring are never approached, served or contested."
+      },
+      {
+        "q": "Do we need to open a US entity?",
+        "a": "To start, usually not. Many agencies bill from home for the first projects and only build structure when volume justifies it. When that moment comes, the path is designed alongside the right specialists."
+      },
+      {
+        "q": "How fast can we start?",
+        "a": "Days, not months. The bench is already built and vetted, so the time is scoping and alignment, not recruiting."
+      },
+      {
+        "q": "Is there exclusivity or a minimum?",
+        "a": "No. It can be one project or a permanent extension of your team. No minimum, no lock-in."
+      },
+      {
+        "q": "What about language and time zone?",
+        "a": "Service runs in Portuguese, English and Spanish, out of Miami. You work in your language and your hours, and the American side is handled here."
+      },
+      {
+        "q": "What is the difference between the bench and fractional leadership?",
+        "a": "Specialists execute. Fractional leadership runs things: directing the team, standing up a new practice, or representing the agency in front of your client when the conversation moves from tactical to strategic."
+      }
+    ],
+
+    "ctaEyebrow": "Next step",
+    "ctaH2": "A 30-minute conversation settles more than three months of research.",
+    "ctaText": "Tell us where your agency is today and where it should go. If there is a fit, the proposal follows with scope, format and investment. If there is not, that will be clear on the first call.",
+    "ctaEmail": "valter.klug@chameleon.co",
+    "ctaLinkedIn": "/in/valterklug",
+    "ctaLocation": "Miami, Florida",
+    "ctaButton": "Start the conversation"
   }
 }
