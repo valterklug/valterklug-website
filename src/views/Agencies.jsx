@@ -248,10 +248,7 @@ export default function Agencies() {
                   {t('agencies.teamEyebrow')}
                 </span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 12 }}>
-                <h2 style={{ ...h2Style, marginBottom: 0 }}>{t('agencies.teamH2')}</h2>
-                <img src="/agencies/chameleon-logo.png" alt="Chameleon Collective" style={{ height: 28, opacity: .6 }} />
-              </div>
+              <h2 style={{ ...h2Style, marginBottom: 12 }}>{t('agencies.teamH2')}</h2>
               <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '.9375rem', color: '#555', lineHeight: 1.7, maxWidth: 680, marginBottom: 40 }}>
                 {t('agencies.teamIntro')}
               </p>
@@ -261,15 +258,15 @@ export default function Agencies() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 28 }}>
                 {teamMembers.map((member, i) => (
                   <StaggerItem key={i}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'left' }}>
                       <img src={member.photo} alt={member.name} style={{
                         width: 120, height: 120, borderRadius: '50%', objectFit: 'cover',
                         filter: 'grayscale(100%)', marginBottom: 14,
                       }} />
                       <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 15, fontWeight: 600, color: '#121212', margin: '0 0 4px' }}>{member.name}</h3>
                       <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: ORANGE, marginBottom: 10 }}>{member.role}</div>
-                      <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#555', lineHeight: 1.6, textAlign: 'left', marginBottom: 12 }}>{member.bio}</p>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center' }}>
+                      <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#555', lineHeight: 1.6, marginBottom: 12 }}>{member.bio}</p>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                         {member.tags.map((tag, j) => (
                           <span key={j} style={{
                             fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500,
