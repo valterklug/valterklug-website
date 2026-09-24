@@ -1073,11 +1073,11 @@
       ["UX/UI pod, project", "$12,000 / mo", "$18,000 / mo", "$6,000 / mo"],
       ["Fractional CMO, strategic lead", "$10,000 / mo", "$15,000 / mo", "$5,000 / mo"]
     ],
-    "costTitle": "2. The cost of doing it alone",
+    "costTitle": "The cost of doing it alone",
     "costHeaders": ["Path", "Estimated monthly cost", "Time to first delivery", "If it does not work"],
     "costRows": [
-      ["Own US operation: entity, accounting, legal, office and a local head", "$25,000 to 30,000", "6 to 12 months", "Unwind the structure, severance, sunk cost"],
-      ["Full-time American executive", "$20,000 to 26,000", "3 to 6 months", "One wrong hire, start over"],
+      ["Own US operation: entity, office, legal, accounting, a local head and a small team", "$80,000 to 120,000", "6 to 12 months", "Unwind the structure, severance, sunk cost"],
+      ["Full-time American executive", "$25,000 to 35,000", "3 to 6 months", "One wrong hire, start over"],
       ["Fractional executive with the bench behind", "A fraction of that", "Days", "You stop whenever you want"]
     ],
     "mathDisclaimer": "Illustrative figures, not a quote. Actual partner rates depend on scope and seniority, and the markup applied is entirely your agency's decision.",

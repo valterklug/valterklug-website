@@ -1317,11 +1317,11 @@
       ["Dupla de UX e UI, por projeto", "US$ 12.000/mês", "US$ 18.000/mês", "US$ 6.000/mês"],
       ["CMO fractional, liderança estratégica", "US$ 10.000/mês", "US$ 15.000/mês", "US$ 5.000/mês"]
     ],
-    "costTitle": "2. O custo de fazer sozinho",
+    "costTitle": "O custo de fazer sozinho",
     "costHeaders": ["Caminho", "Custo mensal estimado", "Tempo até a primeira entrega", "Se não der certo"],
     "costRows": [
-      ["Operação própria nos EUA: abertura de empresa, contador, jurídico, escritório e um diretor local", "US$ 25.000 a 30.000", "6 a 12 meses", "Desmontar tudo, pagar rescisão, perder o investimento"],
-      ["Contratar um executivo americano em tempo integral", "US$ 20.000 a 26.000", "3 a 6 meses", "Contratação errada, recomeçar do zero"],
+      ["Operação própria nos EUA: empresa, escritório, jurídico, contabilidade, um diretor local e uma equipe pequena", "US$ 80.000 a 120.000", "6 a 12 meses", "Desmontar tudo, pagar rescisão, perder o investimento"],
+      ["Contratar um executivo americano em tempo integral", "US$ 25.000 a 35.000", "3 a 6 meses", "Contratação errada, recomeçar do zero"],
       ["Executivo fractional com a rede por trás", "A partir de uma fração disso", "Dias", "Você para quando quiser"]
     ],
     "mathDisclaimer": "Números ilustrativos, não uma proposta. A taxa efetiva depende do escopo e da senioridade, e a margem aplicada é decisão exclusiva da sua agência.",

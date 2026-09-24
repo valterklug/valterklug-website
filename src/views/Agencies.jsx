@@ -45,13 +45,10 @@ export default function Agencies() {
   const services = t('agencies.services', { returnObjects: true })
   const teamMembers = t('agencies.teamMembers', { returnObjects: true })
   const disciplines = t('agencies.disciplines', { returnObjects: true })
-  const howSteps = t('agencies.howSteps', { returnObjects: true })
   const benefitCards = t('agencies.benefitCards', { returnObjects: true })
   const compareHeaders = t('agencies.compareHeaders', { returnObjects: true })
   const compareRows = t('agencies.compareRows', { returnObjects: true })
   const soundcheckCards = t('agencies.soundcheckCards', { returnObjects: true })
-  const marginHeaders = t('agencies.marginHeaders', { returnObjects: true })
-  const marginRows = t('agencies.marginRows', { returnObjects: true })
   const costHeaders = t('agencies.costHeaders', { returnObjects: true })
   const costRows = t('agencies.costRows', { returnObjects: true })
   const faqs = t('agencies.faqs', { returnObjects: true })
@@ -324,36 +321,7 @@ export default function Agencies() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════
-          7. HOW IT WORKS — 3 steps
-          ════════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#FAFAFA', ...sectionPad, borderBottom: '1px solid #E8E8E8' }}>
-        <div style={innerMax}>
-          <FadeIn>
-            <span style={sectionLabel()}>
-              <span style={labelDot()} />
-              {t('agencies.howEyebrow')}
-            </span>
-            <h2 style={h2Style}>{t('agencies.howH2')}</h2>
-          </FadeIn>
-
-          <StaggerContainer>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
-              {howSteps.map((step, i) => (
-                <StaggerItem key={i}>
-                  <div style={{ padding: '28px', background: '#fff', borderTop: `3px solid ${ORANGE}`, height: '100%' }}>
-                    <div style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 32, fontWeight: 300, color: ORANGE, marginBottom: 8 }}>{step.num}</div>
-                    <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500, color: '#121212', margin: '0 0 10px', lineHeight: 1.3 }}>{step.title}</h3>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#555', lineHeight: 1.65 }}>{step.desc}</p>
-                  </div>
-                </StaggerItem>
-              ))}
-            </div>
-          </StaggerContainer>
-        </div>
-      </section>
-
-      {/* ════════════════════════════════════════════════════════════
-          8. COMPARISON TABLE + BENEFIT CARDS
+          7. COMPARISON TABLE + BENEFIT CARDS
           ════════════════════════════════════════════════════════════ */}
       <section style={{ background: '#fff', ...sectionPad, borderBottom: '1px solid #E8E8E8' }}>
         <div style={innerMax}>
@@ -368,23 +336,9 @@ export default function Agencies() {
             </p>
           </FadeIn>
 
-          {/* Benefit cards */}
-          <StaggerContainer>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20, marginBottom: 48 }}>
-              {benefitCards.map((card, i) => (
-                <StaggerItem key={i}>
-                  <div style={{ padding: 24, background: '#F5F5F5', borderLeft: `3px solid ${ORANGE}`, height: '100%' }}>
-                    <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 15, fontWeight: 500, color: '#121212', margin: '0 0 8px', lineHeight: 1.3 }}>{card.title}</h3>
-                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#555', lineHeight: 1.6 }}>{card.desc}</p>
-                  </div>
-                </StaggerItem>
-              ))}
-            </div>
-          </StaggerContainer>
-
-          {/* Comparison table — desktop */}
+          {/* Comparison table */}
           <FadeIn>
-            <div style={{ overflowX: 'auto' }} className="agencies-table-wrap">
+            <div style={{ overflowX: 'auto', marginBottom: 48 }} className="agencies-table-wrap">
               <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 700 }} className="agencies-compare-table">
                 <thead>
                   <tr>
@@ -420,6 +374,20 @@ export default function Agencies() {
               </table>
             </div>
           </FadeIn>
+
+          {/* Benefit cards */}
+          <StaggerContainer>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
+              {benefitCards.map((card, i) => (
+                <StaggerItem key={i}>
+                  <div style={{ padding: 24, background: '#F5F5F5', borderLeft: `3px solid ${ORANGE}`, height: '100%' }}>
+                    <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 15, fontWeight: 500, color: '#121212', margin: '0 0 8px', lineHeight: 1.3 }}>{card.title}</h3>
+                    <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#555', lineHeight: 1.6 }}>{card.desc}</p>
+                  </div>
+                </StaggerItem>
+              ))}
+            </div>
+          </StaggerContainer>
         </div>
       </section>
 
@@ -439,43 +407,7 @@ export default function Agencies() {
             </p>
           </FadeIn>
 
-          {/* Table 1: Margin */}
-          <FadeIn>
-            <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500, color: '#121212', marginBottom: 16 }}>{t('agencies.marginTitle')}</h3>
-            <div style={{ overflowX: 'auto', marginBottom: 40 }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 600 }}>
-                <thead>
-                  <tr>
-                    {marginHeaders.map((h, i) => (
-                      <th key={i} style={{
-                        fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 12, fontWeight: 600,
-                        color: '#121212', background: '#F0F0F0',
-                        padding: '12px 16px', textAlign: 'left',
-                        borderBottom: `2px solid ${ORANGE}`,
-                      }}>{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {marginRows.map((row, ri) => (
-                    <tr key={ri}>
-                      {row.map((cell, ci) => (
-                        <td key={ci} style={{
-                          fontFamily: 'Inter,sans-serif', fontSize: 14,
-                          color: ci === 3 ? ORANGE : '#555',
-                          fontWeight: ci === 3 ? 600 : 400,
-                          padding: '12px 16px', borderBottom: '1px solid #E8E8E8',
-                          lineHeight: 1.5, whiteSpace: 'nowrap',
-                        }}>{cell}</td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </FadeIn>
-
-          {/* Table 2: Cost of doing it alone */}
+          {/* Cost of doing it alone */}
           <FadeIn>
             <h3 style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 500, color: '#121212', marginBottom: 16 }}>{t('agencies.costTitle')}</h3>
             <div style={{ overflowX: 'auto', marginBottom: 24 }}>
@@ -660,7 +592,7 @@ export default function Agencies() {
       <style>{`
         @media (max-width: 900px) {
           .agencies-split { grid-template-columns: 1fr !important; gap: 48px !important; }
-          .agencies-bio-layout { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+          .agencies-bio-layout { flex-direction: column !important; }
         }
         @media (max-width: 768px) {
           .agencies-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
