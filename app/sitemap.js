@@ -1,7 +1,6 @@
 import { PROJECTS } from '../src/data/portfolio'
 import { CASES } from '../src/data/caseStudies'
-
-const BASE = 'https://valterklug.com'
+import { SITE_URL as BASE } from './lib/site'
 
 const PAGES = [
   '/',

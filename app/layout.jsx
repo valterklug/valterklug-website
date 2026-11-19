@@ -1,7 +1,8 @@
 import './globals.css'
+import { SITE_URL } from './lib/site'
 
 export const metadata = {
-  metadataBase: new URL('https://valterklug.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
     template: '%s — Valter Klug',
     default: 'Valter Klug — Fractional CMO & Brand Expansion Strategist',

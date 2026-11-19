@@ -3,9 +3,9 @@ import pt from '../../src/locales/pt/translations.json'
 import es from '../../src/locales/es/translations.json'
 import { getProject } from '../../src/data/portfolio'
 import { getCaseBySlug } from '../../src/data/caseStudies'
+import { SITE_URL as BASE } from './site'
 
 const allTranslations = { en, pt, es }
-const BASE = 'https://valterklug.com'
 const OG_LOCALE = { en: 'en_US', pt: 'pt_BR', es: 'es_ES' }
 
 function strip(s) {
