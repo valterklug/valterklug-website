@@ -150,7 +150,11 @@ export const PROJECTS = [
     year: '2022',
     category: 'CPG + Brand Strategy + International',
     accent: '#88E8F0',
-    images: ['/guarana-brand-book.pdf'],
+    // Pages 1, 7, 12, 25, 26, 27, 29, 37, 42, 51, 69 and 77 of the brand book, rendered from the PDF
+    carouselImages: [1, 7, 12, 25, 26, 27, 29, 37, 42, 51, 69, 77].map(n => `/brand-books/guarana/page-${String(n).padStart(2, '0')}.jpg`),
+    pdfs: [
+      { url: '/guarana-brand-book.pdf', title: 'International Brand Book' },
+    ],
     roles: [
       { title: 'Creative Director', names: ['Valter Klug', 'Daniel Faudt'] },
       { title: 'Strategy Director', names: ['Valter Klug', 'Matheus Gonzalez'] },
@@ -169,7 +173,9 @@ export const PROJECTS = [
     year: '2020',
     category: 'Luxury + Brand + E-Commerce',
     accent: '#E8EB74',
-    images: ['/JTaylorLogoBrandGuidelines.pdf'],
+    pdfs: [
+      { url: '/JTaylorLogoBrandGuidelines.pdf', title: 'Brand Guidelines' },
+    ],
     carouselImages: ['/JTaylorhomepagemockupv5.jpg', '/productpage_desktop.jpg', '/about_desktop_3.2.jpg', '/contact_desktop.jpg', '/help_desktop.jpg'],
     roles: [
       { title: 'Creative Director', names: ['Valter Klug'] },
