@@ -411,6 +411,8 @@
     "heroH1": "28 years of work.\nA selection of the cases that defined it.",
     "heroSub": "From global CPG giants to challenger brands — strategic marketing leadership that moved culture and delivered measurable business outcomes.",
     "readCaseStudy": "Read Case Study",
+    "allCaseStudies": "All case studies",
+    "nextCase": "Next case study",
     "challengeLabel": "Challenge",
     "approachLabel": "Approach",
     "impactLabel": "Impact",
@@ -677,7 +679,8 @@
       "agency": "Agency",
       "documents": "Documents",
       "before": "Before",
-      "after": "After"
+      "after": "After",
+      "close": "Close"
     }
   },
   "goglobal": {

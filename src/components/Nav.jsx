@@ -34,6 +34,14 @@ export default function Nav() {
 
   useEffect(() => setOpen(false), [pathname])
 
+  // A section stays highlighted on its own pages too (/case-studies/<case>, /portfolio/<project>).
+  // English pages are served from /en/... behind the scenes, so drop that prefix before comparing.
+  const isActive = to => {
+    const current = pathname.replace(/^\/en(?=\/|$)/, '') || '/'
+    const target = localePath(to)
+    return current === target || current.startsWith(`${target}/`)
+  }
+
   return (
     <>
       <nav style={{
@@ -63,7 +71,7 @@ export default function Nav() {
         {/* Desktop links */}
         <ul style={{ display: 'flex', alignItems: 'center', gap: 4, listStyle: 'none', margin: 0 }} className="nav-desktop">
           {NAV_LINKS.map(({ label, to }) => {
-            const active = pathname === localePath(to)
+            const active = isActive(to)
             return (
               <li key={to}>
                 <Link href={localePath(to)} style={{
@@ -165,7 +173,7 @@ export default function Nav() {
                 <Link href={localePath(to)} style={{
                   display: 'block', padding: '14px 0',
                   fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 16, fontWeight: 400,
-                  color: pathname === localePath(to) ? '#EA633F' : '#121212',
+                  color: isActive(to) ? '#EA633F' : '#121212',
                   borderBottom: '1px solid #E8E8E8', textDecoration: 'none',
                 }}>{label}</Link>
               </motion.div>

@@ -411,6 +411,8 @@
     "heroH1": "28 anos de trabalho.\nUma seleção dos casos que o definiram.",
     "heroSub": "De gigantes CPG globais a marcas desafiadoras — liderança em marketing estratégico que movimentou cultura e entregou resultados de negócio mensuráveis.",
     "readCaseStudy": "Ler Case de Sucesso",
+    "allCaseStudies": "Todos os cases de sucesso",
+    "nextCase": "Próximo case de sucesso",
     "challengeLabel": "Desafio",
     "approachLabel": "Abordagem",
     "impactLabel": "Impacto",
@@ -814,7 +816,8 @@
       "agency": "Agência",
       "documents": "Documentos",
       "before": "Antes",
-      "after": "Depois"
+      "after": "Depois",
+      "close": "Fechar"
     },
     "projects": {
       "bauducco-times-square": {

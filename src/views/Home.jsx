@@ -245,10 +245,10 @@ export default function Home() {
                 <span key={tag} style={{ fontFamily: 'IBM Plex Sans,sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(18,18,18,.08)', padding: '4px 12px', color: '#121212' }}>{tag}</span>
               ))}
             </div>
-            <Link href={localePath('/case-studies')} className="tlink">{t('home.viewCaseStudy')}</Link>
+            <Link href={localePath('/case-studies/bauducco-panettone')} className="tlink">{t('home.viewCaseStudy')}</Link>
           </FadeIn>
           <FadeIn delay={.12} direction="left">
-            <Link href={localePath('/case-studies')} style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
+            <Link href={localePath('/case-studies/bauducco-panettone')} style={{ display: 'block', position: 'relative', overflow: 'hidden', background: '#121212' }}>
               <img src="/cs-bauducco-panettone-thumb.jpg" alt="Bauducco Panettone" style={{ width: '100%', height: '100%', minHeight: 360, objectFit: 'cover', display: 'block', opacity: 0.9, transition: 'opacity .3s' }}
                 onMouseEnter={e => e.currentTarget.style.opacity = '1'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '0.9'}
